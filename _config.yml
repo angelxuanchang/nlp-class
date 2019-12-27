@@ -1,22 +1,22 @@
 exclude: ['README.md', 'assets/latex/', 'archive']
 timezone: US/Pacific
 markdown: kramdown
-coursys: "https://coursys.sfu.ca/2019fa-cmpt-413-x1/"
-semcode: 1197
+coursys: "https://coursys.sfu.ca/2020sp-cmpt-825-g1/"
+semcode: 1201
 calendar: "https://calendar.google.com/calendar/ical/qgs97od9ef8t1582k2rqomv5ho%40group.calendar.google.com/public/basic.ics"
-lastday: "Dec 3, 2019"
-midterm: "Oct 22, 2019"
-instructor: anoop
+lastday: "Apr 9, 2020"
+midterm: "Feb 20, 2020"
+instructor: angel
 tas:
-  - name: Yilong (Jetic) Gu 
-    email: jeticg
-    officehour: 'Wednesdays 3:30-4:30pm. Location: ASB 9816'
-  - name: "Nishant Kambhatla"
-    email: nkambhat
-    officehour: 'Tuesdays, 9:30-10:30am. Location: ASB 9816'
-  - name: "Hassan Shavarani"
-    email: sshavara@sfu.ca 
-    officehour: "Tuesdays, 12:00-01:00pm. Location: ASB 9808"
+  - name: "Yasaman Etasam"
+    email: yetesam
+    officehour: "Time: TBD. Location: TBD"
+  - name: "Ali Gholami"
+    email: gholami
+    officehour: "Time: TBD. Location: TBD"
+  - name: "Roya Javadi"
+    email: rjavadi
+    officehour: "Time: TBD. Location: TBD"
 hwdates:
   - hw: "0"
     startdate: "Sep 10, 2019"

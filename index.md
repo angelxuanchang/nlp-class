@@ -31,7 +31,7 @@ encode, human languages provide an interesting challenge, both in
 terms of its analysis and the learning of language from observations.
 
 #### Instructor
-* [Anoop Sarkar](http://www.cs.sfu.ca/~anoop/) 
+* [Angel Chang](http://angelxuanchang.github.io/)
 
 #### Teaching Assistants
 <ul>
@@ -42,17 +42,18 @@ terms of its analysis and the learning of language from observations.
 
 #### Asking for help
 * Ask for help on [the discussion board]({{ site.coursys }}/discussion)
-* Instructor office hours: Thu 9:30-10:30am TASC1 9427
+* Instructor office hours: Thu 9:30-10:30am TASC1 8031
 * <b>No emails</b> to the TAs and strictly emails about personal matters to the instructor
-* Use only SFU email address and use `cmpt413:` or `cmpt825:` (for ugrad and grad respectively) as subject prefix
+* Use only SFU email address and use `cmpt825:` as subject prefix
 
 #### Time and place
-* Tue 4:30-5:20 [BLU 9660](http://www.sfu.ca/campuses/maps-and-directions/burnaby-map.html) 
-* Thu 3:30-5:20 [BLU 9660](http://www.sfu.ca/campuses/maps-and-directions/burnaby-map.html)
+* Tue 3:30-4:50 [AQ 3149](http://www.sfu.ca/campuses/maps-and-directions/burnaby-map.html) 
+* Thu 3:30-4:50 [AQ 3149](http://www.sfu.ca/campuses/maps-and-directions/burnaby-map.html)
 * Last day of classes: {{ site.lastday }}
 
-#### Calendar
+<!-- #### Calendar
 * [Subscribe]({{ site.calendar }})
+ -->
 
 #### Textbook
 * No required textbook. Online readings provided in Syllabus.
