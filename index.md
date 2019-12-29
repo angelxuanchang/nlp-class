@@ -7,7 +7,7 @@ title: Course Information
 active_tab: main_page 
 ---
 
-## Natural Language Processing <span class="text-muted">Fall 2019</span>
+## Natural Language Processing <span class="text-muted">Spring 2020</span>
 
 Imagine a world where you can pick up a phone and talk in English,
 while at the other end of the line your words are [spoken in
@@ -65,7 +65,8 @@ terms of its analysis and the learning of language from observations.
 * In class midterm: {{ site.midterm }} (25%)
 * Participation: Helping other students on the discussion board in a positive way (5%)
 * Final Project Proposal: Due on {{ site.hwdates[5].proposal }} (5%)
-* Final Project: Due on {{ site.hwdates[5].deadline }} (23%)
+* Final Project Milestone: Due on {{ site.hwdates[5].milestone }} (5%)
+* Final Project: Due on {{ site.hwdates[5].deadline }} (18%)
 * Final Project Poster Session:
     * Time: {{ site.hwdates[5].deadline }} {{ site.hwdates[5].time }}. 
     * Location: {{ site.hwdates[5].location }}
