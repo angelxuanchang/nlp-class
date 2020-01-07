@@ -2,11 +2,12 @@ exclude: ['README.md', 'assets/latex/', 'archive']
 timezone: US/Pacific
 markdown: kramdown
 coursys: "https://coursys.sfu.ca/2020sp-cmpt-825-g1/"
+piazza: "https://piazza.com/sfu.ca/spring2020/cmpt825"
 semcode: 1201
 calendar: "https://calendar.google.com/calendar/ical/qgs97od9ef8t1582k2rqomv5ho%40group.calendar.google.com/public/basic.ics"
 lastday: "Apr 9, 2020"
 midterm: "Feb 20, 2020"
-instructor: angel
+instructor: angelx
 tas:
   - name: "Yasaman Etasam"
     email: yetesam
@@ -19,24 +20,24 @@ tas:
     officehour: "Time: TBD. Location: TBD"
 hwdates:
   - hw: "0"
-    startdate: "Jan 7, 2020"
-    deadline: "Jan 14, 2020"
+    startdate: "Jan 9, 2020"
+    deadline: "Jan 16, 2020"
   - hw: "1"
-    startdate: "Jan 14, 2020"
-    deadline: "Jan 28, 2020"
+    startdate: "Jan 16, 2020"
+    deadline: "Jan 30, 2020"
   - hw: "2"
-    startdate: "Jan 28, 2020"
-    deadline: "Feb 11, 2020"
+    startdate: "Jan 30, 2020"
+    deadline: "Feb 13, 2020"
   - hw: "3"
-    startdate: "Feb 18, 2020"
-    deadline: "Mar 3, 2020"
+    startdate: "Feb 20, 2020"
+    deadline: "Mar 5, 2020"
   - hw: "4"
-    startdate: "Mar 3, 2020"
-    deadline: "Mar 17, 2020"
+    startdate: "Mar 5, 2020"
+    deadline: "Mar 19, 2020"
   - hw: "project"
     startdate: "Feb 20, 2020"
     deadline: "Apr 14, 2020"
     time: "Poster session: Apr ??, 2020. 4pm-5:30pm (Session 1) and 5:30pm-7pm (Session 2)"
     location: "TBD"
-    proposal: "Mar 10, 2020"
-    milestone: "Mar 31, 2020"
+    proposal: "Mar 12, 2020"
+    milestone: "Mar 26, 2020"

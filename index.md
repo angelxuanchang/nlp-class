@@ -41,7 +41,7 @@ terms of its analysis and the learning of language from observations.
 </ul>
 
 #### Asking for help
-* Ask for help on [the discussion board]({{ site.coursys }}/discussion)
+* Ask for help on [piazza]({{ site.piazza }})
 * Instructor office hours: Thu 9:30-10:30am TASC1 8031
 * <b>No emails</b> to the TAs and strictly emails about personal matters to the instructor
 * Use only SFU email address and use `cmpt825:` as subject prefix
@@ -67,8 +67,3 @@ terms of its analysis and the learning of language from observations.
 * Final Project Proposal: Due on {{ site.hwdates[5].proposal }} (5%)
 * Final Project Milestone: Due on {{ site.hwdates[5].milestone }} (5%)
 * Final Project: Due on {{ site.hwdates[5].deadline }} (18%)
-* Final Project Poster Session:
-    * Time: {{ site.hwdates[5].deadline }} {{ site.hwdates[5].time }}. 
-    * Location: {{ site.hwdates[5].location }}
-    * Poster session assignments: [Session 1](assets/handouts/poster-session-1.pdf) and [Session 2](assets/handouts/poster-session-2.pdf)
-
