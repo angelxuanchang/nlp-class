@@ -18,14 +18,14 @@ active_tab: faq
 
 ### Email policy
 
-* We will be using the [discussion board on Coursys]({{ site.coursys }}discussion/) for **all** discussions including asking for help. For syllabus, practice, homeworks, exams, or other clarification emails **do not** email me (the instructor) or the TA(s) directly.
-* If you email the instructor directly for personal matters that are inappropriate for the discussion board, use your SFU email address to send the email (do not use any other provider), and use either <code>cmpt413:</code> or <code>cmpt825:</code> as the prefix in your subject line.
+* We will be using [Piazza]({{ site.piazza }}/) for **all** discussions including asking for help. For syllabus, practice, homeworks, exams, or other clarification emails **do not** email me (the instructor) or the TA(s) directly.
+* If you email the instructor directly for personal matters that are inappropriate for the Piazza discussion board, use your SFU email address to send the email (do not use any other provider), and use either <code>cmpt413:</code> or <code>cmpt825:</code> as the prefix in your subject line.
 * Do not email the TAs directly (without cc:ing the instructor) under any circumstance.
-* Before you email or post to the discussion board **read this FAQ**.
+* Before you email or post to the Piazza discussion board **read this FAQ**.
 
 ### How to ask a question
 
-How to ask a question on the [discussion board on Coursys]({{ site.coursys }}discussion/):
+How to ask a question on [Piazza]({{ site.piazza }}/):
 
 * Do not ask two or more questions about different issues in the same topic. Ask each question as a separate topic.
 * First check your code on a CSIL Linux machine. If the problem goes away then the issue is with your development environment.
