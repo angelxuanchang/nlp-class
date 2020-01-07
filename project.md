@@ -119,53 +119,34 @@ Make sure the following points are in your abstract.
     * Using equations is not necessary but if you do, use a clear mathematical style to explain your model(s).
 * Data
     * Exactly which data set do you plan to use
+* Evaluation
     * What is the evaluation measure for the data set and what is the baseline
 
-### Poster Session
+### Project milestone (due on {{ site.hwdates[5].milestone }})
 
-There will be a poster session at the SFU Downtown Vancouver campus on {{ site.hwdates[5].deadline }}. 
-Your group must present a poster at this poster session providing details about your final course
-project. 
+For your project milestone please submit a PDF file that describes
+progress you made so far on your project and plans for the remainder.
+For the final write-up you will need to also submit your code, so we encourage
+to get started early and submit preliminary code and results with the milestone.
+Make sure the following points are covered.
 
-If you are enrolled in the Machine Learning course you must present
-a different poster. You can share code between the projects but the
-projects must be different from each other and have a distinct
-contribution.
+* Progress
+    * What have you achieved so far?
+    * Are there are any issues you encountered?
+* Plans
+    * What are the remaining steps?
+    * Do you have any plans for addressing challenges or issues?
+* Data
+    * What did you find out about the data so far?
+* Results
+    * Summary of preliminary results
+    * Remaining results that you plan to produce
 
-#### Poster size
-
-The poster size should be as follows:
-
-* Landscape orientation: 3ft by 3ft.
-* Portrait orientation: A0 portrait (4ft vertical by 3ft horizontal)
-
-If you use LaTeX then here are two sample poster styles (A0 portrait):
-
-* [LaTeX Portrait Poster Template](https://www.overleaf.com/latex/examples/latex-portrait-poster-template/gybjbztdkvyg)
-* [Medical University of Vienna (MUW) Poster Template](https://www.overleaf.com/latex/templates/medical-university-of-vienna-muw-poster-template/xdgtytckkwzf)
-
-#### Poster grading
-
-The poster will be graded using the following criteria (1-5):
-
-1. Goal is clear?
-1. Implementation is clear?
-1. Model was clear?
-1. Did provided example make things clear?
-1. Experimental evaluation was clear?
-1. Adequate comparison to previous work?
-1. Poster layout and oral explanation.
-1. Analysis of the output.
-1. Overall quality.
-
-Please read through this set of [tutorial slides on making effective posters](assets/cached/makeup_ijcnlp_2017.pdf).
-
-Also, I have provided [two](assets/cached/EMNLP2017_poster.pdf) [examples](assets/cached/IWSLT2015_poster.pdf) of NLP posters (note that they are not in portrait layout).
 
 ### Project Write-up
 
-Apart from the poster session you must also submit your project
-write-up as a Python notebook `project.ipynb` and your source
+You must submit your project write-up as a PDF document.
+In addition you must submit a Python notebook `project.ipynb` and your source
 code for your project in your GitLab repository:
 
     git@csil-git1.cs.surrey.sfu.ca:USER/nlpclass-1187-g-GROUP.git
@@ -178,8 +159,8 @@ so that we can use a virtual environment to run your code.
 
 Your Python notebook must be called `project.ipynb`. In addition
 to writing code for a good project submission, the description of
-what you did for your project in your Python notebook is also a
-very important part of your project submission. It **must** have
+what you did for your project in your PDF writeup and your notebook is also a
+very important part of your project submission. The PDF writeup **must** have
 the following sections:
 
 * Motivation 
@@ -235,5 +216,5 @@ The total marks are distributed as follows:
 
 * Work. Work done in the project. Results obtained. 50 marks (see the section on _Grading of the Final Project Work_ for grading details)
 * Docs. Documentation of the work done in the notebook. 25 marks (see the section on _Project Write-up_ for grading details)
-* Poster. Performance at the poster session and poster quality. 25 marks (see the section on _Poster grading_ for grading details)
+* Milestone. Description of progress and project plans. 25 marks (see the section on _Milestone_ for grading details)
 
