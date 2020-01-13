@@ -8,16 +8,17 @@ calendar: "https://calendar.google.com/calendar/ical/qgs97od9ef8t1582k2rqomv5ho%
 lastday: "Apr 9, 2020"
 midterm: "Feb 25, 2020"
 instructor: angelx
+officehour: "Fri 10:30-11:30am. TASC1 8031"
 tas:
   - name: "Yasaman Etasam"
     email: yetesam
-    officehour: "Time: Fri 3-4pm. Location: TBD"
+    officehour: "Time: Fri 1/17 3:30pm-4:30pm, regularly Mon 2-3pm. Location: ASB9808"
   - name: "Ali Gholami"
     email: gholami
-    officehour: "Time: Tues 1-2pm. Location: TBD"
+    officehour: "Time: Tues 1-2pm. Location: ASB9808"
   - name: "Roya Javadi"
     email: rjavadi
-    officehour: "Time: Thu 9:30-10:30am. Location: TBD"
+    officehour: "Time: Thu 9:30-10:30am. Location: ASB9808"
 hwdates:
   - hw: "0"
     startdate: "Jan 9, 2020"
