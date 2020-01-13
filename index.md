@@ -42,7 +42,7 @@ terms of its analysis and the learning of language from observations.
 
 #### Asking for help
 * Ask for help on [piazza]({{ site.piazza }})
-* Instructor office hours: Thu 9:30-10:30am TASC1 8031
+* Instructor office hours: Fri 10:30-11:30am TASC1 8031
 * <b>No emails</b> to the TAs and strictly emails about personal matters to the instructor
 * Use only SFU email address and use `cmpt825:` as subject prefix
 
