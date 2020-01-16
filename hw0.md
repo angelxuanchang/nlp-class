@@ -220,7 +220,7 @@ Run [jupyter notebook](http://jupyter.org/):
     jupyter notebook
 
 Read the [jupyter
-documentation](https://jupyterhub.readthedocs.io/en/stable/) and
+documentation](https://jupyter-notebook.readthedocs.io/en/stable/) and
 get used to editing a notebook with a combination of markdown and
 Python code.
 
