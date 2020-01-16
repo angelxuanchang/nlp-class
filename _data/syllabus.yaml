@@ -74,7 +74,7 @@
       author: "Yoav Goldberg"
   links:
     - author: Dan Jurafsky
-      title: ""
+      title: "Language Modeling with N-Grams (J+M chapter 3)"
       url: "https://web.stanford.edu/~jurafsky/slp3/3.pdf"
       optional: false
     - author: Michael Collins
