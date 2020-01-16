@@ -73,7 +73,7 @@
       download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/goldberg_lm.ipynb"
       author: "Yoav Goldberg"
   links:
-    - author: Dan Jurafsky
+    - author: Dan Jurafsky and James H. Martin
       title: "Language Modeling with N-Grams (J+M chapter 3)"
       url: "https://web.stanford.edu/~jurafsky/slp3/3.pdf"
       optional: false

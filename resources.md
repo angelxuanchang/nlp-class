@@ -10,7 +10,7 @@ active_tab: resources
 ### Reference books
 
 * There is no official textbook for the course, but if you would like to read further about NLP, here are some good reference books on NLP:
-    * [Neural Network methods for Natural Language Processing](http://www.morganclaypool.com/doi/10.2200/S00762ED1V01Y201703HLT037) by Yoav Goldberg.
+    * [A Primer on Neural Network Models for Natural Language Processing](http://u.cs.biu.ac.il/~yogo/nnlp.pdf) by Yoav Goldberg (see also [Neural Network methods for Natural Language Processing](http://www.morganclaypool.com/doi/10.2200/S00762ED1V01Y201703HLT037)).
     * [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/) by [Daniel Jurafsky](http://www.stanford.edu/~jurafsky) and [James Martin](http://www.cs.colorado.edu/~martin).
     * [Natural Language Processing](https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf) by [Jacob Eisenstein](https://jacobeisenstein.github.io/)
 
