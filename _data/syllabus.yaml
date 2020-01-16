@@ -11,8 +11,9 @@
     - author: Lillian Lee
       title: "I'm sorry Dave, I'm afraid I can't do that"
       url: "http://www.cs.cornell.edu/home/llee/papers/cstb.pdf"
+      optional: false
     - author: Percy Liang
-      titla: "Talking to Computers in Natural Language"
+      title: "Talking to Computers in Natural Language"
       url: "https://cs.stanford.edu/~pliang/papers/talking-xrds2014.pdf"
       optional: true
     - author: Rick Rashid 
@@ -72,6 +73,10 @@
       download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/goldberg_lm.ipynb"
       author: "Yoav Goldberg"
   links:
+    - author: Dan Jurafsky
+      title: ""
+      url: "https://web.stanford.edu/~jurafsky/slp3/3.pdf"
+      optional: false
     - author: Michael Collins
       title: "Language models"
       download: "http://www.cs.columbia.edu/~mcollins/courses/nlp2011/notes/lm.pdf"
