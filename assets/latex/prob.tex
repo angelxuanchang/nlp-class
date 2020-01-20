@@ -4,6 +4,29 @@
 
 \lecture{Probability and Language}{}
 
+\begin{comment}
+\begin{frame}
+\frametitle{Announcements}
+\centering
+\begin{block}{Office Hours}
+\smallskip
+\begin{tabular}{lll}
+ & Time & Location \\
+\hline
+Angel Chang & Fri 10:30-11:30am & TASC 8031 \\
+Yasaman Etesam & Mon 2-3pm & ASB 9808 \\
+            & this Fri 3:30-4:30 pm & \\
+Ali Gholami & Tue 1-2 pm & ASB 9808 \\
+Roya Javadi & Thu 9:30-10:30 am & ASB 9808
+\end{tabular}
+\end{block}
+
+\begin{block}{Assignments}
+HW0 due this Thursday
+\end{block}
+\end{frame}
+\end{comment}
+
 \section{Probability and Language}
 \frame{\tableofcontents[currentsection]}
 
@@ -72,6 +95,21 @@ we must discuss on greater vision . & -36.09 \\
 \end{frame}
 
 \begin{frame}
+\frametitle{Scoring Hypotheses in Spelling Correction}
+\centering
+\begin{block}{Substitute spelling variants to generate hypotheses}
+\begin{tabular}{p{8cm}l}
+\rowcolor{MidnightBlue!50}
+Hypothesis & Score \\
+\hline
+... stellar and versatile {\color{MidnightBlue}\textbf{acress}} whose combination of sass and glamour has defined her ... & -18920 \\
+... stellar and versatile {\color{MidnightBlue}\textbf{acres}} whose combination of sass and glamour has defined her ... & -10209 \\
+... stellar and versatile {\color{MidnightBlue}\textbf{actress}} whose combination of sass and glamour has defined her ... & -9801
+\end{tabular}
+\end{block}
+\end{frame}
+
+\begin{frame}
 \frametitle{Scoring Hypotheses in Decryption}
 \centering
 \begin{block}{Character substitutions on ciphertext to plaintext candidates}
@@ -103,6 +141,27 @@ Listen, do you want to know a secret? & -25\\
 \item Use the model to \textbf{predict} the probability of new sequences.
 \end{itemize}
 \end{frame}
+
+\begin{frame}
+\frametitle{Probabilistic Language Modeling}
+\begin{itemize}[<+->]
+\item Compute the probability of a sentence of sequence of words
+      $P(W) = P(w_1, w_2, w_3, w_4, \ldots, w_n)$
+\item Build the sequence up over time and use chain rule
+  \begin{itemize}[<+->]
+  \item $P(w_1, w_2, w_3, w_3, w_4, \ldots, w_n) = P(w_1) P(w_2, \ldots, w_n | w_1)$ 
+  \item $P(w_1, w_2, w_3, w_3, w_4, \ldots, w_n) = P(w_1) P(w_2 | w_1) P(w_3 | w_1, w_2) \ldots P(w_n | w_1, \ldots, w_{n-1}))$ 
+  \item $P(w_1, w_2, w_3, w_3, w_4, \ldots, w_n) = \prod_i P(w_i | w_1, \ldots w_{i-1})$
+  \item $P(\text{it is very cold today}) = P(\text{it}) P(\text{is}|\text{it}) P(\text{very}|\text{it is}) P(\text{cold}|\text{it is very}) P(\text{today}|\text{it is very cold})$
+  \end{itemize}
+\item Need to compute: $P(w_i | w_1, \ldots w_{i-1})$
+  \begin{itemize}[<+->]
+    \item Let's count!
+    \item $P(\text{cold}|\text{it is very}) = \frac{\text{Count}(\text{it is very cold})}{\text{Count}(\text{it is very})}$ 
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
 
 \lecture{Quick guide to probability theory}{}
 

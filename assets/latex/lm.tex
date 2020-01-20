@@ -2,6 +2,32 @@
 \begin{document}
 \input{titlepage.tex}
 
+%\author{}
+%\institute{}
+
+\begin{comment}
+\begin{frame}
+\frametitle{Announcements}
+\centering
+\begin{block}{Assignments}
+\begin{itemize}
+\item HW0 due today Midnight
+\item Do not have spaces or dashes in your group name!!!
+\item Make sure your Coursys group name and gitlab repo matches!!!
+\end{itemize}
+\end{block}
+\begin{block}{Office Hours}
+\smallskip
+\begin{tabular}{lll}
+ & Time & Location \\
+\hline
+Angel Chang & Fri 10:30-11:30am & TASC 8031 \\
+Yasaman Etesam & this Fri 3:30-4:30 pm & ASB 9808
+\end{tabular}
+\end{block}
+\end{frame}
+\end{comment}
+
 \lecture{Probability models of Language}{}
 \section{Language models}
 
@@ -313,34 +339,56 @@ But others are simply unobserved in the training data, $P(idea \mid colourless, 
 \end{block}
 \end{frame}
 
-\subsection{Handling Unknown Tokens}
 
 \begin{frame}
-\frametitle{Handling tokens in test corpus unseen in training corpus}
-\begin{block}{Assume closed vocabulary}
-In some situations we can make this assumption, e.g.\ our vocabulary is ASCII characters
-\end{block}
-\pause
-\begin{block}{Interpolate with unknown words distribution}
-We will call this {\em smoothing}. We combine the $n$-gram probability with a distribution over unknown words 
-\smallskip
-\[ P_{\textrm{unk}}(w) = \frac{1}{V_{\textrm{all}}} \] 
-$V_{\textrm{all}}$ is an estimate of the vocabulary size including unknown words.
-\end{block}
-\pause
-\begin{block}{Add an \texttt{<unk>} word}
-Modify the training data $L$ by changing words that appear only once to the \texttt{<unk>} token. Since this probability can be an over-estimate we multiply it with a probability $P_{\textrm{unk}}(\cdot)$.
-\end{block}
-
+\frametitle{Summary: Probabilistic Language Modeling}
+\begin{itemize}[<+->]
+\item Language modeling: Predict probability for sequence of words
+\item Useful for speech recognition, machine translation, spelling correction, etc.  
+\item To compute the probability of a sequence of words
+  \begin{itemize}[<+->]
+  \item  $P(W) = P(w_1, w_2, w_3, \ldots, w_n) = \prod_i P(w_i | w_1, \ldots w_{i-1})$
+  \item $P(\text{it is very cold today}) = P(\text{it}) P(\text{is}|\text{it}) P(\text{very}|\text{it is}) P(\text{cold}|\text{it is very}) P(\text{today}|\text{it is very cold})$ 
+  \end{itemize}
+\item Learn probabilities from a corpus of text data by counting\\
+  $P(\text{cold}|\text{it is very}) = \frac{\text{Count}(\text{it is very cold})}{\text{Count}(\text{it is very})}$
+\end{itemize}
 \end{frame}
 
-\lecture{Smoothing Probability Models}{}
-\section{Smoothing $n$-gram Models}
-\frame{\tableofcontents[currentsection]}
+
+\begin{frame}
+\frametitle{Summary: Probabilistic Language Modeling}
+\begin{itemize}[<+->]
+\item What about $P(\text{cold}|\text{it is very very very very})$? 
+\item Lots of unseen sequences!  What to do?
+\item Use the Markov assumption \\
+  Assume that $P(w_i)$ depends only on recent history \\
+  Unigram: $P(w_i | w_1, \ldots w_{i-1}) \approx P(w_i)$  \\
+  Bigram: $P(w_i | w_1, \ldots w_{i-1}) \approx P(w_i | w_{i-1})$ \\
+  Trigram: $P(w_i | w_1, \ldots w_{i-1}) \approx P(w_i | w_{i-2}, w_{i-1})$ 
+\item
+  $P(\text{cold}|\text{it is very very very very}) \approx P(\text{cold} | \text{very very}) = \frac{\text{Count}(\text{very very cold})}{\text{Count}(\text{very very})}$
+\end{itemize}
+\pdfcomment{This is also known as the maximum likelihood estimate.  Parameters that maximizes the probability of the training data}
+\end{frame}
+
 
 \begin{comment}
-
-\subsection{Smoothing Counts}
+\begin{frame}
+\frametitle{Maximum Likelihood Estimate}
+\begin{block}{Using training data to learn a trigram model}
+\begin{itemize}[<+->]
+\item Let $c(u,v,w)$ be the count of the trigram $u,v,w$, e.g. $c(crazy,killer,clown)$. $P(u,v,w) = \frac{c(u,v,w)}{\sum_{u,v,w} c(u,v,w)}$
+\item Let $c(u,v)$ be the count of the bigram $u,v$, e.g. $c(crazy,killer)$. $P(u,v) = \frac{c(u,v)}{\sum_{u,v} c(u,v)}$
+\item For any $u,v,w$ we can compute the conditional probability of generating $w$ given $u,v$:
+\[ p(w \mid u,v) = \frac{c(u,v,w)}{c(u,v)} \]
+\item For example:
+\[ p(clown \mid crazy, killer) = \frac{c(crazy, killer, clown)}{c(crazy, killer)} \]
+\end{itemize}
+\pdfcomment{This is also known as the maximum likelihood estimate}
+\end{block}
+\end{frame}
+\end{comment}
 
 \begin{frame}
 \frametitle{Bigram Models}
@@ -360,7 +408,39 @@ In practice:
 \end{itemize}
 \end{frame}
 
+\lecture{Smoothing Probability Models}{}
+\section{Smoothing $n$-gram Models}
+\frame{\tableofcontents[currentsection]}
 
+
+\begin{frame}
+\frametitle{Smoothing Intuition}
+\begin{block}{Taking from the rich and giving to the poor}
+\includegraphics[scale=0.3]{figures/lm/smoothing.png}
+\end{block}
+\end{frame}
+
+\subsection{Handling Unknown Tokens}
+
+\begin{frame}
+\frametitle{Handling tokens in test corpus unseen in training corpus}
+\begin{block}{Assume closed vocabulary}
+In some situations we can make this assumption, e.g.\ our vocabulary is ASCII characters
+\end{block}
+\pause
+\begin{block}{Interpolate with unknown words distribution}
+We will call this {\em smoothing}. We combine the $n$-gram probability with a distribution over unknown words 
+\smallskip
+\[ P_{\textrm{unk}}(w) = \frac{1}{V_{\textrm{all}}} \] 
+$V_{\textrm{all}}$ is an estimate of the vocabulary size including unknown words.
+\end{block}
+\pause
+\begin{block}{Add an \texttt{<unk>} word}
+Modify the training data $L$ by changing words that appear only once to the \texttt{<unk>} token. Since this probability can be an over-estimate we multiply it with a probability $P_{\textrm{unk}}(\cdot)$.
+\end{block}
+\end{frame}
+
+\subsection{Smoothing Counts}
 \begin{frame}
 \frametitle{Smoothing}
 \begin{itemize}[<+->]
@@ -381,8 +461,8 @@ In practice:
 \frametitle{Add-one Smoothing}
 \[ P(w_i~\mid~w_{i-1}) = \frac{ c(w_{i-1},w_i) } { c(w_{i-1}) } \]
 \begin{itemize}[<+->]
-\item Add-one Smoothing:
-\[ P(w_i~\mid~w_{i-1}) = \frac{ 1 + c(w_{i-1},w_i) } { V + c(w_{i-1}) } \]
+\item Add-one Smoothing (aka Laplace Smoothing):
+\[ P(w_i~\mid~w_{i-1}) = \frac{ \highlight{1} + c(w_{i-1},w_i) } { \highlight{V} + c(w_{i-1}) } \]
 \item Let $V$ be the number of words in our vocabulary \\
  Assign count of $1$ to unseen bigrams
 \end{itemize}
@@ -411,146 +491,148 @@ In practice:
 \begin{itemize}[<+->]
 \item Why add $1$? $1$ is an overestimate for unobserved events.
 \item Additive Smoothing:
-\[ P(w_i~\mid~w_{i-1}) = \frac{ \delta + c(w_{i-1},w_i) } { (\delta \times V) + c(w_{i-1}) } \]
+\[ P(w_i~\mid~w_{i-1}) = \frac{ \highlight{\delta} + c(w_{i-1},w_i) } { \highlight{(\delta \times V)} + c(w_{i-1}) } \]
 \item $0 < \delta \leq 1$
 \end{itemize}
 \end{frame}
 
-\subsubsection{Good-Turing Smoothing}
+\begin{comment}
 
-\begin{frame}
-\frametitle{Good-Turing Smoothing: (Good, 1953)} 
-\[ P(w_i~\mid~w_{i-1}) = \frac{ c(w_{i-1},w_i) } { c(w_{i-1}) } \]
-\begin{itemize}[<+->]
-\item Imagine you're sitting at a sushi bar with a conveyor belt. 
-\item You see going past you  { \color{blue} 10} plates of tuna,  { \color{blue} 3} plates of unagi,  { \color{blue} 2} plates of salmon,  { \color{blue} 1} plate of shrimp,  { \color{blue} 1} plate of octopus, and  { \color{blue} 1} plate of yellowtail
-\item Chance you will observe a \alert{new} kind of seafood: {\color{blue} $\frac{3}{18}$}
-\item How likely are you to see another plate of salmon: \\
-should be { \color{blue} $< \frac{2}{18}$ }
-\end{itemize}
-\end{frame}
+% \subsubsection{Good-Turing Smoothing}
 
-\begin{frame}
-\frametitle{Good-Turing Smoothing}
-\begin{itemize}[<+->]
-\item How many types of seafood (words) were seen once? Use this to predict probabilities for unseen events\\
-Let $n_1$ be the number of events that occurred once: 
-{ \color{blue} $p_0 = \frac{ n_1 }{ N } $}
-\item The Good-Turing estimate states that for any $n$-gram that occurs $r$ times, we should pretend that it occurs $r^\ast$ times
-{\color{blue} \[ r^\ast = (r+1) \frac{ n_{r+1} }{ n_r } \] }
-\item {\color{blue} $n_r$}: number of different objects seen $r$ times
-\end{itemize}
-\end{frame}
+% \begin{frame}
+% \frametitle{Good-Turing Smoothing: (Good, 1953)} 
+% \[ P(w_i~\mid~w_{i-1}) = \frac{ c(w_{i-1},w_i) } { c(w_{i-1}) } \]
+% \begin{itemize}[<+->]
+% \item Imagine you're sitting at a sushi bar with a conveyor belt. 
+% \item You see going past you  { \color{blue} 10} plates of tuna,  { \color{blue} 3} plates of unagi,  { \color{blue} 2} plates of salmon,  { \color{blue} 1} plate of shrimp,  { \color{blue} 1} plate of octopus, and  { \color{blue} 1} plate of yellowtail
+% \item Chance you will observe a \alert{new} kind of seafood: {\color{blue} $\frac{3}{18}$}
+% \item How likely are you to see another plate of salmon: \\
+% should be { \color{blue} $< \frac{2}{18}$ }
+% \end{itemize}
+% \end{frame}
 
-\begin{frame}
-\frametitle{Good-Turing Smoothing}
-\begin{itemize}[<+->]
-\item { \color{blue} 10} tuna,  { \color{blue} 3} unagi,  { \color{blue} 2} salmon,  { \color{blue} 1} shrimp,  { \color{blue} 1} octopus,  { \color{blue} 1} yellowtail
-\item How likely is new data? Let $n_1$ be the number of items occurring once, which is {\color{blue} 3} in this case. $N$ is the total, which is {\color{blue} 18}.
-\[ p_0 = \frac{n_1}{N} = \frac{3}{18} = 0.166 \]
-\end{itemize}
-\end{frame}
+% \begin{frame}
+% \frametitle{Good-Turing Smoothing}
+% \begin{itemize}[<+->]
+% \item How many types of seafood (words) were seen once? Use this to predict probabilities for unseen events\\
+% Let $n_1$ be the number of events that occurred once: 
+% { \color{blue} $p_0 = \frac{ n_1 }{ N } $}
+% \item The Good-Turing estimate states that for any $n$-gram that occurs $r$ times, we should pretend that it occurs $r^\ast$ times
+% {\color{blue} \[ r^\ast = (r+1) \frac{ n_{r+1} }{ n_r } \] }
+% \item {\color{blue} $n_r$}: number of different objects seen $r$ times
+% \end{itemize}
+% \end{frame}
 
-\begin{frame}
-\frametitle{Good-Turing Smoothing}
-\begin{itemize}[<+->]
-\item { \color{blue} 10} tuna,  { \color{blue} 3} unagi,  { \color{blue} 2} salmon,  { \color{blue} 1} shrimp,  { \color{blue} 1} octopus,  { \color{blue} 1} yellowtail
-\item How likely is {\em octopus}? Since $c(\textit{octopus}) = 1$ The GT estimate is $1^\ast$. 
-{\color{blue} \[ r^\ast = (r+1) \frac{ n_{r+1} }{ n_r } \] }
-{\color{blue} \[ p_{GT} = \frac{ r^\ast }{ N } \] }
-\item To compute $1^\ast$, we need $n_1 = 3$ and $n_2 = 1$
-\[ 1^\ast = 2 \times \frac{1}{3} = \frac{2}{3} \]
-\[ p_1 = \frac{1^\ast}{18} = 0.037 \]
-\item What happens when $n_{r+1} = 0$? (smoothing before smoothing)
-\end{itemize}
-\end{frame}
+% \begin{frame}
+% \frametitle{Good-Turing Smoothing}
+% \begin{itemize}[<+->]
+% \item { \color{blue} 10} tuna,  { \color{blue} 3} unagi,  { \color{blue} 2} salmon,  { \color{blue} 1} shrimp,  { \color{blue} 1} octopus,  { \color{blue} 1} yellowtail
+% \item How likely is new data? Let $n_1$ be the number of items occurring once, which is {\color{blue} 3} in this case. $N$ is the total, which is {\color{blue} 18}.
+% \[ p_0 = \frac{n_1}{N} = \frac{3}{18} = 0.166 \]
+% \end{itemize}
+% \end{frame}
 
-\begin{frame}
-\frametitle{Simple Good-Turing: linear interpolation for missing $n_{r+1}$}
-\begin{columns}
-\column{.7\textwidth}
-\includegraphics[scale=0.55]{figures/fit.png}
-\column{.3\textwidth}
-{\small
-\begin{eqnarray*}
-f(r) & = & a + b * r \\
-a & = & 2.3 \\
-b & = & -0.17 
-\end{eqnarray*}
-\begin{tabular}{ll}
-\hline
-$r$ & $n_r = f(r)$  \\
-\hline
-$1$ & 2.14 \\
-$2$ & 1.97 \\
-$3$ & 1.80 \\
-$4$ & 1.63 \\
-$5$ & 1.46 \\
-$6$ & 1.29 \\
-$7$ & 1.12 \\
-$8$ & 0.95 \\
-$9$ & 0.78 \\
-$10$ & 0.61 \\
-$11$ & 0.44 \\
-\hline
-\end{tabular}
-}
-\end{columns}
-\end{frame}
+% \begin{frame}
+% \frametitle{Good-Turing Smoothing}
+% \begin{itemize}[<+->]
+% \item { \color{blue} 10} tuna,  { \color{blue} 3} unagi,  { \color{blue} 2} salmon,  { \color{blue} 1} shrimp,  { \color{blue} 1} octopus,  { \color{blue} 1} yellowtail
+% \item How likely is {\em octopus}? Since $c(\textit{octopus}) = 1$ The GT estimate is $1^\ast$. 
+% {\color{blue} \[ r^\ast = (r+1) \frac{ n_{r+1} }{ n_r } \] }
+% {\color{blue} \[ p_{GT} = \frac{ r^\ast }{ N } \] }
+% \item To compute $1^\ast$, we need $n_1 = 3$ and $n_2 = 1$
+% \[ 1^\ast = 2 \times \frac{1}{3} = \frac{2}{3} \]
+% \[ p_1 = \frac{1^\ast}{18} = 0.037 \]
+% \item What happens when $n_{r+1} = 0$? (smoothing before smoothing)
+% \end{itemize}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Simple Good-Turing: linear interpolation for missing $n_{r+1}$}
+% \begin{columns}
+% \column{.7\textwidth}
+% \includegraphics[scale=0.55]{figures/fit.png}
+% \column{.3\textwidth}
+% {\small
+% \begin{eqnarray*}
+% f(r) & = & a + b * r \\
+% a & = & 2.3 \\
+% b & = & -0.17 
+% \end{eqnarray*}
+% \begin{tabular}{ll}
+% \hline
+% $r$ & $n_r = f(r)$  \\
+% \hline
+% $1$ & 2.14 \\
+% $2$ & 1.97 \\
+% $3$ & 1.80 \\
+% $4$ & 1.63 \\
+% $5$ & 1.46 \\
+% $6$ & 1.29 \\
+% $7$ & 1.12 \\
+% $8$ & 0.95 \\
+% $9$ & 0.78 \\
+% $10$ & 0.61 \\
+% $11$ & 0.44 \\
+% \hline
+% \end{tabular}
+% }
+% \end{columns}
+% \end{frame}
 
 
-\begin{frame}
-\frametitle{Comparison between Add-one and Good-Turing}
-\centering
-\begin{tabular}{lllll}
-\hline
-freq & num with freq $r$ & NS    & Add1  & SGT   \\
-$r$  & $n_r$ & $p_r$ & $p_r$ & $p_r$ \\
-\hline
-0  &  0 & 0    & 0.0294 & 0.12 \\
-1  &  3 & 0.04 & 0.0588 & 0.03079 \\
-2  &  2 & 0.08 & 0.0882 & 0.06719 \\
-3  &  1 & 0.12 & 0.1176 & 0.1045 \\
-5  &  1 & 0.2  & 0.1764 & 0.1797 \\
-10 &  1 & 0.4  & 0.3235 & 0.3691 \\
-\hline
-\end{tabular}
-\begin{itemize}[<+->]
-\item $N = (1*3) + (2*2) + 3 + 5 + 10 = 25$
-\item $V = 1 + 3 + 2 + 1 + 1 + 1 = 9$
-\item Important: we added a new word type for unseen words. Let's call it UNK, the unknown word.
-\item Check that: $1.0 == \sum_r n_r \times p_r$ \\
-{\small $0.12 + (3 * 0.03079) + (2 * 0.06719) + 0.1045  + 0.1797 + 0.3691 = 1.0$ }
-\end{itemize}
-\end{frame}
+% \begin{frame}
+% \frametitle{Comparison between Add-one and Good-Turing}
+% \centering
+% \begin{tabular}{lllll}
+% \hline
+% freq & num with freq $r$ & NS    & Add1  & SGT   \\
+% $r$  & $n_r$ & $p_r$ & $p_r$ & $p_r$ \\
+% \hline
+% 0  &  0 & 0    & 0.0294 & 0.12 \\
+% 1  &  3 & 0.04 & 0.0588 & 0.03079 \\
+% 2  &  2 & 0.08 & 0.0882 & 0.06719 \\
+% 3  &  1 & 0.12 & 0.1176 & 0.1045 \\
+% 5  &  1 & 0.2  & 0.1764 & 0.1797 \\
+% 10 &  1 & 0.4  & 0.3235 & 0.3691 \\
+% \hline
+% \end{tabular}
+% \begin{itemize}[<+->]
+% \item $N = (1*3) + (2*2) + 3 + 5 + 10 = 25$
+% \item $V = 1 + 3 + 2 + 1 + 1 + 1 = 9$
+% \item Important: we added a new word type for unseen words. Let's call it UNK, the unknown word.
+% \item Check that: $1.0 == \sum_r n_r \times p_r$ \\
+% {\small $0.12 + (3 * 0.03079) + (2 * 0.06719) + 0.1045  + 0.1797 + 0.3691 = 1.0$ }
+% \end{itemize}
+% \end{frame}
 
-\begin{frame}
-\frametitle{Comparison between Add-one and Good-Turing}
-\centering
-\begin{tabular}{lllll}
-\hline
-freq & num with freq $r$ & NS    & Add1  & SGT   \\
-$r$  & $n_r$ & $p_r$ & $p_r$ & $p_r$ \\
-\hline
-0  &  0 & 0    & 0.0294 & 0.12 \\
-1  &  3 & 0.04 & 0.0588 & 0.03079 \\
-2  &  2 & 0.08 & 0.0882 & 0.06719 \\
-3  &  1 & 0.12 & 0.1176 & 0.1045 \\
-5  &  1 & 0.2  & 0.1764 & 0.1797 \\
-10 &  1 & 0.4  & 0.3235 & 0.3691 \\
-\hline
-\end{tabular}
-\begin{itemize}[<+->]
-\item NS = No smoothing: $p_r = \frac{r}{N}$
-%%$(3 * 0.04) + (2 * 0.08) + 0.12 + 0.2 + 0.4 = 1.0$
-\item Add1 = Add-one smoothing: $p_r = \frac{1 + r}{V + N}$
-%%$0.0294 + (3 * 0.0588) + (2* 0.0882) + 0.1176 + 0.1764 + 0.3235 = 1.0$
-\item SGT = Simple Good-Turing: $p_0 = \frac{n_1}{N}$, $p_r = \frac{(r+1) \frac{n_{r+1}}{n_r}}{N}$ \\
-with linear interpolation for missing values where $n_{r+1} = 0$ \\
-{\small (Gale and Sampson, 1995) \textit{http://www.grsampson.net/AGtf1.html}}
-%%$0.12 + (3 * 0.03079) + (2 * 0.06719) + 0.1045  + 0.1797 + 0.3691 = 1.0$
-\end{itemize}
-\end{frame}
+% \begin{frame}
+% \frametitle{Comparison between Add-one and Good-Turing}
+% \centering
+% \begin{tabular}{lllll}
+% \hline
+% freq & num with freq $r$ & NS    & Add1  & SGT   \\
+% $r$  & $n_r$ & $p_r$ & $p_r$ & $p_r$ \\
+% \hline
+% 0  &  0 & 0    & 0.0294 & 0.12 \\
+% 1  &  3 & 0.04 & 0.0588 & 0.03079 \\
+% 2  &  2 & 0.08 & 0.0882 & 0.06719 \\
+% 3  &  1 & 0.12 & 0.1176 & 0.1045 \\
+% 5  &  1 & 0.2  & 0.1764 & 0.1797 \\
+% 10 &  1 & 0.4  & 0.3235 & 0.3691 \\
+% \hline
+% \end{tabular}
+% \begin{itemize}[<+->]
+% \item NS = No smoothing: $p_r = \frac{r}{N}$
+% %%$(3 * 0.04) + (2 * 0.08) + 0.12 + 0.2 + 0.4 = 1.0$
+% \item Add1 = Add-one smoothing: $p_r = \frac{1 + r}{V + N}$
+% %%$0.0294 + (3 * 0.0588) + (2* 0.0882) + 0.1176 + 0.1764 + 0.3235 = 1.0$
+% \item SGT = Simple Good-Turing: $p_0 = \frac{n_1}{N}$, $p_r = \frac{(r+1) \frac{n_{r+1}}{n_r}}{N}$ \\
+% with linear interpolation for missing values where $n_{r+1} = 0$ \\
+% {\small (Gale and Sampson, 1995) \textit{http://www.grsampson.net/AGtf1.html}}
+% %%$0.12 + (3 * 0.03079) + (2 * 0.06719) + 0.1045  + 0.1797 + 0.3691 = 1.0$
+% \end{itemize}
+% \end{frame}
 
 \subsection{Smoothing by Interpolation}
 
@@ -575,9 +657,9 @@ with linear interpolation for missing values where $n_{r+1} = 0$ \\
 \item $P_{JM}(w_i~\mid~w_{i-1}) = {\color{blue} \lambda} P_{ML}(w_i~\mid~w_{i-1}) +  {\color{blue} (1 - \lambda) }P_{ML}(w_{i})$ \\
  where, $0 \leq \lambda \leq 1$
 \item Jelinek and Mercer (1980) describe an elegant form of this {\bf interpolation}:
-\[ P_{JM}(\textsf{$n$gram}) = \lambda P_{ML}(\textsf{$n$gram}) + (1 - \lambda) P_{JM}(\textsf{$n-1$gram}) \]
+\[ P_{JM}(\textsf{$n$gram}) = \highlight{\lambda} P_{ML}(\textsf{$n$gram}) + \highlight{(1 - \lambda)} P_\highlight{JM}(\textsf{$n-1$gram}) \]
 \item What about $P_{JM}(w_i)$? \\
-For missing unigrams: $P_{JM}(w_i) = \lambda P_{ML}(w_i) + (1 - \lambda) \frac{\delta}{V}$ \\
+For missing unigrams: $P_{JM}(w_i) = \highlight{\lambda} P_{ML}(w_i) + \highlight{(1 - \lambda) \frac{\delta}{V}}$ \\
 $0 < \delta \leq 1$
 \end{itemize}
 \end{frame}
@@ -588,7 +670,9 @@ $0 < \delta \leq 1$
 \begin{itemize}[<+->]
 \item Deleted Interpolation (Jelinek, Mercer) \\
 compute $\lambda$ values to minimize cross-entropy on {\bf held-out} data which is \alert{deleted} from the initial set of training data
-\item Improved JM smoothing, a separate $\lambda$ for each $w_{i-1}$: 
+\centering
+\includegraphics[scale=.25]{figures/lm/heldout}
+\item Improved JM smoothing, a separate \highlight{$\lambda$ for each $w_{i-1}$}: 
 \[ P_{JM}(w_i \mid w_{i-1}) = {\color{blue} \lambda(w_{i-1})} P_{ML}(w_i \mid w_{i-1}) + {\color{blue} (1 - \lambda(w_{i-1}))} P_{ML}(w_i) \]
 \end{itemize}
 \end{frame}
@@ -619,8 +703,8 @@ compute $\lambda$ values to minimize cross-entropy on {\bf held-out} data which 
 \item Absolute Discounting (aka \textit{abs}) (Ney, Essen, Kneser)
 \[ P_{\textit{abs}}(y~\mid~x) = \left\{ 
 \begin{array}{cc}
-\frac{ c(xy) - D }{ c(x) } & \textsf{ if $c(xy) > 0$} \\
-\alpha(x) P(y) & \textsf{otherwise}
+\frac{ c(xy) - \highlight{D} }{ c(x) } & \textsf{ if $c(xy) > 0$} \\
+\highlight{\alpha(x)} P(y) & \textsf{otherwise}
 \end{array}
 \right. \]
 \item where $\alpha(x)$ is chosen to make sure that $P_{\textit{abs}}(y~\mid~x)$ is a proper probability
@@ -672,6 +756,29 @@ $P(\textsf{Francisco}~\mid~\textsf{eggplant}) > P(\textsf{stew}~\mid~\textsf{egg
 \end{frame}
 
 \end{comment}
+
+\begin{frame}
+\frametitle{Web-scale N-grams Smoothing}
+\begin{itemize}[<+->]
+\item ``Stupid backoff'' (Brants et al, 2007)
+\centering
+\includegraphics[scale=.25]{figures/lm/stupidbackoff}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Takeaways}
+\begin{itemize}[<+->]
+\item Predict probability of sequence of words
+\item Need to handle \highlight{data sparsity} \\ use Markov assumption and smoothing
+\item Later: Neural language models
+\begin{block}{Use Chain rule and approximate using a neural network}
+\[ p(w_1, \ldots, w_n) \approx \prod_{t} p(w_{t+1} \mid \underbrace{\phi(w_1, \ldots, w_t)}_{\text{capture history with vector $s(t)$}}) \]
+\end{block}
+\end{itemize}
+\end{frame}
+
 
 \lecture{Evaluating Language Models}{}
 \section{Evaluating Language Models}
