@@ -2,20 +2,44 @@
 \begin{document}
 \input{titlepage.tex}
 
+\author{}
+\institute{}
+
 \lecture{Classification tasks in NLP}{}
 
 \section{Classification tasks in NLP}
 \frame{\tableofcontents[currentsection]}
 
 \begin{frame}
+\frametitle{Sentiment classification: Movie reviews}
+\begin{itemize}
+\item {\color{red} neg} unbelievably disappointing 
+\item {\color{green} pos} Full of zany characters and richly applied satire, and some great plot twists
+\item {\color{green} pos} this is the greatest screwball comedy ever filmed  
+\item {\color{red} neg} It was pathetic. The worst part about it was the boxing scenes.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Intent Detection}
+\begin{itemize}
+\item {\color{blue} ADDR\_CHANGE} I just moved and want to change my address. 
+\item {\color{blue} ADDR\_CHANGE} Please help me update my address.  
+\item {\color{blue} FILE\_CLAIM} I just got into a terrible accident and I want to file a claim. 
+\item {\color{blue} CLOSE\_ACCOUNT} I'm moving and I want to disconnect my service.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
 \frametitle{Prepositional Phrases}
 \begin{itemize}[<+->]
-\item noun attach: {\em I bought the shirt with pockets}
-\item verb attach: {\em I washed the shirt with soap}
-\item As in the case of other attachment decisions in parsing: it depends on the meaning of the entire sentence -- needs world knowledge, etc.
+\item noun attach: {\em I bought \textbf{the shirt with pockets}}
+\item verb attach: {\em I \textbf{bought} the shirt \textbf{with my credit card}}
+\item noun attach: {\em I washed \textbf{the shirt with mud}}
+\item verb attach: {\em I \textbf{washed} the shirt \textbf{with soap}}
+\item Attachment depends on the meaning of the entire sentence -- needs world knowledge, etc.
 \item Maybe there is a simpler solution: we can attempt to solve it using heuristics or associations between words
 \end{itemize}
-
 \end{frame}
 
 \begin{frame}
