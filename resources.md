@@ -28,6 +28,11 @@ active_tab: resources
     * [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/) [demo](http://corenlp.run/) Java NLP pipeline from Stanford
     * [NLTK](https://www.nltk.org/) [demo](http://text-processing.com/demo/) Useful basic Python tools for NLP
 
+* Deep learning for NLP
+    * [TorchText](https://torchtext.readthedocs.io/en/latest/)
 
-
+* Word Embeddings
+    * [Word2Vec](https://code.google.com/archive/p/word2vec/)
+    * [GloVe](https://nlp.stanford.edu/projects/glove/)
+    * [FastText](https://fasttext.cc/) 
 
