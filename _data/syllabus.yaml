@@ -107,10 +107,19 @@
       url: "assets/notes/loglinear.html"
     - title: "Exercise: Linear combinations"
       url: "assets/notes/linearb.html"
+    - author: Dan Jurafsky and James H. Martin
+      title: "Naive Bayes Classification and Sentiment (J+M chapter 4)"
+      url: "https://web.stanford.edu/~jurafsky/slp3/4.pdf"
+      optional: false
+    - author: Dan Jurafsky and James H. Martin
+      title: "Logistic Regression (J+M chapter 5)"
+      url: "https://web.stanford.edu/~jurafsky/slp3/5.pdf"
+      optional: false
     - author: Michael Collins
       title: "Log-linear models, MEMMs and CRFs"
       url: "http://www.cs.columbia.edu/~mcollins/crf.pdf"
       download: "assets/mcollins-notes/crf.pdf"
+      optional: false
 - title: "Word Vectors"
   tag: w2v
   include: true
@@ -127,6 +136,10 @@
       download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/svd.ipynb"
     - title: "Exercise: word2vec"
       url: "assets/notes/word2vec.html"
+    - author: Dan Jurafsky and James H. Martin
+      title: "Vector Semantics and Embeddings (J+M chapter 6)"
+      url: "https://web.stanford.edu/~jurafsky/slp3/6.pdf"
+      optional: false
 - title: "Feedforward neural networks"
   tag: ff
   include: true
@@ -144,6 +157,10 @@
       title: "Feedforward neural networks"
       url: "http://www.cs.columbia.edu/~mcollins/cs4705-spring2018/notes/ff.pdf"
       download: "assets/mcollins-notes/ff.pdf"
+    - author: Dan Jurafsky and James H. Martin
+      title: "Neural Networks and Neural Language Models (J+M chapter 7)"
+      url: "https://web.stanford.edu/~jurafsky/slp3/7.pdf"
+      optional: false
   links:
     - title: "Efficient Backprop"
       url: "http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf"
