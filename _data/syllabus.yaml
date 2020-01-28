@@ -238,7 +238,7 @@
 - title: "Machine Translation"
   tag: smt
   include: true
-  current: true 
+  current: false 
   notes:
     - title: "Introduction to Machine Translation"
       url: "assets/slides/mtintro.pdf"
@@ -255,7 +255,7 @@
 - title: "Sequence to Sequence models"
   tag: tutorial
   include: true
-  current: true
+  current: false
   notes:
     - title: "Sequence to Sequence Models (Part 1)"
       author: Jetic Gu
