@@ -53,6 +53,35 @@ The syllabus is preliminary and subject to change.
                       {% endfor %}
                       </ul>
                   {% endif %}
+                  {%if week.readings %}
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Readings (<i class="fa fa-star"></i>=optional)</h3>
+                      </div>
+                      <ul class="list-group">
+                      {% for link in week.readings %}
+                        <li class="list-group-item"> 
+                        {% if link.optional %}
+                            <i class="fa fa-star"> </i>
+                        {% else %}
+                            <i class="fa"> </i> 
+                        {% endif %}
+                        <a href="{{ link.url }}">{{ link.title }}</a>.
+                            {%if link.author %}
+                                {{ link.author }}.
+                            {% endif %}
+                            {%if link.citation %}
+                                {{ link.citation }}.
+                            {% endif %}
+                            {%if link.video %}
+                                <a href="{{ link.video }}"><span class="glyphicon glyphicon-film"></span></a>
+                            {% endif %}
+                            {% if link.download %} 
+                                <a href="{{ link.download }}"><span class="glyphicon glyphicon-save"> </span></a> 
+                            {% endif %}
+                        </li>
+                      {% endfor %}
+                      </ul>
+                  {% endif %}
                   {%if week.links %}
                       <div class="panel-heading">
                         <h3 class="panel-title">Links (<i class="fa fa-star"></i>=optional)</h3>
