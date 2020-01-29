@@ -2,8 +2,8 @@
 \begin{document}
 \input{titlepage.tex}
 
-\author{}
-\institute{}
+%\author{}
+%\institute{}
 
 \lecture{Classification tasks in NLP}{}
 
@@ -130,7 +130,51 @@ use sophisticated smoothing model for PP attachment\\
   \end{itemize}
 \end{frame}
 
+\author{Angel Xuan Chang \\ 
+  {\color{RoyalBlue!70}{\href{http://angelxuanchang.github.io/nlp-class}{angelxuanchang.github.io/nlp-class}}} \\
+  {\color{gray}{adapted from lecture slides from \\ Anoop Sarkar, Danqi Chen and Karthik Narasimhan}}
+}
+
 \lecture{Probabilistic Classifiers}{}
+
+\begin{frame}
+\frametitle{Classification Task}
+\begin{itemize}[<+->]
+\item Input: 
+  \begin{itemize}
+  \item A document \highlight{$d$} 
+  \item a set of classes \highlight{$C = \{c_1, c_2, \ldots, c_m\}$}
+  \end{itemize}
+\item Output: Predicted class \highlight{$c$} for document \highlight{$d$}
+\item Example:
+  \begin{itemize}
+  \item {\color{red} neg} unbelievably disappointing 
+  \item {\color{green} pos} this is the greatest screwball comedy ever filmed  
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Supervised learning: Let's use statistics!}
+\begin{itemize}[<+->]
+\item Inputs: 
+  \begin{itemize}
+  \item Set of \highlight{$m$} classes \highlight{$C = \{c_1, c_2, \ldots, c_m\}$}
+  \item Set of \highlight{$n$} {\em labeled} documents: \highlight{$\{(d_1, c_1), (d_2, c_2), \ldots, (d_n, c_n)\}$}
+  \end{itemize}
+\item Output: Trained classifier \highlight{$F: d \rightarrow c$}
+  \begin{itemize}
+  \item What form should \highlight{$F$} take?
+  \item How to learn \highlight{$F$}?
+  \end{itemize}
+\end{itemize}
+\note{Data-driven approach. Let machine figure out the best function to use}
+\end{frame}
+
+\begin{frame}
+\frametitle{Types of supervised classifiers}
+\includegraphics[scale=0.27]{figures/classifiers/supervised.png}
+\end{frame}
 
 \section{Naive Bayes Classifier}
 \frame{\tableofcontents[currentsection]}
@@ -146,6 +190,270 @@ use sophisticated smoothing model for PP attachment\\
 \item We can ignore $P({\bf x})$ in the above equation because it is a constant scaling factor for each $y$.
 \end{itemize}
 \end{frame}
+
+\begin{frame}
+\frametitle{Naive Bayes Classifier for text classification}
+\begin{itemize}[<+->]
+\item For text classificaiton: input $\textbf{x} = document \textbf{d} = (w_1, \ldots, w_k)$, 
+\item Use as our features the words $w_j$, $1 \leq j \leq |V|$ where $V$ is our vocabulary 
+\item $c$ is the output classification
+\item Assume that position of each word is irrelevant and that the words are \highlight{conditionally independent} given class $c$
+\begin{equation*}
+P(w_1, w_2, \ldots, w_k | c) = P(w_1|c) P(w_2|c) \ldots P(w_k|c) 
+\end{equation*} 
+\item Maximum a posteriori estimate
+\begin{equation*}
+c_{\text{MAP}} = \argmax_{c} P(c) P(d|c)  = \argmax_{c} \hat{P}(c) \prod_{i=1}^{k} \hat{P}(w_i | c)
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Bag of words}
+\includegraphics[scale=0.25]{figures/classifiers/bow.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Estimating probabilities}
+\begin{block}{Maximum likelihood estimate}
+\begin{equation*}\hat{P}(c_j) = \frac{\cnt(c_j)}{n}\end{equation*} \\
+\pause
+\begin{equation*}\hat{P}(w_i | c_j) = \frac{\cnt(w_i, c_j)}{\sum_{w \in V}[\cnt(w, c_j)]}\end{equation*}
+\end{block}
+\pause
+\begin{block}{Smoothing}
+\begin{equation*}\hat{P}(w_i | c) = \frac{\cnt(w_i, c) + \alpha}{\sum_{w \in V}[\cnt(w, c_j) + \alpha ]}\end{equation*}
+\note{simple, easy to use, effective in practice}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Overall process}
+Input: Set of labeled documents: $\{(d_i, c_i)\}_{i=1}^n$
+\begin{itemize}[<+->]
+\item Compute vocabulary $V$ of all words
+\item Calculate \begin{equation*}\hat{P}(c_j) = \frac{\cnt(c_j)}{n}\end{equation*}
+\item Calculate \begin{equation*}\hat{P}(w_i | c_j) = \frac{\cnt(w_i, c_j) + \alpha}{\sum_{w \in V}[\cnt(w, c_j) + \alpha ]}\end{equation*}
+\item Prediction: Given document $d = (w_1, \ldots, w_k)$
+\begin{equation*}
+c_{\text{MAP}} = \argmax_{c} \hat{P}(c) \prod_{i=1}^{k} \hat{P}(w_i | c)
+\end{equation*}
+\end{itemize}
+\note{n = Total number of docs}
+\note{MAP = Maximum a posteriori}
+\end{frame}
+
+\begin{frame}
+\frametitle{Naive Bayes Example}
+\includegraphics[scale=0.25]{figures/classifiers/nbexample.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Tokenization}
+\begin{block}{Tokenization matters - it can affect your vocabulary}
+\begin{itemize}[<+->]
+  \item {\em aren't}
+    \framebox{aren't} \\
+    \framebox{arent} \\
+    \framebox{are} \framebox{n't} \\
+    \framebox{aren} \framebox{t} \\
+  \item Emails, URLs, phone numbers, dates, emoticons 
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Features}
+\begin{itemize}[<+->]
+\item Remember: Naive Bayes can use any set of features
+\item Captitalization, subword features (end with -ing), etc
+\item Domain knowledge crucial for performance
+\end{itemize}
+
+\pause
+\begin{block}{Top features for spam detection}
+\includegraphics[scale=0.25]{figures/classifiers/features.png}
+\\
+\mycite{Alqatawna et al, IJCNSS 2015}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Evaluation}
+\begin{itemize}[<+->]
+\item Table of prediction (binary classification)
+\includegraphics[scale=0.25]{figures/classifiers/evalex1.png}
+\item Ideally we want to get \\
+\includegraphics[scale=0.25]{figures/classifiers/evalex0.png}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Evaluation Metrics}
+\includegraphics[scale=0.25]{figures/classifiers/evalex1.png}
+\\
+\centering
+\includegraphics[scale=0.25]{figures/classifiers/evalterms.png}
+\begin{equation*}
+\textbf{Accuracy} = \frac{TP + TN}{Total} = \frac{200}{250} = 80\%
+\end{equation*}
+\end{frame}
+
+\begin{frame}
+\frametitle{Evaluation Metrics}
+\includegraphics[scale=0.25]{figures/classifiers/evalex2.png}
+\\
+\centering
+\includegraphics[scale=0.25]{figures/classifiers/evalterms.png}
+\begin{equation*}
+\textbf{Accuracy} = \frac{TP + TN}{Total} = \frac{200}{250} = 80\%
+\end{equation*}
+\end{frame}
+
+\begin{frame}
+\frametitle{Precision and Recall}
+\centering
+\includegraphics[scale=0.25]{figures/classifiers/prdef.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Precision and Recall}
+\centering
+\includegraphics[scale=0.40]{figures/classifiers/evalterms.png}
+\includegraphics[scale=0.40]{figures/classifiers/pr.png}
+\\
+\footnotesize{from Wikipedia}
+\end{frame}
+
+\begin{frame}
+\frametitle{F-Score}
+\includegraphics[scale=0.25]{figures/classifiers/fscore.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Choosing Beta}
+\includegraphics[scale=0.25]{figures/classifiers/beta.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Aggregating scores}
+\begin{itemize}[<+->]
+\item We have Precision, Recall, F1 for each class
+\item How to combine them for an overall score?
+  \begin{itemize}
+  \item Macro-average: Compute for each class, then average
+  \item Micro-average: Collect predictions for all classes and jointly evaluate
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Macro vs Micro average}
+\includegraphics[scale=0.25]{figures/classifiers/averaging.png}
+\begin{itemize}[<+->]
+\item Macroaveraged precision: $(0.5+0.9)/2=0.7$
+\item Microaveraged precision: $100/120=.83$
+\item Microaveraged score is dominated by score on common classes
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Validation}
+\includegraphics[scale=0.25]{figures/classifiers/splits.png}
+\begin{itemize}[<+->]
+\item Choose a metric: Precision/Recall/F1
+\item Optimize for metric on {\color{green} Validation} (aka Development) set
+\item Finally evaluate on ‘unseen’ {\color{red} Test} set
+\item Cross-validation
+  \begin{itemize}
+  \item Repeatedly sample several train-val splits
+  \item Reduces bias due to sampling errors \\
+  \includegraphics[scale=0.25]{figures/classifiers/cv.png}
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Advantanges of Naive Bayes}
+\begin{itemize}[<+->]
+\item Very fast, low storage requirements
+\item Robust to irrelevant features
+\item Very good in domains with many equally important features
+\item Optimal if the independence assumptions hold
+\item Good dependable baseline for text classification
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{When to use Naive Bayes}
+\begin{itemize}[<+->]
+\item Small data sizes: Naive Bayes is great! \note{high bias}.
+ \\ Rule-based classifiers can work well too
+\item Medium size datasets: More advanced classifiers might perform better (SVM, logistic regression)
+\item Large datasets: Naive Bayes becomes competive again (most learned classifiers will work well)
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Failings of Naive Bayes (1)}
+\begin{block}{Independence assumptions are too strong}
+\begin{itemize}[<+->]
+\item XOR problem: Naive Bayes cannot learn a decision boundary
+\pause
+\includegraphics[scale=0.25]{figures/classifiers/xor.png}
+\item Both variables are jointly required to predict class. Independence assumption broken!
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Failings of Naive Bayes (2)}
+\begin{block}{Class Imbalance}
+\begin{itemize}[<+->]
+\item One or more classes have more instances than others
+\item Data skew causes NB to prefer one class over the other
+%\item Solution: Complement Naive Bayes \mycite{Rennie et al., 2003}
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Failings of Naive Bayes (3)}
+\begin{block}{Weight magnitude errors}
+\begin{itemize}[<+->]
+\item Classes with larger weights are preferred
+\item 10 documents with class=MA and “Boston” occurring once each
+\item 10 documents with class=CA and “San Francisco” occurring once each
+\item New document $d$: “Boston Boston Boston San Francisco San Francisco”
+\pause
+\\
+\begin{equation*}
+P(\text{class}=\text{CA} | d) > P(\text{class} = \text{MA} | d)
+\end{equation*}
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Naive Bayes Summary}
+\begin{itemize}[<+->]
+\item Domain knowledge is crucial to selecting good features
+\item Handle class imbalance by re-weighting classes
+\item Use log scale operations instead of multiplying probabilities
+\begin{equation*}
+P(c_{NB}) = \argmax_{c_j \in C} \log P(c_j) + \sum_{i} \log P(x_i | c_j)
+\end{equation*}
+\item Model is now just max of sum of weights
+\end{itemize}
+\end{frame}
+
+
+\author{Angel Xuan Chang \\ 
+  {\color{RoyalBlue!70}{\href{http://angelxuanchang.github.io/nlp-class}{angelxuanchang.github.io/nlp-class}}} \\
+  {\color{gray}{adapted from lecture slides from Anoop Sarkar}}
+}
 
 \section{Log linear models}
 \frame{\tableofcontents[currentsection]}

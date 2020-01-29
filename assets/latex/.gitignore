@@ -12,6 +12,7 @@
 *.blg
 *.toc
 *.qry
+*.upa
 *.synctex.gz
 prob.pdf
 lm.pdf
