@@ -167,6 +167,10 @@
       url: "https://web.stanford.edu/~jurafsky/slp3/7.pdf"
       optional: false
   links:
+    - title: "A Review of the Neural History of Natural Language Processing"
+      url: "https://ruder.io/a-review-of-the-recent-history-of-nlp/index.html"
+      author: "Sebastian Ruder"
+      optional: true
     - title: "Efficient Backprop"
       url: "http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf"
       author: "LeCun, Bottou, Orr and Muller"
