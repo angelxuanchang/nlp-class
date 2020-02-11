@@ -126,7 +126,7 @@
 - title: "Word Vectors"
   tag: w2v
   include: true
-  current: true
+  current: false
   notes: 
     - title: "Vector space models (Jurafsky and Martin)"
       url: "assets/cached/slp3/vector1.pdf"
@@ -144,10 +144,14 @@
       title: "Vector Semantics and Embeddings (J+M chapter 6)"
       url: "https://web.stanford.edu/~jurafsky/slp3/6.pdf"
       optional: false
+    - author: Omer Levy, Yoav Goldberg, and Ido Dagan
+      title: "Improving Distributional Similarity with Lessons Learned from Word Embeddings"
+      url: "https://www.aclweb.org/anthology/Q15-1016.pdf"
+      optional: true
 - title: "Feedforward neural networks"
   tag: ff
   include: true
-  current: false
+  current: true
   notes:
     - title: "Feedforward neural networks"
       url: "assets/slides/ff.pdf"
