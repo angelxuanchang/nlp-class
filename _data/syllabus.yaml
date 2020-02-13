@@ -68,6 +68,7 @@
       url: "assets/slides/lm.pdf"
     - title: "Exercise: n-gram Language Models"
       url: "assets/notes/lm.html"
+      soln: "assets/notes/lm_soln.html"
     - title: "The unreasonable effectiveness of Character-level Language Models"
       url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/goldberg_lm.ipynb"
       download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/goldberg_lm.ipynb"
@@ -107,8 +108,10 @@
       download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/loglinear.ipynb"
     - title: "Exercise: Log linear models"
       url: "assets/notes/loglinear.html"
+      soln: "assets/notes/loglinear_soln.html"
     - title: "Exercise: Linear combinations"
       url: "assets/notes/linearb.html"
+      soln: "assets/notes/linearb_solution.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
       title: "Naive Bayes Classification and Sentiment (J+M chapter 4)"
@@ -139,6 +142,7 @@
       download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/svd.ipynb"
     - title: "Exercise: word2vec"
       url: "assets/notes/word2vec.html"
+      soln: "assets/notes/word2vec_soln.html"
   readings:
     - author: Dan Jurafsky and James H. Martin
       title: "Vector Semantics and Embeddings (J+M chapter 6)"
@@ -199,6 +203,10 @@
       author: Yoav Goldberg
       url: "http://u.cs.biu.ac.il/~yogo/nnlp.pdf" 
   links:
+    - title: "An overview of gradient descent optimization algorithms"
+      author: "Sebastian Ruder"
+      url: "https://ruder.io/optimizing-gradient-descent/"
+      optional: true
     - title: "Deep Learning for MT Winter School"
       url: "http://dl4mt.computing.dcu.ie/"
       optional: true
@@ -222,6 +230,55 @@
     - author: Erik F. Tjong Kim Sang and Sabine Buchholz
       title: "Introduction to the CoNLL-2000 Shared Task: Chunking"
       url: "http://www.cnts.ua.ac.be/conll2000/pdf/12732tjo.pdf"
+- title: "Hidden Markov Models"
+  tag: hmm
+  include: true
+  current: false
+  notes:
+    - title: "Hidden Markov Models"
+      url: "assets/slides/hmm.pdf"
+    - title: "Python Notebook: Viterbi algorithm for HMMs"
+      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/hmm.ipynb"
+      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/hmm.ipynb"
+  links:
+    - author: Michael Collins
+      title: "Hidden Markov Models"
+      download: "assets/mcollins-notes/hmms-spring2013.pdf"
+      url: "assets/mcollins-notes/hmms-spring2013.pdf"
+    - author: Anoop Sarkar
+      title: "Introduction to Hidden Markov Models"
+      video: "http://youtu.be/D9TvSfkcN-8"
+      url: "http://youtu.be/D9TvSfkcN-8"
+    - author: Anoop Sarkar
+      title: "N-grams versus HMMs"
+      video: "http://youtu.be/sxziC8Zh8Kw"
+      url: "http://youtu.be/sxziC8Zh8Kw"
+    - author: Anoop Sarkar
+      title: "Parsing with HMMs"
+      video: "http://youtu.be/0OQIBTWqjFY"
+      url: "http://youtu.be/0OQIBTWqjFY"
+    - author: Anoop Sarkar
+      title: "Viterbi algorithm for HMMs"
+      video: "http://youtu.be/TymbVHmJWQ8"
+      url: "http://youtu.be/TymbVHmJWQ8"
+    - author: Anoop Sarkar
+      title: "Language models and HMMs"
+      video: "http://youtu.be/dxEQeUd4JBs"
+      url: "http://youtu.be/dxEQeUd4JBs"
+    - author: Anoop Sarkar
+      title: "Supervised learning of HMMs"
+      video: "http://youtu.be/0dp3Digvfcw"
+      url: "http://youtu.be/0dp3Digvfcw"
+    - author: Anoop Sarkar
+      title: "Lagrange multipliers for HMM parameter updates"
+      video: "http://youtu.be/ZUcb_UJK1UM"
+      url: "http://youtu.be/ZUcb_UJK1UM"
+      optional: true
+    - author: Michael Collins
+      title: "Forward-backward algorithm"
+      download: "assets/mcollins-notes/fb.pdf"
+      url: "assets/mcollins-notes/fb.pdf"
+      optional: true
 - title: "Neural Language models"
   tag: nlm
   include: true
@@ -308,55 +365,6 @@
       author: "R. Neco and M. Forcada"
       citation: "International Conference on Neural Networks, vol 4, pages 2535-2540"
       url: "http://www.cs.brandeis.edu/~gregws/cs113/asynchronous-translations-with-recurrent.pdf"
-      optional: true
-- title: "Hidden Markov Models"
-  tag: hmm
-  include: true
-  current: false
-  notes:
-    - title: "Hidden Markov Models"
-      url: "assets/slides/hmm.pdf"
-    - title: "Python Notebook: Viterbi algorithm for HMMs"
-      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/hmm.ipynb"
-      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/hmm.ipynb"
-  links:
-    - author: Michael Collins
-      title: "Hidden Markov Models"
-      download: "assets/mcollins-notes/hmms-spring2013.pdf"
-      url: "assets/mcollins-notes/hmms-spring2013.pdf"
-    - author: Anoop Sarkar
-      title: "Introduction to Hidden Markov Models"
-      video: "http://youtu.be/D9TvSfkcN-8"
-      url: "http://youtu.be/D9TvSfkcN-8"
-    - author: Anoop Sarkar
-      title: "N-grams versus HMMs"
-      video: "http://youtu.be/sxziC8Zh8Kw"
-      url: "http://youtu.be/sxziC8Zh8Kw"
-    - author: Anoop Sarkar
-      title: "Parsing with HMMs"
-      video: "http://youtu.be/0OQIBTWqjFY"
-      url: "http://youtu.be/0OQIBTWqjFY"
-    - author: Anoop Sarkar
-      title: "Viterbi algorithm for HMMs"
-      video: "http://youtu.be/TymbVHmJWQ8"
-      url: "http://youtu.be/TymbVHmJWQ8"
-    - author: Anoop Sarkar
-      title: "Language models and HMMs"
-      video: "http://youtu.be/dxEQeUd4JBs"
-      url: "http://youtu.be/dxEQeUd4JBs"
-    - author: Anoop Sarkar
-      title: "Supervised learning of HMMs"
-      video: "http://youtu.be/0dp3Digvfcw"
-      url: "http://youtu.be/0dp3Digvfcw"
-    - author: Anoop Sarkar
-      title: "Lagrange multipliers for HMM parameter updates"
-      video: "http://youtu.be/ZUcb_UJK1UM"
-      url: "http://youtu.be/ZUcb_UJK1UM"
-      optional: true
-    - author: Michael Collins
-      title: "Forward-backward algorithm"
-      download: "assets/mcollins-notes/fb.pdf"
-      url: "assets/mcollins-notes/fb.pdf"
       optional: true
 - title: Ambiguity and Context-Free Grammars
   tag: cfg
