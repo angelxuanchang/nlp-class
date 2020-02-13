@@ -100,6 +100,10 @@ ideas for these tasks.
 * [Algebra Question Answering with Rationales](https://github.com/deepmind/AQuA/)
 * [Quora Question Pairs](https://www.kaggle.com/c/quora-question-pairs).
 * Reverse QA: Jeopardy style QA. [json](https://drive.google.com/file/d/0BwT5wj_P7BKXb2hfM3d2RHU1ckE/view) and [csv](https://drive.google.com/file/d/0BwT5wj_P7BKXUl9tOUJWYzVvUjA/view)
+* [CoQA](https://stanfordnlp.github.io/coqa/)
+* [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/)
+* [HotpotQA](https://hotpotqa.github.io/)
+
 
 ## Project Submission
 
@@ -142,8 +146,13 @@ Make sure the following points are covered.
     * Summary of preliminary results
     * Remaining results that you plan to produce
 
+Go to [Coursys]({{ site.coursys }}). Under the `Final Project`
+activity submit the following files:
 
-### Project Write-up
+* `mileston.pdf`: this is the project milestone report
+
+
+### Project Write-up (due on {{ site.hwdates[5].deadline }})
 
 You must submit your project write-up as a PDF document.
 In addition you must submit a Python notebook `project.ipynb` and your source
@@ -188,7 +197,8 @@ Go to [Coursys]({{ site.coursys }}). Under the `Final Project`
 activity submit the following zip files:
 
 * `output.zip`: output of your project implementation on a dataset. please include the evaluation code and references to allow us to check the evaluation you present in your write-up. Note this should only be your output on the test data file of some dataset plus any evaluation code and clear instructions on how to run the evaluation script.
-* `source.zip`: this zip file should contain your iPython notebook that serves as the write-up for your project and only the source code you have written (along with a requirements.txt for a virtualenv). Do not include any data files in this zipfile. Please also include a README.username file as you have done for all your homeworks in this zip file.
+* `source.zip`: this zip file should contain your iPython notebook and only the source code you have written (along with a requirements.txt for a virtualenv). Do not include any data files in this zipfile. Please also include a README.username file as you have done for all your homeworks in this zip file.
+* `report.pdf`: this is the final project report
 
 The instructions for submission and development are provided in more detail in [Homework 0](hw0.html).
 
