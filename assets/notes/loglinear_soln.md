@@ -1,3 +1,9 @@
+---
+layout: default
+title: word2vec
+active_tab: syllabus
+---
+
 Warning: the following solutions may contain error.
 
 # Solutions to exercises

@@ -40,6 +40,9 @@ The syllabus is preliminary and subject to change.
                       <ul class="list-group">
                       {% for notes in week.notes %}
                         <li class="list-group-item"> <a href="{{ notes.url }}">{{ notes.title }}</a>
+                            {%if notes.soln %}
+                                <i class="fa fa-star"></i><a href="{{ notes.soln }}">Solutions</a>
+                            {% endif %}
                             {%if notes.video %}
                                 <a href="{{ notes.video }}"><span class="glyphicon glyphicon-film"></span></a>
                             {% endif %}

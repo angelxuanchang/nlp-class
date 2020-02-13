@@ -1,7 +1,13 @@
+---
+layout: default
+title: word2vec
+active_tab: syllabus
+---
+
 Warning: the following solutions may contain error.
 
 # Solutions to exercises
-https://github.com/anoopsarkar/nlp-class/blob/gh-pages/assets/notes/linearb_solution.pdf
+
 ## Word2Vec Practice
 
 ### Question 1
