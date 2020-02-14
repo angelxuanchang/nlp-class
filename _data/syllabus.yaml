@@ -237,6 +237,8 @@
   notes:
     - title: "Hidden Markov Models"
       url: "assets/slides/hmm.pdf"
+    - title: "Sequence Models"
+      url: "assets/slides/seqmodels.pdf"
     - title: "Python Notebook: Viterbi algorithm for HMMs"
       url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/hmm.ipynb"
       download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/hmm.ipynb"
