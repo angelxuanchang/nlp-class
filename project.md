@@ -22,6 +22,8 @@ A list of shared task datasets are provided below. In many cases
 you can extend your homework code to produce innovative project
 ideas for these tasks.
 
+You can also checkout the titles of group projects from [fall 2019](project_titles) or final projects from [Stanford CS224n](https://nlp.stanford.edu/courses/cs224n/) for inspiration.
+
 ### Shared Task Collections
 
 * [Torchtext](https://torchtext.readthedocs.io/en/latest/)
@@ -103,7 +105,6 @@ ideas for these tasks.
 * [CoQA](https://stanfordnlp.github.io/coqa/)
 * [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/)
 * [HotpotQA](https://hotpotqa.github.io/)
-
 
 ## Project Submission
 
