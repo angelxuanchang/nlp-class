@@ -150,7 +150,7 @@ Make sure the following points are covered.
 Go to [Coursys]({{ site.coursys }}). Under the `Final Project`
 activity submit the following files:
 
-* `mileston.pdf`: this is the project milestone report
+* `milestone.pdf`: this is the project milestone report
 
 
 ### Project Write-up (due on {{ site.hwdates[5].deadline }})
