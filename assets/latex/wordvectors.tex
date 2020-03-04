@@ -88,13 +88,15 @@ The amount of variance captured by the first $k$ dimensions is given by
 \begin{frame}
 \frametitle{Dimensionality reduction with SVD}
 \framesubtitle{Figure from \cite{cs224n}}
-\includegraphics[scale=.38]{figures/wordvectors/svdapply}	
+\centering
+\includegraphics[scale=.35]{figures/wordvectors/svdapply}
 \end{frame}
 
 \begin{frame}
 \frametitle{Dimensionality reduction with SVD}
 \framesubtitle{Figure from \cite{cs224n}}
-\includegraphics[scale=.38]{figures/wordvectors/reducedim}	
+\centering
+\includegraphics[scale=.38]{figures/wordvectors/reducedim}
 \end{frame}
 
 \begin{frame}
@@ -249,17 +251,62 @@ $v_{\textrm{the}}$ \> $v_{\textrm{general}}$ \> \> $v_{\textrm{the}}$ \> $v_{\te
 \frame{\tableofcontents[currentsection]}
 
 \begin{frame}
+\frametitle{Relationship of PMI and Word2Vec}
+\begin{itemize}[<+->]
+\item Word2Vec SGNS implicitly factorizes word-context PPMI matrix
+\begin{equation*}
+\overrightarrow{w}\cdot\overrightarrow{c} = PMI(w,c) - \log k
+\end{equation*}
+\begin{equation*}
+W \cdot C^T = M^{PMI} - \log k
+\end{equation*}
+\item SGNS factorizes M into two unconstrained matrices (vs two orthonormal and one diagonal matrix)
+\item Loss is not L2 loss
+\note{PMI matrix is indeed low dimensional/low rank: https://www.offconvex.org/2016/02/14/word-embeddings-2/}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{GloVe}
+\begin{itemize}[<+->]
+\item Explicitly encode meaning as vector offsets in an embedding space
+\item Aim to minimize difference of the vectors of two words and the log of their co-occurrrence count
+\begin{equation*}
+\hat{J} = - \sum_{ij} f(X_{ij})  ( u_j \cdot v_i + b_i + \tilde{b}_j - \log X_{ij} )^2 
+\end{equation*}
+$u_j=$ \textbf{word} vector for word $j$, $v_i=$ \textbf{context} vector for word $i$.\\
+$X_{ij}$ is number of times word $j$ occurs in the context of word $i$.
+\item Objective is factorization of the log-count matrix (shifted by bias terms)
+\end{itemize}
+\end{frame}
+
+\begin{comment}
+\begin{frame}
+\frametitle{GloVe}
+\centering
+\includegraphics[scale=0.35]{figures/wordvectors/glove1.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{GloVe}
+\centering
+\includegraphics[scale=0.35]{figures/wordvectors/glove2.png}
+\end{frame}
+\end{comment}
+
+\begin{frame}
 \frametitle{GloVe}
 \begin{alertblock}{Co-occurrence matrix}
-Let $X$ denote the word-word co-occurrence matrix.\\
+Let $X$ denote the \textbf{word-word co-occurrence matrix}.\\
 $X_{ij}$ is number of times word $j$ occurs in the context of word $i$.\\
-Let $X_i = \sum_k X_{ik}$ \\
-And $P_{ij} = P(w_j \mid w_i) = \frac{X_{ij}}{X_i}$	
+Let $X_i = \sum_k X_{ik}$ and $P_{ij} = P(w_j \mid w_i) = \frac{X_{ij}}{X_i}$
 \end{alertblock}
 \pause
 \begin{alertblock}{GloVe objective}
-Probability that word $j$ occurs in context of word $i$:
+Probability that word $j$ occurs in context of word $i$: \\
+$u_j=$ \textbf{word} vector for word $j$, $v_i=$ \textbf{context} vector for word $i$.\\
 \[ Q_{ij} = \frac{exp(u_j \cdot v_i)}{\sum_{w=1}^{|V|} exp(u_w \cdot v_i) } \]
+\pause
 Compute global cross-entropy loss:
 \[ J = - \sum_{i=1}^{|V|} \sum_{j=1}^{|V|} X_{ij} \log Q_{ij} \]
 \end{alertblock}
@@ -269,7 +316,8 @@ Compute global cross-entropy loss:
 \frametitle{GloVe}
 \begin{alertblock}{Cross Entropy Loss}
 \[ J = - \sum_{i=1}^{|V|} \sum_{j=1}^{|V|} \underbrace{X_{ij}}_{X_i P_{ij}} \log Q_{ij} \]
- \[ \textrm{$X_{i,j} = X_i P_{ij}$ because: } P_{ij} = \frac{X_{ij}}{\sum_{k} X_{ik}} = \frac{X_{ij}}{X_i} \]
+ \[ \textrm{$X_{ij} = X_i P_{ij}$ because: } P_{ij} = \frac{X_{ij}}{\sum_{k} X_{ik}} = \frac{X_{ij}}{X_i} \]
+\pause
 \[ J = - \sum_i X_i \underbrace{\sum_j P_{ij} \log Q_{ij}}_{H(P_i, Q_i)} \]
 where $H$ is the cross entropy of $Q_{ij}$ which uses the parameters $u, v$ wrt the observed frequencies $P_{ij}$.
 \end{alertblock}
@@ -280,11 +328,51 @@ where $H$ is the cross entropy of $Q_{ij}$ which uses the parameters $u, v$ wrt 
 \frametitle{GloVe}
 \begin{alertblock}{Simplify objective function}
  In the objective $- \sum_{ij} X_i \cdot P_{ij} \log Q_{ij}$ the distribution $Q_{ij}$ requires an expensive normalization over the entire vocabulary.\\
+\pause
 Simplify $J$ to $\hat{J}$ using the squared error of the logs of $\hat{P}$ and $\hat{Q}$ without normalization:
 \[ \hat{J} = - \sum_{i,j=1}^{|V|} \underbrace{X_i}_{\textrm{replace with function $f(X_{ij})$}} \left( \log \underbrace{\hat{Q}_{ij}}_{exp(u_j \cdot v_i)} - \log \underbrace{\hat{P}_{ij}}_{X_{ij}} \right)^2 \]
-\[ \hat{J} = - \sum_{ij} f(X_{ij})  ( u_j \cdot v_i - \log X_{ij} )^2 \] 
+\pause
+\[ \hat{J} = - \sum_{ij} f(X_{ij})  ( u_j \cdot v_i \underbrace{+ b_i + \tilde{b}_j}_{\text{add bias terms}} - \log X_{ij} )^2 \] 
+\pause
 The GloVe model efficiently leverages global statistical information by training only on the nonzero elements in a word-word co-occurrence matrix.
 \end{alertblock}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{GloVe}
+\begin{alertblock}{Objective function}
+\begin{equation*}
+\hat{J} = - \sum_{ij} f(X_{ij})  ( u_j \cdot v_i + b_i + \tilde{b}_j - \log X_{ij} )^2 
+\end{equation*}
+\end{alertblock}
+\pause
+\begin{alertblock}{Weighting function}
+\centering
+\includegraphics[scale=0.12]{figures/wordvectors/glove-function-eq.png}
+\includegraphics[scale=0.12]{figures/wordvectors/glove-function.png} \\
+Rare co-occurrences are less informative than frequent ones and should be weighted less.
+\note{can account for 75-95\% of entries}
+\end{alertblock}
+\pause
+\begin{alertblock}{Final word vector}
+Combination of learned \textbf{word} and \textbf{context} vectors: \\
+\centering
+$w_i = u_i + v_i$
+\end{alertblock}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Extensions to word vectors}
+	\begin{itemize}[<+->]
+		\item Subword embeddings (FastText)
+		\item Phrases and multi-word expressions
+		\item Cross-lingual and modal embeddings
+		\item Sense embeddings
+		\item Embeddings using other types of contexts
+		\item Context dependent embeddings
+	\end{itemize}
 \end{frame}
 
 \section{Evaluation of Word Vectors}

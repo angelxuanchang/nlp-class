@@ -2,6 +2,49 @@
 \begin{document}
 \input{titlepage.tex}
 
+\lecture{Neural language modeling and RNNs}{}
+
+\begin{comment}
+\begin{frame}
+\frametitle{Course Logistics}
+\begin{block}{Midterm}
+\begin{itemize}[<+->]
+\item Graded midterms will be available on Thursday
+\end{itemize}
+\end{block}
+
+\pause
+\begin{block}{HW3}
+\begin{itemize}[<+->]
+\item 3/10 (Tue) Updated due date 
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Course Logistics}
+\begin{block}{Project}
+\begin{itemize}[<+->]
+\item 3/12 (Thu) - Abstract due
+\item 3/26 (Thu) - Milestone report due
+\item 4/14 (Tue) - Final Project report due 
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}{Remaining topics}
+\begin{itemize}[<+->]
+\item Recurrent NNs and neural language models
+\item Sequence to sequence models and machine translation
+\item Contextualized word embeddings
+\item Constituency parsing
+\item Dependency parsing
+\item Tasks: Question answering, dialogue, coreference resolution, grounding
+\end{itemize}
+\end{frame}
+\end{comment}
+
+\begin{comment}
 \lecture{Long distance dependencies}{}
 \section{Long distance dependencies}
 
@@ -58,9 +101,71 @@ P(\text{herself} &\mid& \text{She}, \ldots, \text{confidence} )
 \end{itemize}
 \end{block}
 \end{frame}
+\end{comment}
+
+\begin{frame}
+\frametitle{Recurrent neural networks (RNNs)}
+A class of neural networks to handle \textbf{variable length inputs}.
+
+\centering
+\includegraphics[scale=0.4]{figures/nlm/rnn.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Recurrent neural networks (RNNs)}
+Proven to be an highly effective approach to language modeling, sequence tagging as well as text classification tasks:
+
+\centering
+\includegraphics[scale=0.25]{figures/nlm/rnntasks.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Recurrent neural networks (RNNs)}
+Form the basis for modern approaches to machine translation, question answering, and dialogue:
+
+\centering
+\includegraphics[scale=0.4]{figures/nlm/mt.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Why variable length?}
+Recall the feedforward neural LMs we learned:
+\centering
+\includegraphics[scale=0.25]{figures/nlm/fnlm.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Simple RNNs}
+\centering
+\includegraphics[scale=0.3]{figures/nlm/rnnsimple1.png}
+\pause
+\includegraphics[scale=0.25]{figures/nlm/rnnsimple2.png}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Simple RNNs}
+\centering
+\includegraphics[scale=0.3]{figures/nlm/rnn-h.png}
+\pause
+\includegraphics[scale=0.4]{figures/nlm/rnnsameweights.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{RNNs vs Feedforward NNs}
+\centering
+\includegraphics[scale=0.3]{figures/nlm/rnnvsff.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Recurrent Neural Language Models (RNNLMs)}
+\centering
+\includegraphics[scale=0.175]{figures/nlm/rnnlm-p.png}
+\pause
+\includegraphics[scale=0.175]{figures/nlm/rnnlm.png}
+\end{frame}
 
 \lecture{Neural Language Models}{}
-
 \begin{frame}
 \frametitle{Neural Language Models}
 \begin{block}{Use Chain rule and approximate using a neural network}
@@ -217,7 +322,7 @@ P(\text{herself} &\mid& \text{She}, \ldots, \text{confidence} )
 \framesubtitle{Backward pass}
 \begin{itemize}[<+->]
 	\item The recurrent weights $W$ are updated by unfolding them in time and training the network as a deep feedforward neural network.
-	\item The process of propagating errors back through the recurrent weights is called Backpropagation Through Time (BPTT).
+	\item The process of propagating errors back through the recurrent weights is called \textbf{Backpropagation Through Time (BPTT)}.
 \end{itemize}
 \end{frame}
 
@@ -227,6 +332,12 @@ P(\text{herself} &\mid& \text{She}, \ldots, \text{confidence} )
 \begin{figure}
 \includegraphics[scale=0.25]{figures/nlm/rnn-bptt.png}
 \end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Truncated backpropagation through time}
+\centering
+\includegraphics[scale=0.25]{figures/nlm/tbptt.png}
 \end{frame}
 
 \begin{frame}{Training of RNNLM: Backpropagation through time}

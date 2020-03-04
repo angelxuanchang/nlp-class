@@ -384,48 +384,31 @@ for $i = 1, \ldots, m$
 \end{block}
 \end{frame}
 
-\section{Stochastic Gradient Descent}
-\frame{\tableofcontents[currentsection]}
-
-\begin{frame}{Simple stochastic gradient descent}
-\begin{block}{Inputs:}
-\begin{itemize}[<+->]
-\item Training examples $(x^i, y^i)$ for $i = 1, \ldots, n$
-\item A feedforward representation $\phi(x; \theta)$
-\item Integer $T$ specifying the number of updates
-\item A sequence of learning rates: $\eta^1, \ldots, \eta^T$ where $\eta^t \in [0,1]$
-\begin{itemize}[<+->]
-\item One should experiment with learning rates: 0.001, 0.01, 0.1, 1
-\item Bottou (2012) suggests a learning rate $\eta^t = \frac{\eta^1}{1 + \eta^1 \times \lambda \times t}$ where $\lambda$ is a hyperparameter that can be tuned experimentally
-\end{itemize}
-\end{itemize}
-\end{block}
-\pause
-\begin{block}{Initialization:}
-Set $v = (v(y), \gamma_y)$ for all $y$, and $\theta$ to random values
-\end{block}
+\begin{frame}{Feed-forward Network}
+\centering
+\includegraphics[scale=0.27]{figures/ff/network.png}
 \end{frame}
 
-
-
-\begin{frame}{Gradient descent}
-\begin{block}{Algorithm:}
-\begin{itemize}[<+->]
-\item For $t = 1, \ldots, T$
-\begin{itemize}[<+->]
-\item Select an integer $i$ uniformly at random from $\{ 1, \ldots, n \}$
-\item Define $L(\theta, v) = - \log P(y_i \mid x_i; \theta, v)$
-\item For each parameter $\theta_j$ and $v_k(y)$ and $\gamma_y$ (for each label $y$):
-\begin{eqnarray*}
-\theta_j &=& \theta_j - \eta^t \times \frac{dL(\theta,v)}{d\theta_j} \\
-v_k(y) &=& v_k(y) - \eta^t \times \frac{dL(\theta,v)}{d v_k(y)} \\
-\gamma(y) &=& \gamma(y) - \eta^t \times \frac{dL(\theta,v)}{d \gamma(y)}
-\end{eqnarray*}
-\end{itemize}
-\item \textbf{Output}: parameters $\theta$, $v = (v(y), \gamma_y)$ for all $y$
-\end{itemize}
-\end{block}
+\begin{frame}{Neuron}
+\centering
+\includegraphics[scale=0.4]{figures/ff/neuron.png}
 \end{frame}
+
+\begin{frame}{Neuron}
+\centering
+\includegraphics[scale=0.3]{figures/ff/neuron2.png}
+\end{frame}
+
+\begin{frame}{Activation Functions}
+\centering
+\includegraphics[scale=0.4]{figures/ff/activationfns.png}
+\end{frame}
+
+\begin{frame}{Leaky ReLU}
+\centering
+\includegraphics[scale=0.3]{figures/ff/leakyrelu.png}
+\end{frame}
+
 
 \section{Motivating example: XOR}
 \frame{\tableofcontents[currentsection]}
@@ -442,6 +425,19 @@ x^3 &=& [1,0], y^3 = +1\\
 x^4 &=& [1,1], y^4 = -1
 \end{eqnarray*}
 \end{block}
+\end{frame}
+
+\begin{frame}{No solution with single neuron (perceptron)}
+\begin{block}{}
+Perception can compute \textbf{and} and \textbf{or}\\
+\centering
+\includegraphics[scale=0.7]{figures/ff/perceqn.png}
+\end{block}
+\begin{block}{}
+\includegraphics[scale=0.7]{figures/ff/percandor.png}
+\end{block}
+\note{single neural unit cannot compute
+some very simple functions of its input.}
 \end{frame}
 
 \begin{frame}{Motivating example: the XOR problem}
@@ -507,14 +503,118 @@ $u = [1, -2]$ and $\gamma = -0.5$ satisfies these constraints.
 
 \begin{frame}{Solving the XOR problem}
 \begin{figure}
+\centering
+\includegraphics[width=0.90\textwidth]{figures/ff/xorsolnnet.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Solving the XOR problem}
+\begin{figure}
+\centering
+\includegraphics[width=0.90\textwidth]{figures/ff/xorsoln.png}
+\end{figure}
+\end{frame}
+
+\begin{comment}
+\begin{frame}{Solving the XOR problem}
+\begin{figure}
    \includegraphics[width=0.475\textwidth]{figures/ff/xorbefore.png}
    \hfill
    \includegraphics[width=0.475\textwidth]{figures/ff/xorafter.png}
 \end{figure}
 \end{frame}
+\end{comment}
+
+
+\begin{frame}{Text Classification}
+\centering
+\includegraphics[scale=0.20]{figures/ff/nbow.png}
+\end{frame}
+
+\begin{frame}{Word embeddings: re-train or not?}
+\centering
+\includegraphics[scale=0.30]{figures/ff/wordembedding.png}
+\end{frame}
+
+\begin{frame}{Feed forward language models}
+\centering
+\includegraphics[scale=0.23]{figures/ff/ngramfflm2.png}
+\end{frame}
+
+\begin{frame}{Loss functions}
+\centering
+\includegraphics[scale=0.23]{figures/ff/losses.png}
+\end{frame}
+
+\begin{frame}{Optimization}
+\[ \theta^{(t+1)} = \theta^{(t)} - \eta \nabla_\theta J(\theta) \]
+\begin{itemize}[<+->]
+\item Recall logistic regression is convex: one global minimum
+\item Neural networks are non-convex and not easy to optimize
+\item Use stochastic gradient descent and family of "adaptive" optimizers that scale the parameter adjustment by an accumulated gradient
+\begin{itemize}
+\item \textbf{SGD}, Adam, Adagrad, RMSProp, ...
+\end{itemize}
+\centering
+\includegraphics[scale=0.25]{figures/ff/nonconvex.png}
+\includegraphics[scale=0.25]{figures/ff/saddlepoint.png}
+\end{itemize}
+\end{frame}
+
+\section{Stochastic Gradient Descent}
+\frame{\tableofcontents[currentsection]}
+
+\begin{frame}{Simple stochastic gradient descent}
+\begin{block}{Inputs:}
+\begin{itemize}[<+->]
+\item Training examples $(x^i, y^i)$ for $i = 1, \ldots, n$
+\item A feedforward representation $\phi(x; \theta)$
+\item Integer $T$ specifying the number of updates
+\item A sequence of learning rates: $\eta^1, \ldots, \eta^T$ where $\eta^t \in [0,1]$
+\begin{itemize}[<+->]
+\item One should experiment with learning rates: 0.001, 0.01, 0.1, 1
+\item Bottou (2012) suggests a learning rate $\eta^t = \frac{\eta^1}{1 + \eta^1 \times \lambda \times t}$ where $\lambda$ is a hyperparameter that can be tuned experimentally
+\end{itemize}
+\end{itemize}
+\end{block}
+\pause
+\begin{block}{Initialization:}
+Set $v = (v(y), \gamma_y)$ for all $y$, and $\theta$ to random values
+\end{block}
+\end{frame}
+
+
+\begin{frame}{Gradient descent}
+\begin{block}{Algorithm:}
+\begin{itemize}[<+->]
+\item For $t = 1, \ldots, T$
+\begin{itemize}[<+->]
+\item Select an integer $i$ uniformly at random from $\{ 1, \ldots, n \}$
+\item Define $L(\theta, v) = - \log P(y_i \mid x_i; \theta, v)$
+\item For each parameter $\theta_j$ and $v_k(y)$ and $\gamma_y$ (for each label $y$):
+\begin{eqnarray*}
+\theta_j &=& \theta_j - \eta^t \times \frac{dL(\theta,v)}{d\theta_j} \\
+v_k(y) &=& v_k(y) - \eta^t \times \frac{dL(\theta,v)}{d v_k(y)} \\
+\gamma(y) &=& \gamma(y) - \eta^t \times \frac{dL(\theta,v)}{d \gamma(y)}
+\end{eqnarray*}
+\end{itemize}
+\item \textbf{Output}: parameters $\theta$, $v = (v(y), \gamma_y)$ for all $y$
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+\begin{frame}{SGD}
+\begin{figure}
+\centering
+\includegraphics[width=0.70\textwidth]{figures/ff/sgd.png}
+\end{figure}
+\end{frame}
+
 
 \section{Computation Graphs}
 \frame{\tableofcontents[currentsection]}
+
 
 \begin{frame}{Complex neural networks}
 \begin{block}{Neural network with a loss function}
@@ -554,6 +654,14 @@ the function $(y^\ast - y)^2$.
 \end{block}
 
 \end{frame}
+
+\begin{frame}{Computation graphs and automatic differentiation}
+\begin{figure}
+\centering
+\includegraphics[width=0.85\textwidth]{figures/ff/cg.png}
+\end{figure}
+\end{frame}
+
 
 \begin{frame}{Computation graphs and automatic differentiation}
 \framesubtitle{Figure from \cite{Neubig2018}}
