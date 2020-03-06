@@ -284,7 +284,7 @@
 - title: "Neural Language models"
   tag: nlm
   include: true
-  current: true
+  current: false
   notes:
     - title: "Neural Language model"
       url: "assets/slides/nlm.pdf"
@@ -310,7 +310,7 @@
 - title: "Machine Translation"
   tag: smt
   include: true
-  current: false 
+  current: true 
   notes:
     - title: "Introduction to Machine Translation"
       url: "assets/slides/mtintro.pdf"
@@ -375,7 +375,7 @@
   notes:
     - title: "Formal Ambiguity"
       url: "assets/slides/ambiguity.pdf"
-    - title: "Exercise on CFGs"
+    - title: "Exercise: CFGs"
       url: "assets/notes/cfgquiz.pdf"
     - title: "Python Notebook: Context-free grammars"
       url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/cfg.ipynb"
