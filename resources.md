@@ -36,3 +36,8 @@ active_tab: resources
     * [GloVe](https://nlp.stanford.edu/projects/glove/)
     * [FastText](https://fasttext.cc/) 
 
+* Machine Translation
+    * [SFUTranslate](https://github.com/sfu-natlang/SFUTranslate) SFU NLL's MT toolkit (designed to be modern and flexible) 
+    * [JoeyNMT](https://github.com/joeynmt/joeynmt) Minimalist system for understanding NMT
+    * [OpenNMT](https://opennmt.net/) Comprehensive NMT framework
+
