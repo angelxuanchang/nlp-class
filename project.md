@@ -113,7 +113,7 @@ You can also checkout the titles of group projects from [fall 2019](project_titl
 For your project proposal please submit a text file in Markdown
 format that includes a Title and an Abstract. Your abstract should
 be about 250 words (please definitely use less than 1000 words).
-Make sure the following points are in your abstract.
+Make sure the following points are in your proposal.
 
 * Motivation 
     * which NLP task do you plan to do; 
@@ -126,6 +126,9 @@ Make sure the following points are in your abstract.
     * Exactly which data set do you plan to use
 * Evaluation
     * What is the evaluation measure for the data set and what is the baseline
+
+Go to [Coursys]({{ site.coursys }}) and submit under `Project Proposal` activity.
+
 
 ### Project milestone (due on {{ site.hwdates[5].milestone }})
 
@@ -147,7 +150,7 @@ Make sure the following points are covered.
     * Summary of preliminary results
     * Remaining results that you plan to produce
 
-Go to [Coursys]({{ site.coursys }}). Under the `Final Project`
+Go to [Coursys]({{ site.coursys }}). Under the `Project Milestone`
 activity submit the following files:
 
 * `milestone.pdf`: this is the project milestone report
