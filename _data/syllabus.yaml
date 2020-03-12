@@ -313,6 +313,8 @@
   current: true 
   notes:
     - title: "Introduction to Machine Translation"
+      url: "assets/slides/mt.pdf"
+    - title: "Anoop's Introduction to Machine Translation"
       url: "assets/slides/mtintro.pdf"
     - title: "Exercise: Philae Obelisk"
       url: "assets/notes/philae-obelisk.html"
