@@ -288,6 +288,8 @@
   notes:
     - title: "Neural Language model"
       url: "assets/slides/nlm.pdf"
+    - title: "Recursive Neural Networks"
+      url: "assets/slides/rnn.pdf"
     - title: "RNN based Neural Language model (experiments)"
       url: "assets/slides/nlm-mikolov.pdf"
       author: Tomas Mikolov
@@ -310,7 +312,7 @@
 - title: "Machine Translation"
   tag: smt
   include: true
-  current: true 
+  current: false 
   notes:
     - title: "Introduction to Machine Translation"
       url: "assets/slides/mt.pdf"
@@ -327,9 +329,9 @@
       url: http://www.isi.edu/natural-language/mt/wkbk.pdf
       optional: true
 - title: "Sequence to Sequence models"
-  tag: tutorial
+  tag: seq2seq
   include: true
-  current: false
+  current: true
   notes:
     - title: "Sequence to Sequence Models (Part 1)"
       author: Jetic Gu
