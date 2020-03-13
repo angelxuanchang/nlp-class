@@ -333,17 +333,19 @@
   include: true
   current: true
   notes:
+    - title: "Neural Machine Translation"
+      url: "assets/slides/nmt.pdf"
     - title: "Sequence to Sequence Models (Part 1)"
       author: Jetic Gu
       url: "assets/slides/03-2019-1010_NMT_Lecture.pdf"
     - title: "Sequence to Sequence Models (Part 2)"
       author: Jetic Gu
       url: "assets/slides/03-2019-1012_NMT_Lecture2.pdf"
-    - title: "Neural Machine Translation"
+    - title: "Neural Machine Translation Tutorial"
       author: "Thang Luong, Kyunghyun Cho and Chris Manning"
       citation: "Tutorial at ACL 2016"
       url: "https://sites.google.com/site/acl16nmt/"
-      download: "assets/cached/Luong-Cho-Manning-NMT-ACL2016-v4.pdf"
+      download: "assets/slides/Luong-Cho-Manning-NMT-ACL2016-v4-edited.pdf"
     - title: "Neural Machine Translation and Sequence-to-sequence Models: A Tutorial"
       author: "Graham Neubig"
       citation: "arXiv"
@@ -372,6 +374,16 @@
       citation: "International Conference on Neural Networks, vol 4, pages 2535-2540"
       url: "http://www.cs.brandeis.edu/~gregws/cs113/asynchronous-translations-with-recurrent.pdf"
       optional: true
+- title: "Contextualized Word Embeddings and Transformers"
+  tag: transformers
+  include: true
+  current: true
+  links:
+    - title: "Contextual Word Representations: A Contextual Introduction"
+      author: "Noah A. Smith"
+      url: "https://arxiv.org/pdf/1902.06006.pdf"
+    - title: "Attention Is All You Need"
+      url: "https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf"
 - title: Ambiguity and Context-Free Grammars
   tag: cfg
   include: true
