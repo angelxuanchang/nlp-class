@@ -297,6 +297,10 @@
       url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/rnnlm.ipynb"
       download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/rnnlm.ipynb"
   links:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Sequence Processing with Recurrent Networks (J+M chapter 9)"
+      url: "https://web.stanford.edu/~jurafsky/slp3/9.pdf"
+      optional: true
     - title: "How to implement a recurrent neural network"
       author: "peterroelants.github.io"
       url: "http://peterroelants.github.io/posts/rnn_implementation_part01/"
@@ -351,6 +355,10 @@
       citation: "arXiv"
       url: "https://arxiv.org/pdf/1703.01619.pdf"
   links:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Encoder-Decoder Models, Attention, and Contextual Embeddings (J+M chapter 10)"
+      url: "https://web.stanford.edu/~jurafsky/slp3/10.pdf"
+      optional: true
     - title: "Neural Machine Translation: Breaking the Performance Plateau"
       author: Rico Sennrich
       url: "http://www.meta-net.eu/events/meta-forum-2016/slides/09_sennrich.pdf"
@@ -384,6 +392,15 @@
       url: "https://arxiv.org/pdf/1902.06006.pdf"
     - title: "Attention Is All You Need"
       url: "https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf"
+- title: "Dependency Parsing"
+  tag: dependency
+  include: false
+  current: false
+  links:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Dependency Parsing (J+M chapter 15)"
+      url: "https://web.stanford.edu/~jurafsky/slp3/15.pdf"
+      optional: true
 - title: Ambiguity and Context-Free Grammars
   tag: cfg
   include: true
@@ -420,6 +437,33 @@
     - title: "Exercise: OrwellSpeak"
       author: "Jason Eisner"
       url: "http://www.naclo.cs.cmu.edu/problems2009/N2009-M.pdf"
+      optional: true
+- title: "Semantic Parsing"
+  tag: semparse
+  include: false
+  current: false
+  links:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Logical Representations of Sentence Meaning (J+M chapter 16)"
+      url: "https://web.stanford.edu/~jurafsky/slp3/16.pdf"
+      optional: true
+- title: "Question Answering"
+  tag: qa
+  include: false
+  current: false
+  links:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Questing Answering (J+M chapter 25)"
+      url: "https://web.stanford.edu/~jurafsky/slp3/25.pdf"
+      optional: true
+- title: "Dialogue"
+  tag: dialogue
+  include: false
+  current: false
+  links:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Dialog Systems and Chatbots (J+M chapter 26)"
+      url: "https://web.stanford.edu/~jurafsky/slp3/26.pdf"
       optional: true
 - title: Word Alignment
   tag: align
