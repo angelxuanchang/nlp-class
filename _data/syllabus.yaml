@@ -387,11 +387,22 @@
   include: true
   current: true
   links:
+    - title: "Illustrated Transformer"
+      author: "Jay Alammar"
+      url: "http://jalammar.github.io/illustrated-transformer/"
+    - title: "Illustrated BERT"
+      author: "Jay Alammar"
+      url: "http://jalammar.github.io/illustrated-bert/"
+    - title: "Illustrated BERT"
+      author: "Jay Alammar"
+      url: "http://jalammar.github.io/illustrated-bert/"
     - title: "Contextual Word Representations: A Contextual Introduction"
       author: "Noah A. Smith"
       url: "https://arxiv.org/pdf/1902.06006.pdf"
+      optional: true
     - title: "Attention Is All You Need"
       url: "https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf"
+      optional: true
 - title: "Dependency Parsing"
   tag: dependency
   include: false
