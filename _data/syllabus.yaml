@@ -335,7 +335,7 @@
 - title: "Sequence to Sequence models"
   tag: seq2seq
   include: true
-  current: true
+  current: false
   notes:
     - title: "Neural Machine Translation"
       url: "assets/slides/nmt.pdf"
@@ -386,6 +386,9 @@
   tag: transformers
   include: true
   current: true
+  notes:
+    - title: "Contextualized Word Embeddings"
+      url: "assets/slides/contextualized-word-embeddings.pdf"
   links:
     - title: "Illustrated Transformer"
       author: "Jay Alammar"
