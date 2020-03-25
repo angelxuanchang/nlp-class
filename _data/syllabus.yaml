@@ -403,7 +403,7 @@
     - title: "Attention Is All You Need"
       url: "https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf"
       optional: true
-- title: Constiuency Parsing, Ambiguity and Context-Free Grammars
+- title: Constituency Parsing, Ambiguity and Context-Free Grammars
   tag: cfg
   include: true
   current: true
