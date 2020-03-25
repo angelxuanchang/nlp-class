@@ -431,7 +431,7 @@
       url: "https://web.stanford.edu/~jurafsky/slp3/12.pdf"
       optional: true
     - author: Dan Jurafsky and James H. Martin
-      title: "CConstituency Parsing (J+M chapter 13)"
+      title: "Constituency Parsing (J+M chapter 13)"
       url: "https://web.stanford.edu/~jurafsky/slp3/13.pdf"
       optional: true
     - author: Dan Jurafsky and James H. Martin
