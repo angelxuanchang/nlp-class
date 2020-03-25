@@ -403,7 +403,7 @@
     - title: "Attention Is All You Need"
       url: "https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf"
       optional: true
-- title: Ambiguity and Context-Free Grammars
+- title: Constiuency Parsing, Ambiguity and Context-Free Grammars
   tag: cfg
   include: true
   current: true
@@ -426,6 +426,18 @@
       title: "Lexicalized Context-free Grammars"
       url: "http://www.cs.columbia.edu/~mcollins/courses/nlp2011/notes/lexpcfgs.pdf"
       download: "assets/mcollins-notes/lexpcfgs.pdf"
+    - author: Dan Jurafsky and James H. Martin
+      title: "Constituency Grammars (J+M chapter 12)"
+      url: "https://web.stanford.edu/~jurafsky/slp3/12.pdf"
+      optional: true
+    - author: Dan Jurafsky and James H. Martin
+      title: "CConstituency Parsing (J+M chapter 13)"
+      url: "https://web.stanford.edu/~jurafsky/slp3/13.pdf"
+      optional: true
+    - author: Dan Jurafsky and James H. Martin
+      title: "Statistical Constituency Parsing (J+M chapter 14)"
+      url: "https://web.stanford.edu/~jurafsky/slp3/14.pdf"
+      optional: true
     - title: "Exercise: Grammar Rules!"
       author: "Andrea Schalley and Patrick Littell"
       url: "http://nacloweb.org/resources/problems/2013/N2013-F.pdf"
@@ -444,7 +456,7 @@
       optional: true
 - title: "Dependency Parsing"
   tag: dependency
-  include: false
+  include: true
   current: false
   links:
     - author: Dan Jurafsky and James H. Martin
