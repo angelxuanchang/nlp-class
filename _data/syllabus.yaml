@@ -459,6 +459,8 @@
   include: true
   current: false
   links:
+    - title: "Dependency Parsing"
+      url: "assets/slides/dependency-parsing.pdf"
     - author: Dan Jurafsky and James H. Martin
       title: "Dependency Parsing (J+M chapter 15)"
       url: "https://web.stanford.edu/~jurafsky/slp3/15.pdf"
