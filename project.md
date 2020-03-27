@@ -136,11 +136,17 @@ For your project milestone please submit a PDF file that describes
 progress you made so far on your project and plans for the remainder.
 For the final write-up you will need to also submit your code, so we encourage
 to get started early and submit preliminary code and results with the milestone.
-Make sure the following points are covered.
 
+The project milestone PDF should be 2-4 pages in the style of a conference (e.g. ACL/EMNLP) submission.  Your final report should use the same template.  Links to acceptable templates are below:
+* [ACL style download](http://acl2020.org/downloads/acl2020-templates.zip)
+* [ACL style template Overleaf](https://www.overleaf.com/latex/templates/acl-2020-proceedings-template/zsrkcwjptpcd)
+* [EMNLP style download](https://2020.emnlp.org/files/emnlp2020-templates.zip)
+* [EMLNP style template Overleaf](https://www.overleaf.com/latex/templates/emnlp-2020/knvtcxwzhbbz)
+
+Make sure the following points are covered.
 * Progress
     * What have you achieved so far?
-    * Are there are any issues you encountered?
+    * Are there any issues you encountered?
 * Plans
     * What are the remaining steps?
     * Do you have any plans for addressing challenges or issues?
@@ -150,10 +156,28 @@ Make sure the following points are covered.
     * Summary of preliminary results
     * Remaining results that you plan to produce
 
+A good structure for the milestone report will include the following sections.  It can then also serve as a draft for your final project write-up.
+* Title and Abstract 
+    * Motivate the problem, describe your goals, and highlight your findings (if you have findings)
+* Approach 
+    * Provide details on your main approach and baselines.  Be specific.  Make clear what part is original, what code you are writing yourself, what code you are using that is taken from elsewhere (homework, github, etc)
+* Experiments 
+    * Describe the **dataset** (provide some information about the data such as statistics and analysis).
+    * Describe the **evaluation metrics** you will be using. 
+    * Describe what experiments you plan to run and/or any results you have so far.  
+    * Also provide training details, training times, etc. (if you have preliminary experiements) 
+* Future Work 
+    * What is your plan for the rest of the project?  
+* Reference - provide references using BibTex 
+
+Grading of the milestone will be based on the progress and the quality of writing.  
+
 Go to [Coursys]({{ site.coursys }}). Under the `Project Milestone`
 activity submit the following files:
 
 * `milestone.pdf`: this is the project milestone report
+
+Optionally, you can also upload `source.zip` and `output.zip` for your project.  These will not be graded.
 
 
 ### Project Write-up (due on {{ site.hwdates[5].deadline }})
@@ -172,14 +196,14 @@ so that we can use a virtual environment to run your code.
 
 Your Python notebook must be called `project.ipynb`. In addition
 to writing code for a good project submission, the description of
-what you did for your project in your PDF writeup and your notebook is also a
-very important part of your project submission. The PDF writeup **must** have
+what you did for your project as a PDF report is also a very important 
+part of your project submission. The PDF writeup **must** have
 the following sections:
 
 * Motivation 
     * Which aspect of the problem / task did your group choose to improve and reasons for your choice.
 * Approach 
-    * Describe the algorithms and machine learning models used in your project. Use a clear mathematical style to explain your model(s).
+    * Describe the algorithms and machine learning models used in your project. Use clear mathematical notation and diagrams to explain your model(s).
 * Data 
     * Exactly which data files were used; also include here any external data that was not provided to you.
 * Code
@@ -192,6 +216,8 @@ the following sections:
     * Did you improve over the baseline. Why or why not?
 * Future Work
     * What could be fixed in your approach. What you did not have time to finish, but you think would be a useful addition to your project.
+* References
+     * provide references using BibTex
 
 Please read this [guide to presenting your work](assets/cached/cs224u/cs224u-2019-presenting.pdf). Also available is a [video tutorial covering the same material](https://www.youtube.com/watch?v=WXLb4h2A724).
 
@@ -200,9 +226,9 @@ Please read this [guide to presenting your work](assets/cached/cs224u/cs224u-201
 Go to [Coursys]({{ site.coursys }}). Under the `Final Project`
 activity submit the following zip files:
 
-* `output.zip`: output of your project implementation on a dataset. please include the evaluation code and references to allow us to check the evaluation you present in your write-up. Note this should only be your output on the test data file of some dataset plus any evaluation code and clear instructions on how to run the evaluation script.
-* `source.zip`: this zip file should contain your iPython notebook and only the source code you have written (along with a requirements.txt for a virtualenv). Do not include any data files in this zipfile. Please also include a README.username file as you have done for all your homeworks in this zip file.
 * `report.pdf`: this is the final project report
+* `source.zip`: this zip file should contain your iPython notebook and only the source code you have written (along with a requirements.txt for a virtualenv). Do not include any data files in this zipfile. Please also include a README.username file as you have done for all your homeworks in this zip file.
+* `output.zip`: output of your project implementation on a dataset. please include the evaluation code and references to allow us to check the evaluation you present in your write-up. Note this should only be your output on the test data file of some dataset plus any evaluation code and clear instructions on how to run the evaluation script.
 
 The instructions for submission and development are provided in more detail in [Homework 0](hw0.html).
 
@@ -228,7 +254,7 @@ The final projects for this course will be graded using the following criteria:
 
 The total marks are distributed as follows:
 
-* Work. Work done in the project. Results obtained. 50 marks (see the section on _Grading of the Final Project Work_ for grading details)
-* Docs. Documentation of the work done in the notebook. 25 marks (see the section on _Project Write-up_ for grading details)
+* Work. Work done in the project. Results obtained. 50 marks (see the section on _Grading of the Final Project Work_ for grading details) 
+* Report. Description and analysis of what was done. 25 marks (see the section on _Project Write-up_ for grading details)
 * Milestone. Description of progress and project plans. 25 marks (see the section on _Milestone_ for grading details)
 
