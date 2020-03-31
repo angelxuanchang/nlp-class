@@ -26,6 +26,7 @@ active_tab: resources
     * [AllenNLP](https://allennlp.org/) [demo](https://demo.allennlp.org/) Modern NLP tools using Pytorch from AI2 
     * [Spacy.io](https://spacy.io/) [demo](https://explosion.ai/demos/) Popular python based NLP pipeline
     * [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/) [demo](http://corenlp.run/) Java NLP pipeline from Stanford
+    * [Stanza](https://stanfordnlp.github.io/stanza) Python NLP library from Stanford
     * [NLTK](https://www.nltk.org/) [demo](http://text-processing.com/demo/) Useful basic Python tools for NLP
 
 * Deep learning for NLP
@@ -35,6 +36,10 @@ active_tab: resources
     * [Word2Vec](https://code.google.com/archive/p/word2vec/)
     * [GloVe](https://nlp.stanford.edu/projects/glove/)
     * [FastText](https://fasttext.cc/) 
+
+* Contextual Word Embeddings 
+    * [ElMo](https://allennlp.org/elmo)
+    * [Huggingface Transformers](https://huggingface.co/transformers/) Support for various BERT models
 
 * Machine Translation
     * [SFUTranslate](https://github.com/sfu-natlang/SFUTranslate) SFU NLL's MT toolkit (designed to be modern and flexible) 
