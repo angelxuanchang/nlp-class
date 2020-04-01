@@ -406,10 +406,13 @@
 - title: Constituency Parsing, Ambiguity and Context-Free Grammars
   tag: cfg
   include: true
-  current: true
+  current: false
   notes:
     - title: "Constituency Parsing"
       url: "assets/slides/constituency-parsing.pdf"
+    - title: "Phrase structure parsing (Berkeley)"
+      author: "David Bamman"
+      url: "http://people.ischool.berkeley.edu/~dbamman/nlp20_slides/14_phrase_structure_parsing.pdf"  
     - title: "Formal Ambiguity"
       url: "assets/slides/ambiguity.pdf"
     - title: "Exercise: CFGs"
@@ -458,26 +461,41 @@
   tag: dependency
   include: true
   current: false
-  links:
+  notes:
     - title: "Dependency Parsing"
       url: "assets/slides/dependency-parsing.pdf"
+  links:
     - author: Dan Jurafsky and James H. Martin
       title: "Dependency Parsing (J+M chapter 15)"
       url: "https://web.stanford.edu/~jurafsky/slp3/15.pdf"
       optional: true
 - title: "Semantic Parsing"
   tag: semparse
-  include: false
+  include: true
   current: false
+  notes:
+    - title: "Semantic Parsing"
+      url: "assets/slides/semantic-parsing.pdf"
   links:
+    - author: Percy Liang
+      title: "Learning Executable Semantic Parsers for Natural Language Understanding"
+      url: "https://cs.stanford.edu/~pliang/papers/executable-cacm2016.pdf"
+      optional: false
     - author: Dan Jurafsky and James H. Martin
       title: "Logical Representations of Sentence Meaning (J+M chapter 16)"
       url: "https://web.stanford.edu/~jurafsky/slp3/16.pdf"
       optional: true
+    - author: Bill MacCartney
+      title: "Tutorial: SippyCup introduction to semantic parsing"
+      url: "https://nbviewer.jupyter.org/github/wcmac/sippycup/blob/master/sippycup-unit-0.ipynb"
+      optional: true
 - title: "Question Answering"
   tag: qa
-  include: false
-  current: false
+  include: true
+  current: true
+  notes:
+    - title: "Question Answering"
+      url: "assets/slides/question-answering.pdf"
   links:
     - author: Dan Jurafsky and James H. Martin
       title: "Questing Answering (J+M chapter 25)"
