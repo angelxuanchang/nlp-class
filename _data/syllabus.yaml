@@ -492,7 +492,7 @@
 - title: "Question Answering"
   tag: qa
   include: true
-  current: true
+  current: false
   notes:
     - title: "Question Answering"
       url: "assets/slides/question-answering.pdf"
@@ -503,8 +503,11 @@
       optional: true
 - title: "Dialogue"
   tag: dialogue
-  include: false
-  current: false
+  include: true
+  current: true
+  notes:
+    - title: "Dialogue"
+      url: "assets/slides/dialogue.pdf"
   links:
     - author: Dan Jurafsky and James H. Martin
       title: "Dialog Systems and Chatbots (J+M chapter 26)"

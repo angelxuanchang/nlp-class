@@ -141,7 +141,7 @@ The project milestone PDF should be 2-4 pages in the style of a conference (e.g.
 * [ACL style download](http://acl2020.org/downloads/acl2020-templates.zip)
 * [ACL style template Overleaf](https://www.overleaf.com/latex/templates/acl-2020-proceedings-template/zsrkcwjptpcd)
 * [EMNLP style download](https://2020.emnlp.org/files/emnlp2020-templates.zip)
-* [EMLNP style template Overleaf](https://www.overleaf.com/latex/templates/emnlp-2020/knvtcxwzhbbz)
+* [EMNLP style template Overleaf](https://www.overleaf.com/latex/templates/emnlp-2020/knvtcxwzhbbz)
 
 Make sure the following points are covered.
 * Progress
@@ -256,5 +256,5 @@ The total marks are distributed as follows:
 
 * Work. Work done in the project. Results obtained. 50 marks (see the section on _Grading of the Final Project Work_ for grading details) 
 * Report. Description and analysis of what was done. 25 marks (see the section on _Project Write-up_ for grading details)
-* Milestone. Description of progress and project plans. 25 marks (see the section on _Milestone_ for grading details)
+* Milestone. Description of progress and project plans. 20 marks (see the section on _Milestone_ for grading details)
 
