@@ -513,6 +513,13 @@
       title: "Dialog Systems and Chatbots (J+M chapter 26)"
       url: "https://web.stanford.edu/~jurafsky/slp3/26.pdf"
       optional: true
+- title: "Grounded Language"
+  tag: grounding
+  include: true
+  current: true
+  notes:
+    - title: "Grounded Natural Language"
+      url: "assets/slides/grounding.pdf"
 - title: Word Alignment
   tag: align
   include: false
