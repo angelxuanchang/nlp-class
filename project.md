@@ -186,7 +186,7 @@ You must submit your project write-up as a PDF document.
 In addition you must submit a Python notebook `project.ipynb` and your source
 code for your project in your GitLab repository:
 
-    git@csil-git1.cs.surrey.sfu.ca:USER/nlpclass-1187-g-GROUP.git
+    git@csil-git1.cs.surrey.sfu.ca:USER/nlpclass-{{ site.semcode }}-g-GROUP.git
 
 Put all your project files into the directory `project` in your
 GitLab repository.

@@ -250,7 +250,7 @@ Get started:
 
 Clone your repository if you haven’t done it already:
 
-    git clone git@csil-git1.cs.surrey.sfu.ca:USER/nlpclass-1187-g-GROUP.git
+    git clone git@csil-git1.cs.surrey.sfu.ca:USER/nlpclass-{{ site.semcode }}-g-GROUP.git
 
 Then copy over the contents of the `ensegment` directory into your
 `hw0` directory in your repository.
