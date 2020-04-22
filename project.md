@@ -243,7 +243,7 @@ The final projects for this course will be graded using the following criteria:
 * Originality 
 * Substance (amount of work done for the project)
 * Well documented use of prior results from research papers
-* Clarity of the writing
+* Clarity of the writing, code and documentaiton quality
 * Quality of experimental design
 * Quality of evaluation and results
 * Theoretical insights / Practical insights
