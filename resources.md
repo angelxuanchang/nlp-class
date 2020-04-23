@@ -20,8 +20,9 @@ active_tab: resources
 * To learn more about doing practical natural language processing
     * [Natural Language Processing with Python](http://www.nltk.org/book_1ed/) by [Steven Bird](http://estive.net/) and [Ewan Klein](http://homepages.inf.ed.ac.uk/ewan/) and [Edward Loper](http://ed.loper.org/).
 
-### Debugging Tips
-* [Tips from Graham Neubig (CMU CS11-747)](http://www.phontron.com/class/nn4nlp2020/assets/slides/nn4nlp-10-debugging.pdf)
+### Debugging Neural Networks
+* [General tips from Andrej Karpathy for training neural networks](http://karpathy.github.io/2019/04/25/recipe/)
+* [Tips from Graham Neubig (CMU CS11-747) for debugging NLP models](http://www.phontron.com/class/nn4nlp2020/assets/slides/nn4nlp-10-debugging.pdf)
 
 
 ### Tools
