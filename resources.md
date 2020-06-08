@@ -15,7 +15,7 @@ active_tab: resources
     * [Natural Language Processing](https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf) by [Jacob Eisenstein](https://jacobeisenstein.github.io/)
 
 * To learn more about deep learning
-    * [Deep learning](http://www.deeplearningbook.org/) by Ian Goodfello and Yoshua Bengio and Aaron Courville
+    * [Deep learning](http://www.deeplearningbook.org/) by Ian Goodfellow and Yoshua Bengio and Aaron Courville
 
 * To learn more about doing practical natural language processing
     * [Natural Language Processing with Python](http://www.nltk.org/book_1ed/) by [Steven Bird](http://estive.net/) and [Ewan Klein](http://homepages.inf.ed.ac.uk/ewan/) and [Edward Loper](http://ed.loper.org/).
