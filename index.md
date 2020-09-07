@@ -7,7 +7,7 @@ title: Course Information
 active_tab: main_page 
 ---
 
-## Natural Language Processing <span class="text-muted">Spring 2020</span>
+## Natural Language Processing <span class="text-muted">Fall 2020</span>
 
 Imagine a world where you can pick up a phone and talk in English,
 while at the other end of the line your words are [spoken in
@@ -47,8 +47,8 @@ terms of its analysis and the learning of language from observations.
 * Use only SFU email address and use `cmpt825:` as subject prefix
 
 #### Time and place
-* Tue 3:30-4:50 [AQ 3149](http://www.sfu.ca/campuses/maps-and-directions/burnaby-map.html) 
-* Thu 3:30-4:50 [AQ 3149](http://www.sfu.ca/campuses/maps-and-directions/burnaby-map.html)
+* Wed 11:30am-12:20pm Online
+* Fri 10:30am-12:20pm Online
 * Last day of classes: {{ site.lastday }}
 
 <!-- #### Calendar
@@ -61,9 +61,8 @@ terms of its analysis and the learning of language from observations.
 #### Grading
 * Submit homework source code and check your grades on [Coursys]({{ site.coursys }})
 * Programming setup homework: HW0 due on {{ site.hwdates[0].deadline }} (2%)
-* Four programming homeworks. Due dates: HW1 on {{ site.hwdates[1].deadline }}, HW2 on {{ site.hwdates[2].deadline }}, HW3 on {{ site.hwdates[3].deadline }}, HW4 on {{ site.hwdates[4].deadline }} (10% each)
-* In class midterm: {{ site.midterm }} (25%)
-* Participation: Helping other students on the discussion board in a positive way (5%)
+* Four homeworks. Due dates: HW1 on {{ site.hwdates[1].deadline }}, HW2 on {{ site.hwdates[2].deadline }}, HW3 on {{ site.hwdates[3].deadline }}, HW4 on {{ site.hwdates[4].deadline }} (15% each)
+* Participation: Helping other students on the discussion board in a positive way (3%)
 * Final Project Proposal: Due on {{ site.hwdates[5].proposal }} (5%)
 * Final Project Milestone: Due on {{ site.hwdates[5].milestone }} (5%)
-* Final Project: Due on {{ site.hwdates[5].deadline }} (18%)
+* Final Project: Due on {{ site.hwdates[5].deadline }} (25%)

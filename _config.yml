@@ -1,44 +1,63 @@
 exclude: ['README.md', 'assets/latex/', 'archive']
 timezone: US/Pacific
 markdown: kramdown
-coursys: "https://coursys.sfu.ca/2020sp-cmpt-825-g1/"
-piazza: "https://piazza.com/sfu.ca/spring2020/cmpt825"
-semcode: 1201
+coursys: "https://coursys.sfu.ca/2020fa-cmpt-413-x1/"
+piazza: "https://piazza.com/sfu.ca/fall2020/cmpt413825"
+semcode: 1207
 calendar: "https://calendar.google.com/calendar/ical/qgs97od9ef8t1582k2rqomv5ho%40group.calendar.google.com/public/basic.ics"
-lastday: "Apr 9, 2020"
-midterm: "Feb 27, 2020"
+lastday: "Dec 4, 2020"
+midterm: "None"
 instructor: angelx
-officehour: "Fri 10:30-11:30am. TASC1 8031"
+officehour: "TBD"
 tas:
-  - name: "Yasaman Etesam"
-    email: yetesam
-    officehour: "Time: Fri 1/17 3:30pm-4:30pm, regularly Mon 2-3pm. Location: ASB 9808"
   - name: "Ali Gholami"
     email: gholami
-    officehour: "Time: Tues 1-2pm. Location: ASB 9808"
-  - name: "Roya Javadi"
-    email: rjavadi
-    officehour: "Time: Thu 9:30-10:30am. Location: ASB 9808"
+    officehour: "Time: Mon 3-4pm"
+  - name: "Sonia Raychaudhuri"
+    email: sraychau
+    officehour: "Time: Thurs 3-4pm"
+  - name: "Yue Ruan"
+    email: yuer
+    officehour: "Time: Tues 3-4pm"
+tutorials:
+  - tutorial: "0"
+    title: "Probability, linear algebra and calculus"
+  - tutorial: "1"
+    title: "Python/numpy"
+  - tutorial: "2"
+    title: "Classifiers"
+  - tutorial: "3"
+    title: "Optimization"
+  - tutorial: "4"
+    title: "Word Vectors"
+  - tutorial: "5"
+    title: "Neural networks: Pytorch and backpropagation"
+  - tutorial: "6"
+    title: "Neural networks: training/debugging networks and running experiments"
+group:
+  - minsize: 2
+  - maxsize: 4
 hwdates:
   - hw: "0"
-    startdate: "Jan 9, 2020"
-    deadline: "Jan 16, 2020"
+    startdate: "Sept 9, 2020"
+    deadline: "Sept 16, 2020"
   - hw: "1"
-    startdate: "Jan 16, 2020"
-    deadline: "Jan 30, 2020"
+    startdate: "Sept 16, 2020"
+    deadline: "Sept 30, 2020"
   - hw: "2"
-    startdate: "Jan 30, 2020"
-    deadline: "Feb 13, 2020"
+    startdate: "Sept 30, 2020"
+    deadline: "Oct 14, 2020"
   - hw: "3"
-    startdate: "Feb 25, 2020"
-    deadline: "Mar 10, 2020"
+    startdate: "Oct 14, 2020"
+    deadline: "Oct 28, 2020"
   - hw: "4"
-    startdate: "Mar 10, 2020"
-    deadline: "Mar 24, 2020"
+    startdate: "Oct 28, 2020"
+    deadline: "Nov 11, 2020"
   - hw: "project"
-    startdate: "Feb 25, 2020"
-    deadline: "Apr 14, 2020"
-    time: "Poster session: Apr ??, 2020. 4pm-5:30pm (Session 1) and 5:30pm-7pm (Session 2)"
+    startdate: "Sept 25, 2020"
+    deadline: "Dec 11, 2020"
+    time: "Poster session: ???"
     location: "TBD"
-    proposal: "Mar 12, 2020"
-    milestone: "Mar 31, 2020"
+    proposal: "Oct 21, 2020"
+    milestone: "Nov 20, 2020"
+    poster: "TBD"

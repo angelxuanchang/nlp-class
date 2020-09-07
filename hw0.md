@@ -15,7 +15,8 @@ active_tab: homework
 ## Setup on Coursys
 
 Find a group to work with for the homework assignments and the final
-course project. The group size is 3 people or less.
+course project. The group size is {{ group.maxsize }} people or less.
+You can use [Piazza]({{ site.piazza }}) to look for teammates.
 We will be checking that all group members are contributing equally
 to the homework submission and the final project.
 
@@ -23,11 +24,11 @@ Along with your group members, register yourself as part of a group on [Coursys]
 
 Create a memorable name for your group. If you need help, [seek help](https://www.wordlab.com/name-generators/team-name-generator/).
 
-Go to the [Course Discussion Page]({{ site.coursys }}) and select `Manage Subscription`.
+<!-- Go to the [Course Discussion Page]({{ site.coursys }}) and select `Manage Subscription`.
 Change the `Notification` to `Email me for new topics and replies`. It should look like this:
 
 ![Coursys Subscription](assets/img/coursys_subscription.png)
-
+ -->
 ## Setup Git Repository
 
 ### Git Basics

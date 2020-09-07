@@ -19,7 +19,7 @@ active_tab: faq
 ### Email policy
 
 * We will be using [Piazza]({{ site.piazza }}/) for **all** discussions including asking for help. For syllabus, practice, homeworks, exams, or other clarification emails **do not** email me (the instructor) or the TA(s) directly.
-* If you email the instructor directly for personal matters that are inappropriate for the Piazza discussion board, use your SFU email address to send the email (do not use any other provider), and use <code>cmpt825:</code> as the prefix in your subject line.
+* If you email the instructor directly for personal matters that are inappropriate for the Piazza discussion board, use your SFU email address to send the email (do not use any other provider), and use either <code>cmpt413:</code> or <code>cmpt825:</code> as the prefix in your subject line.
 * Do not email the TAs directly (without cc:ing the instructor) under any circumstance.
 * Before you email or post to the Piazza discussion board **read this FAQ**.
 
@@ -60,13 +60,13 @@ How to ask a question on [Piazza]({{ site.piazza }}/):
 * Your homework solution will be submitted electronically on [courses.cs.sfu.ca](https://courses.cs.sfu.ca/).
 * Please include an `answer/README.md` file for any documentation outside of the source code especially for code obtained from elsewhere.
 * All homeworks are due by 11:59PM on the homework due date.
-* Each homework comes with 2 grace days. However the grace days only apply to those who have a valid submission on the due date. The default is usually a valid submission. For example, if your homework deadline is Tuesday 11:59PM and you submit a valid solution then you have until Thursday night 11:59PM to modify your homework submission.
+* Each **programming** homework comes with 2 grace days. However the grace days only apply to those who have a valid submission on the due date. The default is usually a valid submission. For example, if your programming homework deadline is Wednesday 11:59PM and you submit a valid solution then you have until Friday night 11:59PM to modify your programming homework submission.
 * We will make every attempt to release grades for each homework as soon as possible. However, this means that after we review the source code we might have to lower your official grade. If you cheated in some way, such as copying your submission or you have violated the ground rules for each homework, your grades will be decreased from the initial value.
 * To request an extension of the due date due to a medical problem, you must submit the [official SFU Certificate of Illness](http://www.sfu.ca/content/dam/sfu/students/pdf/certificate-of-illness.pdf). Depending on the circumstances you may still lose part of your marks if your medical problem was only for a small portion of the entire homework duration.
 
 ### Groups
     
-* The homework assignments will be solved in groups. Groups are upto 3 people. All groups must be formed before the Homework 0 due date.
+* The **programming** homework assignment will be solved in groups. Groups are upto {{ group.maxsize }} people. All groups must be formed before the Homework 0 due date.
 * You are allowed to leave a group and form a group of size one at the start of each homework but not at the end.
 * Each group will create a single submission and upload it to Coursys on or before the due date.
 * Each group member will be graded on their self report and any commit logs that are submitted. If the TA or the instructor perceives there is a problem with collaboration in a group, certain group members can get zero marks. If you are pair programming, take turns in switching the user doing the commits to the repository.
