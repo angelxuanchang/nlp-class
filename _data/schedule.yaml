@@ -87,7 +87,7 @@
 - week: 9
   dates:
   - date: "11/11" 
-    holiday: true
+    noclass: true
     title: "Holiday"
     hwdue: "4"
   - date: "11/13" 

@@ -31,9 +31,9 @@ tutorials:
   - tutorial: "4"
     title: "Word Vectors"
   - tutorial: "5"
-    title: "Neural networks: Pytorch and backpropagation"
+    title: "Pytorch and backpropagation"
   - tutorial: "6"
-    title: "Neural networks: training/debugging networks and running experiments"
+    title: "training/debugging networks and running experiments"
 group:
   - minsize: 2
   - maxsize: 4

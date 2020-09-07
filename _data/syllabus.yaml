@@ -91,8 +91,8 @@
       title: "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling"
       url: "https://arxiv.org/abs/1312.3005"
       optional: true
-- title: "Linear models"
-  tag: linear
+- title: "Classifiers"
+  tag: classifiers
   include: true
   current: false
   notes:

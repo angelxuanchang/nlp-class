@@ -1,1 +1,22 @@
 body { padding-top: 70px; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+th, td {
+    text-align: left;
+    padding: 5px 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+tr.noclass {
+   color: #a5a5a5; 
+}

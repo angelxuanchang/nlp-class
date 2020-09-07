@@ -29,13 +29,17 @@ The schedule is preliminary and subject to change.
         <tbody>  
         {% for week in site.data.schedule %}
           {% for date in week.dates %}
-            <tr>
+            <tr {% if date.noclass %}class="noclass"{% endif %}>
               <td>{{ date.date }}</td>
               <td>
-                Lecture: {{ date.title }} <br/>
-                {% if date.tutorial != null %}
-                  Tutorial: {{ site.tutorials[date.tutorial].title }}  <br/>
-                {% endif %}                
+                {% if date.noclass %}
+                  {{ date.title }}
+                {% else %}
+                  Lecture: {{ date.title }} <br/>
+                  {% if date.tutorial != null %}
+                    Tutorial: {{ site.tutorials[date.tutorial].title }}  <br/>
+                  {% endif %}
+                {% endif %}
               </td>
               <td>
                 {% if date.hwdue %}
