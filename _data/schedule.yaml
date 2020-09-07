@@ -1,0 +1,119 @@
+- week: 0
+  dates:
+  - date: "9/9" 
+    title: "Introduction"
+    lecture: "intro"
+    hwout: "0"
+  - date: "9/11" 
+    title: "Language Modeling"
+    lecture: "lm"
+    tutorial: 0
+- week: 1
+  dates:
+  - date: "9/16" 
+    title: "Language Modeling"
+    lecture: "lm"
+    hwdue: "0"
+    hwout: "1"
+  - date: "9/18" 
+    title: "Text Classification: Naive Bayes"
+    lecture: "classifiers"
+    tutorial: 1
+- week: 2
+  dates:
+  - date: "9/23" 
+    title: "Text Classification: Logistic Regression"
+    lecture: "classifiers"
+  - date: "9/25" 
+    title: "Word Embeddings"
+    lecture: "w2v"
+    tutorial: 2
+- week: 3
+  dates:
+  - date: "9/30" 
+    title: "Word Embeddings"
+    lecture: "w2v"
+    hwdue: "1"
+    hwout: "2"
+  - date: "10/2" 
+    title: "Neural Networks"
+    lecture: "nn"
+    tutorial: 4
+- week: 4
+  dates:
+  - date: "10/7" 
+    title: "Neural Networks"
+    lecture: "nlm"
+  - date: "10/9" 
+    title: "Sequence Modeling: HMMs and Viterbi"
+    lecture: "seqmodeling"
+    tutorial: 5
+- week: 5
+  dates:
+  - date: "10/14" 
+    title: "Sequence Modeling: RNNs"
+    lecture: "rnn"
+    hwdue: "2"
+    hwout: "3"
+  - date: "10/16" 
+    title: "Seq2Seq"
+    lecture: "s2s"
+    tutorial: 6
+- week: 6
+  dates:
+  - date: "10/21" 
+    title: "Neural Machine Translation"
+    lecture: "nmt"
+  - date: "10/23" 
+    lecture: "generation"
+- week: 7
+  dates:
+  - date: "10/28" 
+    title: "Constituency Parsing"
+    lecture: "cp"
+    hwdue: "3"
+    hwout: "4"
+  - date: "10/30" 
+    title: "Dependency Parsing"
+    lecture: "dp"
+- week: 8
+  dates:
+  - date: "11/4" 
+    title: "Contextual Word Embeddings"
+    lecture: "cwe"
+  - date: "11/6" 
+    title: "Contextual Word Embeddings"
+    lecture: "cwe"
+- week: 9
+  dates:
+  - date: "11/11" 
+    holiday: true
+    title: "Holiday"
+    hwdue: "4"
+  - date: "11/13" 
+    title: "ConvNets for NLP"
+    lecture: "convnets"
+- week: 10
+  dates:
+  - date: "11/18" 
+    title: "Subword modeling"
+    lecture: "subword"
+  - date: "11/20" 
+    title: "Question Answering"
+    lecture: "qa"
+- week: 11
+  dates:
+  - date: "11/25" 
+    title: "Coreference Resolution"
+    lecture: "coref"
+  - date: "11/27" 
+    title: "Dialogue"
+    lecture: "dialogue"
+- week: 12
+  dates:
+  - date: "12/2" 
+    title: "Grounding"
+    lecture: "grounding"
+  - date: "12/4" 
+    title: "Conclusion: NLP future and review"
+    lecture: "conclusion"
