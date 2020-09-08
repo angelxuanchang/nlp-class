@@ -47,7 +47,7 @@ terms of its analysis and the learning of language from observations.
 * Use only SFU email address and use `cmpt825:` as subject prefix
 
 #### Time and place
-Course lectures will be held using [canvas]({{ site.canvas }})
+Course lectures will be held using [canvas]({{ site.canvas }}) BB Collaborate Ultra
 * Wed 11:30am-12:20pm Online
 * Fri 10:30am-12:20pm Online
 * Last day of classes: {{ site.lastday }}
@@ -68,7 +68,8 @@ Course lectures will be held using [canvas]({{ site.canvas }})
   * HW2 on {{ site.hwdates[2].deadline }} 
   * HW3 on {{ site.hwdates[3].deadline }} 
   * HW4 on {{ site.hwdates[4].deadline }} 
+* Final Project (35% total)
+  * Project Proposal: Due on {{ site.hwdates[5].proposal }} (5%)
+  * Project Milestone: Due on {{ site.hwdates[5].milestone }} (5%)
+  * Project Report and Code: Due on {{ site.hwdates[5].deadline }} (25%)
 * Participation: Helping other students on the discussion board in a positive way (3%)
-* Final Project Proposal: Due on {{ site.hwdates[5].proposal }} (5%)
-* Final Project Milestone: Due on {{ site.hwdates[5].milestone }} (5%)
-* Final Project: Due on {{ site.hwdates[5].deadline }} (25%)

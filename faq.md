@@ -12,9 +12,9 @@ active_tab: faq
 ### Reference books
 
 * There is no official textbook for the course, but if you would like to read further about NLP, here are some good reference books:
+    * [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/) by [Dan Jurafsky](http://www.stanford.edu/~jurafsky) and [James Martin](http://www.cs.colorado.edu/~martin).
+    * [Natural Language Processing](https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf) by [Jacob Eisenstein](https://jacobeisenstein.github.io/).
     * [Neural Network methods for Natural Language Processing](http://www.morganclaypool.com/doi/10.2200/S00762ED1V01Y201703HLT037) by Yoav Goldberg.
-    * [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/) by [Daniel Jurafsky](http://www.stanford.edu/~jurafsky) and [James Martin](http://www.cs.colorado.edu/~martin).
-    * [Natural Language Processing with Python](http://www.nltk.org/book_1ed/) by [Steven Bird](http://estive.net/) and [Ewan Klein](http://homepages.inf.ed.ac.uk/ewan/) and [Edward Loper](http://ed.loper.org/).
 
 ### Email policy
 
@@ -38,18 +38,18 @@ How to ask a question on [Piazza]({{ site.piazza }}/):
 ### Grading
 
 * The grade for the course is computed using the final marks which are a weighted average of each activity as defined on the [main page](index.html).
-* The grade cutoff are as follows:
+* The tentative grade cutoff are as follows (note that the cutoffs are subject to change):
 
   | **Final Grade** | **Final marks** |
-  | A+ | >95 |
-  | A  | >90 |
-  | A- | >85 |
-  | B+ | >80 |
-  | B  | >75 |
-  | B- | >70 |
-  | C+ | >65 |
-  | C  | >60 |
-  | C- | >55 |
+  | A+ | >98 |
+  | A  | >93 |
+  | A- | >90 |
+  | B+ | >85 |
+  | B  | >80 |
+  | B- | >75 |
+  | C+ | >70 |
+  | C  | >65 |
+  | C- | >60 |
   | D  | >50 |
   | F  | &le;50 |
   {: .table}
