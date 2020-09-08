@@ -16,14 +16,16 @@
     hwdue: "0"
     hwout: "1"
   - date: "9/18" 
-    title: "Text Classification: Naive Bayes"
+    title: "Text Classification (Naive Bayes)"
     lecture: "classifiers"
+    readings: [ "naivebayes"]
     tutorial: 1
 - week: 2
   dates:
   - date: "9/23" 
-    title: "Text Classification: Logistic Regression"
+    title: "Text Classification (Logistic Regression)"
     lecture: "classifiers"
+    readings: [ "logregression"]
   - date: "9/25" 
     title: "Word Embeddings"
     lecture: "w2v"
@@ -37,53 +39,55 @@
     hwout: "2"
   - date: "10/2" 
     title: "Neural Networks"
-    lecture: "nn"
+    lecture: "ff"
     tutorial: 4
 - week: 4
   dates:
   - date: "10/7" 
     title: "Neural Networks"
-    lecture: "nlm"
+    lecture: "ff"
   - date: "10/9" 
-    title: "Sequence Modeling: HMMs and Viterbi"
-    lecture: "seqmodeling"
+    title: "Sequence Modeling (HMMs and Viterbi)"
+    lecture: "hmm"
     tutorial: 5
 - week: 5
   dates:
   - date: "10/14" 
-    title: "Sequence Modeling: RNNs"
-    lecture: "rnn"
+    title: "Sequence Modeling (RNNs)"
+    lecture: "nlm"
     hwdue: "2"
     hwout: "3"
   - date: "10/16" 
-    title: "Seq2Seq"
-    lecture: "s2s"
+    title: "Sequence-to-Sequence models"
+    lecture: "seq2seq"
     tutorial: 6
 - week: 6
   dates:
   - date: "10/21" 
     title: "Neural Machine Translation"
+    project: "Project proposal"
     lecture: "nmt"
   - date: "10/23" 
+    title: "Text generation and evaluation"
     lecture: "generation"
 - week: 7
   dates:
   - date: "10/28" 
     title: "Constituency Parsing"
-    lecture: "cp"
+    lecture: "cfg"
     hwdue: "3"
     hwout: "4"
   - date: "10/30" 
     title: "Dependency Parsing"
-    lecture: "dp"
+    lecture: "dependency"
 - week: 8
   dates:
   - date: "11/4" 
     title: "Contextual Word Embeddings"
-    lecture: "cwe"
+    lecture: "transformers"
   - date: "11/6" 
     title: "Contextual Word Embeddings"
-    lecture: "cwe"
+    lecture: "transformers"
 - week: 9
   dates:
   - date: "11/11" 
@@ -100,6 +104,7 @@
     lecture: "subword"
   - date: "11/20" 
     title: "Question Answering"
+    project: "Project milestone"
     lecture: "qa"
 - week: 11
   dates:
@@ -115,5 +120,9 @@
     title: "Grounding"
     lecture: "grounding"
   - date: "12/4" 
-    title: "Conclusion: NLP future and review"
+    title: "NLP future and review"
     lecture: "conclusion"
+- week: 13
+  dates:
+  - date: "12/11"
+    project: "Final project report"

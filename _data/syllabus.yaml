@@ -76,6 +76,7 @@
   readings:
     - author: Dan Jurafsky and James H. Martin
       title: "Language Modeling with N-Grams (J+M chapter 3)"
+      abbr: "J+M chapter 3" 
       url: "https://web.stanford.edu/~jurafsky/slp3/3.pdf"
       optional: false
     - author: Michael Collins
@@ -91,7 +92,7 @@
       title: "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling"
       url: "https://arxiv.org/abs/1312.3005"
       optional: true
-- title: "Classifiers"
+- title: "Text classification"
   tag: classifiers
   include: true
   current: false
@@ -115,10 +116,14 @@
   readings:
     - author: Dan Jurafsky and James H. Martin
       title: "Naive Bayes Classification and Sentiment (J+M chapter 4)"
+      abbr: "J+M chapter 4" 
+      tag: "naivebayes"
       url: "https://web.stanford.edu/~jurafsky/slp3/4.pdf"
       optional: false
     - author: Dan Jurafsky and James H. Martin
       title: "Logistic Regression (J+M chapter 5)"
+      abbr: "J+M chapter 5" 
+      tag: "logregression"
       url: "https://web.stanford.edu/~jurafsky/slp3/5.pdf"
       optional: false
     - author: Michael Collins
@@ -146,6 +151,7 @@
   readings:
     - author: Dan Jurafsky and James H. Martin
       title: "Vector Semantics and Embeddings (J+M chapter 6)"
+      abbr: "J+M chapter 6" 
       url: "https://web.stanford.edu/~jurafsky/slp3/6.pdf"
       optional: false
     - author: Omer Levy, Yoav Goldberg, and Ido Dagan
@@ -172,6 +178,7 @@
       download: "assets/mcollins-notes/ff.pdf"
     - author: Dan Jurafsky and James H. Martin
       title: "Neural Networks and Neural Language Models (J+M chapter 7)"
+      abbr: "J+M chapter 7" 
       url: "https://web.stanford.edu/~jurafsky/slp3/7.pdf"
       optional: false
   links:
@@ -299,6 +306,7 @@
   links:
     - author: Dan Jurafsky and James H. Martin
       title: "Sequence Processing with Recurrent Networks (J+M chapter 9)"
+      abbr: "J+M chapter 9" 
       url: "https://web.stanford.edu/~jurafsky/slp3/9.pdf"
       optional: true
     - title: "How to implement a recurrent neural network"
@@ -357,6 +365,7 @@
   links:
     - author: Dan Jurafsky and James H. Martin
       title: "Encoder-Decoder Models, Attention, and Contextual Embeddings (J+M chapter 10)"
+      abbr: "J+M chapter 10" 
       url: "https://web.stanford.edu/~jurafsky/slp3/10.pdf"
       optional: true
     - title: "Neural Machine Translation: Breaking the Performance Plateau"
@@ -389,7 +398,7 @@
   notes:
     - title: "Contextualized Word Embeddings"
       url: "assets/slides/contextualized-word-embeddings.pdf"
-  links:
+  readings:
     - title: "Illustrated Transformer"
       author: "Jay Alammar"
       url: "http://jalammar.github.io/illustrated-transformer/"
@@ -401,6 +410,7 @@
       url: "https://arxiv.org/pdf/1902.06006.pdf"
       optional: true
     - title: "Attention Is All You Need"
+      author: "Vaswani et al"
       url: "https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf"
       optional: true
 - title: Constituency Parsing, Ambiguity and Context-Free Grammars
@@ -435,10 +445,12 @@
       optional: true
     - author: Dan Jurafsky and James H. Martin
       title: "Constituency Parsing (J+M chapter 13)"
+      abbr: "J+M chapter 13" 
       url: "https://web.stanford.edu/~jurafsky/slp3/13.pdf"
       optional: true
     - author: Dan Jurafsky and James H. Martin
       title: "Statistical Constituency Parsing (J+M chapter 14)"
+      abbr: "J+M chapter 14" 
       url: "https://web.stanford.edu/~jurafsky/slp3/14.pdf"
       optional: true
     - title: "Exercise: Grammar Rules!"
@@ -464,9 +476,10 @@
   notes:
     - title: "Dependency Parsing"
       url: "assets/slides/dependency-parsing.pdf"
-  links:
+  readings:
     - author: Dan Jurafsky and James H. Martin
       title: "Dependency Parsing (J+M chapter 15)"
+      abbr: "J+M chapter 15" 
       url: "https://web.stanford.edu/~jurafsky/slp3/15.pdf"
       optional: true
 - title: "Semantic Parsing"
@@ -476,13 +489,14 @@
   notes:
     - title: "Semantic Parsing"
       url: "assets/slides/semantic-parsing.pdf"
-  links:
+  readings:
     - author: Percy Liang
       title: "Learning Executable Semantic Parsers for Natural Language Understanding"
       url: "https://cs.stanford.edu/~pliang/papers/executable-cacm2016.pdf"
       optional: false
     - author: Dan Jurafsky and James H. Martin
       title: "Logical Representations of Sentence Meaning (J+M chapter 16)"
+      abbr: "J+M chapter 16" 
       url: "https://web.stanford.edu/~jurafsky/slp3/16.pdf"
       optional: true
     - author: Bill MacCartney
@@ -496,9 +510,10 @@
   notes:
     - title: "Question Answering"
       url: "assets/slides/question-answering.pdf"
-  links:
+  readings:
     - author: Dan Jurafsky and James H. Martin
       title: "Questing Answering (J+M chapter 25)"
+      abbr: "J+M chapter 25" 
       url: "https://web.stanford.edu/~jurafsky/slp3/25.pdf"
       optional: true
 - title: "Dialogue"
@@ -508,9 +523,10 @@
   notes:
     - title: "Dialogue"
       url: "assets/slides/dialogue.pdf"
-  links:
+  readings:
     - author: Dan Jurafsky and James H. Martin
       title: "Dialog Systems and Chatbots (J+M chapter 26)"
+      abbr: "J+M chapter 26" 
       url: "https://web.stanford.edu/~jurafsky/slp3/26.pdf"
       optional: true
 - title: "Grounded Language"
