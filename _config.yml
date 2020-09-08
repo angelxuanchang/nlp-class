@@ -3,6 +3,7 @@ timezone: US/Pacific
 markdown: kramdown
 coursys: "https://coursys.sfu.ca/2020fa-cmpt-413-x1/"
 piazza: "https://piazza.com/sfu.ca/fall2020/cmpt413825"
+canvas: "https://canvas.sfu.ca/courses/56551"
 semcode: 1207
 calendar: "https://calendar.google.com/calendar/ical/qgs97od9ef8t1582k2rqomv5ho%40group.calendar.google.com/public/basic.ics"
 lastday: "Dec 4, 2020"

@@ -47,6 +47,7 @@ terms of its analysis and the learning of language from observations.
 * Use only SFU email address and use `cmpt825:` as subject prefix
 
 #### Time and place
+Course lectures will be held using [canvas]({{ site.canvas }})
 * Wed 11:30am-12:20pm Online
 * Fri 10:30am-12:20pm Online
 * Last day of classes: {{ site.lastday }}
@@ -60,8 +61,13 @@ terms of its analysis and the learning of language from observations.
 
 #### Grading
 * Submit homework source code and check your grades on [Coursys]({{ site.coursys }})
-* Programming setup homework: HW0 due on {{ site.hwdates[0].deadline }} (2%)
-* Four homeworks. Due dates: HW1 on {{ site.hwdates[1].deadline }}, HW2 on {{ site.hwdates[2].deadline }}, HW3 on {{ site.hwdates[3].deadline }}, HW4 on {{ site.hwdates[4].deadline }} (15% each)
+* Programming setup and diagnostic homework (2%)
+  * HW0 due on {{ site.hwdates[0].deadline }} 
+* Four homeworks (60% total - 15% each, with 10% for programming and 5% for question answering). Due dates:
+  * HW1 on {{ site.hwdates[1].deadline }} 
+  * HW2 on {{ site.hwdates[2].deadline }} 
+  * HW3 on {{ site.hwdates[3].deadline }} 
+  * HW4 on {{ site.hwdates[4].deadline }} 
 * Participation: Helping other students on the discussion board in a positive way (3%)
 * Final Project Proposal: Due on {{ site.hwdates[5].proposal }} (5%)
 * Final Project Milestone: Due on {{ site.hwdates[5].milestone }} (5%)
