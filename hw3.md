@@ -7,7 +7,7 @@ title: Homework 3 | Robust Phrasal Chunking
 active_tab: homework
 ---
 
-# Homework 3: Robust Phrasal Chunking
+# Programming Homework 3: Robust Phrasal Chunking
 
 <span class="text-info">Start on {{ site.hwdates[3].startdate }}</span> |
 <span class="text-warning">Due on {{ site.hwdates[3].deadline }}</span>

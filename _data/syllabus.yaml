@@ -117,13 +117,13 @@
     - author: Dan Jurafsky and James H. Martin
       title: "Naive Bayes Classification and Sentiment (J+M chapter 4)"
       abbr: "J+M chapter 4" 
-      tag: "naivebayes"
+      tag: "jm4"
       url: "https://web.stanford.edu/~jurafsky/slp3/4.pdf"
       optional: false
     - author: Dan Jurafsky and James H. Martin
       title: "Logistic Regression (J+M chapter 5)"
       abbr: "J+M chapter 5" 
-      tag: "logregression"
+      tag: "jm5"
       url: "https://web.stanford.edu/~jurafsky/slp3/5.pdf"
       optional: false
     - author: Michael Collins
@@ -249,11 +249,12 @@
     - title: "Python Notebook: Viterbi algorithm for HMMs"
       url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/hmm.ipynb"
       download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/hmm.ipynb"
-  links:
+  readings:
     - author: Michael Collins
       title: "Hidden Markov Models"
       download: "assets/mcollins-notes/hmms-spring2013.pdf"
       url: "assets/mcollins-notes/hmms-spring2013.pdf"
+  links:
     - author: Anoop Sarkar
       title: "Introduction to Hidden Markov Models"
       video: "http://youtu.be/D9TvSfkcN-8"
@@ -303,12 +304,14 @@
     - title: "Python Notebook: RNN Language model"
       url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/rnnlm.ipynb"
       download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/rnnlm.ipynb"
-  links:
+  readings:
     - author: Dan Jurafsky and James H. Martin
       title: "Sequence Processing with Recurrent Networks (J+M chapter 9)"
       abbr: "J+M chapter 9" 
+      tag: "jm9"
       url: "https://web.stanford.edu/~jurafsky/slp3/9.pdf"
       optional: true
+  links:
     - title: "How to implement a recurrent neural network"
       author: "peterroelants.github.io"
       url: "http://peterroelants.github.io/posts/rnn_implementation_part01/"
@@ -362,12 +365,14 @@
       author: "Graham Neubig"
       citation: "arXiv"
       url: "https://arxiv.org/pdf/1703.01619.pdf"
-  links:
+  readings:
     - author: Dan Jurafsky and James H. Martin
       title: "Encoder-Decoder Models, Attention, and Contextual Embeddings (J+M chapter 10)"
       abbr: "J+M chapter 10" 
+      tag: jm10
       url: "https://web.stanford.edu/~jurafsky/slp3/10.pdf"
       optional: true
+  links:
     - title: "Neural Machine Translation: Breaking the Performance Plateau"
       author: Rico Sennrich
       url: "http://www.meta-net.eu/events/meta-forum-2016/slides/09_sennrich.pdf"
@@ -430,15 +435,7 @@
     - title: "Python Notebook: Context-free grammars"
       url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/cfg.ipynb"
       download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/cfg.ipynb"
-  links:
-    - author: Michael Collins
-      title: "Probabilistic Context-free Grammars"
-      url: "http://www.cs.columbia.edu/~mcollins/courses/nlp2011/notes/pcfgs.pdf"
-      download: "assets/mcollins-notes/pcfgs.pdf"
-    - author: Michael Collins
-      title: "Lexicalized Context-free Grammars"
-      url: "http://www.cs.columbia.edu/~mcollins/courses/nlp2011/notes/lexpcfgs.pdf"
-      download: "assets/mcollins-notes/lexpcfgs.pdf"
+  readings:
     - author: Dan Jurafsky and James H. Martin
       title: "Constituency Grammars (J+M chapter 12)"
       url: "https://web.stanford.edu/~jurafsky/slp3/12.pdf"
@@ -453,6 +450,15 @@
       abbr: "J+M chapter 14" 
       url: "https://web.stanford.edu/~jurafsky/slp3/14.pdf"
       optional: true
+  links:
+    - author: Michael Collins
+      title: "Probabilistic Context-free Grammars"
+      url: "http://www.cs.columbia.edu/~mcollins/courses/nlp2011/notes/pcfgs.pdf"
+      download: "assets/mcollins-notes/pcfgs.pdf"
+    - author: Michael Collins
+      title: "Lexicalized Context-free Grammars"
+      url: "http://www.cs.columbia.edu/~mcollins/courses/nlp2011/notes/lexpcfgs.pdf"
+      download: "assets/mcollins-notes/lexpcfgs.pdf"
     - title: "Exercise: Grammar Rules!"
       author: "Andrea Schalley and Patrick Littell"
       url: "http://nacloweb.org/resources/problems/2013/N2013-F.pdf"
@@ -499,6 +505,7 @@
       abbr: "J+M chapter 16" 
       url: "https://web.stanford.edu/~jurafsky/slp3/16.pdf"
       optional: true
+  links:
     - author: Bill MacCartney
       title: "Tutorial: SippyCup introduction to semantic parsing"
       url: "https://nbviewer.jupyter.org/github/wcmac/sippycup/blob/master/sippycup-unit-0.ipynb"

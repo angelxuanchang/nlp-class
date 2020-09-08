@@ -7,7 +7,7 @@ title: "Homework | Lexical Substitution"
 active_tab: homework
 ---
 
-# Homework 2: Lexical Substitution
+# Programming Homework 2: Lexical Substitution
 
 <span class="text-info">Start on {{ site.hwdates[2].startdate }}</span> |
 <span class="text-warning">Due on {{ site.hwdates[2].deadline }}</span>

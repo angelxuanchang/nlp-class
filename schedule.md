@@ -43,7 +43,7 @@ The schedule is preliminary and subject to change.
               </td>
               <td>
                 {% if date.hwdue %}
-                  Due: HW{{ date.hwdue }}<br/>
+                  Due: <a href="{{site.baseurl}}/hw{{date.hwdue}}.html">HW{{ date.hwdue }}</a><br/>
                 {% endif %}
                 {% if date.project %}
                   Due: {{ date.project }}<br/>

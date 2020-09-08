@@ -7,7 +7,7 @@ title: Homework 4 | Attention
 active_tab: homework
 ---
 
-# Homework 4: Attention
+# Programming Homework 4: Attention
 
 <span class="text-info">Start on {{ site.hwdates[4].startdate }}</span> |
 <span class="text-warning">Due on {{ site.hwdates[4].deadline }}</span>
