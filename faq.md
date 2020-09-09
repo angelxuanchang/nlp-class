@@ -66,7 +66,7 @@ How to ask a question on [Piazza]({{ site.piazza }}/):
 
 ### Groups
     
-* The **programming** homeworks will be solved in groups. Groups are upto {{ group.maxsize }} people. All groups must be formed before the Homework 0 due date.
+* The **programming** homeworks will be solved in groups. Groups are {{ site.group.minsize }} to {{ site.group.maxsize }} people. All groups must be formed before the Homework 0 due date.
 * You are allowed to leave a group and form a group of size one at the start of each homework but not at the end.
 * Each group will create a single submission and upload it to Coursys on or before the due date.
 * Each group member will be graded on their self report and any commit logs that are submitted. If the TA or the instructor perceives there is a problem with collaboration in a group, certain group members can get zero marks. If you are pair programming, take turns in switching the user doing the commits to the repository.

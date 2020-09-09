@@ -36,8 +36,8 @@ tutorials:
   - tutorial: "6"
     title: "training/debugging networks and running experiments"
 group:
-  - minsize: 2
-  - maxsize: 4
+  minsize: 2
+  maxsize: 4
 hwdates:
   - hw: "0"
     startdate: "Sept 9, 2020"

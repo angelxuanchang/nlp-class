@@ -22,7 +22,7 @@ active_tab: homework
 ## Setup on Coursys
 
 Find a group to work with for the homework assignments and the final
-course project. The group size is {{ group.maxsize }} people or less.
+course project. The group size should be {{ site.group.minsize }} to {{ site.group.maxsize }} people.
 You can use [Piazza]({{ site.piazza }}) to look for teammates.
 We will be checking that all group members are contributing equally
 to the homework submission and the final project.

@@ -115,10 +115,10 @@ be about 250 words (please definitely use less than 1000 words).
 
 ### Project proposal (due on {{ site.hwdates[5].proposal }})
 
-For your project project please submit a PDF file that describes
+For your project proposal please submit a PDF file that describes
 what problem you plan to work on, what data you will use, and the basic approach you plan to take.
 
-The project project PDF should be 1-2 pages in the style of a conference (e.g. ACL/EMNLP) submission.  Your project milestone and final report should use the same template.  Links to acceptable templates are below:
+The project proposal PDF should be 1-2 pages in the style of a conference (e.g. ACL/EMNLP) submission.  Your project milestone and final report should use the same template.  Links to acceptable templates are below:
 * [ACL style download](http://acl2020.org/downloads/acl2020-templates.zip)
 * [ACL style template Overleaf](https://www.overleaf.com/latex/templates/acl-2020-proceedings-template/zsrkcwjptpcd)
 * [EMNLP style download](https://2020.emnlp.org/files/emnlp2020-templates.zip)
@@ -138,7 +138,10 @@ Make sure the following points are in your proposal.
 * Evaluation
     * What is the evaluation measure for the data set and what is the baseline
 
-Go to [Coursys]({{ site.coursys }}) and submit under `Project Proposal` activity.
+Go to [Coursys]({{ site.coursys }}). Under the `Project Proposal`
+activity submit the following files:
+
+* `proposal.pdf`: this is the project proposal report
 
 
 ### Project milestone (due on {{ site.hwdates[5].milestone }})
