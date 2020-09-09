@@ -157,7 +157,7 @@ Make sure the following points are covered.
     * Remaining results that you plan to produce
 
 A good structure for the milestone report will include the following sections.  It can then also serve as a draft for your final project write-up.
-* Title and Abstract 
+* Introductrion 
     * Motivate the problem, describe your goals, and highlight your findings (if you have findings)
 * Approach 
     * Provide details on your main approach and baselines.  Be specific.  Make clear what part is original, what code you are writing yourself, what code you are using that is taken from elsewhere (homework, github, etc)
@@ -194,30 +194,29 @@ GitLab repository.
 Make sure you have a `requirements.txt` file for your project 
 so that we can use a virtual environment to run your code.
 
-Your Python notebook must be called `project.ipynb`. In addition
-to writing code for a good project submission, the description of
-what you did for your project as a PDF report is also a very important 
-part of your project submission. The PDF writeup **must** have
-the following sections:
+Your Python notebook must be called `project.ipynb`. 
 
-* Motivation 
+In addition to writing code for a good project submission, the description of
+what you did for your project as a PDF report is also a very important 
+part of your project submission. The PDF writeup should have
+the following sections and **must** cover the following information:
+
+* Introduction 
     * Which aspect of the problem / task did your group choose to improve and reasons for your choice.
 * Approach 
     * Describe the algorithms and machine learning models used in your project. Use clear mathematical notation and diagrams to explain your model(s).
-* Data 
-    * Exactly which data files were used; also include here any external data that was not provided to you.
-* Code
-    * If you used homework code, which homework code you used in your project. Provide exactly which code was used in your project not written by your group (e.g. use of an aligner from an open-source project).
-* Experimental Setup
-    * Describe what kind of evaluation you are doing and which methods you are comparing against each other.
-* Results 
-    * Include a detailed comparison of different methods.
-* Analysis of the Results
-    * Did you improve over the baseline. Why or why not?
-* Future Work
-    * What could be fixed in your approach. What you did not have time to finish, but you think would be a useful addition to your project.
+* Experiments 
+    * Data - What data was used? how was it used? Is there anything interesting about the data?
+    * Implementation - What code did you use? Did you implement everything by yourself?  If you used homework code, which homework code you used in your project. Provide exactly which code was used in your project not written by your group (e.g. use of an aligner from an open-source project).
+    * Evaluation: Describe what kind of evaluation you are doing, what metrics you are using
+    * Methods being compared: which methods you are comparing against each other?
+    * Results: Include a detailed comparison of different method and analysis of the results.  Did you improve over the baseline. Why or why not?
+* Conclusion
+    * What did you learn from your experiments?
+    * What could be fixed in your approach. 
+    * What you did not have time to finish, but you think would be a useful addition to your project.
 * References
-     * provide references using BibTex
+    * Provide references using BibTex
 
 Please read this [guide to presenting your work](assets/cached/cs224u/cs224u-2019-presenting.pdf). Also available is a [video tutorial covering the same material](https://www.youtube.com/watch?v=WXLb4h2A724).
 
@@ -256,5 +255,6 @@ The total marks are distributed as follows:
 
 * Work. Work done in the project. Results obtained. 50 marks (see the section on _Grading of the Final Project Work_ for grading details) 
 * Report. Description and analysis of what was done. 25 marks (see the section on _Project Write-up_ for grading details)
+* Poster. Performance at the online poster session and presentation quality. 25 marks (details TBD)
 * Milestone. Description of progress and project plans. 20 marks (see the section on _Milestone_ for grading details)
 

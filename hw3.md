@@ -7,10 +7,17 @@ title: Homework 3 | Robust Phrasal Chunking
 active_tab: homework
 ---
 
-# Programming Homework 3: Robust Phrasal Chunking
+# Homework 3
 
 <span class="text-info">Start on {{ site.hwdates[3].startdate }}</span> |
 <span class="text-warning">Due on {{ site.hwdates[3].deadline }}</span>
+
+## Homework Questions 3: Sequence models and machine translation
+
+<span class="text-info">Out on {{ site.hwdates[3].startdate }}</span> 
+
+# Programming Homework 3: Robust Phrasal Chunking
+
 
 ## Getting Started
 
@@ -438,7 +445,7 @@ did for this homework in `answer/README.username`.
 
 ### Upload to Coursys
 
-Go to `Homework 3` on Coursys and do a group submission:
+Go to `Programming Homework 3` on Coursys and do a group submission:
 
 * Upload `output.zip` and `source.zip`
 * Make sure your `source.zip` matches your Gitlab repository.

@@ -7,10 +7,17 @@ title: Homework | Setup
 active_tab: homework
 ---
 
-# Programming Homework 0: Setup
+# Homework 0
 
 <span class="text-info">Start on {{ site.hwdates[0].startdate }}</span> |
 <span class="text-warning">Due on {{ site.hwdates[0].deadline }}</span>
+
+## Homework Questions 0: Probablity, linear algebra, and calculus
+
+<span class="text-info">Out on {{ site.hwdates[0].startdate }}</span> 
+
+# Programming Homework 0: Setup
+
 
 ## Setup on Coursys
 
@@ -88,10 +95,7 @@ and  grade your code. Add the instructor and TAs as a member of your
 repo by clicking on the Settings menu which looks like a gear icon <i class="fa fa-gear"></i>`Settings`
 on the left hand menu and selecting `Members` from the dropdown menu. On the page that loads up
 type in (or individually copy/paste) the following list of names in the `Add new user` box using a `,` to
-delimit each username: <code>{{ site.instructor }}</code>, 
-{%- for ta in site.tas -%}
-<code>{{ ta.email }}</code>, 
-{%- endfor -%}. 
+delimit each username: <code>{{ site.instructor }}, {{ site.tas | map: "email" | join: ', '}}</code>. 
 
 Change the role permissions from `Guest` to `Developer` in the
 dropdown menu. Click on `Add to Project` to add the instructor and
@@ -459,7 +463,7 @@ did for this homework in `answer/README.username`.
 
 #### Upload to Coursys
 
-Go to `Homework 0` on Coursys and do a group submission:
+Go to `Programming Homework 0` on Coursys and do a group submission:
 
 * Upload `output.zip` and `source.zip`
 * Make sure you have documented your approach in `answer/ensegment.ipynb`.

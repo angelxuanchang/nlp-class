@@ -1,5 +1,5 @@
 ---
-layoue: default
+layout: default
 img: rosetta
 img_link: "http://en.wikipedia.org/wiki/Rosetta_Stone"
 caption: Jean-François Champollion used word alignment (starting with the word Ptolemy) to decipher Egyptian hierogyphics.
@@ -7,10 +7,16 @@ title: Homework 4 | Attention
 active_tab: homework
 ---
 
-# Programming Homework 4: Attention
-
+# Homework 4
 <span class="text-info">Start on {{ site.hwdates[4].startdate }}</span> |
 <span class="text-warning">Due on {{ site.hwdates[4].deadline }}</span>
+
+## Homework Questions 4: Parsing and contextual word embeddings
+
+<span class="text-info">Out on {{ site.hwdates[4].startdate }}</span> 
+
+# Programming Homework 4: Attention
+
 
 ## Getting Started
 
@@ -254,7 +260,7 @@ did for this homework in `answer/README.username`.
 
 ### Upload to Coursys
 
-Go to `Homework 4` on Coursys and do a group submission:
+Go to `Programming Homework 4` on Coursys and do a group submission:
 
 * Upload `output.zip` and `source.zip`
 * Make sure your `source.zip` matches your Gitlab repository.

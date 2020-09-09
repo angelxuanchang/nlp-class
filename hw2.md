@@ -7,10 +7,16 @@ title: "Homework | Lexical Substitution"
 active_tab: homework
 ---
 
-# Programming Homework 2: Lexical Substitution
+# Homework 2
 
 <span class="text-info">Start on {{ site.hwdates[2].startdate }}</span> |
 <span class="text-warning">Due on {{ site.hwdates[2].deadline }}</span>
+
+## Homework Questions 2: Word vectors and neural networks
+
+<span class="text-info">Out on {{ site.hwdates[2].startdate }}</span> 
+
+# Programming Homework 2: Lexical Substitution
 
 ## Getting Started
 
@@ -468,7 +474,7 @@ did for this homework in `answer/README.username`.
 
 ### Upload to Coursys
 
-Go to `Homework 2` on Coursys and do a group submission:
+Go to `Programming Homework 2` on Coursys and do a group submission:
 
 * Upload `output.zip` and `source.zip`
 * Make sure your `source.zip` matches your Gitlab repository.

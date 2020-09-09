@@ -7,10 +7,17 @@ title: "Homework | Chinese Word Segmentation"
 active_tab: homework
 ---
 
-# Programming Homework 1: Chinese Word Segmentation
+# Homework 1
 
 <span class="text-info">Start on {{ site.hwdates[1].startdate }}</span> |
 <span class="text-warning">Due on {{ site.hwdates[1].deadline }}</span>
+
+## Homework Questions 1: Language models and text classification
+
+<span class="text-info">Out on {{ site.hwdates[1].startdate }}</span> 
+
+# Programming Homework 1: Chinese Word Segmentation
+
 
 ## Getting Started
 
@@ -352,7 +359,7 @@ Make sure that your have updated your GitLab repository with your submission sou
 
 ### Upload to Coursys
 
-Go to `Homework 1` on Coursys and do a group submission:
+Go to `Programming Homework 1` on Coursys and do a group submission:
 
 * Upload `output.zip` and `source.zip`
 * Make sure your `source.zip` matches your Gitlab repository.
