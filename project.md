@@ -108,11 +108,22 @@ You can also checkout the titles of group projects from [fall 2019](project_titl
 
 ## Project Submission
 
-### Project proposal (due on {{ site.hwdates[5].proposal }})
-
-For your project proposal please submit a text file in Markdown
+<!-- For your project topic selection please submit a text file in Markdown
 format that includes a Title and an Abstract. Your abstract should
 be about 250 words (please definitely use less than 1000 words).
+ -->
+
+### Project proposal (due on {{ site.hwdates[5].proposal }})
+
+For your project project please submit a PDF file that describes
+what problem you plan to work on, what data you will use, and the basic approach you plan to take.
+
+The project project PDF should be 1-2 pages in the style of a conference (e.g. ACL/EMNLP) submission.  Your project milestone and final report should use the same template.  Links to acceptable templates are below:
+* [ACL style download](http://acl2020.org/downloads/acl2020-templates.zip)
+* [ACL style template Overleaf](https://www.overleaf.com/latex/templates/acl-2020-proceedings-template/zsrkcwjptpcd)
+* [EMNLP style download](https://2020.emnlp.org/files/emnlp2020-templates.zip)
+* [EMNLP style template Overleaf](https://www.overleaf.com/latex/templates/emnlp-2020/knvtcxwzhbbz)
+
 Make sure the following points are in your proposal.
 
 * Motivation 

@@ -7,7 +7,7 @@
       url: "assets/slides/introduction.pdf"
     - title: "Introduction to NLP Tasks"
       url: "assets/slides/nlptasks.pdf"
-  links:
+  readings:
     - author: Lillian Lee
       title: "I'm sorry Dave, I'm afraid I can't do that"
       url: "http://www.cs.cornell.edu/home/llee/papers/cstb.pdf"
@@ -16,6 +16,7 @@
       title: "Talking to Computers in Natural Language"
       url: "https://cs.stanford.edu/~pliang/papers/talking-xrds2014.pdf"
       optional: true
+  links:
     - author: Rick Rashid 
       title: "Speech Recognition Breakthrough for the Spoken, Translated Word by Rick Rashid"
       video: "https://www.youtube.com/watch?v=Nu-nlQqFCKg"
