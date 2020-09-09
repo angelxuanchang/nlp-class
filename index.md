@@ -44,7 +44,7 @@ terms of its analysis and the learning of language from observations.
 * Ask for help on [piazza]({{ site.piazza }})
 * Instructor office hours: {{ site.officehour }} 
 * <b>No emails</b> to the TAs and strictly emails about personal matters to the instructor
-* Use only SFU email address and use `cmpt825:` as subject prefix
+* Use only SFU email address and use either `cmpt413:` or`cmpt825:` as subject prefix
 
 #### Time and place
 Course lectures will be held using [canvas]({{ site.canvas }}) BB Collaborate Ultra
@@ -76,5 +76,6 @@ Course lectures will be held using [canvas]({{ site.canvas }}) BB Collaborate Ul
 * Final Project (35% total)
   * Project Proposal: Due on {{ site.hwdates[5].proposal }} (5%)
   * Project Milestone: Due on {{ site.hwdates[5].milestone }} (5%)
+  * Project "Poster" Presentation: Online, details {{ site.hwdates[5].poster }} (5%)
   * Project Report and Code: Due on {{ site.hwdates[5].deadline }} (25%)
 * Participation: Helping other students on the discussion board in a positive way (3%)
