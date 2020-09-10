@@ -9,7 +9,7 @@ active_tab: syllabus
 
 ## Syllabus
 
-The syllabus is preliminary and subject to change.
+The syllabus is preliminary and subject to change.  Lecture notes are from prior years and are subject to change.  Updated lecture notes will be posted after the lecture.
 
 <style type="text/css">
     .bs-example{
