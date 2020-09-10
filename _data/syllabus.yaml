@@ -4,7 +4,7 @@
   current: false
   notes:
     - title: "Course introduction"
-      url: "assets/slides/introduction.pdf"
+      url: "assets/lecture-slides/L1-intro.pdf"
     - title: "Introduction to NLP Tasks"
       url: "assets/slides/nlptasks.pdf"
   readings:
@@ -34,7 +34,7 @@
       title: "NLP Highlights podcast"
       url: "https://soundcloud.com/nlp-highlights"
       optional: true
-- title: "Probability models and language"
+- title: "Probability models and language (reviewed in tutorial)"
   tag: probintro
   include: true
   current: false

@@ -3,6 +3,9 @@
   - date: "9/9" 
     title: "Introduction"
     lecture: "intro"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L1-intro.pdf"
     hwout: "0"
   - date: "9/11" 
     title: "Language Modeling"

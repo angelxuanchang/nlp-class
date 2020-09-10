@@ -36,6 +36,11 @@ The schedule is preliminary and subject to change.
                   {{ date.title }}
                 {% elsif date.title %}
                  Lecture: {{ date.title }} <br/>
+                  {% if date.leclinks %}
+                    {% for link in date.leclinks %}
+                      [<a href="{{link.url}}">{{link.name}}</a>]
+                    {% endfor %}
+                  {% endif %} 
                   {% if date.tutorial != null %}
                     Tutorial: {{ site.tutorials[date.tutorial].title }}<br/>
                   {% endif %}

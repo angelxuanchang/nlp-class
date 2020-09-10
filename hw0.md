@@ -14,7 +14,7 @@ active_tab: homework
 
 ## Homework Questions 0: Probablity, linear algebra, and calculus
 
-<span class="text-info">Out on {{ site.hwdates[0].startdate }}</span> 
+<span class="text-info">Out on {{ site.hwdates[0].startdate }}.  Posted on [Piazza]({{ site.piazza }}).</span> 
 
 # Programming Homework 0: Setup
 
