@@ -40,6 +40,7 @@ The schedule is preliminary and subject to change.
                     {% for link in date.leclinks %}
                       [<a href="{{link.url}}">{{link.name}}</a>]
                     {% endfor %}
+                    <br/>
                   {% endif %} 
                   {% if date.tutorial != null %}
                     Tutorial: {{ site.tutorials[date.tutorial].title }}<br/>

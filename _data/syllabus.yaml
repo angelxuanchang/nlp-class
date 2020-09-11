@@ -66,6 +66,8 @@
   current: false
   notes:
     - title: "Language models"
+      url: "assets/lecture-slides/L2-Language_Models.pdf"
+    - title: "Language models (spring 2020)"
       url: "assets/slides/lm.pdf"
     - title: "Exercise: n-gram Language Models"
       url: "assets/notes/lm.html"

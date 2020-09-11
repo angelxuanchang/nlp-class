@@ -10,6 +10,9 @@
   - date: "9/11" 
     title: "Language Modeling"
     lecture: "lm"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L2-Language_Models.pdf"
     tutorial: 0
 - week: 1
   dates:
