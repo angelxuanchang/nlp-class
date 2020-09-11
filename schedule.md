@@ -44,6 +44,12 @@ The schedule is preliminary and subject to change.
                   {% endif %} 
                   {% if date.tutorial != null %}
                     Tutorial: {{ site.tutorials[date.tutorial].title }}<br/>
+                    {% if date.tutlinks %}
+                      {% for link in date.tutlinks %}
+                        [<a href="{{link.url}}">{{link.name}}</a>]
+                      {% endfor %}
+                      <br/>
+                    {% endif %} 
                   {% endif %}
                 {% endif %}
               </td>

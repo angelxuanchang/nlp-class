@@ -14,6 +14,11 @@
       - name: "slides"
         url: "assets/lecture-slides/L2-Language_Models.pdf"
     tutorial: 0
+    tutlinks:
+      - name: "video"
+        url: "https://piazza.com/class_profile/get_resource/kehwtnnb4g852t/kexunlrtsr75wi"
+      - name: "slides"
+        url: "https://piazza.com/class_profile/get_resource/kehwtnnb4g852t/kexmysub91c3oa"
 - week: 1
   dates:
   - date: "9/16" 
