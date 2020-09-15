@@ -27,8 +27,8 @@ active_tab: resources
 * Here are some useful NLP tools
     * [AllenNLP](https://allennlp.org/) \[[demo](https://demo.allennlp.org/)\] Modern NLP tools using Pytorch from AI2 
     * [Spacy.io](https://spacy.io/) \[[demo](https://explosion.ai/demos/)\] Popular python based NLP pipeline
+    * [Stanza](https://stanfordnlp.github.io/stanza)\[[demo](http://stanza.run/)\] Python NLP library from Stanford
     * [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/) \[[demo](http://corenlp.run/)\] Java NLP pipeline from Stanford
-    * [Stanza](https://stanfordnlp.github.io/stanza) Python NLP library from Stanford
     * [NLTK](https://www.nltk.org/) \[[demo](http://text-processing.com/demo/)\] \[[book](http://www.nltk.org/book_1ed/)\] Useful basic Python tools for NLP
 
 * Deep learning for NLP

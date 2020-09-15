@@ -15,6 +15,9 @@ active_tab: homework
 ## Homework Questions 1: Language models and text classification
 
 <span class="text-info">Out on {{ site.hwdates[1].startdate }}</span> 
+{% if site.hwdates[1].piazza %}
+<span>Posted on [Piazza]({{ site.hwdates[1].piazza }}).</span> 
+{% endif %}
 
 # Programming Homework 1: Chinese Word Segmentation
 

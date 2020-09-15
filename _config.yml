@@ -9,7 +9,7 @@ calendar: "https://calendar.google.com/calendar/ical/qgs97od9ef8t1582k2rqomv5ho%
 lastday: "Dec 4, 2020"
 midterm: "None"
 instructor: angelx
-officehour: "TBD"
+officehour: "Time: Wed 2-3pm"
 tas:
   - name: "Ali Gholami"
     email: gholami
@@ -42,6 +42,7 @@ hwdates:
   - hw: "0"
     startdate: "Sept 9, 2020"
     deadline: "Sept 16, 2020"
+    piazza: "http://www.piazza.com/class_profile/get_resource/kehwtnnb4g852t/kew9h6v5g6z44p"
   - hw: "1"
     startdate: "Sept 16, 2020"
     deadline: "Sept 30, 2020"

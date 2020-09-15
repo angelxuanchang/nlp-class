@@ -15,6 +15,9 @@ active_tab: homework
 ## Homework Questions 2: Word vectors and neural networks
 
 <span class="text-info">Out on {{ site.hwdates[2].startdate }}</span> 
+{% if site.hwdates[2].piazza %}
+<span>Posted on [Piazza]({{ site.hwdates[2].piazza }}).</span> 
+{% endif %}
 
 # Programming Homework 2: Lexical Substitution
 

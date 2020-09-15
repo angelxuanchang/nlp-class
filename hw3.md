@@ -15,6 +15,9 @@ active_tab: homework
 ## Homework Questions 3: Sequence models and machine translation
 
 <span class="text-info">Out on {{ site.hwdates[3].startdate }}</span> 
+{% if site.hwdates[3].piazza %}
+<span>Posted on [Piazza]({{ site.hwdates[3].piazza }}).</span> 
+{% endif %}
 
 # Programming Homework 3: Robust Phrasal Chunking
 
