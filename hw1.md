@@ -121,8 +121,8 @@ this the `data` directory contains two files:
 
 You can also optionally use the data used to create the above count files which is in `train.txt.bz2` in the `data` directory.
 
-You can also use a larger dataset provided to you via this link: [wseg_simplified_cn.txt.bz2](https://vault.sfu.ca/index.php/s/ghsaEeqtvV5IYLF) which contains 1M Chinese sentences with word segments (bzip2 compressed). This link is only available for SFU students. You must not give a copy of this data set to **anybody**. 
-
+<!-- You can also use a larger dataset provided to you via this link: [wseg_simplified_cn.txt.bz2](https://vault.sfu.ca/index.php/s/ghsaEeqtvV5IYLF) which contains 1M Chinese sentences with word segments (bzip2 compressed). This link is only available for SFU students. You must not give a copy of this data set to **anybody**. 
+ -->
 ## Data files
 
 The data files provided are:
