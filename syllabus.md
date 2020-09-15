@@ -40,10 +40,10 @@ The syllabus is preliminary and subject to change.  Lecture notes are from prior
                       <ul class="list-group">
                       {% for notes in week.notes %}
                         <li class="list-group-item"> <a href="{{ notes.url }}">{{ notes.title }}</a>
-                            {%if notes.soln %}
+<!--                             {%if notes.soln %}
                                 <i class="fa fa-star"></i><a href="{{ notes.soln }}">Solutions</a>
                             {% endif %}
-                            {%if notes.video %}
+ -->                        {%if notes.video %}
                                 <a href="{{ notes.video }}"><span class="glyphicon glyphicon-film"></span></a>
                             {% endif %}
                             {% if notes.download %} 
