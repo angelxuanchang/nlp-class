@@ -73,10 +73,23 @@ repository name might be `nlpclass-{{ site.semcode }}-g-ethicsgradient`
 Make sure you add the `g-` before your group name. It's important
 to name the repo exactly as you see here.
 
-Do not use any obscene words in your group name. Be mature about 
+**Selecting group names** Please take care when selecting a group name and 
+follow the guidelines below.
+* Please choose a group name that is distinctive and unlikely to be used 
+by another group.  For instance, `group` is a poor group name.
+* Do not use any obscene words in your group name. Be mature about 
 your choice of group name. That does not mean it cannot be funny,
 just be aware that your choice of group name may offend someone
 else so be considerate of others.
+* Do not use any strange characters in your group name.  
+Use alphanumeric characters [a-z0-9] only in your 
+group name, underscore and dashes are also permited (**please avoid spaces**).
+We use an automated process to align your group name in Coursys 
+to your repo in gitlab.  If your group name and repo does not match 
+exactly, we will not be able to match your gitlab repo to your Coursys group.
+If you used spaces in your group name in Coursys by mistake, make sure that your
+gitlab repo has dashes ('-') instead of spaces (because the internal
+system name used by Coursys will have dashes instead of spaces).
 
 Leave all other settings as they are and click the `Create Project` button
 at the bottom left of the page.
