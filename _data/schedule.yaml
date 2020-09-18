@@ -24,6 +24,9 @@
   - date: "9/16" 
     title: "Language Modeling"
     lecture: "lm"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L2b-Language_Models_II.pdf"
     hwdue: "0"
     hwout: "1"
   - date: "9/18" 
