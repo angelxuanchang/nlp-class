@@ -32,13 +32,19 @@
   - date: "9/18" 
     title: "Text Classification (Naive Bayes)"
     lecture: "classifiers"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L3-Classification-Naive-Bayes.pdf"
     readings: [ "jm4"]
     tutorial: 1
 - week: 2
   dates:
   - date: "9/23" 
-    title: "Text Classification (Log-linear models)"
+    title: "Text Classification (Logistic regression)"
     lecture: "classifiers"
+    leclinks:
+      - name: "evaluation"
+        url: "assets/lecture-slides/L3b-Classification-Evaluation.pdf"
     readings: [ "jm5"]
   - date: "9/25" 
     title: "Word Embeddings"
