@@ -43,6 +43,8 @@
     title: "Text Classification (Logistic regression)"
     lecture: "classifiers"
     leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L4-Classification-Logistic.pdf"
       - name: "evaluation"
         url: "assets/lecture-slides/L3b-Classification-Evaluation.pdf"
     readings: [ "jm5"]

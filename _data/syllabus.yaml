@@ -65,10 +65,10 @@
   include: true
   current: false
   notes:
-    - title: "Language models"
+    - title: "Language models I"
       url: "assets/lecture-slides/L2-Language_Models.pdf"
-    - title: "Language models (spring 2020)"
-      url: "assets/slides/lm.pdf"
+    - title: "Language models II"
+      url: "assets/lecture-slides/L2b-Language_Models_II.pdf"
     - title: "Exercise: n-gram Language Models"
       url: "assets/notes/lm.html"
       soln: "assets/notes/lm_soln.html"
@@ -100,10 +100,12 @@
   include: true
   current: true
   notes:
-    - title: "Linear models"
-      url: "assets/slides/linearmodels.pdf"
+    - title: "Naive Bayes"
+      url: "assets/lecture-slides/L3-Classification-Naive-Bayes.pdf"
     - title: "Logistic regression"
-      url: "assets/slides/logisticreg.pdf"
+      url: "assets/lecture-slides/L4-Classification-Logistic.pdf"
+    - title: "Evaluation"
+      url: "assets/lecture-slides/L3b-Classification-Evaluation.pdf"
     - title: "Python Notebook: Naive Bayes Classifiers"
       url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/naivebayes.ipynb"
       download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/naivebayes.ipynb"
