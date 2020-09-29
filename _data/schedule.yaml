@@ -85,15 +85,16 @@
     lecture: "seq2seq"
     readings: ["jm10"]
     tutorial: 6
+    project: "Project title and abstract"
 - week: 6
   dates:
   - date: "10/21" 
     title: "Neural Machine Translation"
-    project: "Project proposal"
     lecture: "nmt"
   - date: "10/23" 
     title: "Text generation and evaluation"
     lecture: "generation"
+    project: "Project proposal"
 - week: 7
   dates:
   - date: "10/28" 

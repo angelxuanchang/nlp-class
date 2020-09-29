@@ -12,17 +12,28 @@ active_tab: project
 <span class="text-info">Start by {{ site.hwdates[5].startdate }} or earlier</span> |
 <span class="text-warning">Due on {{ site.hwdates[5].deadline }}</span>
 
+The class project is an opportunity for you to apply your newly acquired skills in NLP towards an in-depth application and/or research problem.
+Your project should aim to answer a scientific question and provide some kind of scientific knowledge gain similar to typical NLP research papers.
+
 ## Project Ideas
 
-First start with a task that has a well-defined dataset that you
-can use for your project. Pick something you are passionate about
-or something you find interesting.
 
-A list of shared task datasets are provided below. In many cases
-you can extend your homework code to produce innovative project
-ideas for these tasks.
+You should pick something you are passionate about or something you find interesting.  When selecting a project, you should make sure that you can find an well-defined dataset that you can use for your project.
+
+Possible projects types include:
+* Re-implementing / rereproducing a recent paper
+* Applying an existing neural model to a new task
+* Implementing a complex neural architecture
+* Proposing a new neural model or a new variation of an existing model
+* Proposing a new training, optimization, or evaluation scheme
+* Experimental and/or theoretical analysis of a NLP model
 
 You can also checkout the titles of group projects from [fall 2019](project_titles) or final projects from [Stanford CS224n](https://nlp.stanford.edu/courses/cs224n/) for inspiration.
+
+## Resources
+
+A list of shared task datasets are provided below.
+In many cases you can extend your homework code to produce innovative project ideas for these tasks.
 
 ### Shared Task Collections
 
@@ -108,10 +119,17 @@ You can also checkout the titles of group projects from [fall 2019](project_titl
 
 ## Project Submission
 
-<!-- For your project topic selection please submit a text file in Markdown
-format that includes a Title and an Abstract. Your abstract should
+### Project title and abstract (due on {{ site.hwdates[5].abstract }})
+
+For your project, please submit a Title and an Abstract (in Markdown format)
+that describes what topic/problem your group will work on, the scope of the project 
+and the data you plan to use.
+The title/abstract is not graded, but you will receive feedback on the feasibility of the project. 
+
+To submit, go to [Coursys]({{ site.coursys }}). Under the `Project Abstract`
+activity, enter your Title and Abstract in Markdown
+format. Your abstract should
 be about 250 words (please definitely use less than 1000 words).
- -->
 
 ### Project proposal (due on {{ site.hwdates[5].proposal }})
 
