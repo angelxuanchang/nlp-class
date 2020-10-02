@@ -98,7 +98,7 @@
 - title: "Text classification"
   tag: classifiers
   include: true
-  current: true
+  current: false
   notes:
     - title: "Naive Bayes"
       url: "assets/lecture-slides/L3-Classification-Naive-Bayes.pdf"
@@ -139,7 +139,7 @@
 - title: "Word Vectors"
   tag: w2v
   include: true
-  current: false
+  current: true
   notes: 
     - title: "Vector space models (Jurafsky and Martin)"
       url: "assets/cached/slp3/vector1.pdf"
