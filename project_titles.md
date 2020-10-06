@@ -3,9 +3,28 @@ layout: default
 img: escherbabel
 img_link: http://en.wikipedia.org/wiki/Tower_of_Babel_(M._C._Escher)
 caption: "1928 woodcut by M. C. Escher showing the Tower of Babel."
-title: "Projects from Fall 2019"
+title: "Projects from previous terms"
 active_tab: project
 ---
+
+# Spring 2020 Final Projects
+* Span-based End-to-End Semantic Role Labeling
+* Predicting the Usefullness of Yelp Reviews
+* Real or Not? NLP with Disaster Tweets
+* Social Robots: The Process of Translating from English to Body Language in a 3-D Vector Space
+* Joint Intent Detection and Slot Filling 
+* Google QUEST Q&A Labeling
+* Tackling the Problem of Generalizing in End-to-End SLU Task
+* LangNMT: A Neural Machine Translation tool
+* Visual Question Answering Utilizing Semantic Similarity
+* Toxic/Abusive Comments Detection
+* NLP with Disaster Tweets: Predicting Which Tweets Are About Real Disasters and Which Are Not
+* Semantic Search of Speeches in Audio
+* Exploring Attention Variants of Question Answering Models on SQuAD
+* Emotional Intensity Classification
+* Toxic Comment Classification
+* Automated Patent Abstract Generator
+* Generating plausible movie reviews
 
 # Fall 2019 Final Projects
 

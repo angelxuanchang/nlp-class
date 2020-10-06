@@ -61,7 +61,14 @@ The schedule is preliminary and subject to change.
                   Due: {{ date.project }}<br/>
                 {% endif %}
               </td>
-              <td>
+              {% if date.skipread %} 
+              {% else %}
+                 {% if date.keepread %}
+                   {% assign keepread = date.keepread %}
+                {% else %} 
+                   {% assign keepread = 1 %} 
+                {% endif %}
+              <td rowspan="{{ keepread }}">
                 {% if date.lecture %}
                   {% assign lectures = site.data.syllabus | where: "tag", date.lecture  %}
                   {% if lectures[0] %}
@@ -96,6 +103,7 @@ The schedule is preliminary and subject to change.
                   {% endif %}
                 {% endif %}
               </td>
+              {% endif %}
             </tr>
           {% endfor %}
         {% endfor %}

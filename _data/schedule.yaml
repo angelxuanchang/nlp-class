@@ -13,6 +13,7 @@
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L2-Language_Models.pdf"
+    keepread: 2
     tutorial: 0
     tutlinks:
       - name: "video"
@@ -27,6 +28,7 @@
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L2b-Language_Models_II.pdf"
+    skipread: true
     hwdue: "0"
     hwout: "1"
   - date: "9/18" 
@@ -36,6 +38,7 @@
       - name: "slides"
         url: "assets/lecture-slides/L3-Classification-Naive-Bayes.pdf"
     readings: [ "jm4"]
+    keepread: 2
     tutorial: 1
 - week: 2
   dates:
@@ -46,6 +49,7 @@
       - name: "slides"
         url: "assets/lecture-slides/L3-Classification-Naive-Bayes.pdf"
     readings: [ "jm4"]
+    skipread: true
   - date: "9/25" 
     title: "Text Classification (Logistic regression)"
     lecture: "classifiers"
@@ -64,20 +68,24 @@
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L6-word2vec.pdf"
+    keepread: 2
     hwdue: "1"
     hwout: "2"
   - date: "10/2" 
     title: "Word Embeddings"
     lecture: "w2v"
+    skipread: true
     tutorial: 4
 - week: 4
   dates:
   - date: "10/7" 
     title: "Neural Networks"
     lecture: "ff"
+    keepread: 2
   - date: "10/9" 
     title: "Neural Networks"
     lecture: "dl4nlp"
+    skipread: true
     tutorial: 5
 - week: 5
   dates:
@@ -117,9 +125,11 @@
   - date: "11/4" 
     title: "Contextual Word Embeddings"
     lecture: "transformers"
+    keepread: 2
   - date: "11/6" 
     title: "Contextual Word Embeddings"
     lecture: "transformers"
+    skipread: true
 - week: 9
   dates:
   - date: "11/11" 

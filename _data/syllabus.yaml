@@ -139,7 +139,7 @@
 - title: "Word Vectors"
   tag: w2v
   include: true
-  current: true
+  current: false
   notes: 
     - title: "Vector space models (Jurafsky and Martin)"
       url: "assets/cached/slp3/vector1.pdf"
@@ -163,10 +163,25 @@
       title: "Improving Distributional Similarity with Lessons Learned from Word Embeddings"
       url: "https://www.aclweb.org/anthology/Q15-1016.pdf"
       optional: true
+  papers:
+    - author: Mikolov et al,
+      title: "Efficient Estimation of Word Representations in Vector Space"
+      url: "https://arxiv.org/pdf/1301.3781.pdf"
+      comments: "Original word2vec paper"
+    - author: Mikolov et al,
+      title: "Distributed Representations of Words and Phrases and their Compositionality"
+      url: "http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf"
+      comments: "Negative sampling for word2vec"
+    - author: "Jeffrey Pennington, Richard Socher, Christopher D. Manning"
+      title: "GloVe: Global Vectors for Word Representation"
+      url: "https://nlp.stanford.edu/pubs/glove.pdf"
+    - author: "Sanjeev Arora, Yingyu Liang, Tengyu Ma"
+      title: "A Simple but Tough-to-beat Baseline for Sentence Embeddings"
+      url: "https://openreview.net/pdf?id=SyK00v5xx"
 - title: "Feedforward neural networks"
   tag: ff
   include: true
-  current: false
+  current: true
   notes:
     - title: "Feedforward neural networks"
       url: "assets/slides/ff.pdf"
@@ -177,15 +192,15 @@
       author: Tom McCoy
       url: "http://www.nacloweb.org/resources/problems/2017/N2017-H.pdf"
   readings:
-    - author: Michael Collins
-      title: "Feedforward neural networks"
-      url: "http://www.cs.columbia.edu/~mcollins/cs4705-spring2018/notes/ff.pdf"
-      download: "assets/mcollins-notes/ff.pdf"
     - author: Dan Jurafsky and James H. Martin
       title: "Neural Networks and Neural Language Models (J+M chapter 7)"
       abbr: "J+M chapter 7" 
       url: "https://web.stanford.edu/~jurafsky/slp3/7.pdf"
       optional: false
+    - author: Michael Collins
+      title: "Feedforward neural networks"
+      url: "http://www.cs.columbia.edu/~mcollins/cs4705-spring2018/notes/ff.pdf"
+      download: "assets/mcollins-notes/ff.pdf"
   links:
     - title: "A Review of the Neural History of Natural Language Processing"
       url: "https://ruder.io/a-review-of-the-recent-history-of-nlp/index.html"
@@ -231,18 +246,7 @@
       citation: "Nature, 1986"
       url: "https://www.iro.umontreal.ca/~vincentp/ift3395/lectures/backprop_old.pdf"
       optional: true
-- title: "Linear models for sequence prediction"
-  tag: linearseq
-  include: true
-  current: false
-  notes:
-    - title: "Linear models for sequence prediction"
-      url: "assets/slides/linearseq.pdf"
-  links:
-    - author: Erik F. Tjong Kim Sang and Sabine Buchholz
-      title: "Introduction to the CoNLL-2000 Shared Task: Chunking"
-      url: "http://www.cnts.ua.ac.be/conll2000/pdf/12732tjo.pdf"
-- title: "Hidden Markov Models"
+- title: "Sequence Models (Hidden Markov Models)"
   tag: hmm
   include: true
   current: false
@@ -294,7 +298,18 @@
       download: "assets/mcollins-notes/fb.pdf"
       url: "assets/mcollins-notes/fb.pdf"
       optional: true
-- title: "Neural Language models"
+- title: "Linear models for sequence prediction"
+  tag: linearseq
+  include: false
+  current: false
+  notes:
+    - title: "Linear models for sequence prediction"
+      url: "assets/slides/linearseq.pdf"
+  links:
+    - author: Erik F. Tjong Kim Sang and Sabine Buchholz
+      title: "Introduction to the CoNLL-2000 Shared Task: Chunking"
+      url: "http://www.cnts.ua.ac.be/conll2000/pdf/12732tjo.pdf"
+- title: "Sequence Models (RNNs)"
   tag: nlm
   include: true
   current: false
@@ -348,7 +363,7 @@
       title: "A Statistical MT Tutorial Workbook"
       url: http://www.isi.edu/natural-language/mt/wkbk.pdf
       optional: true
-- title: "Sequence to Sequence models"
+- title: "Sequence to Sequence models and Neural Machine Translation"
   tag: seq2seq
   include: true
   current: false
@@ -371,6 +386,10 @@
       citation: "arXiv"
       url: "https://arxiv.org/pdf/1703.01619.pdf"
   readings:
+    - author: Philipp Koehn
+      title: "Neural Machine Translation"
+      url: "https://arxiv.org/pdf/1709.07809.pdf"
+      optional: true
     - author: Dan Jurafsky and James H. Martin
       title: "Encoder-Decoder Models, Attention, and Contextual Embeddings (J+M chapter 10)"
       abbr: "J+M chapter 10" 
@@ -444,6 +463,7 @@
     - author: Dan Jurafsky and James H. Martin
       title: "Constituency Grammars (J+M chapter 12)"
       url: "https://web.stanford.edu/~jurafsky/slp3/12.pdf"
+      abbr: "J+M chapter 12" 
       optional: true
     - author: Dan Jurafsky and James H. Martin
       title: "Constituency Parsing (J+M chapter 13)"
@@ -540,6 +560,16 @@
       title: "Dialog Systems and Chatbots (J+M chapter 26)"
       abbr: "J+M chapter 26" 
       url: "https://web.stanford.edu/~jurafsky/slp3/26.pdf"
+      optional: true
+- title: "Coreference Resolution"
+  tag: coref
+  include: true
+  current: false
+  readings:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Coreference Resolution (J+M chapter 22)"
+      abbr: "J+M chapter 22" 
+      url: https://web.stanford.edu/~jurafsky/slp3/22.pdf
       optional: true
 - title: "Grounded Language"
   tag: grounding

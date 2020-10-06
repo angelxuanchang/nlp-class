@@ -28,17 +28,22 @@ Possible projects types include:
 * Proposing a new training, optimization, or evaluation scheme
 * Experimental and/or theoretical analysis of a NLP model
 
-You can also checkout the titles of group projects from [fall 2019](project_titles) or final projects from [Stanford CS224n](https://nlp.stanford.edu/courses/cs224n/) for inspiration.
+For interesting project ideas, consider reading papers at top publishing venues for
+* NLP: ACL, EMNLP, TACL, NAACL, EACL (see [http://www.aclweb.org/anthology/](http://www.aclweb.org/anthology/) for many NLP publications)
+* Machine learning: NeurIPS, ICLR, ICML 
+
+You can also checkout the titles of group projects from [past terms](project_titles) or final projects from [Stanford CS224n](https://nlp.stanford.edu/courses/cs224n/) for inspiration.
 
 ## Resources
 
 A list of shared task datasets are provided below.
-In many cases you can extend your homework code to produce innovative project ideas for these tasks.
+In some cases you can also extend your homework code to produce innovative project ideas for these tasks.
 
 ### Shared Task Collections
 
 * [Torchtext](https://torchtext.readthedocs.io/en/latest/)
-* [Sebastian Ruder's curated collection](https://github.com/sebastianruder/NLP-progress)
+* [Sebastian Ruder's curated collection](https://nlpprogress.com/)
+* [Datasets for Natural Language Processing](https://machinelearningmastery.com/datasets-natural-language-processing/)
 * [Kaggle NLP Tasks](https://www.kaggle.com/datasets?sortBy=hottest&group=public&page=1&pageSize=20&size=sizeAll&filetype=fileTypeAll&license=licenseAll&tagids=13204%2C11208%2C2107)
 
 #### CoNLL Shared Tasks
