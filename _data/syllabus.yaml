@@ -201,6 +201,9 @@
       title: "Feedforward neural networks"
       url: "http://www.cs.columbia.edu/~mcollins/cs4705-spring2018/notes/ff.pdf"
       download: "assets/mcollins-notes/ff.pdf"
+    - author: "Yoav Goldberg"
+      title: "A Primer on Neural Network Models for Natural Language Processing"
+      url: "https://u.cs.biu.ac.il/~yogo/nnlp.pdf"
   links:
     - title: "A Review of the Neural History of Natural Language Processing"
       url: "https://ruder.io/a-review-of-the-recent-history-of-nlp/index.html"
@@ -310,7 +313,7 @@
       title: "Introduction to the CoNLL-2000 Shared Task: Chunking"
       url: "http://www.cnts.ua.ac.be/conll2000/pdf/12732tjo.pdf"
 - title: "Sequence Models (RNNs)"
-  tag: nlm
+  tag: rnn
   include: true
   current: false
   notes:
@@ -331,15 +334,13 @@
       tag: "jm9"
       url: "https://web.stanford.edu/~jurafsky/slp3/9.pdf"
       optional: true
+    - author: "Christopher Olah"
+      title: "Understanding LSTM Networks"
+      url: "http://colah.github.io/posts/2015-08-Understanding-LSTMs/"
   links:
     - title: "How to implement a recurrent neural network"
       author: "peterroelants.github.io"
       url: "http://peterroelants.github.io/posts/rnn_implementation_part01/"
-      optional: true
-    - title: "Neural Machine Translation and Sequence-to-sequence Models: A Tutorial"
-      author: "Graham Neubig"
-      citation: "arXiv"
-      url: "https://arxiv.org/pdf/1703.01619.pdf"
       optional: true
     - title: "Statistical language models based on neural networks"
       author: Tomas Mikolov
@@ -386,15 +387,20 @@
       citation: "arXiv"
       url: "https://arxiv.org/pdf/1703.01619.pdf"
   readings:
-    - author: Philipp Koehn
-      title: "Neural Machine Translation"
-      url: "https://arxiv.org/pdf/1709.07809.pdf"
-      optional: true
     - author: Dan Jurafsky and James H. Martin
       title: "Encoder-Decoder Models, Attention, and Contextual Embeddings (J+M chapter 10)"
       abbr: "J+M chapter 10" 
       tag: jm10
       url: "https://web.stanford.edu/~jurafsky/slp3/10.pdf"
+      optional: true
+    - author: Philipp Koehn
+      title: "Neural Machine Translation"
+      url: "https://arxiv.org/pdf/1709.07809.pdf"
+      optional: true
+    - title: "Neural Machine Translation and Sequence-to-sequence Models: A Tutorial"
+      author: "Graham Neubig"
+      citation: "arXiv"
+      url: "https://arxiv.org/pdf/1703.01619.pdf"
       optional: true
   links:
     - title: "Neural Machine Translation: Breaking the Performance Plateau"

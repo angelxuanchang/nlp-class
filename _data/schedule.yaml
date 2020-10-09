@@ -96,8 +96,7 @@
     hwout: "3"
   - date: "10/16" 
     title: "Sequence Modeling (RNNs)"
-    lecture: "nlm"
-    readings: ["jm9"]
+    lecture: "rnn"
     tutorial: 6
     project: "Project title and abstract"
 - week: 6
