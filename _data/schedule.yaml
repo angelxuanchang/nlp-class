@@ -74,6 +74,9 @@
   - date: "10/2" 
     title: "Word Embeddings"
     lecture: "w2v"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L6-word2vec.pdf"
     skipread: true
     tutorial: 4
 - week: 4
@@ -81,10 +84,16 @@
   - date: "10/7" 
     title: "Neural Networks"
     lecture: "ff"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L7-neural-nets.pdf"
     keepread: 2
   - date: "10/9" 
     title: "Neural Networks"
     lecture: "dl4nlp"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L7-neural-nets.pdf"
     skipread: true
     tutorial: 5
 - week: 5

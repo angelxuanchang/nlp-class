@@ -181,7 +181,7 @@
 - title: "Feedforward neural networks"
   tag: ff
   include: true
-  current: true
+  current: false
   notes:
     - title: "Feedforward neural networks"
       url: "assets/slides/ff.pdf"
@@ -209,6 +209,10 @@
       url: "https://ruder.io/a-review-of-the-recent-history-of-nlp/index.html"
       author: "Sebastian Ruder"
       optional: true
+    - title: "Natural Language Understanding with Distributed Representation"
+      author: "Kyunghyun Cho"
+      url: "http://arxiv.org/abs/1511.07916"
+      optional: true
     - title: "Efficient Backprop"
       url: "http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf"
       author: "LeCun, Bottou, Orr and Muller"
@@ -221,17 +225,19 @@
       url: "http://cs231n.github.io/neural-networks-3/"
       author: "Andrej Karpathy"
       optional: true
-- title: "Neural Network Models and Training"
+- title: "Neural Network Models and Training (training tips in tutorial)"
   tag: dl4nlp
   include: true
   current: false
   notes:
-    - title: "Natural Language Understanding with Distributed Representation"
-      author: "Kyunghyun Cho"
-      url: "http://arxiv.org/abs/1511.07916"
-    - title: "A Primer on Neural Networks for NLP"
-      author: Yoav Goldberg
-      url: "http://u.cs.biu.ac.il/~yogo/nnlp.pdf" 
+    - title: "Training Neural Networks I (from UMich EECS498)"
+      url: "https://web.eecs.umich.edu/~justincj/slides/eecs498/FA2020/598_FA2020_lecture10.pdf"
+      video: "https://www.youtube.com/watch?v=lGbQlr1Ts7w&list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r"
+      author: "Justin Johnson"
+    - title: "Training Neural Networks II (from UMich EECS498)"
+      url: "https://web.eecs.umich.edu/~justincj/slides/eecs498/FA2020/598_FA2020_lecture11.pdf"
+      video: "https://www.youtube.com/watch?v=WUazOtlti0g&list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r"
+      author: "Justin Johnson"
   links:
     - title: "An overview of gradient descent optimization algorithms"
       author: "Sebastian Ruder"
@@ -252,7 +258,7 @@
 - title: "Sequence Models (Hidden Markov Models)"
   tag: hmm
   include: true
-  current: false
+  current: true
   notes:
     - title: "Hidden Markov Models"
       url: "assets/slides/hmm.pdf"
@@ -448,6 +454,10 @@
       author: "Vaswani et al"
       url: "https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf"
       optional: true
+  links:
+    - title: "The Annotated Transformer"
+      author: "Alexander Rush"
+      url: "https://nlp.seas.harvard.edu/2018/04/03/attention.html"
 - title: Constituency Parsing, Ambiguity and Context-Free Grammars
   tag: cfg
   include: true
