@@ -56,6 +56,15 @@ Course lectures will be held using [canvas]({{ site.canvas }}) BB Collaborate Ul
 * [Subscribe]({{ site.calendar }})
  -->
 
+#### Prerequisites
+There are no formal prerequisites for this class.  However, you are expected to be familiar with the following:
+* Proficiency in Python - Programming assignments will be in python (numpy and pytorch will be used).
+* Calculus and Linear Algebra (MATH 151, MATH 232/240) - You will need to be comfortable with taking multivariable derivatives
+* Basic Probability and Statistics (STAT 270)
+* Basic Machine Learning (CMPT 419/726) is strongly recommended
+
+There will be optional TA led tutorials that will help review these topics. 
+
 #### Textbook
 * No required textbook. Online readings provided in Syllabus.
 * Many of the readings will be from the following:
