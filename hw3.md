@@ -306,6 +306,7 @@ Some useful links if you feel lost at the beginning:
 
 * [60 mins intro to Pytorch](https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)
 * [Intro to RNN based classification](https://pytorch.org/tutorials/intermediate/char_rnn_classification_tutorial.html)
+* TA tutorial on Pytorch: [video](https://piazza.com/class_profile/get_resource/kehwtnnb4g852t/kg1gyhh4u6z10c), [slides](https://piazza.com/class_profile/get_resource/kehwtnnb4g852t/kg1h3lz7ljw7dc)
 
 ## The Challenge
 
