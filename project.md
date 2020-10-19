@@ -160,6 +160,9 @@ Make sure the following points are in your proposal.
     * Exactly which data set do you plan to use
 * Evaluation
     * What is the evaluation measure for the data set and what is the baseline
+* Timeline and work breakdown
+    * What do you plan to achieve by the milestone?  
+    * How will the work be allocated between the team members?
 
 Go to [Coursys]({{ site.coursys }}). Under the `Project Proposal`
 activity submit the following files:
@@ -194,7 +197,7 @@ Make sure the following points are covered.
     * Remaining results that you plan to produce
 
 A good structure for the milestone report will include the following sections.  It can then also serve as a draft for your final project write-up.
-* Introductrion 
+* Introduction 
     * Motivate the problem, describe your goals, and highlight your findings (if you have findings)
 * Approach 
     * Provide details on your main approach and baselines.  Be specific.  Make clear what part is original, what code you are writing yourself, what code you are using that is taken from elsewhere (homework, github, etc)
