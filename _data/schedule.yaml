@@ -40,6 +40,11 @@
     readings: [ "jm4"]
     keepread: 2
     tutorial: 1
+    tutlinks:
+      - name: "video"
+        url: "https://canvas.sfu.ca/courses/56551/files/folder/Tutorials?preview=13369023"
+      - name: "slides"
+        url: "https://piazza.com/class_profile/get_resource/kehwtnnb4g852t/kf5g6b8yib21a4"
 - week: 2
   dates:
   - date: "9/23" 
@@ -60,6 +65,11 @@
         url: "assets/lecture-slides/L3b-Classification-Evaluation.pdf"
     readings: [ "jm5"]
     tutorial: 2
+    tutlinks:
+      - name: "video"
+        url: "https://canvas.sfu.ca/courses/56551/files/folder/Tutorials?preview=13447636"
+      - name: "slides"
+        url: "https://piazza.com/class_profile/get_resource/kehwtnnb4g852t/kfg2sbyxsn9t3"
 - week: 3
   dates:
   - date: "9/30" 
@@ -79,6 +89,11 @@
         url: "assets/lecture-slides/L6-word2vec.pdf"
     skipread: true
     tutorial: 4
+    tutlinks:
+      - name: "video"
+        url: "https://canvas.sfu.ca/courses/56551/files/folder/Tutorials?preview=13582204"
+      - name: "slides"
+        url: "https://piazza.com/class_profile/get_resource/kehwtnnb4g852t/kg7987lz5k1ls"
 - week: 4
   dates:
   - date: "10/7" 
@@ -96,6 +111,11 @@
         url: "assets/lecture-slides/L7-neural-nets.pdf"
     skipread: true
     tutorial: 5
+    tutlinks:
+      - name: "video"
+        url: "https://piazza.com/class_profile/get_resource/kehwtnnb4g852t/kg1gyhh4u6z10c"
+      - name: "slides"
+        url: "https://piazza.com/class_profile/get_resource/kehwtnnb4g852t/kg1h3lz7ljw7dc"
 - week: 5
   dates:
   - date: "10/14" 
@@ -107,6 +127,11 @@
     title: "Sequence Modeling (RNNs)"
     lecture: "rnn"
     tutorial: 6
+    tutlinks:
+      - name: "video"
+        url: "https://piazza.com/class_profile/get_resource/kehwtnnb4g852t/kg9jklvl1ix2n1"
+      - name: "slides"
+        url: "https://piazza.com/class_profile/get_resource/kehwtnnb4g852t/kg9jiu1zly36ul"
     project: "Project title and abstract"
 - week: 6
   dates:
