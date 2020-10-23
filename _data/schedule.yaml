@@ -146,23 +146,23 @@
 - week: 7
   dates:
   - date: "10/28" 
-    title: "Constituency Parsing"
-    lecture: "cfg"
-    hwdue: "3"
-    hwout: "4"
-  - date: "10/30" 
-    title: "Dependency Parsing"
-    lecture: "dependency"
-- week: 8
-  dates:
-  - date: "11/4" 
     title: "Contextual Word Embeddings"
     lecture: "transformers"
     keepread: 2
-  - date: "11/6" 
+    hwdue: "3"
+    hwout: "4"
+  - date: "10/30" 
     title: "Contextual Word Embeddings"
     lecture: "transformers"
     skipread: true
+- week: 8
+  dates:
+  - date: "11/4" 
+    title: "Constituency Parsing"
+    lecture: "cfg"
+  - date: "11/6" 
+    title: "Dependency Parsing"
+    lecture: "dependency"
 - week: 9
   dates:
   - date: "11/11" 
