@@ -263,7 +263,7 @@
     - title: "Hidden Markov Models"
       url: "assets/slides/hmm.pdf"
     - title: "Sequence Models"
-      url: "assets/slides/seqmodels.pdf"
+      url: "assets/lecture-slides/L8-Sequence-modeling.pdf"
     - title: "Python Notebook: Viterbi algorithm for HMMs"
       url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/hmm.ipynb"
       download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/hmm.ipynb"
@@ -326,7 +326,7 @@
     - title: "Neural Language model"
       url: "assets/slides/nlm.pdf"
     - title: "Recursive Neural Networks"
-      url: "assets/slides/rnn.pdf"
+      url: "assets/lecture-slides/L9-RNN.pdf"
     - title: "RNN based Neural Language model (experiments)"
       url: "assets/slides/nlm-mikolov.pdf"
       author: Tomas Mikolov
@@ -373,10 +373,10 @@
 - title: "Sequence to Sequence models and Neural Machine Translation"
   tag: seq2seq
   include: true
-  current: true
+  current: false
   notes:
     - title: "Neural Machine Translation"
-      url: "assets/slides/nmt.pdf"
+      url: "assets/lecture-slides/L10-NeuralMT.pdf"
     - title: "Sequence to Sequence Models (Part 1)"
       author: Jetic Gu
       url: "assets/slides/03-2019-1010_NMT_Lecture.pdf"
@@ -398,6 +398,12 @@
       abbr: "J+M chapter 10" 
       tag: jm10
       url: "https://web.stanford.edu/~jurafsky/slp3/10.pdf"
+      optional: true
+    - author: Jacob Eisenstein
+      title: "Machine Translation (Natural Language Processing chapter 18)"
+      abbr: "Eisenstein chapter 18" 
+      tag: je18
+      url: "https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf"
       optional: true
     - author: Philipp Koehn
       title: "Neural Machine Translation"
@@ -435,7 +441,7 @@
 - title: "Contextualized Word Embeddings and Transformers"
   tag: transformers
   include: true
-  current: false
+  current: true
   notes:
     - title: "Contextualized Word Embeddings"
       url: "assets/slides/contextualized-word-embeddings.pdf"

@@ -119,13 +119,19 @@
 - week: 5
   dates:
   - date: "10/14" 
-    title: "Sequence Modeling (HMMs and Viterbi)"
+    title: "Sequence Modeling (HMMs)"
     lecture: "hmm"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L8-Sequence-modeling.pdf"
     hwdue: "2"
     hwout: "3"
   - date: "10/16" 
-    title: "Sequence Modeling (RNNs)"
-    lecture: "rnn"
+    title: "Sequence Modeling (Decoding)"
+    lecture: "hmm"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L8-Sequence-modeling.pdf"
     tutorial: 6
     tutlinks:
       - name: "video"
@@ -136,12 +142,18 @@
 - week: 6
   dates:
   - date: "10/21" 
-    title: "Sequence-to-Sequence models and Neural Machine Translation"
-    lecture: "seq2seq"
-    readings: ["jm10"]
+    title: "Sequence Modeling (RNNs)"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L9-RNN.pdf"
+    lecture: "rnn"
   - date: "10/23" 
-    title: "Text generation and evaluation"
-    lecture: "generation"
+    title: "Sequence-to-Sequence models and Neural Machine Translation"
+    readings: ["jm10"]
+    lecture: "seq2seq"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L10-NeuralMT.pdf"
     project: "Project proposal"
 - week: 7
   dates:
@@ -195,7 +207,7 @@
     title: "Grounding"
     lecture: "grounding"
   - date: "12/4" 
-    title: "NLP future and review"
+    title: "Final project presentations"
     lecture: "conclusion"
 - week: 13
   dates:
