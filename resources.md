@@ -16,6 +16,7 @@ active_tab: resources
 
 * To learn more about deep learning
     * [Deep learning](http://www.deeplearningbook.org/) by Ian Goodfellow and Yoshua Bengio and Aaron Courville
+    * [Dive into deep learning](https://d2l.ai/index.html) by Aston Zhang, Zachary C. Lipton, Mu Li, and Alexander J. Smola
 
 ### Debugging Neural Networks
 * [General tips from Andrej Karpathy for training neural networks](http://karpathy.github.io/2019/04/25/recipe/)
