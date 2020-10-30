@@ -160,12 +160,18 @@
   - date: "10/28" 
     title: "Contextual Word Embeddings"
     lecture: "transformers"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L11-contextualized-word-embeddings.pdf"
     keepread: 2
     hwdue: "3"
     hwout: "4"
   - date: "10/30" 
     title: "Contextual Word Embeddings"
     lecture: "transformers"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L11-contextualized-word-embeddings.pdf"
     skipread: true
 - week: 8
   dates:
@@ -182,13 +188,13 @@
     title: "Holiday"
     hwdue: "4"
   - date: "11/13" 
-    title: "ConvNets for NLP"
+    title: "ConvNets for NLP and Subword modeling"
     lecture: "convnets"
 - week: 10
   dates:
   - date: "11/18" 
-    title: "Subword modeling"
-    lecture: "subword"
+    title: "Semantic Parsing"
+    lecture: "semparse"
   - date: "11/20" 
     title: "Question Answering"
     project: "Project milestone"

@@ -444,7 +444,7 @@
   current: true
   notes:
     - title: "Contextualized Word Embeddings"
-      url: "assets/slides/contextualized-word-embeddings.pdf"
+      url: "assets/lecture-slides/L11-contextualized-word-embeddings.pdf"
   readings:
     - title: "Illustrated Transformer"
       author: "Jay Alammar"
