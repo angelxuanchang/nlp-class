@@ -176,11 +176,17 @@
 - week: 8
   dates:
   - date: "11/4" 
-    title: "Constituency Parsing"
+    title: "Constituency Parsing I"
     lecture: "cfg"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L12-constituency-parsing.pdf"
   - date: "11/6" 
-    title: "Dependency Parsing"
+    title: "Constituency Parsing II; Dependency parsing intro"
     lecture: "dependency"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L13-dependency-parsing.pdf"
 - week: 9
   dates:
   - date: "11/11" 
@@ -188,13 +194,16 @@
     title: "Holiday"
     hwdue: "4"
   - date: "11/13" 
-    title: "ConvNets for NLP and Subword modeling"
-    lecture: "convnets"
+    title: "Dependency Parsing II; Semantic Parsing"
+    lecture: "semparse"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L14-semantic-parsing.pdf"
 - week: 10
   dates:
   - date: "11/18" 
-    title: "Semantic Parsing"
-    lecture: "semparse"
+    title: "Subword modeling"
+    lecture: "subword"
   - date: "11/20" 
     title: "Question Answering"
     project: "Project milestone"

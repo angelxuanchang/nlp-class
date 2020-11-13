@@ -441,7 +441,7 @@
 - title: "Contextualized Word Embeddings and Transformers"
   tag: transformers
   include: true
-  current: true
+  current: false
   notes:
     - title: "Contextualized Word Embeddings"
       url: "assets/lecture-slides/L11-contextualized-word-embeddings.pdf"
@@ -475,7 +475,7 @@
   current: false
   notes:
     - title: "Constituency Parsing"
-      url: "assets/slides/constituency-parsing.pdf"
+      url: "assets/lecture-slides/L12-constituency-parsing.pdf"
     - title: "Phrase structure parsing (Berkeley)"
       author: "David Bamman"
       url: "http://people.ischool.berkeley.edu/~dbamman/nlp20_slides/14_phrase_structure_parsing.pdf"  
@@ -530,10 +530,10 @@
 - title: "Dependency Parsing"
   tag: dependency
   include: true
-  current: false
+  current: true
   notes:
     - title: "Dependency Parsing"
-      url: "assets/slides/dependency-parsing.pdf"
+      url: "assets/lecture-slides/L13-dependency-parsing.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
       title: "Dependency Parsing (J+M chapter 15)"
@@ -543,10 +543,10 @@
 - title: "Semantic Parsing"
   tag: semparse
   include: true
-  current: false
+  current: true
   notes:
     - title: "Semantic Parsing"
-      url: "assets/slides/semantic-parsing.pdf"
+      url: "assets/lecture-slides/L14-semantic-parsing.pdf"
   readings:
     - author: Percy Liang
       title: "Learning Executable Semantic Parsers for Natural Language Understanding"
