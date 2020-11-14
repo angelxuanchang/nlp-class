@@ -194,16 +194,19 @@
     title: "Holiday"
     hwdue: "4"
   - date: "11/13" 
-    title: "Dependency Parsing II; Semantic Parsing"
+    title: "Dependency Parsing"
+    lecture: "dependency"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L13-dependency-parsing.pdf"
+- week: 10
+  dates:
+  - date: "11/18" 
+    title: "Semantic parsing"
     lecture: "semparse"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L14-semantic-parsing.pdf"
-- week: 10
-  dates:
-  - date: "11/18" 
-    title: "Subword modeling"
-    lecture: "subword"
   - date: "11/20" 
     title: "Question Answering"
     project: "Project milestone"

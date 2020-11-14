@@ -86,5 +86,5 @@ There will be optional TA led tutorials that will help review these topics.
   * Project Proposal: Due on {{ site.hwdates[5].proposal }} (5%)
   * Project Milestone: Due on {{ site.hwdates[5].milestone }} (5%)
   * Project "Poster" Presentation: Online on {{ site.hwdates[5].poster }} (5%)
-  * Project Report and Code: Due on {{ site.hwdates[5].deadline }} (25%)
+  * Project Report and Code: Due on {{ site.hwdates[5].deadline }} (20%)
 * Participation: Helping other students on the discussion board in a positive way (3%)
