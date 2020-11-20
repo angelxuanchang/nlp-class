@@ -33,7 +33,7 @@ The schedule is preliminary and subject to change.
               <td>{{ date.date }}</td>
               <td>
                 {% if date.noclass %}
-                  {{ date.title }}
+                  No class - {{ date.title }}
                 {% elsif date.title %}
                  Lecture: {{ date.title }} <br/>
                   {% if date.leclinks %}
