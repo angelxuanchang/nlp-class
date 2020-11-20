@@ -211,11 +211,14 @@
     title: "Question Answering"
     project: "Project milestone"
     lecture: "qa"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L16-question-answering.pdf"
 - week: 11
   dates:
   - date: "11/25" 
-    title: "Coreference Resolution"
-    lecture: "coref"
+    noclass: true
+    title: "Angel at <a href='https://caida.ubc.ca/event/emerging-technologies-bcs-ai-showcase'>Emerging Technologies: BC's AI Showcase</a>"
   - date: "11/27" 
     title: "Dialogue"
     lecture: "dialogue"

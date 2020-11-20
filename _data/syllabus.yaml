@@ -530,7 +530,7 @@
 - title: "Dependency Parsing"
   tag: dependency
   include: true
-  current: true
+  current: false
   notes:
     - title: "Dependency Parsing"
       url: "assets/lecture-slides/L13-dependency-parsing.pdf"
@@ -543,7 +543,7 @@
 - title: "Semantic Parsing"
   tag: semparse
   include: true
-  current: true
+  current: false
   notes:
     - title: "Semantic Parsing"
       url: "assets/lecture-slides/L14-semantic-parsing.pdf"
@@ -565,10 +565,10 @@
 - title: "Question Answering"
   tag: qa
   include: true
-  current: false
+  current: true
   notes:
     - title: "Question Answering"
-      url: "assets/slides/question-answering.pdf"
+      url: "assets/lecture-slides/L16-question-answering.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
       title: "Questing Answering (J+M chapter 25)"
