@@ -222,6 +222,9 @@
   - date: "11/27" 
     title: "Dialogue"
     lecture: "dialogue"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L18-dialogue.pdf"
 - week: 12
   dates:
   - date: "12/2" 
