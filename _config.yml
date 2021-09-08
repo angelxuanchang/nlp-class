@@ -1,25 +1,25 @@
 exclude: ['README.md', 'assets/latex/', 'archive']
 timezone: US/Pacific
 markdown: kramdown
-coursys: "https://coursys.sfu.ca/2020fa-cmpt-413-x1/"
-piazza: "https://piazza.com/sfu.ca/fall2020/cmpt413825"
-canvas: "https://canvas.sfu.ca/courses/56551"
-semcode: 1207
+coursys: "https://coursys.sfu.ca/2021fa-cmpt-413-x1/"
+canvas: "https://canvas.sfu.ca/courses/64917"
+gradescope: "https://www.gradescope.ca/courses/5095"
+semcode: 1217
 calendar: "https://calendar.google.com/calendar/ical/qgs97od9ef8t1582k2rqomv5ho%40group.calendar.google.com/public/basic.ics"
-lastday: "Dec 4, 2020"
+lastday: "Dec 7, 2020"
 midterm: "None"
 instructor: angelx
-officehour: "Time: Wed 2-3pm"
+officehour: "Time: TBD"
 tas:
+  - name: "Jetic Gu"
+    email: jeticg
+    officehour: "Time: TBD"
   - name: "Ali Gholami"
     email: gholami
-    officehour: "Time: Mon 3-4pm"
+    officehour: "Time: TBD"
   - name: "Sonia Raychaudhuri"
     email: sraychau
-    officehour: "Time: Thurs 3-4pm"
-  - name: "Yue Ruan"
-    email: yuer
-    officehour: "Time: Tues 3-4pm"
+    officehour: "Time: TBD"
 tutorials:
   - tutorial: "0"
     title: "Probability, linear algebra and calculus"
@@ -36,17 +36,15 @@ tutorials:
   - tutorial: "6"
     title: "training/debugging networks and running experiments"
 group:
-  minsize: 2
-  maxsize: 4
+  minsize: 1
+  maxsize: 3
 hwdates:
   - hw: "0"
     startdate: "Sept 9, 2020"
     deadline: "Sept 16, 2020"
-    piazza: "http://www.piazza.com/class_profile/get_resource/kehwtnnb4g852t/kew9h6v5g6z44p"
   - hw: "1"
     startdate: "Sept 16, 2020"
     deadline: "Sept 30, 2020"
-    piazza: "https://piazza.com/class_profile/get_resource/kehwtnnb4g852t/kf60wjoomek3a3"
   - hw: "2"
     startdate: "Sept 30, 2020"
     deadline: "Oct 14, 2020"
@@ -64,4 +62,4 @@ hwdates:
     abstract: "Oct 16, 2020"
     proposal: "Oct 23, 2020"
     milestone: "Nov 20, 2020"
-    poster: "Dec 4, 2020"
+    poster: "TBD"

@@ -7,6 +7,42 @@ title: "Projects from previous terms"
 active_tab: project
 ---
 
+# Fall 2020 Final Projects
+* The detection of fake news and real news
+* Tackling Toxicity: Training Tools to Target Toxic Text
+* Analysis and Improvement of Three Top-Performing Models in Fake News Challenge
+* Comparison of Language Models on Twitter Sentiment Analysis
+* Evaluation of BERT models on Question Answering Tasks
+* Toxic Comment Classification Proposal
+* Analyze and Differentiate Application Feedback
+* Exploring Temporal Verb Embeddings in Script Event Prediction
+* Generate Sentiment Polarity of Tweets Using LSTM with Word2Vec/GloVe
+* Learning Language-to-Vision Mapping in Agent Navigation Task
+* Deep image captioning with local features
+* ITS: Improved Text Summarizer Based on TextRank
+* An implementation of the SQuAD Question Answering model
+* Fake News Detection with Deep Learning
+* Automatic Lyric Generation Model
+* Sentiment Analysis and Topic Classification of Newspaper Articles
+* Spam E-Mail Classification Comparison using Naïve Bayes and RNN Algorithms
+* Toxic Comment Classification Challenge
+* Product Review Classifier
+* Word -> Pronunciation (Grapheme to Phoneme) Translation
+* Sentiment Analysis of Public Opinion on COVID-19 Over Time
+* Sentiment Analysis on Movie Reviews
+* Deep Learning library for DPCNN - Text Categorization
+* Building and Improving an Abstractive Seq2Seq Text Summarization Model
+* Is Attention All You Need?
+* Fake News Challenge: Using Neural Networks for Stance Detection in News Articles
+* Stylistic Text to Speech Synthesis
+* Language guided 3D Shape Retrieval by Learning Joint Text-Shape Embeddings
+* A Hybridized Approach to Image Captioning
+* Text summarization from basic to advanced approaches
+* Toxic Comment Classification
+* Comment Abuse Tracker
+* IMDB sentiment Analysis
+* Seq2Seq COVID doctor Chatbot with Attention Mechanism and Unsupervised Data Augmentation
+
 # Spring 2020 Final Projects
 * Span-based End-to-End Semantic Role Labeling
 * Predicting the Usefullness of Yelp Reviews

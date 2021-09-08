@@ -7,7 +7,7 @@ title: Course Information
 active_tab: main_page 
 ---
 
-## Natural Language Processing <span class="text-muted">Fall 2020</span>
+## Natural Language Processing <span class="text-muted">Fall 2021</span>
 
 Imagine a world where you can pick up a phone and talk in English,
 while at the other end of the line your words are [spoken in
@@ -41,16 +41,18 @@ terms of its analysis and the learning of language from observations.
 </ul>
 
 #### Asking for help
-* Ask for help on [piazza]({{ site.piazza }})
+* Ask for help on [canvas]({{ site.canvas }})
 * Instructor office hours: {{ site.officehour }} 
 * <b>No emails</b> to the TAs and strictly emails about personal matters to the instructor
-* Use only SFU email address and use either `cmpt413:` or`cmpt825:` as subject prefix
+* Use only SFU email address and use either `cmpt413:` or`cmpt713:` as subject prefix
 
 #### Time and place
-Course lectures will be held using [canvas]({{ site.canvas }}) BB Collaborate Ultra
-* Wed 11:30am-12:20pm Online
-* Fri 10:30am-12:20pm Online
+Course lectures will be held in person at the Burnaby campus
+* Tue 5:30am-6:20pm SSCC 9001
+* Thu 4:30am-6:20pm RCB IMAGTH
 * Last day of classes: {{ site.lastday }}
+
+Course material will be made available on [canvas]({{ site.canvas }})
 
 <!-- #### Calendar
 * [Subscribe]({{ site.calendar }})
