@@ -7,118 +7,110 @@
       - name: "slides"
         url: "assets/lecture-slides/L1-intro.pdf"
     hwout: "0"
-  - date: "9/11" 
+  - date: "9/10" 
+    tutorial: 0
+    tutlinks:
+      - name: "video"
+        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
+      - name: "slides"
+        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
+- week: 1
+  dates:
+  - date: "9/14" 
     title: "Language Modeling"
     lecture: "lm"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L2-Language_Models.pdf"
-    keepread: 2
-    tutorial: 0
-    tutlinks:
-      - name: "video"
-        url: "https://piazza.com/class_profile/get_resource/kehwtnnb4g852t/kexunlrtsr75wi"
-      - name: "slides"
-        url: "https://piazza.com/class_profile/get_resource/kehwtnnb4g852t/kexmysub91c3oa"
-- week: 1
-  dates:
   - date: "9/16" 
-    title: "Language Modeling"
-    lecture: "lm"
-    leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L2b-Language_Models_II.pdf"
-    skipread: true
-    hwdue: "0"
-    hwout: "1"
-  - date: "9/18" 
     title: "Text Classification (Naive Bayes)"
     lecture: "classifiers"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L3-Classification-Naive-Bayes.pdf"
     readings: [ "jm4"]
-    keepread: 2
+    hwdue: "0"
+    hwout: "1"
+  - date: "9/17" 
     tutorial: 1
     tutlinks:
       - name: "video"
-        url: "https://canvas.sfu.ca/courses/56551/files/folder/Tutorials?preview=13369023"
+        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
       - name: "slides"
-        url: "https://piazza.com/class_profile/get_resource/kehwtnnb4g852t/kf5g6b8yib21a4"
+        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
 - week: 2
   dates:
-  - date: "9/23" 
-    title: "Text Classification (Naive Bayes)"
-    lecture: "classifiers"
-    leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L3-Classification-Naive-Bayes.pdf"
-    readings: [ "jm4"]
-    skipread: true
-  - date: "9/25" 
+  - date: "9/21" 
     title: "Text Classification (Logistic regression)"
     lecture: "classifiers"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L4-Classification-Logistic.pdf"
+    readings: [ "jm4"]
+    skipread: true
+  - date: "9/23" 
+    title: "Text Classification (Neural Networks)"
+    lecture: "ff"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L7-neural-nets.pdf"
       - name: "evaluation"
         url: "assets/lecture-slides/L3b-Classification-Evaluation.pdf"
     readings: [ "jm5"]
+  - date: "9/24" 
     tutorial: 2
     tutlinks:
       - name: "video"
-        url: "https://canvas.sfu.ca/courses/56551/files/folder/Tutorials?preview=13447636"
+        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
       - name: "slides"
-        url: "https://piazza.com/class_profile/get_resource/kehwtnnb4g852t/kfg2sbyxsn9t3"
+        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
 - week: 3
   dates:
-  - date: "9/30" 
-    title: "Word Embeddings"
-    lecture: "w2v"
-    leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L6-word2vec.pdf"
-    keepread: 2
-    hwdue: "1"
-    hwout: "2"
-  - date: "10/2" 
-    title: "Word Embeddings"
-    lecture: "w2v"
-    leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L6-word2vec.pdf"
-    skipread: true
-    tutorial: 4
-    tutlinks:
-      - name: "video"
-        url: "https://canvas.sfu.ca/courses/56551/files/folder/Tutorials?preview=13582204"
-      - name: "slides"
-        url: "https://piazza.com/class_profile/get_resource/kehwtnnb4g852t/kg7987lz5k1ls"
-- week: 4
-  dates:
-  - date: "10/7" 
-    title: "Neural Networks"
+  - date: "9/28" 
+    title: "Text Classification (Neural Networks)"
     lecture: "ff"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L7-neural-nets.pdf"
     keepread: 2
-  - date: "10/9" 
-    title: "Neural Networks"
-    lecture: "dl4nlp"
-    leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L7-neural-nets.pdf"
-    skipread: true
-    tutorial: 5
+    hwdue: "1"
+    hwout: "2"
+  - date: "9/30" 
+    noclass: true
+    title: "Holiday (National Day)"
+  - date: "10/1" 
+    tutorial: 3
     tutlinks:
       - name: "video"
-        url: "https://piazza.com/class_profile/get_resource/kehwtnnb4g852t/kg1gyhh4u6z10c"
+        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
       - name: "slides"
-        url: "https://piazza.com/class_profile/get_resource/kehwtnnb4g852t/kg1h3lz7ljw7dc"
+        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
+- week: 4
+  dates:
+  - date: "10/5" 
+    title: "Word Embeddings"
+    lecture: "w2v"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L6-word2vec.pdf"
+    keepread: 2
+  - date: "10/7" 
+    title: "Word Embeddings"
+    lecture: "w2v"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L6-word2vec.pdf"
+    skipread: true
+  - date: "10/8" 
+    tutorial: 4
+    tutlinks:
+      - name: "video"
+        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
+      - name: "slides"
+        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
 - week: 5
   dates:
-  - date: "10/14" 
+  - date: "10/12" 
     title: "Sequence Modeling (HMMs)"
     lecture: "hmm"
     leclinks:
@@ -126,39 +118,49 @@
         url: "assets/lecture-slides/L8-Sequence-modeling.pdf"
     hwdue: "2"
     hwout: "3"
-  - date: "10/16" 
-    title: "Sequence Modeling (Decoding)"
-    lecture: "hmm"
+  - date: "10/14" 
+    title: "Neural Sequence Modeling (RNNs)"
+    lecture: "rnn"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L8-Sequence-modeling.pdf"
-    tutorial: 6
+        url: "assets/lecture-slides/L9-RNN.pdf"
+    readings: ["jm10"]
+    keepread: 2
+  - date: "10/15" 
+    tutorial: 5
     tutlinks:
       - name: "video"
-        url: "https://piazza.com/class_profile/get_resource/kehwtnnb4g852t/kg9jklvl1ix2n1"
+        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
       - name: "slides"
-        url: "https://piazza.com/class_profile/get_resource/kehwtnnb4g852t/kg9jiu1zly36ul"
+        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
     project: "Project title and abstract"
 - week: 6
   dates:
-  - date: "10/21" 
-    title: "Sequence Modeling (RNNs)"
+  - date: "10/19" 
+    title: "Sequence Modeling (LSTMs/GRUs)"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L9-RNN.pdf"
     lecture: "rnn"
-  - date: "10/23" 
-    title: "Sequence-to-Sequence models and Neural Machine Translation"
-    readings: ["jm10"]
+    skipread: true
+  - date: "10/21" 
+    title: "Sequence-to-Sequence models and Text Generation"
     lecture: "seq2seq"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L10-NeuralMT.pdf"
     project: "Project proposal"
+  - date: "10/22" 
+    tutorial: 6
+    tutlinks:
+      - name: "video"
+        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
+      - name: "slides"
+        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
 - week: 7
   dates:
-  - date: "10/28" 
-    title: "Contextual Word Embeddings"
+  - date: "10/26" 
+    title: "Transformers"
     lecture: "transformers"
     leclinks:
       - name: "slides"
@@ -173,53 +175,57 @@
       - name: "slides"
         url: "assets/lecture-slides/L11-contextualized-word-embeddings.pdf"
     skipread: true
+  - date: "10/31" 
+    tutorial: 7
+    tutlinks:
+      - name: "video"
+        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
+      - name: "slides"
+        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
 - week: 8
   dates:
-  - date: "11/4" 
-    title: "Constituency Parsing I"
+  - date: "11/2" 
+    title: "Constituency Parsing"
     lecture: "cfg"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L12-constituency-parsing.pdf"
-  - date: "11/6" 
-    title: "Constituency Parsing II; Dependency parsing intro"
+  - date: "11/4" 
+    title: "Dependency parsing"
     lecture: "dependency"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L13-dependency-parsing.pdf"
 - week: 9
   dates:
-  - date: "11/11" 
-    noclass: true
-    title: "Holiday"
-    hwdue: "4"
-  - date: "11/13" 
-    title: "Dependency Parsing"
-    lecture: "dependency"
-    leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L13-dependency-parsing.pdf"
-- week: 10
-  dates:
-  - date: "11/18" 
+  - date: "11/9" 
     title: "Semantic parsing"
     lecture: "semparse"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L14-semantic-parsing.pdf"
-  - date: "11/20" 
+  - date: "11/11" 
+    noclass: true
+    title: "Holiday"
+    hwdue: "4"
+- week: 10
+  dates:
+  - date: "11/16" 
+    title: "NLP Applications"
+    lecture: "applications"
+  - date: "11/18" 
+    title: "Information extraction"
+    lecture: "ie"
+- week: 11
+  dates:
+  - date: "11/23" 
     title: "Question Answering"
     project: "Project milestone"
     lecture: "qa"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L16-question-answering.pdf"
-- week: 11
-  dates:
   - date: "11/25" 
-    noclass: true
-    title: "Angel at <a href='https://caida.ubc.ca/event/emerging-technologies-bcs-ai-showcase'>Emerging Technologies: BC's AI Showcase</a>"
-  - date: "11/27" 
     title: "Dialogue"
     lecture: "dialogue"
     leclinks:
@@ -227,13 +233,16 @@
         url: "assets/lecture-slides/L18-dialogue.pdf"
 - week: 12
   dates:
+  - date: "11/30" 
+    title: "Visualization and interpretation"
+    lecture: "interpretation"
   - date: "12/2" 
     title: "Grounding"
     lecture: "grounding"
-  - date: "12/4" 
-    title: "Final project presentations"
-    lecture: "conclusion"
 - week: 13
   dates:
+  - date: "12/7"
+    title: "Final project presentations"
+    lecture: "conclusion"
   - date: "12/8"
     project: "Final project report"

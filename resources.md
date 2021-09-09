@@ -23,6 +23,9 @@ active_tab: resources
 * [Tips from Graham Neubig (CMU CS11-747) for debugging NLP models](http://www.phontron.com/class/nn4nlp2020/assets/slides/nn4nlp-10-debugging.pdf)
 
 
+### Podcasts
+* [NLP highlights](https://player.fm/series/nlp-highlights) with Matt Gardner, Pradeep Dasigi, and Waleed Ammar 
+
 ### Tools
 
 * Here are some useful NLP tools
