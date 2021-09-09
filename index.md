@@ -90,3 +90,7 @@ There will be optional TA led tutorials that will help review these topics.
   * Project "Poster" Presentation: {{ site.hwdates[5].poster }} (5%)
   * Project Report and Code: Due on {{ site.hwdates[5].deadline }} (13%)
 * Participation: Helping other students on the discussion board in a positive way (3%)
+
+
+#### Other notes
+For CMPT 413 students (so undergrads only): any person enrolled in this course who identifies as a woman and currently lives in British Columbia can apply for a $500 scholarship from Athena Pathways.  [Please use this link to apply](https://www.athenapathways.org/education).
