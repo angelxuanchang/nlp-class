@@ -375,8 +375,8 @@ The grading is split up into the following components:
 
 * dev scores (see Table below)
 * test scores (see Table below)
-* quality of report 
-* code content and quality
+* Report quality 
+* Code content and quality
   * Make sure that iterative search algorithm is implemented as described in the Baseline section above
 * Check if each group member has a `answer/README.username`.
 * Make sure that your have updated your GitLab repository with your submission source code.

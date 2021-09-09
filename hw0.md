@@ -15,14 +15,14 @@ active_tab: homework
 ## Homework Questions 0: Probablity, linear algebra, and calculus
 
 <span class="text-info">Out on {{ site.hwdates[0].startdate }}.</span> 
-{% if site.hwdates[0].piazza %}
-<span>Posted on [Piazza]({{ site.hwdates[0].piazza }}).</span> 
+{% if site.hwdates[0].canvas %}
+<span>Posted on [Canvas]({{ site.hwdates[0].canvas }}).</span> 
 {% endif %}
 
 # Programming Homework 0: Setup
 
 
-## Setup on Coursys
+## Setup on Canvas
 
 Find a group to work with for the homework assignments and the final
 course project. The group size should be {{ site.group.minsize }} to {{ site.group.maxsize }} people.
@@ -30,7 +30,7 @@ You can use [Canvas discussion]({{ site.canvas }}) to look for teammates.
 We will be checking that all group members are contributing equally
 to the homework submission and the final project.
 
-Along with your group members, register yourself as part of a group on [Coursys]({{ site.coursys }}).
+Along with your group members, register yourself as part of a group on [Canvas]({{ site.canvas }}).
 
 Create a memorable name for your group. If you need help, [seek help](https://www.wordlab.com/name-generators/team-name-generator/).
 
@@ -68,7 +68,7 @@ On the `New Project` page, give your repo a name under the `Project
 name` field. The default name is `my-awesome-project` which is
 **not** what you should call your repo. Instead, name your repo:
 `nlpclass-{{ site.semcode }}-g-GROUP` where `GROUP` is the group
-you registered on [Coursys]({{ site.coursys }}). For example, a
+you registered on [Canvas]({{ site.canvas }}). For example, a
 repository name might be `nlpclass-{{ site.semcode }}-g-ethicsgradient`
 Make sure you add the `g-` before your group name. It's important
 to name the repo exactly as you see here.
@@ -84,12 +84,12 @@ else so be considerate of others.
 * Do not use any strange characters in your group name.  
 Use alphanumeric characters [a-z0-9] only in your 
 group name, underscore and dashes are also permited (**please avoid spaces**).
-We use an automated process to align your group name in Coursys 
+We use an automated process to align your group name in Canvas 
 to your repo in gitlab.  If your group name and repo does not match 
-exactly, we will not be able to match your gitlab repo to your Coursys group.
-If you used spaces in your group name in Coursys by mistake, make sure that your
+exactly, we will not be able to match your gitlab repo to your Canvas group.
+If you used spaces in your group name in Canvas by mistake, make sure that your
 gitlab repo has dashes ('-') instead of spaces (because the internal
-system name used by Coursys will have dashes instead of spaces).
+system name used by Canvas will have dashes instead of spaces).
 
 Leave all other settings as they are and click the `Create Project` button
 at the bottom left of the page.
@@ -168,7 +168,7 @@ In the terminal window, enter the commands
 
 where `USER` is your SFU username, `GROUPUSER` is the SFU username of
 the person who created the group repository and `GROUP` is the name of the
-group you have already setup on [Coursys]({{ site.coursys }}). If
+group you have already setup on [Canvas]({{ site.canvas }}). If
 you skipped any of the above steps in setting up your GitLab repo
 this command will not work.  The system might prompt you for a
 username/password combo. Supply the usual answers. To avoid entering
@@ -260,7 +260,7 @@ have to submit the solution to the following task as your submission
 for Homework 0. It will serve as a guide for the steps to be taken
 for all subsequent homeworks in this course.
 
-Submission for each homework will be done on [Coursys]({{ site.coursys }}).
+Submission for each homework will be done on [Canvas]({{ site.canvas }}).
 
 ### Getting Started
 
@@ -401,7 +401,7 @@ You must create the following files:
 
 ### Run your solution on the data files
 
-To create the `output.zip` file for upload to Coursys do:
+To create the `output.zip` file for upload to Canvas do:
 
     python3 zipout.py
 
@@ -450,22 +450,22 @@ F-score on both dev and test:
     dev.out score: 0.98
     test.out score: 0.97
 
-### Submit your homework on Coursys
+### Submit your homework on Canvas
 
 Once you are done with your homework submit all the relevant materials
-to Coursys for evaluation.
+to Canvas for evaluation.
 
 
 #### Create output.zip
 
 Once you have a working solution in `answer/ensegment.py` create
-the `output.zip` for upload to Coursys using:
+the `output.zip` for upload to Canvas using:
 
     python3 zipout.py
 
 #### Create source.zip
 
-To create the `source.zip` file for upload to Coursys do:
+To create the `source.zip` file for upload to Canvas do:
 
     python3 zipsrc.py
 
@@ -477,9 +477,9 @@ You must have the following files or `zipsrc.py` will complain about it:
 In addition, each group member should write down a short description of what they
 did for this homework in `answer/README.username`.
 
-#### Upload to Coursys
+#### Upload to Canvas
 
-Go to `Programming Homework 0` on Coursys and do a group submission:
+Go to `Programming Homework 0` on Canvas and do a group submission:
 
 * Upload `output.zip` and `source.zip`
 * Make sure you have documented your approach in `answer/ensegment.ipynb`.
@@ -489,7 +489,7 @@ Go to `Programming Homework 0` on Coursys and do a group submission:
 
 The grading is split up into the following components:
 
-* Group setup done on Coursys.
+* Group setup done on Canvas.
 * GitLab setup including adding instructor and TA as Developer to the repository.
 * dev scores (see Table below)
 * test scores (see Table below)
@@ -512,5 +512,5 @@ Your F-score should be equal to or greater than the score listed for the corresp
 | .99 | .97 | 100 | A+ |
 {: .table}
 
-The score will be normalized to the marks on Coursys for the dev and test scores.
+The score will be normalized to the marks on Canvas for the dev and test scores.
 
