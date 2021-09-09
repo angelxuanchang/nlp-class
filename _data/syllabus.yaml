@@ -268,6 +268,12 @@
       url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/hmm.ipynb"
       download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/hmm.ipynb"
   readings:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Hidden Markov Models (J+M Appendix A)"
+      abbr: "J+M Appendix A" 
+      tag: "jmA"
+      url: "https://web.stanford.edu/~jurafsky/slp3/A.pdf"
+      optional: true
     - author: Michael Collins
       title: "Hidden Markov Models"
       download: "assets/mcollins-notes/hmms-spring2013.pdf"
@@ -438,17 +444,31 @@
       citation: "International Conference on Neural Networks, vol 4, pages 2535-2540"
       url: "http://www.cs.brandeis.edu/~gregws/cs113/asynchronous-translations-with-recurrent.pdf"
       optional: true
-- title: "Contextualized Word Embeddings and Transformers"
+- title: "Transformers"
   tag: transformers
+  include: true
+  current: false
+  readings:
+    - title: "Illustrated Transformer"
+      author: "Jay Alammar"
+      url: "http://jalammar.github.io/illustrated-transformer/"
+    - title: "Attention Is All You Need"
+      author: "Vaswani et al"
+      url: "https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf"
+      optional: true
+  links:
+    - title: "The Annotated Transformer"
+      author: "Alexander Rush"
+      url: "https://nlp.seas.harvard.edu/2018/04/03/attention.html"
+      optional: true
+- title: "Contextualized Word Embeddings"
+  tag: cwe
   include: true
   current: false
   notes:
     - title: "Contextualized Word Embeddings"
       url: "assets/lecture-slides/L11-contextualized-word-embeddings.pdf"
   readings:
-    - title: "Illustrated Transformer"
-      author: "Jay Alammar"
-      url: "http://jalammar.github.io/illustrated-transformer/"
     - title: "Illustrated BERT"
       author: "Jay Alammar"
       url: "http://jalammar.github.io/illustrated-bert/"
@@ -456,18 +476,9 @@
       author: "Noah A. Smith"
       url: "https://arxiv.org/pdf/1902.06006.pdf"
       optional: true
-    - title: "Attention Is All You Need"
-      author: "Vaswani et al"
-      url: "https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf"
-      optional: true
     - title: "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
       author: "Devlin et al"
       url: "https://arxiv.org/pdf/1810.04805.pdf"
-      optional: true
-  links:
-    - title: "The Annotated Transformer"
-      author: "Alexander Rush"
-      url: "https://nlp.seas.harvard.edu/2018/04/03/attention.html"
       optional: true
 - title: Constituency Parsing, Ambiguity and Context-Free Grammars
   tag: cfg

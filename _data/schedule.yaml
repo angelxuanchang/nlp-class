@@ -46,8 +46,7 @@
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L4-Classification-Logistic.pdf"
-    readings: [ "jm4"]
-    skipread: true
+    readings: [ "jm5"]
   - date: "9/23" 
     title: "Text Classification (Neural Networks)"
     lecture: "ff"
@@ -56,7 +55,6 @@
         url: "assets/lecture-slides/L7-neural-nets.pdf"
       - name: "evaluation"
         url: "assets/lecture-slides/L3b-Classification-Evaluation.pdf"
-    readings: [ "jm5"]
   - date: "9/24" 
     tutorial: 2
     tutlinks:
@@ -72,7 +70,6 @@
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L7-neural-nets.pdf"
-    keepread: 2
     hwdue: "1"
     hwout: "2"
   - date: "9/30" 
@@ -124,8 +121,6 @@
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L9-RNN.pdf"
-    readings: ["jm10"]
-    keepread: 2
   - date: "10/15" 
     tutorial: 5
     tutlinks:
@@ -133,7 +128,6 @@
         url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
       - name: "slides"
         url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
-    project: "Project title and abstract"
 - week: 6
   dates:
   - date: "10/19" 
@@ -142,14 +136,12 @@
       - name: "slides"
         url: "assets/lecture-slides/L9-RNN.pdf"
     lecture: "rnn"
-    skipread: true
   - date: "10/21" 
     title: "Sequence-to-Sequence models and Text Generation"
     lecture: "seq2seq"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L10-NeuralMT.pdf"
-    project: "Project proposal"
   - date: "10/22" 
     tutorial: 6
     tutlinks:
@@ -157,6 +149,7 @@
         url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
       - name: "slides"
         url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
+    project: "Project title and abstract"
 - week: 7
   dates:
   - date: "10/26" 
@@ -165,17 +158,16 @@
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L11-contextualized-word-embeddings.pdf"
-    keepread: 2
     hwdue: "3"
     hwout: "4"
-  - date: "10/30" 
+  - date: "10/28" 
     title: "Contextual Word Embeddings"
-    lecture: "transformers"
+    lecture: "cwe"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L11-contextualized-word-embeddings.pdf"
-    skipread: true
-  - date: "10/31" 
+    project: "Project proposal"
+  - date: "10/29" 
     tutorial: 7
     tutlinks:
       - name: "video"
@@ -204,10 +196,10 @@
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L14-semantic-parsing.pdf"
+    hwdue: "4"
   - date: "11/11" 
     noclass: true
     title: "Holiday"
-    hwdue: "4"
 - week: 10
   dates:
   - date: "11/16" 
@@ -216,11 +208,11 @@
   - date: "11/18" 
     title: "Information extraction"
     lecture: "ie"
+    project: "Project milestone"
 - week: 11
   dates:
   - date: "11/23" 
     title: "Question Answering"
-    project: "Project milestone"
     lecture: "qa"
     leclinks:
       - name: "slides"

@@ -14,8 +14,8 @@ active_tab: homework
 ## Homework Questions 4: Parsing and contextual word embeddings
 
 <span class="text-info">Out on {{ site.hwdates[4].startdate }}</span> 
-{% if site.hwdates[4].piazza %}
-<span>Posted on [Piazza]({{ site.hwdates[4].piazza }}).</span> 
+{% if site.hwdates[4].canvas %}
+<span>Posted on [Canvas]({{ site.hwdates[4].canvas }}).</span> 
 {% endif %}
 
 # Programming Homework 4: Attention
@@ -208,7 +208,7 @@ You must create the following files:
 
 ## Run your solution on the data files
 
-To create the `output.zip` file for upload to Coursys do:
+To create the `output.zip` file for upload to Canvas do:
 
     python3 zipout.py
 
@@ -235,21 +235,21 @@ In particular use the log file to check your output evaluation:
 The accuracy on `data/input/test.txt` will not be shown.  We will
 evaluate your output on the test input after the submission deadline.
 
-## Submit your homework on Coursys
+## Submit your homework on Canvas
 
 Once you are done with your homework submit all the relevant materials
-to Coursys for evaluation.
+to Canvas for evaluation.
 
 ### Create output.zip
 
 Once you have a working solution in `answer/neuralmt.py` create
-the `output.zip` for upload to Coursys using:
+the `output.zip` for upload to Canvas using:
 
     python3 zipout.py
 
 ### Create source.zip
 
-To create the `source.zip` file for upload to Coursys do:
+To create the `source.zip` file for upload to Canvas do:
 
     python3 zipsrc.py
 
@@ -261,9 +261,9 @@ You must have the following files or `zipsrc.py` will complain about it:
 In addition, each group member should write down a short description of what they
 did for this homework in `answer/README.username`.
 
-### Upload to Coursys
+### Upload to Canvas
 
-Go to `Programming Homework 4` on Coursys and do a group submission:
+Go to `Programming Homework 4` on Canvas and do a group submission:
 
 * Upload `output.zip` and `source.zip`
 * Make sure your `source.zip` matches your Gitlab repository.
@@ -276,7 +276,8 @@ The grading is split up into the following components:
 
 * dev scores (see Table below)
 * test scores (see Table below)
-* iPython notebook write-up 
+* Report quality
+* Code content and quality 
 * Check if each group member has a `answer/README.username`.
 
 Your F-score should be equal to or greater than the score listed for the corresponding marks.
@@ -295,4 +296,4 @@ Your F-score should be equal to or greater than the score listed for the corresp
 | 20.0 | 19.0 | 100 | A+ |
 {: .table}
 
-The score will be normalized to the marks on Coursys for the dev and test scores.
+The score will be normalized to the marks on Canvas for the dev and test scores.

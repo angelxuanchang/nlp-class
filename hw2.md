@@ -15,8 +15,8 @@ active_tab: homework
 ## Homework Questions 2: Word vectors and neural networks
 
 <span class="text-info">Out on {{ site.hwdates[2].startdate }}</span> 
-{% if site.hwdates[2].piazza %}
-<span>Posted on [Piazza]({{ site.hwdates[2].piazza }}).</span> 
+{% if site.hwdates[2].canvas %}
+<span>Posted on [Canvas]({{ site.hwdates[2].canvas }}).</span> 
 {% endif %}
 
 # Programming Homework 2: Lexical Substitution
@@ -398,7 +398,7 @@ You must create the following files:
 
 ## Run your solution on the data files
 
-To create the `output.zip` file for upload to Coursys do:
+To create the `output.zip` file for upload to Canvas do:
 
     python3 zipout.py
 
@@ -449,21 +449,21 @@ accuracy on the dev set:
     $ python3 check.py
     dev.out score: 40.5167
 
-## Submit your homework on Coursys
+## Submit your homework on Canvas
 
 Once you are done with your homework submit all the relevant materials
-to Coursys for evaluation.
+to Canvas for evaluation.
 
 ### Create output.zip
 
 Once you have a working solution in `answer/lexsub.py` create
-the `output.zip` for upload to Coursys using:
+the `output.zip` for upload to Canvas using:
 
     python3 zipout.py
 
 ### Create source.zip
 
-To create the `source.zip` file for upload to Coursys do:
+To create the `source.zip` file for upload to Canvas do:
 
     python3 zipsrc.py
 
@@ -475,9 +475,9 @@ You must have the following files or `zipsrc.py` will complain about it:
 In addition, each group member should write down a short description of what they
 did for this homework in `answer/README.username`.
 
-### Upload to Coursys
+### Upload to Canvas
 
-Go to `Programming Homework 2` on Coursys and do a group submission:
+Go to `Programming Homework 2` on Canvas and do a group submission:
 
 * Upload `output.zip` and `source.zip`
 * Make sure your `source.zip` matches your Gitlab repository.
@@ -490,7 +490,8 @@ The grading is split up into the following components:
 
 * dev scores (see Table below)
 * test scores (see Table below)
-* iPython notebook write-up 
+* Report quality 
+* Code content and quality
    * Make sure that you are not using any external data sources in your solution. You must only use the provided word vector file.
    * Make sure you have implemented retrofitting yourself.
    * Do **not** submit the retrofitted word vector file but you should provide a script that produces the retrofitted `.magnitude` word vectors used by your Baseline solution.

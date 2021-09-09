@@ -15,8 +15,8 @@ active_tab: homework
 ## Homework Questions 1: Language models and text classification
 
 <span class="text-info">Out on {{ site.hwdates[1].startdate }}</span> 
-{% if site.hwdates[1].piazza %}
-<span>Posted on [Piazza]({{ site.hwdates[1].piazza }}).</span> 
+{% if site.hwdates[1].canvas %}
+<span>Posted on [Canvas]({{ site.hwdates[1].canvas }}).</span> 
 {% endif %}
 
 # Programming Homework 1: Chinese Word Segmentation
@@ -273,7 +273,7 @@ You must create the following files:
 
 ## Run your solution on the data files
 
-To create the `output.zip` file for upload to Coursys do:
+To create the `output.zip` file for upload to Canvas do:
 
     python3 zipout.py
 
@@ -331,21 +331,21 @@ the Chinese language) should give you some further ideas to consolidate
 certain types of characters into words based on regularity how they
 combine into words in the training set.
 
-## Submit your homework on Coursys
+## Submit your homework on Canvas
 
 Once you are done with your homework submit all the relevant materials
-to Coursys for evaluation.
+to Canvas for evaluation.
 
 ### Create output.zip
 
 Once you have a working solution in `answer/zhsegment.py` create
-the `output.zip` for upload to Coursys using:
+the `output.zip` for upload to Canvas using:
 
     python3 zipout.py
 
 ### Create source.zip
 
-To create the `source.zip` file for upload to Coursys do:
+To create the `source.zip` file for upload to Canvas do:
 
     python3 zipsrc.py
 
@@ -360,9 +360,9 @@ did for this homework in `answer/README.username`.
 Make sure that your have updated your GitLab repository with your submission source code.
 
 
-### Upload to Coursys
+### Upload to Canvas
 
-Go to `Programming Homework 1` on Coursys and do a group submission:
+Go to `Programming Homework 1` on Canvas and do a group submission:
 
 * Upload `output.zip` and `source.zip`
 * Make sure your `source.zip` matches your Gitlab repository.
@@ -375,8 +375,9 @@ The grading is split up into the following components:
 
 * dev scores (see Table below)
 * test scores (see Table below)
-* iPython notebook write-up 
-   * Make sure that iterative search algorithm is implemented as described in the Baseline section above
+* quality of report 
+* code content and quality
+  * Make sure that iterative search algorithm is implemented as described in the Baseline section above
 * Check if each group member has a `answer/README.username`.
 * Make sure that your have updated your GitLab repository with your submission source code.
 
@@ -397,5 +398,5 @@ Your F-score should be equal to or greater than the score listed for the corresp
 {: .table}
 
 
-The score will be normalized to the marks on Coursys for the dev and test scores.
+The score will be normalized to the marks on Canvas for the dev and test scores.
 

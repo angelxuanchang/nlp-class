@@ -26,7 +26,7 @@ active_tab: homework
 
 Find a group to work with for the homework assignments and the final
 course project. The group size should be {{ site.group.minsize }} to {{ site.group.maxsize }} people.
-You can use [Piazza]({{ site.piazza }}) to look for teammates.
+You can use [Canvas discussion]({{ site.canvas }}) to look for teammates.
 We will be checking that all group members are contributing equally
 to the homework submission and the final project.
 

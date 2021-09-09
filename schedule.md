@@ -34,16 +34,18 @@ The schedule is preliminary and subject to change.
               <td>
                 {% if date.noclass %}
                   No class - {{ date.title }}
-                {% elsif date.title %}
-                 Lecture: {{ date.title }} <br/>
-                  {% if date.leclinks %}
-                    {% for link in date.leclinks %}
-                      [<a href="{{link.url}}">{{link.name}}</a>]
-                    {% endfor %}
-                    <br/>
+                {% elsif date.title or date.tutorial %}
+                  {% if date.title %}
+                    Lecture: {{ date.title }} <br/>
+                    {% if date.leclinks %}
+                      {% for link in date.leclinks %}
+                        [<a href="{{link.url}}">{{link.name}}</a>]
+                      {% endfor %}
+                      <br/>
+                    {% endif %} 
                   {% endif %} 
                   {% if date.tutorial != null %}
-                    Tutorial: {{ site.tutorials[date.tutorial].title }}<br/>
+                    Tutorial (optional): {{ site.tutorials[date.tutorial].title }}<br/>
                     {% if date.tutlinks %}
                       {% for link in date.tutlinks %}
                         [<a href="{{link.url}}">{{link.name}}</a>]
