@@ -450,6 +450,20 @@ F-score on both dev and test:
     dev.out score: 0.98
     test.out score: 0.97
 
+### Preparing your report
+
+You should prepare a short (<1 page) report on what you did in this assignment.
+
+The report should include the following:
+* Group name with names of group members
+* A summary of the task you are addressing (in this case, English word segmentation) and what you are aiming to achieve 
+* Short description of your method 
+* Results (both quantitative and qualitative) comparing your method to the baseline (default) solution 
+* Discussion of alternative methods you tried and how well they worked (or didn't work)
+* Breakdown of contributions by each group member
+
+Your report should be submitted as `report.pdf`  Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
+
 ### Submit your homework on Canvas
 
 Once you are done with your homework submit all the relevant materials
@@ -481,7 +495,7 @@ did for this homework in `answer/README.username`.
 
 Go to `Programming Homework 0` on Canvas and do a group submission:
 
-* Upload `output.zip` and `source.zip`
+* Upload `output.zip` and `source.zip` and `report.pdf`
 * Make sure you have documented your approach in `answer/ensegment.ipynb`.
 * Make sure each member of your group has documented their contribution to this homework in `answer/README.username` where `username` is your CSIL/GitLab username.
 
@@ -493,7 +507,8 @@ The grading is split up into the following components:
 * GitLab setup including adding instructor and TA as Developer to the repository.
 * dev scores (see Table below)
 * test scores (see Table below)
-* iPython notebook write-up
+* Report quality 
+* Code content and quality (based on iPython notebook write-up)
 * Check if each group member has a `answer/README.username`.
 
 Your F-score should be equal to or greater than the score listed for the corresponding marks.

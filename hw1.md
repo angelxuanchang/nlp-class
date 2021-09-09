@@ -331,6 +331,20 @@ the Chinese language) should give you some further ideas to consolidate
 certain types of characters into words based on regularity how they
 combine into words in the training set.
 
+## Preparing your report
+
+You should prepare a short (1-2 pages) report on what you did in this assignment.
+
+The report should include the following:
+* Group name with names of group members
+* A summary of the task you are addressing and what you are aiming to achieve 
+* Short description of your method 
+* Results (both quantitative and qualitative) comparing your method to the baseline (default) solution 
+* Discussion of alternative methods you tried and how well they worked (or didn't work)
+* Breakdown of contributions by each group member
+
+Your report should be submitted as `report.pdf`  Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
+
 ## Submit your homework on Canvas
 
 Once you are done with your homework submit all the relevant materials
@@ -364,7 +378,7 @@ Make sure that your have updated your GitLab repository with your submission sou
 
 Go to `Programming Homework 1` on Canvas and do a group submission:
 
-* Upload `output.zip` and `source.zip`
+* Upload `output.zip` and `source.zip`  and `report.pdf`
 * Make sure your `source.zip` matches your Gitlab repository.
 * Make sure you have documented your approach in `answer/zhsegment.ipynb`.
 * Make sure each member of your group has documented their contribution to this homework in `answer/README.username` where `username` is your CSIL/GitLab username.
