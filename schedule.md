@@ -24,7 +24,7 @@ The schedule is preliminary and subject to change.
           <th>Date</th>
           <th>Topic</th>
           <th>Assignments</th>
-          <th>Readings</th>
+          <th>Readings and Resources</th>
         </tr></thead>
         <tbody>  
         {% for week in site.data.schedule %}
@@ -82,6 +82,8 @@ The schedule is preliminary and subject to change.
                       {% endif %}  
                       {% for link in readings %}
                         <li> 
+                        {%if link.optional %}
+                        {% endif %}
                         {%if link.abbr %}
                           <a href="{{ link.url }}">{{ link.title }}</a>
                         {% else %}

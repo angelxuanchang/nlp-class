@@ -16,6 +16,10 @@
       title: "Talking to Computers in Natural Language"
       url: "https://cs.stanford.edu/~pliang/papers/talking-xrds2014.pdf"
       optional: true
+    - author: Julia Hirschberg and Christopher D. Manning 
+      title: "Advances in Natural Language Processing"
+      url: "https://cs224d.stanford.edu/papers/advances.pdf"
+      optional: true
   links:
     - author: Rick Rashid 
       title: "Speech Recognition Breakthrough for the Spoken, Translated Word by Rick Rashid"
@@ -86,7 +90,8 @@
       title: "Language models"
       download: "http://www.cs.columbia.edu/~mcollins/courses/nlp2011/notes/lm.pdf"
       url: "assets/mcollins-notes/lm.pdf"
-      optional: false
+      optional: true
+  links:
     - author: Stanley Chen and Joshua Goodman
       title: "A Bit of Progress in Language Modeling"
       url: "https://arxiv.org/abs/cs/0108005"
@@ -120,7 +125,7 @@
       soln: "assets/notes/linearb_solution.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Naive Bayes Classification and Sentiment (J+M chapter 4)"
+      title: "Naive Bayes and Sentiment Classification (J+M chapter 4)"
       abbr: "J+M chapter 4" 
       tag: "jm4"
       url: "https://web.stanford.edu/~jurafsky/slp3/4.pdf"
@@ -135,7 +140,7 @@
       title: "Log-linear models, MEMMs and CRFs"
       url: "http://www.cs.columbia.edu/~mcollins/crf.pdf"
       download: "assets/mcollins-notes/crf.pdf"
-      optional: false
+      optional: true
 - title: "Word Vectors"
   tag: w2v
   include: true
@@ -201,9 +206,11 @@
       title: "Feedforward neural networks"
       url: "http://www.cs.columbia.edu/~mcollins/cs4705-spring2018/notes/ff.pdf"
       download: "assets/mcollins-notes/ff.pdf"
+      optional: true
     - author: "Yoav Goldberg"
       title: "A Primer on Neural Network Models for Natural Language Processing"
       url: "https://u.cs.biu.ac.il/~yogo/nnlp.pdf"
+      optional: true
   links:
     - title: "A Review of the Neural History of Natural Language Processing"
       url: "https://ruder.io/a-review-of-the-recent-history-of-nlp/index.html"
@@ -224,6 +231,11 @@
     - title: "Gradient checks and parameter updates"
       url: "http://cs231n.github.io/neural-networks-3/"
       author: "Andrej Karpathy"
+      optional: true
+    - author: Michael Collins
+      title: "Computational Graphs, and Backpropagation"
+      url: "http://www.cs.columbia.edu/~mcollins/ff2.pdf"
+      download: "assets/mcollins-notes/ff2.pdf"
       optional: true
 - title: "Neural Network Models and Training (training tips in tutorial)"
   tag: dl4nlp
@@ -278,6 +290,7 @@
       title: "Hidden Markov Models"
       download: "assets/mcollins-notes/hmms-spring2013.pdf"
       url: "assets/mcollins-notes/hmms-spring2013.pdf"
+      optional: false
   links:
     - author: Anoop Sarkar
       title: "Introduction to Hidden Markov Models"
@@ -349,6 +362,7 @@
     - author: "Christopher Olah"
       title: "Understanding LSTM Networks"
       url: "http://colah.github.io/posts/2015-08-Understanding-LSTMs/"
+      optional: true
   links:
     - title: "How to implement a recurrent neural network"
       author: "peterroelants.github.io"
@@ -357,6 +371,7 @@
     - title: "Statistical language models based on neural networks"
       author: Tomas Mikolov
       url: "http://www.fit.vutbr.cz/~imikolov/rnnlm/thesis.pdf"
+      optional: true
 - title: "Machine Translation"
   tag: smt
   include: true
@@ -400,10 +415,10 @@
       url: "https://arxiv.org/pdf/1703.01619.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Encoder-Decoder Models, Attention, and Contextual Embeddings (J+M chapter 10)"
-      abbr: "J+M chapter 10" 
-      tag: jm10
-      url: "https://web.stanford.edu/~jurafsky/slp3/10.pdf"
+      title: "Machine Translation and Encoder-Decoder Models (J+M chapter 11)"
+      abbr: "J+M chapter 11" 
+      tag: jm11
+      url: "https://web.stanford.edu/~jurafsky/slp3/11.pdf"
       optional: true
     - author: Jacob Eisenstein
       title: "Machine Translation (Natural Language Processing chapter 18)"
@@ -425,6 +440,7 @@
       author: Rico Sennrich
       url: "http://www.meta-net.eu/events/meta-forum-2016/slides/09_sennrich.pdf"
       download: "assets/cached/09_sennrich.pdf"
+      optional: true
     - title: "Several Studies on Natural Language and Back-propagation"
       author: "Robert B. Allen"
       url: "http://boballen.info/RBA/PAPERS/NL-BP/nl-bp.pdf"
@@ -472,6 +488,7 @@
     - title: "Illustrated BERT"
       author: "Jay Alammar"
       url: "http://jalammar.github.io/illustrated-bert/"
+      optional: true
     - title: "Contextual Word Representations: A Contextual Introduction"
       author: "Noah A. Smith"
       url: "https://arxiv.org/pdf/1902.06006.pdf"
@@ -698,3 +715,13 @@
     - author: "Mark Hopkins and Jonathan May"
       title: "Tuning as Ranking"
       url: "http://www.aclweb.org/anthology/D11-1125"
+- title: "Expectation-Maximization"
+  tag: em
+  include: false
+  current: false
+  readings:
+    - author: "Michael Collins"
+    - title: "The Naive Bayes Model, Maximum-Likelihood Estimation, and the EM Algorithm"
+    - url: "http://www.cs.columbia.edu/~mcollins/em.pdf"
+    - download: "assets/mcollins-notes/em.pdf"
+    - optional: true
