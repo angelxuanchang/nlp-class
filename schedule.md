@@ -83,6 +83,7 @@ The schedule is preliminary and subject to change.
                       {% for link in readings %}
                         <li> 
                         {%if link.optional %}
+                          (optional)
                         {% endif %}
                         {%if link.abbr %}
                           <a href="{{ link.url }}">{{ link.title }}</a>
