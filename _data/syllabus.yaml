@@ -522,19 +522,19 @@
       download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/cfg.ipynb"
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Constituency Grammars (J+M chapter 12)"
+      title: "Constituency Grammars (J+M chapter 12.1-12.2)"
       url: "https://web.stanford.edu/~jurafsky/slp3/12.pdf"
-      abbr: "J+M chapter 12" 
-      optional: true
+      abbr: "J+M chapter 12.1-12.2" 
+      optional: false
     - author: Dan Jurafsky and James H. Martin
-      title: "Constituency Parsing (J+M chapter 13)"
-      abbr: "J+M chapter 13" 
+      title: "Constituency Parsing (J+M chapter 13.1-13.4)"
+      abbr: "J+M chapter 13.1-13.4" 
       url: "https://web.stanford.edu/~jurafsky/slp3/13.pdf"
-      optional: true
+      optional: false
     - author: Dan Jurafsky and James H. Martin
-      title: "Statistical Constituency Parsing (J+M chapter 14)"
-      abbr: "J+M chapter 14" 
-      url: "https://web.stanford.edu/~jurafsky/slp3/14.pdf"
+      title: "Statistical Constituency Parsing (J+M chapter Appendix C.1-C.4)"
+      abbr: "J+M Appendix C.1-C.4" 
+      url: "https://web.stanford.edu/~jurafsky/slp3/C.pdf"
       optional: true
   links:
     - author: Michael Collins
@@ -570,9 +570,9 @@
       url: "assets/lecture-slides/L13-dependency-parsing.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Dependency Parsing (J+M chapter 15)"
-      abbr: "J+M chapter 15" 
-      url: "https://web.stanford.edu/~jurafsky/slp3/15.pdf"
+      title: "Dependency Parsing (J+M chapter 14)"
+      abbr: "J+M chapter 14" 
+      url: "https://web.stanford.edu/~jurafsky/slp3/14.pdf"
       optional: true
 - title: "Semantic Parsing"
   tag: semparse
@@ -587,9 +587,9 @@
       url: "https://cs.stanford.edu/~pliang/papers/executable-cacm2016.pdf"
       optional: false
     - author: Dan Jurafsky and James H. Martin
-      title: "Logical Representations of Sentence Meaning (J+M chapter 16)"
-      abbr: "J+M chapter 16" 
-      url: "https://web.stanford.edu/~jurafsky/slp3/16.pdf"
+      title: "Logical Representations of Sentence Meaning (J+M chapter 15)"
+      abbr: "J+M chapter 15" 
+      url: "https://web.stanford.edu/~jurafsky/slp3/15.pdf"
       optional: true
   links:
     - author: Bill MacCartney
@@ -605,9 +605,9 @@
       url: "assets/lecture-slides/L16-question-answering.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Questing Answering (J+M chapter 25)"
-      abbr: "J+M chapter 25" 
-      url: "https://web.stanford.edu/~jurafsky/slp3/25.pdf"
+      title: "Questing Answering (J+M chapter 23)"
+      abbr: "J+M chapter 23" 
+      url: "https://web.stanford.edu/~jurafsky/slp3/23.pdf"
       optional: true
 - title: "Dialogue"
   tag: dialogue
@@ -618,9 +618,9 @@
       url: "assets/lecture-slides/L18-dialogue.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Dialog Systems and Chatbots (J+M chapter 26)"
-      abbr: "J+M chapter 26" 
-      url: "https://web.stanford.edu/~jurafsky/slp3/26.pdf"
+      title: "Dialog Systems and Chatbots (J+M chapter 24)"
+      abbr: "J+M chapter 24" 
+      url: "https://web.stanford.edu/~jurafsky/slp3/24.pdf"
       optional: true
 - title: "Coreference Resolution"
   tag: coref
@@ -628,9 +628,9 @@
   current: false
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Coreference Resolution (J+M chapter 22)"
-      abbr: "J+M chapter 22" 
-      url: https://web.stanford.edu/~jurafsky/slp3/22.pdf
+      title: "Coreference Resolution (J+M chapter 21)"
+      abbr: "J+M chapter 21" 
+      url: https://web.stanford.edu/~jurafsky/slp3/21.pdf
       optional: true
 - title: "Grounded Language"
   tag: grounding
