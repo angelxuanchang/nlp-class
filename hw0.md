@@ -30,7 +30,7 @@ You can use [Canvas discussion]({{ site.canvas }}) to look for teammates.
 We will be checking that all group members are contributing equally
 to the homework submission and the final project.
 
-Along with your group members, register yourself as part of a group on [Canvas]({{ site.canvas }}).
+Along with your group members, register yourself as part of a group on both [Canvas]({{ site.canvas }}) and [Coursys]({{ site.coursys }}).  Please make sure you use exactly the same group name.  We will use Coursys for providing you feedback on the autograded portion of the homework.
 
 Create a memorable name for your group. If you need help, [seek help](https://www.wordlab.com/name-generators/team-name-generator/).
 
@@ -68,7 +68,7 @@ On the `New Project` page, give your repo a name under the `Project
 name` field. The default name is `my-awesome-project` which is
 **not** what you should call your repo. Instead, name your repo:
 `nlpclass-{{ site.semcode }}-g-GROUP` where `GROUP` is the group
-you registered on [Canvas]({{ site.canvas }}). For example, a
+you registered on [Canvas]({{ site.canvas }})/[Coursys]({{ site.coursys }}). For example, a
 repository name might be `nlpclass-{{ site.semcode }}-g-ethicsgradient`
 Make sure you add the `g-` before your group name. It's important
 to name the repo exactly as you see here.
