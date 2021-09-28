@@ -356,7 +356,7 @@ text file or convert it into the `gensim` binary format.
 You can use your retrofitted word vectors with the code in `default.py`
 or an augmented version of `default.py` that uses a better method
 to find the 10 substitute words for each target word (described
-below in the `Incorporating Context Words` section).
+below in the `Using Context Based Similarity` section).
 
 ### Background Reading
 
@@ -378,12 +378,13 @@ implemented the Baseline model first. One possible extension is
 to use the context words around the target word to find a better
 guess for the substitute word.
 
-### Incorporating Context Words
+### Using Context Based Similarity
 
-You should also augment the default solution to incorporate the
+You should also augment the default solution to use the
 context around the target word to find better substitute words. You
-can use the approach in the following, but do not use their contextual
-embeddings. You must still only use the GloVe embeddings provided
+can use the context-based similarity approaches in the following, 
+but do not use their contextual embeddings. 
+You must still only use the GloVe embeddings provided
 to you.
 
 > [A Simple Word Embedding Model for Lexical Substitution](https://www.aclweb.org/anthology/W15-1501/). Oren Melamud, Omer Levy, Ido Dagan. 1st Workshop on Vector Space Modeling for NLP. 2015.
@@ -452,6 +453,7 @@ accuracy on the dev set:
 ## Preparing your report
 
 You should prepare a short (1-2 pages) report on what you did in this assignment.
+In your report, you should compare the performance of the default solution, vs the retrofitting approach, vs the context-based similarity approach, vs any other methods you attempted.  You should discuss which approach worked the best and what errors were made by different approaches.
 
 The report should include the following:
 * Group name with names of group members
