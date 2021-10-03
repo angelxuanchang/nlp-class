@@ -156,15 +156,15 @@ preferred by a group of human annotators then that substitution
 is marked as correct.
 
 The overall score reported is the precision score over the entire
-data set which is described in detail in the Accuracy section below.
+data set which is described in detail in the "Check your performance" section below.
 
 Your solution should produce exactly 10 guesses for each lexical
 substitution just like the default solution.
 
 ## The Challenge
 
-Your task is to _improve the accuracy as much as possible_. The
-score is explained in detail in the Accuracy section below. You can
+Your task is to _improve the performance as much as possible_. The
+score is explained in detail in the "Check your performance" section below. You can
 only use the pre-trained word vectors file that has been provided
 to you as described in the `Default solution` section above.
 You cannot use any other word vectors or word embeddings.
@@ -407,9 +407,9 @@ For more options:
 
     python3 zipout.py -h
 
-## Check your accuracy
+## Check your performance
 
-To check your accuracy on the dev set:
+To check your performance on the dev set:
 
     python3 check.py
 
@@ -435,7 +435,7 @@ In particular use the log file to check your output evaluation:
 
     python3 check.py -l log
 
-The accuracy on `data/input/test.txt` will not be shown.  We will
+The performance on `data/input/test.txt` will not be shown.  We will
 evaluate your output on the test input after the submission deadline.
 
 The default solution gets a very poor F-score on the dev and test set:
@@ -445,7 +445,7 @@ The default solution gets a very poor F-score on the dev and test set:
     test.out score: 36.0000
 
 Implementing the Baseline method should give you an improved
-accuracy on the dev set:
+performance on the dev set:
 
     $ python3 check.py
     dev.out score: 40.5167

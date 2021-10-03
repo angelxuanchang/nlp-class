@@ -243,7 +243,7 @@ which produces the following detailed evaluation:
     (73.40644276901988, 72.02420981842637, 72.70875763747455)
 
 For this homework we will be scoring your solution based on the FB1 score
-which is described in detail in the Accuracy section below.
+which is described in detail in the "Check your performance" section below.
 
 Make sure that the command line options are kept as they are in
 `default.py`. You can add to them but you must not delete any
@@ -310,12 +310,12 @@ Some useful links if you feel lost at the beginning:
 
 ## The Challenge
 
-Your task is to _improve the accuracy as much as possible while
+Your task is to _improve the performance as much as possible while
 keeping the hyperparameters used in the default solution for the
-phrasal chunker_. The score is explained in detail in the Accuracy
+phrasal chunker_. The score is explained in detail in the "Check your performance"
 section below. With substantial computational resources and using
 large pre-trained models (which are beyond the scope of this homework)
-the [state of the art accuracy on this
+the [state of the art performance on this
 dataset](https://nlpprogress.com/english/shallow_syntax.html) has
 reached an F1-score above 97.5 percent.
 
@@ -383,7 +383,7 @@ vectors can then be concatenated with the word embeddings (from
 128.
 
 Implementing the baseline should give a substantial boost to the
-accuracy obtaining an F1 score higher than 76 percent.
+performance obtaining an F1 score higher than 76 percent.
 
 ## Required files
 
@@ -402,9 +402,9 @@ For more options:
 
     python3 zipout.py -h
 
-## Check your accuracy
+## Check your performance
 
-To check your accuracy on the dev set:
+To check your performance on the dev set:
 
     python3 check.py
 
@@ -418,7 +418,7 @@ In particular use the log file to check your output evaluation:
 
     python3 check.py -l log
 
-The accuracy on `data/input/test.txt` will not be shown.  We will
+The performance on `data/input/test.txt` will not be shown.  We will
 evaluate your output on the test input after the submission deadline.
 
 ## Preparing your report

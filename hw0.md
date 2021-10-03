@@ -367,10 +367,10 @@ many segmentations.
 
 ### The Challenge
 
-Your task is to improve the accuracy on this task as much as possible.
-The definition of accuracy is provided below.  You cannot use any
+Your task is to improve the performance on this task as much as possible.
+The definition of performance is provided below.  You cannot use any
 external data sources or any other toolkits.  You can get a much
-higher accuracy by adding one simple function (one line of code)
+higher performance by adding one simple function (one line of code)
 to the default solution provided to you.  However this one line of
 code is not trivial. You should approach this challenge  based on
 a careful examination of the source code of the default solution
@@ -409,9 +409,9 @@ For more options:
 
     python3 zipout.py -h
 
-### Check your accuracy
+### Check your performance
 
-To check your accuracy on the dev set:
+To check your performance on the dev set:
 
     python3 check.py
 
@@ -433,7 +433,7 @@ In particular use the log file to check your output evaluation:
 
     python3 check.py -l log
 
-The accuracy on `data/input/test.txt` will not be shown.  We will
+The performance on `data/input/test.txt` will not be shown.  We will
 evaluate your output on the test input after the submission deadline.
 
 The default solution gets a very poor F-score on the test set:

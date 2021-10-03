@@ -113,7 +113,7 @@ F-score is explained further below.
 ## The Challenge
 
 Your task is to _improve the F-score as much as possible_ which is explained
-in detail in the Accuracy section below. To help you do
+in detail in the "Check your performance" section below. To help you do
 this the `data` directory contains two files:
 
     count_1w.txt : unigram counts of Chinese words
@@ -259,7 +259,7 @@ choice and document your work. Here are some ideas:
 * Do better _smoothing_ of the unigram and bigram probability models.
 * More advanced methods[^1]
 
-[^1]: If you are ambitious, you can use more advanced machine learning methods such as [global linear models](http://anoopsarkar.github.io/papers/pdf/cnwseg-ai2009.pdf) or [neural networks](http://aclweb.org/anthology/P/P16/P16-1039.pdf) or [bidirectional RNNs](https://arxiv.org/abs/1808.06511) or [transition-based neural language models](http://aclweb.org/anthology/P/P16/P16-1040.pdf). In particular you might want to pay attention to the error analysis for out of vocabulary words in these papers. Even without fancy neural networks the same analysis might help you improve your accuracy.
+[^1]: If you are ambitious, you can use more advanced machine learning methods such as [global linear models](http://anoopsarkar.github.io/papers/pdf/cnwseg-ai2009.pdf) or [neural networks](http://aclweb.org/anthology/P/P16/P16-1039.pdf) or [bidirectional RNNs](https://arxiv.org/abs/1808.06511) or [transition-based neural language models](http://aclweb.org/anthology/P/P16/P16-1040.pdf). In particular you might want to pay attention to the error analysis for out of vocabulary words in these papers. Even without fancy neural networks the same analysis might help you improve your performance.
 
 But the sky's the limit! You are welcome to design your own model, as long 
 as you have implemented the Baseline model first.
@@ -281,9 +281,9 @@ For more options:
 
     python3 zipout.py -h
 
-## Check your accuracy
+## Check your performance
 
-To check your accuracy on the dev set:
+To check your performance on the dev set:
 
     python3 check.py
 
@@ -305,7 +305,7 @@ In particular use the log file to check your output evaluation:
 
     python3 check.py -l log
 
-The accuracy on `data/input/test.txt` will not be shown.  We will
+The performance on `data/input/test.txt` will not be shown.  We will
 evaluate your output on the test input after the submission deadline.
 
 The default solution gets a very poor F-score on the dev and test set:
