@@ -131,7 +131,7 @@ that describes what topic/problem your group will work on, the scope of the proj
 and the data you plan to use.
 The title/abstract is not graded, but you will receive feedback on the feasibility of the project. 
 
-To submit, go to [Coursys]({{ site.coursys }}). Under the `Project Abstract`
+To submit, go to [Canvas]({{ site.canvas }}). Under the `Project Abstract`
 activity, enter your Title and Abstract in Markdown
 format. Your abstract should
 be about 250 words (please definitely use less than 1000 words).
@@ -164,7 +164,7 @@ Make sure the following points are in your proposal.
     * What do you plan to achieve by the milestone?  
     * How will the work be allocated between the team members?
 
-Go to [Coursys]({{ site.coursys }}). Under the `Project Proposal`
+Go to [Canvas]({{ site.canvas }}). Under the `Project Proposal`
 activity submit the following files:
 
 * `proposal.pdf`: this is the project proposal report
@@ -212,7 +212,7 @@ A good structure for the milestone report will include the following sections.  
 
 Grading of the milestone will be based on the progress and the quality of writing.  
 
-Go to [Coursys]({{ site.coursys }}). Under the `Project Milestone`
+Go to [Canvas]({{ site.canvas }}). Under the `Project Milestone`
 activity submit the following files:
 
 * `milestone.pdf`: this is the project milestone report
@@ -260,9 +260,9 @@ the following sections and **must** cover the following information:
 
 Please read this [guide to presenting your work](assets/cached/cs224u/cs224u-2019-presenting.pdf). Also available is a [video tutorial covering the same material](https://www.youtube.com/watch?v=WXLb4h2A724).
 
-### Submit your project on Coursys
+### Submit your project on Canvas
 
-Go to [Coursys]({{ site.coursys }}). Under the `Final Project`
+Go to [Canvas]({{ site.canvas }}). Under the `Final Project`
 activity submit the following zip files:
 
 * `report.pdf`: this is the final project report
