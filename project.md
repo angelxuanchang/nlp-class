@@ -126,14 +126,13 @@ In some cases you can also extend your homework code to produce innovative proje
 
 ### Project title and abstract (due on {{ site.hwdates[5].abstract }})
 
-For your project, please submit a Title and an Abstract (in Markdown format)
+For your project, please submit a Title and an Abstract 
 that describes what topic/problem your group will work on, the scope of the project 
 and the data you plan to use.
 The title/abstract is not graded, but you will receive feedback on the feasibility of the project. 
 
 To submit, go to [Canvas]({{ site.canvas }}). Under the `Project Abstract`
-activity, enter your Title and Abstract in Markdown
-format. Your abstract should
+activity, enter your Title and Abstract. Your abstract should
 be about 250 words (please definitely use less than 1000 words).
 
 ### Project proposal (due on {{ site.hwdates[5].proposal }})
@@ -149,20 +148,24 @@ The project proposal PDF should be 1-2 pages in the style of a conference (e.g. 
 
 Make sure the following points are in your proposal.
 
-* Motivation 
+* Problem Statement and Motivation 
     * which NLP task do you plan to do; 
     * which aspect of the problem / task did your group plan to work on (accuracy, interpretability, etc.); 
     * provide some reasons for your choice
+* Related Work
+    * Briefly describe existing related work (with citations) and how your work relates to it.  Will your project be a re-implementation of a paper?  Will your project be an attempt to replicate a set of experiments / findings in a paper?  Will you be attempting to try something that wasn't previously tried?
 * Approach 
     * Describe the algorithms and machine learning models you plan to use in your project. 
     * Using equations is not necessary but if you do, use a clear mathematical style to explain your model(s).
-* Data
-    * Exactly which data set do you plan to use
-* Evaluation
-    * What is the evaluation measure for the data set and what is the baseline
+* Experimental setup
+    * Data: which datasets you will use?  If you plan on collecting your own data, describe what data collection protocol you will follow. 
+    * Implementation: How will you implement your model?  What existing code you will exploit, what will you implement yourself?
+    * Evaluation: What evaluation metric will you use?
+    * Comparison: What different baselines and/or variation of your approach will you compare?
 * Timeline and work breakdown
     * What do you plan to achieve by the milestone?  
     * How will the work be allocated between the team members?
+* Reference - provide references using BibTex 
 
 Go to [Canvas]({{ site.canvas }}). Under the `Project Proposal`
 activity submit the following files:
@@ -177,7 +180,7 @@ progress you made so far on your project and plans for the remainder.
 For the final write-up you will need to also submit your code, so we encourage
 to get started early and submit preliminary code and results with the milestone.
 
-The project milestone PDF should be 2-4 pages in the style of a conference (e.g. ACL/EMNLP) submission.  Your final report should use the same template.  Links to acceptable templates are below:
+The project milestone PDF should be 3-6 pages in the style of a conference (e.g. ACL/EMNLP) submission.  Your final report should use the same template.  Links to acceptable templates are below:
 * [ACL style download](http://acl2020.org/downloads/acl2020-templates.zip)
 * [ACL style template Overleaf](https://www.overleaf.com/latex/templates/acl-2020-proceedings-template/zsrkcwjptpcd)
 * [EMNLP style download](https://2020.emnlp.org/files/emnlp2020-templates.zip)
@@ -199,6 +202,8 @@ Make sure the following points are covered.
 A good structure for the milestone report will include the following sections.  It can then also serve as a draft for your final project write-up.
 * Introduction 
     * Motivate the problem, describe your goals, and highlight your findings (if you have findings)
+* Related Work
+    * Briefly describe existing related work (with citations) and how your work relates to it
 * Approach 
     * Provide details on your main approach and baselines.  Be specific.  Make clear what part is original, what code you are writing yourself, what code you are using that is taken from elsewhere (homework, github, etc)
 * Experiments 
