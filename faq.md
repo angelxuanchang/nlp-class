@@ -68,14 +68,14 @@ How to ask a question on [Canvas]({{ site.canvas }}/):
     
 * The **programming** homeworks will be solved in groups. Groups are {{ site.group.minsize }} to {{ site.group.maxsize }} people. All groups must be formed before the Homework 0 due date.
 * You are allowed to leave a group and form a group of size one at the start of each homework but not at the end.
-* Each group will create a single submission and upload it to Coursys on or before the due date.
+* Each group will create a single submission and upload it to [Canvas]({{ site.canvas }}) on or before the due date.
 * Each group member will be graded on their self report and any commit logs that are submitted. If the TA or the instructor perceives there is a problem with collaboration in a group, certain group members can get zero marks. If you are pair programming, take turns in switching the user doing the commits to the repository.
 * __Effective group collaboration__: We are looking to see effective collaboration to solve the homework assignment. People can play different roles and sometimes more than one role in the same homework:
     * Designer: creates a plan for implementation and coordinates activities of the group. Should create design docs (text files or markdown or equivalent only). Put these documents in the directory `docs` and mention the files in your `README.username` file (where `username` is your SFU login username).
     * Code reviews: write a critical view of the implementation by the group. Points out what is missing, inelegant code, etc. and produces a code review document (text files or markdown or equivalent only). Put these documents in the directory `docs` and mention the files in your `README.username` file.
     * Development: write the code. This can be done in collaboration. 
     * Testcases: write testcases to stress test the code. Provide the testcases in your submission.
-* **Warning**: if you are missing a `README.username` file in your group source submission then that `username` might get zero marks.
+* **Warning**: if you are missing a `README.username` file in your group source submission then that `username` might get zero marks.  Note that is it not sufficient to have a `README.username` without actually contributing to the assignment.  If you do not contribute to the assignment (as indicated in the report and the git commit logs), you will also receive zero marks for the assignment.
 * Use `git` for version control and effective collaboration. See the section below on setting up `git` for this course.
 * Keep an eye out for comments from the instructor or TAs on your GitLab code repository for each homework. 
 
