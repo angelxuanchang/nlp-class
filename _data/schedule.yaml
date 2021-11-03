@@ -137,7 +137,7 @@
         url: "assets/lecture-slides/L9-RNN.pdf"
     lecture: "rnn"
   - date: "10/21" 
-    title: "Sequence-to-Sequence models and Text Generation"
+    title: "Sequence-to-Sequence models"
     lecture: "seq2seq"
     leclinks:
       - name: "slides"
@@ -191,11 +191,8 @@
 - week: 9
   dates:
   - date: "11/9" 
-    title: "Semantic parsing"
-    lecture: "semparse"
-    leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L14-semantic-parsing.pdf"
+    title: "Final project tips, model debugging and analysis"
+    lecture: "analysis"
     hwdue: "4"
   - date: "11/11" 
     noclass: true
@@ -203,20 +200,20 @@
 - week: 10
   dates:
   - date: "11/16" 
-    title: "NLP Applications"
-    lecture: "applications"
-  - date: "11/18" 
-    title: "Information extraction"
-    lecture: "ie"
-    project: "Project milestone"
-- week: 11
-  dates:
-  - date: "11/23" 
     title: "Question Answering"
     lecture: "qa"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L16-question-answering.pdf"
+  - date: "11/18" 
+    title: "Memory Networks (Jetic Gu)"
+    lecture: "memnet"
+    project: "Project milestone"
+- week: 11
+  dates:
+  - date: "11/23" 
+    title: "Text Generation"
+    lecture: "textgen"
   - date: "11/25" 
     title: "Dialogue"
     lecture: "dialogue"
@@ -226,8 +223,11 @@
 - week: 12
   dates:
   - date: "11/30" 
-    title: "Visualization and interpretation"
-    lecture: "interpretation"
+    title: "Semantic parsing"
+    lecture: "semparse"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L14-semantic-parsing.pdf"
   - date: "12/2" 
     title: "Grounding"
     lecture: "grounding"
