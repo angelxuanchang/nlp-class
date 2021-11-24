@@ -30,7 +30,7 @@ tutorials:
   - tutorial: "3"
     title: "Pytorch"
   - tutorial: "4"
-    title: "Work Vectors"
+    title: "Word Vectors"
   - tutorial: "5"
     title: "Neural Language models"
   - tutorial: "6"

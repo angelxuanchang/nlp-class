@@ -404,7 +404,7 @@
       abbr: "J+M chapter 11" 
       tag: jm11
       url: "https://web.stanford.edu/~jurafsky/slp3/11.pdf"
-      optional: true
+      optional: false
 - title: "Neural Machine Translation"
   tag: nmt
   include: false
@@ -588,7 +588,7 @@
       title: "Dependency Parsing (J+M chapter 14)"
       abbr: "J+M chapter 14" 
       url: "https://web.stanford.edu/~jurafsky/slp3/14.pdf"
-      optional: true
+      optional: false
 - title: "Semantic Parsing"
   tag: semparse
   include: true
