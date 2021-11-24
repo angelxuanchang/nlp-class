@@ -21,13 +21,13 @@
     lecture: "lm"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L2-Language_Models.pdf"
+        url: "assets/lecture-slides/L2-language-models.pdf"
   - date: "9/16" 
     title: "Text Classification (Naive Bayes)"
     lecture: "classifiers"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L3-Classification-Naive-Bayes.pdf"
+        url: "assets/lecture-slides/L3-classification-naivebayes.pdf"
     readings: [ "jm4"]
     hwdue: "0"
     hwout: "1"
@@ -45,16 +45,14 @@
     lecture: "classifiers"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L4-Classification-Logistic.pdf"
+        url: "assets/lecture-slides/L4-logistic.pdf"
     readings: [ "jm5"]
   - date: "9/23" 
     title: "Text Classification (Neural Networks)"
     lecture: "ff"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L7-neural-nets.pdf"
-      - name: "evaluation"
-        url: "assets/lecture-slides/L3b-Classification-Evaluation.pdf"
+        url: "assets/lecture-slides/L5-neural-nets-a.pdf"
   - date: "9/24" 
     tutorial: 2
     tutlinks:
@@ -69,7 +67,7 @@
     lecture: "ff"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L7-neural-nets.pdf"
+        url: "assets/lecture-slides/L6-neural-nets-2.pdf"
     hwdue: "1"
     hwout: "2"
   - date: "9/30" 
@@ -86,17 +84,17 @@
   dates:
   - date: "10/5" 
     title: "Word Embeddings"
-    lecture: "w2v"
+    lecture: "wordvec"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L6-word2vec.pdf"
+        url: "assets/lecture-slides/L7-wordvectors.pdf"
     keepread: 2
   - date: "10/7" 
     title: "Word Embeddings"
-    lecture: "w2v"
+    lecture: "wordvec"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L6-word2vec.pdf"
+        url: "assets/lecture-slides/L8-word2vec.pdf"
     skipread: true
   - date: "10/8" 
     tutorial: 4
@@ -112,7 +110,7 @@
     lecture: "hmm"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L8-Sequence-modeling.pdf"
+        url: "assets/lecture-slides/L9-sequence-modeling.pdf"
     hwdue: "2"
     hwout: "3"
   - date: "10/14" 
@@ -120,7 +118,7 @@
     lecture: "rnn"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L9-RNN.pdf"
+        url: "assets/lecture-slides/L10-RNN.pdf"
   - date: "10/15" 
     tutorial: 5
     tutlinks:
@@ -134,14 +132,14 @@
     title: "Sequence Modeling (LSTMs/GRUs)"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L9-RNN.pdf"
+        url: "assets/lecture-slides/L11-LSTM-GRU.pdf"
     lecture: "rnn"
   - date: "10/21" 
     title: "Sequence-to-Sequence models"
     lecture: "seq2seq"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L10-NeuralMT.pdf"
+        url: "assets/lecture-slides/L12-sequence-generation.pdf"
   - date: "10/22" 
     tutorial: 6
     tutlinks:
@@ -157,7 +155,7 @@
     lecture: "transformers"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L11-contextualized-word-embeddings.pdf"
+        url: "assets/lecture-slides/L13-transformers.pdf"
     hwdue: "3"
     hwout: "4"
   - date: "10/28" 
@@ -165,7 +163,7 @@
     lecture: "cwe"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L11-contextualized-word-embeddings.pdf"
+        url: "assets/lecture-slides/L14-contextualized-word-embeddings.pdf"
     project: "Project proposal"
   - date: "10/29" 
     tutorial: 7
@@ -181,18 +179,21 @@
     lecture: "cfg"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L12-constituency-parsing.pdf"
+        url: "assets/lecture-slides/L15-constituency-parsing.pdf"
   - date: "11/4" 
     title: "Dependency parsing"
     lecture: "dependency"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L13-dependency-parsing.pdf"
+        url: "assets/lecture-slides/L16-dependency-parsing.pdf"
 - week: 9
   dates:
   - date: "11/9" 
     title: "Final project tips, model debugging and analysis"
     lecture: "analysis"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L17-project-tips-analysis.pdf"
     hwdue: "4"
   - date: "11/11" 
     noclass: true
@@ -204,22 +205,28 @@
     lecture: "qa"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L16-question-answering.pdf"
+        url: "assets/lecture-slides/L18-question-answering.pdf"
   - date: "11/18" 
     title: "Memory Networks (Jetic Gu)"
     lecture: "memnet"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L19-memory-networks.pdf"
     project: "Project milestone"
 - week: 11
   dates:
   - date: "11/23" 
     title: "Text Generation"
     lecture: "textgen"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L20-text-generation.pdf"
   - date: "11/25" 
     title: "Dialogue"
     lecture: "dialogue"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L18-dialogue.pdf"
+        url: "assets/lecture-slides/L21-dialogue.pdf"
 - week: 12
   dates:
   - date: "11/30" 
@@ -227,7 +234,7 @@
     lecture: "semparse"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L14-semantic-parsing.pdf"
+        url: "assets/lecture-slides/L22-semantic-parsing.pdf"
   - date: "12/2" 
     title: "Grounding"
     lecture: "grounding"

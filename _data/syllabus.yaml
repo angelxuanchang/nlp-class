@@ -70,9 +70,9 @@
   current: false
   notes:
     - title: "Language models I"
-      url: "assets/lecture-slides/L2-Language_Models.pdf"
+      url: "assets/lecture-slides/L2-language-models-I.pdf"
     - title: "Language models II"
-      url: "assets/lecture-slides/L2b-Language_Models_II.pdf"
+      url: "assets/lecture-slides/L2-language-models-II.pdf"
     - title: "Exercise: n-gram Language Models"
       url: "assets/notes/lm.html"
       soln: "assets/notes/lm_soln.html"
@@ -106,9 +106,9 @@
   current: false
   notes:
     - title: "Naive Bayes"
-      url: "assets/lecture-slides/L3-Classification-Naive-Bayes.pdf"
+      url: "assets/lecture-slides/L3-classification-naivebayes.pdf"
     - title: "Logistic regression"
-      url: "assets/lecture-slides/L4-Classification-Logistic.pdf"
+      url: "assets/lecture-slides/L4-classification-logistic.pdf"
     - title: "Evaluation"
       url: "assets/lecture-slides/L3b-Classification-Evaluation.pdf"
     - title: "Python Notebook: Naive Bayes Classifiers"
@@ -141,55 +141,15 @@
       url: "http://www.cs.columbia.edu/~mcollins/crf.pdf"
       download: "assets/mcollins-notes/crf.pdf"
       optional: true
-- title: "Word Vectors"
-  tag: w2v
-  include: true
-  current: false
-  notes: 
-    - title: "Vector space models (Jurafsky and Martin)"
-      url: "assets/cached/slp3/vector1.pdf"
-    - title: "Word2Vec (Jurafsky and Martin)"
-      url: "assets/cached/slp3/vector2.pdf"
-    - title: "Word Vectors"
-      url: "assets/slides/wordvectors.pdf"
-    - title: "Python Notebook: Singular Value Decomposition for NLP"
-      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/svd.ipynb"
-      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/svd.ipynb"
-    - title: "Exercise: word2vec"
-      url: "assets/notes/word2vec.html"
-      soln: "assets/notes/word2vec_soln.html"
-  readings:
-    - author: Dan Jurafsky and James H. Martin
-      title: "Vector Semantics and Embeddings (J+M chapter 6)"
-      abbr: "J+M chapter 6" 
-      url: "https://web.stanford.edu/~jurafsky/slp3/6.pdf"
-      optional: false
-    - author: Omer Levy, Yoav Goldberg, and Ido Dagan
-      title: "Improving Distributional Similarity with Lessons Learned from Word Embeddings"
-      url: "https://www.aclweb.org/anthology/Q15-1016.pdf"
-      optional: true
-  papers:
-    - author: Mikolov et al,
-      title: "Efficient Estimation of Word Representations in Vector Space"
-      url: "https://arxiv.org/pdf/1301.3781.pdf"
-      comments: "Original word2vec paper"
-    - author: Mikolov et al,
-      title: "Distributed Representations of Words and Phrases and their Compositionality"
-      url: "http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf"
-      comments: "Negative sampling for word2vec"
-    - author: "Jeffrey Pennington, Richard Socher, Christopher D. Manning"
-      title: "GloVe: Global Vectors for Word Representation"
-      url: "https://nlp.stanford.edu/pubs/glove.pdf"
-    - author: "Sanjeev Arora, Yingyu Liang, Tengyu Ma"
-      title: "A Simple but Tough-to-beat Baseline for Sentence Embeddings"
-      url: "https://openreview.net/pdf?id=SyK00v5xx"
 - title: "Feedforward neural networks"
   tag: ff
   include: true
   current: false
   notes:
-    - title: "Feedforward neural networks"
-      url: "assets/lecture-slides/L7-neural-nets.pdf"
+    - title: "Feedforward neural networks I"
+      url: "assets/lecture-slides/L5-neural-nets-1.pdf"
+    - title: "Feedforward neural networks II"
+      url: "assets/lecture-slides/L6-neural-nets-2.pdf"
     - title: "Python Notebook: Feedforward networks and XOR"
       url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/ff.ipynb"
       download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/ff.ipynb"
@@ -267,15 +227,55 @@
       citation: "Nature, 1986"
       url: "https://www.iro.umontreal.ca/~vincentp/ift3395/lectures/backprop_old.pdf"
       optional: true
+- title: "Word Vectors"
+  tag: wordvec
+  include: true
+  current: false
+  notes: 
+    - title: "Word vectors (vector space models)"
+      url: "assets/slides/L7-wordvectors.pdf"
+    - title: "Word2Vec"
+      url: "assets/slides/L8-word2vec.pdf"
+    - title: "Python Notebook: Singular Value Decomposition for NLP"
+      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/svd.ipynb"
+      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/svd.ipynb"
+    - title: "Exercise: word2vec"
+      url: "assets/notes/word2vec.html"
+      soln: "assets/notes/word2vec_soln.html"
+  readings:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Vector Semantics and Embeddings (J+M chapter 6)"
+      abbr: "J+M chapter 6" 
+      url: "https://web.stanford.edu/~jurafsky/slp3/6.pdf"
+      optional: false
+    - author: Omer Levy, Yoav Goldberg, and Ido Dagan
+      title: "Improving Distributional Similarity with Lessons Learned from Word Embeddings"
+      url: "https://www.aclweb.org/anthology/Q15-1016.pdf"
+      optional: true
+  papers:
+    - author: Mikolov et al,
+      title: "Efficient Estimation of Word Representations in Vector Space"
+      url: "https://arxiv.org/pdf/1301.3781.pdf"
+      comments: "Original word2vec paper"
+    - author: Mikolov et al,
+      title: "Distributed Representations of Words and Phrases and their Compositionality"
+      url: "http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf"
+      comments: "Negative sampling for word2vec"
+    - author: "Jeffrey Pennington, Richard Socher, Christopher D. Manning"
+      title: "GloVe: Global Vectors for Word Representation"
+      url: "https://nlp.stanford.edu/pubs/glove.pdf"
+    - author: "Sanjeev Arora, Yingyu Liang, Tengyu Ma"
+      title: "A Simple but Tough-to-beat Baseline for Sentence Embeddings"
+      url: "https://openreview.net/pdf?id=SyK00v5xx"
 - title: "Sequence Models (Hidden Markov Models)"
   tag: hmm
   include: true
   current: false
   notes:
+    - title: "Sequence Models"
+      url: "assets/lecture-slides/L9-sequence-modeling.pdf"
     - title: "Hidden Markov Models"
       url: "assets/slides/hmm.pdf"
-    - title: "Sequence Models"
-      url: "assets/lecture-slides/L8-Sequence-modeling.pdf"
     - title: "Python Notebook: Viterbi algorithm for HMMs"
       url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/hmm.ipynb"
       download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/hmm.ipynb"
@@ -342,10 +342,10 @@
   include: true
   current: false
   notes:
-    - title: "Neural Language model"
-      url: "assets/slides/nlm.pdf"
     - title: "Recursive Neural Networks"
-      url: "assets/lecture-slides/L9-RNN.pdf"
+      url: "assets/lecture-slides/L10-RNN.pdf"
+    - title: "LSTMs and GRUs"
+      url: "assets/lecture-slides/L11-LSTM-GRU.pdf"
     - title: "RNN based Neural Language model (experiments)"
       url: "assets/slides/nlm-mikolov.pdf"
       author: Tomas Mikolov
@@ -374,7 +374,7 @@
       optional: true
 - title: "Machine Translation"
   tag: smt
-  include: true
+  include: false
   current: false 
   notes:
     - title: "Introduction to Machine Translation"
@@ -396,12 +396,24 @@
   include: true
   current: false
   notes:
-    - title: "Neural Machine Translation"
-      url: "assets/lecture-slides/L10-NeuralMT.pdf"
-    - title: "Sequence to Sequence Models (Part 1)"
+    - title: "Sequence to sequence models"
+      url: "assets/lecture-slides/L12-sequence-generation.pdf"
+  readings:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Machine Translation and Encoder-Decoder Models (J+M chapter 11)"
+      abbr: "J+M chapter 11" 
+      tag: jm11
+      url: "https://web.stanford.edu/~jurafsky/slp3/11.pdf"
+      optional: true
+- title: "Neural Machine Translation"
+  tag: nmt
+  include: false
+  current: false
+  notes:
+    - title: "Neural Machine Translation (Part 1)"
       author: Jetic Gu
       url: "assets/slides/03-2019-1010_NMT_Lecture.pdf"
-    - title: "Sequence to Sequence Models (Part 2)"
+    - title: "Neural Machine Translation (Part 2)"
       author: Jetic Gu
       url: "assets/slides/03-2019-1012_NMT_Lecture2.pdf"
     - title: "Neural Machine Translation Tutorial"
@@ -464,6 +476,9 @@
   tag: transformers
   include: true
   current: false
+  notes:
+    - title: "Transformers"
+      url: "assets/lecture-slides/L13-transformers.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
       title: "Deep Learning Architectures for Sequence Processing (J+M chapter 9.4)"
@@ -472,7 +487,7 @@
       url: "https://web.stanford.edu/~jurafsky/slp3/9.pdf"
       optional: false
     - title: "Attention Is All You Need"
-      author: "Vaswani et al"
+      author: "Vaswani et al. 2017"
       url: "https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf"
       optional: true
     - title: "The Annotated Transformer"
@@ -489,7 +504,7 @@
   current: false
   notes:
     - title: "Contextualized Word Embeddings"
-      url: "assets/lecture-slides/L11-contextualized-word-embeddings.pdf"
+      url: "assets/lecture-slides/L14-contextualized-word-embeddings.pdf"
   readings:
     - title: "Illustrated BERT"
       author: "Jay Alammar"
@@ -500,7 +515,7 @@
       url: "https://arxiv.org/pdf/1902.06006.pdf"
       optional: true
     - title: "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
-      author: "Devlin et al"
+      author: "Devlin et al. 2018"
       url: "https://arxiv.org/pdf/1810.04805.pdf"
       optional: true
 - title: Constituency Parsing, Ambiguity and Context-Free Grammars
@@ -509,7 +524,7 @@
   current: false
   notes:
     - title: "Constituency Parsing"
-      url: "assets/lecture-slides/L12-constituency-parsing.pdf"
+      url: "assets/lecture-slides/L15-constituency-parsing.pdf"
     - title: "Phrase structure parsing (Berkeley)"
       author: "David Bamman"
       url: "http://people.ischool.berkeley.edu/~dbamman/nlp20_slides/14_phrase_structure_parsing.pdf"  
@@ -567,7 +582,7 @@
   current: false
   notes:
     - title: "Dependency Parsing"
-      url: "assets/lecture-slides/L13-dependency-parsing.pdf"
+      url: "assets/lecture-slides/L16-dependency-parsing.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
       title: "Dependency Parsing (J+M chapter 14)"
@@ -580,7 +595,7 @@
   current: false
   notes:
     - title: "Semantic Parsing"
-      url: "assets/lecture-slides/L14-semantic-parsing.pdf"
+      url: "assets/lecture-slides/L22-semantic-parsing.pdf"
   readings:
     - author: Percy Liang
       title: "Learning Executable Semantic Parsers for Natural Language Understanding"
@@ -602,12 +617,44 @@
   current: false
   notes:
     - title: "Question Answering"
-      url: "assets/lecture-slides/L16-question-answering.pdf"
+      url: "assets/lecture-slides/L18-question-answering.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
       title: "Questing Answering (J+M chapter 23)"
       abbr: "J+M chapter 23" 
       url: "https://web.stanford.edu/~jurafsky/slp3/23.pdf"
+      optional: true
+- title: "Memory Networks"
+  tag: memnet
+  include: true
+  current: false
+  notes:
+    - title: "Memory Networks"
+      url: "assets/lecture-slides/L19-memory-networks.pdf"
+  readings:
+    - author: "Weston et al. 2014"
+      title: "Memory Networks"
+      url: "https://arxiv.org/pdf/1410.3916.pdf"
+      optional: true
+    - author: "Sukhbaatar et al. 2014"
+      title: "End-to-End Memory Networks"
+      url: "https://arxiv.org/pdf/1503.08895.pdf"
+      optional: true
+    - author: "Graves et al. 2014"
+      title: "Neural Turing Machine"
+      url: "https://arxiv.org/pdf/1410.5401.pdf"
+      optional: true
+- title: "Text Generation"
+  tag: textgen
+  include: true
+  current: false
+  notes:
+    - title: "Text Generation"
+      url: "assets/lecture-slides/L20-text-generation.pdf"
+  readings:
+    - author: "Holtzman et al. 2020"
+      title: "The curious case of text degeneration"
+      url: "https://openreview.net/pdf?id=rygGQyrFvH"
       optional: true
 - title: "Dialogue"
   tag: dialogue
@@ -615,7 +662,7 @@
   current: false
   notes:
     - title: "Dialogue"
-      url: "assets/lecture-slides/L18-dialogue.pdf"
+      url: "assets/lecture-slides/L21-dialogue.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
       title: "Dialog Systems and Chatbots (J+M chapter 24)"
