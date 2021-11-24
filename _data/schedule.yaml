@@ -43,12 +43,12 @@
 - week: 2
   dates:
   - date: "9/21" 
-    title: "Text Classification (Naive Bayes)"
+    title: "Text Classification (Evaluation)"
     lecture: "classifiers"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L3-classification-naivebayes.pdf"
-    readings: [ "jm5"]
+        url: "assets/lecture-slides/L3-classification-evaluation.pdf"
+    readings: ["jm4"]
   - date: "9/23" 
     title: "Text Classification (Logistic regression and Neural Networks)"
     lecture: "classifiers"
@@ -57,6 +57,7 @@
         url: "assets/lecture-slides/L4-classification-logistic.pdf"
       - name: "NN slides"
         url: "assets/lecture-slides/L5-neural-nets-1.pdf"
+    readings: ["jm5"]
   - date: "9/24" 
     tutorial: 2
     tutlinks:
