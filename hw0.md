@@ -21,6 +21,7 @@ active_tab: homework
 
 # Programming Homework 0: Setup
 
+Before getting started, note that homeworks are developed and best run on linux with a terminal.  You should also be able to use MacOS and a terminal, but Windows is not recommended.  If you only have a Windows machine and want to use that, you should install the Windows Linux Subsystem or a Linux Virtual Machine so that you can have a terminal for running your homework. 
 
 ## Setup on Canvas
 
