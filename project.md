@@ -304,7 +304,7 @@ The final projects for this course will be graded using the following criteria:
 The project marks are distributed as follows:
 
 * Proposal. Project proposal. 20 marks (see the section on _Project Proposal_ for grading details)
-* Milestone. Description of progress and project plans. 20 marks (see the section on _Project Milestone_ for grading details)
-* Work. Work done in the project. Results obtained. 40 marks (see the section on _Grading of the Final Project Work_ for grading details) 
-* Report. Description and analysis of what was done. 40 marks (see the section on _Project Write-up_ for grading details)
-* Poster. Performance at the online poster session and presentation quality. 20 marks (10 marks for poster video, and 10 marks poster interactive session)
+* Milestone. Description of progress and project plans. 20 marks (see the section on _Project Milestone_ and the assignment rubric on Canvas for grading details)
+* Work. Work done in the project. Results obtained. 26 marks (see the section on _Grading of the Final Project Work_ and the assignment rubric on Canvas for grading details) 
+* Report. Description and analysis of what was done. 26 marks (see the section on _Project Write-up_  and the assignment rubric on Canvas for grading details)
+* Poster. Performance at the online poster session and presentation quality. 20 marks (15 marks for poster video, and 5 marks poster interactive session, see the assignment rubric on Canvas for grading details)
