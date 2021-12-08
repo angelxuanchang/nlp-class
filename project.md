@@ -267,12 +267,17 @@ Please read this [guide to presenting your work](assets/cached/cs224u/cs224u-201
 
 ### Submit your project on Canvas
 
+Go to [Canvas]({{ site.canvas }}). Under the `Final Project Report`
+activity submit the following pdf files:
+* `report.pdf`: this is the final project report
+
 Go to [Canvas]({{ site.canvas }}). Under the `Final Project`
 activity submit the following zip files:
 
-* `report.pdf`: this is the final project report
 * `source.zip`: this zip file should contain your iPython notebook and only the source code you have written (along with a requirements.txt for a virtualenv). Do not include any data files in this zipfile. Please also include a README.username file as you have done for all your homeworks in this zip file.
-* `output.zip`: output of your project implementation on a dataset. please include the evaluation code and references to allow us to check the evaluation you present in your write-up. Note this should only be your output on the test data file of some dataset plus any evaluation code and clear instructions on how to run the evaluation script.
+* `output.zip`: output of your project implementation on a dataset. please include the evaluation code and references to allow us to check the evaluation you present in your write-up. Note this should only be your output on the test data file of some dataset plus any evaluation code and clear instructions on how to run the evaluation script.  Do not include large models or data in this zip file.  If you have large models or data that you need to share with us, please put them in a networked file storage (e.g. SFU vault) and provide a link and/or instructions for downloading the data and/or models.
+
+For the convenience of the TAs, you can do a duplicate submission of your `report.pdf` under the `Final Project` (in addition to `Final Project Report`). 
 
 The instructions for submission and development are provided in more detail in [Homework 0](hw0.html).
 
