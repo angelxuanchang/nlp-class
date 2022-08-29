@@ -7,6 +7,49 @@ title: "Projects from previous terms"
 active_tab: project
 ---
 
+# Fall 2021 Final Projects
+* Comparison of Language Models on COVID-19 Tweets Text Classification
+* Reproduction and Analysis of Google’s Research Study on Natural Language Processing, Transfer Learning, and T5: the ‘Text-to-Text Transfer Transformer’
+* Aspect-level Sentiment analysis using Attention-based LSTM
+* Re-implementation of EmoNet and Further Experimentation
+* Prompt-based Text Classification Methods for Fake News Stance Detection
+* Toxic Comment Classification Challenge on Kaggle
+* Re-implementation of Bidirectional LSTM-CNNs-CRF
+* Predicting the Stock Market with News Articles using Neural Networks
+* Spam/Click-bait detection with RNN and BERT model
+* Toxic Comment Classification Challenge using NLP methods
+* Amazon Product Review Rating Prediction
+* Precise Question Classification for Applications in Customer Service
+* Toxic Comment Classification
+*  Predicting Knowledge Graphs for Textual Games
+* Analyzing LSTM-based Classification Models Dependency on Spurious Correlations
+* Social Media Fake News Detection with Deep Learning
+* A Comparison of BERT-based Question Answering Models on SQuAD 2.0 and TriviaQA
+* Classification of Toxic Comments Using Naive Bayes and LSTM Models
+* Implementing Sentimental Analysis for Resort Tweets
+* Open-domain Question Answering using Wikipedia 
+* CPA ChatBot
+* Exploring BERT-based Models’ Performance on SQuAD 2.0
+* Public Equity Social Sentiment Mining
+* Toxic Comment Classification
+* Comparison of Inject and Merge Encoder-decoder Models for Image Captioning
+* Robust Question Answering System
+* Using Convolutional Neural Network to Detect Fake News
+* Sentiment Analysis on Movie Reviews
+* Multi-task Learning Word Embedder
+* Fact-based Editing
+* Sentence Sentiment Analysis for IMDB Comments
+* Analysis of Adversarial Attacks against Email Spam Detection Models 
+* Performing Sentiment Analysis on Reddit Comments Associated with the Stock Market and Studying Possible Price Correlations
+* Re-implement Primer: An efficient Transformer architecture
+* Comparing various transformer based architectures with applications in sentiment analysis
+* Korean Hate Speech: Classification on Online News Articles Comments
+* Emoji Prediction for Tweets
+* Toxic Comment Classification: An Evaluation of State-of-the-Art Models
+* Re-implementing Potash et al.’s GhostWriter: Using an LSTM for Automatic Rap Lyric Generation
+* Pre-trained BERT Evaluation On Image Captioning
+* Applying Sentiment Analysis on Movies Reviews Written in Chinese
+
 # Fall 2020 Final Projects
 * The detection of fake news and real news
 * Tackling Toxicity: Training Tools to Target Toxic Text

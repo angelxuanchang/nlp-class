@@ -7,7 +7,7 @@ title: Course Information
 active_tab: main_page 
 ---
 
-## Natural Language Processing <span class="text-muted">Fall 2021</span>
+## Natural Language Processing <span class="text-muted">Fall 2022</span>
 
 Imagine a world where you can pick up a phone and talk in English,
 while at the other end of the line your words are [spoken in
@@ -41,18 +41,17 @@ terms of its analysis and the learning of language from observations.
 </ul>
 
 #### Asking for help
-* Ask for help on [canvas]({{ site.canvas }})
+* Ask for help on [Coursys]({{ site.coursys }})
 * Instructor office hours: {{ site.officehour }} 
 * <b>No emails</b> to the TAs and strictly emails about personal matters to the instructor
 * Use only SFU email address and use either `cmpt413:` or`cmpt713:` as subject prefix
 
 #### Time and place
 Course lectures will be held in person at the Burnaby campus
-* Tue 5:30am-6:20pm SSCC 9001
-* Thu 4:30am-6:20pm RCB IMAGTH
+* Mon 2:30PM - 5:20PM AQ3159
 * Last day of classes: {{ site.lastday }}
 
-Course material will be made available on [canvas]({{ site.canvas }})
+Course material will be made available on [Coursys]({{ site.coursys }})
 
 <!-- #### Calendar
 * [Subscribe]({{ site.calendar }})
@@ -76,7 +75,7 @@ There will be optional TA led tutorials that will help review these topics.
 
 
 #### Grading
-* Submit homework source code and check your grades on [Canvas]({{ site.canvas }})
+* Submit homework source code and check your grades on [Gradescope]({{ site.gradescope }}) and [Coursys]({{ site.coursys }})
 * Programming setup and diagnostic homework (5%)
   * HW0 due on {{ site.hwdates[0].deadline }} 
 * Four homeworks (64% total - 16% each, with 8% for programming and 8% for question answering). Due dates:
@@ -91,6 +90,3 @@ There will be optional TA led tutorials that will help review these topics.
   * Project Report and Code: Due on {{ site.hwdates[5].deadline }} (13%)
 * Participation: Helping other students on the discussion board in a positive way (3%)
 
-
-#### Other notes
-For CMPT 413 students (so undergrads only): any person enrolled in this course who identifies as a woman and currently lives in British Columbia can apply for a $500 scholarship from Athena Pathways.  [Please use this link to apply](https://www.athenapathways.org/education).

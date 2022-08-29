@@ -18,14 +18,14 @@ active_tab: faq
 
 ### Email policy
 
-* We will be using [Canvas discussion forum]({{ site.canvas }}/) for **all** discussions including asking for help. For syllabus, practice, homeworks, exams, or other clarification emails **do not** email me (the instructor) or the TA(s) directly.
-* If you email the instructor directly for personal matters that are inappropriate for the Canvas discussion board, use your SFU email address to send the email (do not use any other provider), and use either <code>cmpt413:</code> or <code>cmpt713:</code> as the prefix in your subject line.
+* We will be using [Coursys discussion forum]({{ site.coursys }}/) for **all** discussions including asking for help. For syllabus, practice, homeworks, exams, or other clarification emails **do not** email me (the instructor) or the TA(s) directly.
+* If you email the instructor directly for personal matters that are inappropriate for the Coursys discussion board, use your SFU email address to send the email (do not use any other provider), and use either <code>cmpt413:</code> or <code>cmpt713:</code> as the prefix in your subject line.
 * Do not email the TAs directly (without cc:ing the instructor) under any circumstance.
-* Before you email or post to the Canvas discussion board **read this FAQ**.
+* Before you email or post to the Coursys discussion board **read this FAQ**.
 
 ### How to ask a question
 
-How to ask a question on [Canvas]({{ site.canvas }}/):
+How to ask a question on [Coursys]({{ site.coursys }}/):
 
 * Do not ask two or more questions about different issues in the same topic. Ask each question as a separate topic.
 * First check your code on a CSIL Linux machine. If the problem goes away then the issue is with your development environment.
@@ -57,7 +57,7 @@ How to ask a question on [Canvas]({{ site.canvas }}/):
 ### Homework Submission and Grace Days
     
 * You have to submit several deliverables for each homework as specified on the homework pages.
-* Your homework solution will be submitted electronically on [Canvas]({{ site.canvas }}).
+* Your homework solution will be submitted electronically on [Gradescope]({{ site.gradescope }}).
 * Please include an `answer/README.md` file for any documentation outside of the source code especially for code obtained from elsewhere.
 * All homeworks are due by 11:59PM on the homework due date.
 * Each **programming** homework comes with 2 grace days. However the grace days only apply to those who have a valid submission on the due date. The default is usually a valid submission. For example, if your programming homework deadline is Wednesday 11:59PM and you submit a valid solution then you have until Friday night 11:59PM to modify your programming homework submission.
@@ -68,7 +68,7 @@ How to ask a question on [Canvas]({{ site.canvas }}/):
     
 * The **programming** homeworks will be solved in groups. Groups are {{ site.group.minsize }} to {{ site.group.maxsize }} people. All groups must be formed before the Homework 0 due date.
 * You are allowed to leave a group and form a group of size one at the start of each homework but not at the end.
-* Each group will create a single submission and upload it to [Canvas]({{ site.canvas }}) on or before the due date.
+* Each group will create a single submission and upload it to [Coursys]({{ site.coursys }}) on or before the due date.
 * Each group member will be graded on their self report and any commit logs that are submitted. If the TA or the instructor perceives there is a problem with collaboration in a group, certain group members can get zero marks. If you are pair programming, take turns in switching the user doing the commits to the repository.
 * __Effective group collaboration__: We are looking to see effective collaboration to solve the homework assignment. People can play different roles and sometimes more than one role in the same homework:
     * Designer: creates a plan for implementation and coordinates activities of the group. Should create design docs (text files or markdown or equivalent only). Put these documents in the directory `docs` and mention the files in your `README.username` file (where `username` is your SFU login username).
