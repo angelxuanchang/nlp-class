@@ -1,252 +1,222 @@
-- week: 0
+- week: 
+  num: 1
   dates:
-  - date: "9/9" 
+  - date: "9/12" 
     title: "Introduction"
     lecture: "intro"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L1-intro.pdf"
     hwout: "0"
-  - date: "9/10" 
-    tutorial: 0
-    tutlinks:
-      - name: "video"
-        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
-      - name: "slides"
-        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
-- week: 1
-  dates:
-  - date: "9/14" 
+  - date: "9/12" 
     title: "Language Modeling I"
     lecture: "lm"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L2-language-models-I.pdf"
+  - date: "9/14" 
+    tutorial: 0 
   - date: "9/16" 
-    title: "Language Modeling II and Text Classification (Naive Bayes)"
+    hwdue: "0"
+    hwout: "1"
+- week: 
+  num: 2
+  dates:
+  - date: "9/19" 
+    title: "Language Modeling II"
     lecture: "classifiers"
     leclinks:
       - name: "LM slides"
         url: "assets/lecture-slides/L2-language-models-II.pdf"
-      - name: "NB slides"
-        url: "assets/lecture-slides/L3-classification-naivebayes.pdf"
     readings: [ "jm4"]
-    hwdue: "0"
-    hwout: "1"
-  - date: "9/17" 
-    tutorial: 1
-    tutlinks:
-      - name: "video"
-        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
-      - name: "slides"
-        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
-- week: 2
-  dates:
-  - date: "9/21" 
-    title: "Text Classification (Evaluation)"
+  - date: "9/19" 
+    title: "Text Classification (Naive Bayes and Evaluation)"
     lecture: "classifiers"
     leclinks:
-      - name: "slides"
+      - name: "NB slides"
+        url: "assets/lecture-slides/L3-classification-naivebayes.pdf"
+      - name: "Evaluation slides"
         url: "assets/lecture-slides/L3-classification-evaluation.pdf"
     readings: ["jm4"]
-  - date: "9/23" 
-    title: "Text Classification (Logistic regression and Neural Networks)"
+    hwout: "1"
+  - date: "9/21" 
+    tutorial: 1
+- week: 
+  num: 3
+  dates:
+  - date: "9/26" 
+    title: "Text Classification (Logistic regression)"
     lecture: "classifiers"
     leclinks:
       - name: "LR slides"
         url: "assets/lecture-slides/L4-classification-logistic.pdf"
-      - name: "NN slides"
-        url: "assets/lecture-slides/L5-neural-nets-1.pdf"
     readings: ["jm5"]
-  - date: "9/24" 
-    tutorial: 2
-    tutlinks:
-      - name: "video"
-        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
-      - name: "slides"
-        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
-- week: 3
-  dates:
-  - date: "9/28" 
+  - date: "9/26" 
     title: "Text Classification (Neural Networks)"
     lecture: "ff"
     leclinks:
-      - name: "slides"
+      - name: "NN slides 1"
+        url: "assets/lecture-slides/L5-neural-nets-1.pdf"
+      - name: "NN slides 2"
         url: "assets/lecture-slides/L6-neural-nets-2.pdf"
+  - date: "9/28" 
+    tutorial: 2
+  - date: "9/30" 
     hwdue: "1"
     hwout: "2"
-  - date: "9/30" 
-    noclass: true
-    title: "Holiday (National Day)"
-  - date: "10/1" 
-    tutorial: 3
-    tutlinks:
-      - name: "video"
-        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
-      - name: "slides"
-        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
-- week: 4
+- week: 
+  num: 4
   dates:
-  - date: "10/5" 
-    title: "Word Embeddings (vector spaces)"
+  - date: "10/3" 
+    title: "Word Vectors"
     lecture: "wordvec"
     leclinks:
-      - name: "slides"
+      - name: "WV slides 1"
         url: "assets/lecture-slides/L7-wordvectors.pdf"
-    keepread: 2
-  - date: "10/7" 
-    title: "Word Embeddings (word2vec)"
-    lecture: "wordvec"
-    leclinks:
-      - name: "slides"
+      - name: "WV slides 2"
         url: "assets/lecture-slides/L8-word2vec.pdf"
-    skipread: true
-  - date: "10/8" 
-    tutorial: 4
-    tutlinks:
-      - name: "video"
-        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
-      - name: "slides"
-        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
-- week: 5
+  - date: "10/4" 
+    tutorial: 3
+- week: 
+  num: 5
   dates:
-  - date: "10/12" 
+  - date: "10/10" 
+    noclass: true
+    title: "Holiday (Thanksgiving Day)"
+  - date: "10/11" 
+    tutorial: 4
+- week: 
+  num: 6
+  dates:
+  - date: "10/17" 
+    title: "Neural language models"
+    lecture: "nlm"
+  - date: "10/17" 
     title: "Sequence Modeling (HMMs)"
     lecture: "hmm"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L9-sequence-modeling.pdf"
+  - date: "10/19" 
+    tutorial: 5
+  - date: "10/21" 
     hwdue: "2"
     hwout: "3"
-  - date: "10/14" 
+- week: 
+  num: 7
+  dates:
+  - date: "10/24" 
     title: "Neural Sequence Modeling (RNNs)"
     lecture: "rnn"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L10-RNN.pdf"
-  - date: "10/15" 
-    tutorial: 5
-    tutlinks:
-      - name: "video"
-        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
-      - name: "slides"
-        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
-- week: 6
-  dates:
-  - date: "10/19" 
+  - date: "10/24" 
     title: "Sequence Modeling (LSTMs/GRUs)"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L11-LSTM-GRU.pdf"
     lecture: "rnn"
-  - date: "10/21" 
+  - date: "10/26" 
+    tutorial: 6
+  - date: "10/28" 
+    project: "Project title and abstract"
+- week: 
+  num: 8
+  dates:
+  - date: "10/31" 
     title: "Sequence-to-Sequence models"
     lecture: "seq2seq"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L12-sequence-generation.pdf"
-  - date: "10/22" 
-    tutorial: 6
-    tutlinks:
-      - name: "video"
-        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
-      - name: "slides"
-        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
-    project: "Project title and abstract"
-- week: 7
-  dates:
-  - date: "10/26" 
+  - date: "10/31" 
     title: "Transformers"
     lecture: "transformers"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L13-transformers.pdf"
-    hwdue: "3"
-    hwout: "4"
-  - date: "10/28" 
+  - date: "11/1" 
+    tutorial: 7
+  - date: "11/3" 
+    project: "Project proposal"
+- week: 
+  num: 9
+  dates:
+  - date: "11/7" 
     title: "Contextual Word Embeddings"
     lecture: "cwe"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L14-contextualized-word-embeddings.pdf"
-    project: "Project proposal"
-  - date: "10/29" 
-    tutorial: 7
-    tutlinks:
-      - name: "video"
-        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
-      - name: "slides"
-        url: "https://canvas.sfu.ca/courses/64917/files/folder/Tutorials"
-- week: 8
-  dates:
-  - date: "11/2" 
-    title: "Constituency Parsing"
-    lecture: "cfg"
-    leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L15-constituency-parsing.pdf"
-  - date: "11/4" 
-    title: "Dependency parsing"
-    lecture: "dependency"
-    leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L16-dependency-parsing.pdf"
-- week: 9
-  dates:
-  - date: "11/9" 
+  - date: "11/7" 
     title: "Final project tips, model debugging and analysis"
     lecture: "analysis"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L17-project-tips-analysis.pdf"
-    hwdue: "4"
+  - date: "11/9"
+    tutorial: 8
   - date: "11/11" 
-    noclass: true
-    title: "Holiday"
-- week: 10
+    hwdue: "3"
+    hwout: "4"
+- week: 
+  num: 10
   dates:
-  - date: "11/16" 
-    title: "Question Answering"
-    lecture: "qa"
+  - date: "11/14" 
+    title: "Constituency Parsing"
+    lecture: "cfg"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L18-question-answering.pdf"
+        url: "assets/lecture-slides/L15-constituency-parsing.pdf"
+  - date: "11/14" 
+    title: "Dependency parsing"
+    lecture: "dependency"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L16-dependency-parsing.pdf"
   - date: "11/18" 
-    title: "Memory Networks (Jetic Gu)"
-    lecture: "memnet"
-    leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L19-memory-networks.pdf"
     project: "Project milestone"
-- week: 11
+- week: 
+  num: 11
   dates:
-  - date: "11/23" 
+  - date: "11/21" 
     title: "Text Generation"
     lecture: "textgen"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L20-text-generation.pdf"
-  - date: "11/25" 
+  - date: "11/21" 
     title: "Dialogue"
     lecture: "dialogue"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L21-dialogue.pdf"
-- week: 12
+  - date: "11/25" 
+    hwdue: "4"
+- week: 
+  num: 12
   dates:
-  - date: "11/30" 
+  - date: "11/28" 
+    title: "Question Answering"
+    lecture: "qa"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L18-question-answering.pdf"
+  - date: "11/28" 
     title: "Semantic parsing"
     lecture: "semparse"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L22-semantic-parsing.pdf"
-  - date: "12/2" 
+- week: 
+  num: 13
+  dates:
+  - date: "12/5" 
     title: "Grounding"
     lecture: "grounding"
-- week: 13
-  dates:
-  - date: "12/7"
+  - date: "12/5"
     title: "Conclusion"
     lecture: "conclusion"
-  - date: "12/8"
+  - date: "12/7"
     project: "Final project report"

@@ -21,6 +21,7 @@ The schedule is preliminary and subject to change.
     <div class="panel-group" id="accordion">
         <table>
         <thead><tr>
+          <th>Week</th>
           <th>Date</th>
           <th>Topic</th>
           <th>Assignments</th>
@@ -28,9 +29,13 @@ The schedule is preliminary and subject to change.
         </tr></thead>
         <tbody>  
         {% for week in site.data.schedule %}
+          <tr>
+          {% assign nrows = week.dates.size | plus: 1 %}
+          <td colspan='1' rowspan="{{nrows}}"><b>{{ week.num }}</b></td>
+          </tr>
           {% for date in week.dates %}
             <tr {% if date.noclass %}class="noclass"{% endif %}>
-              <td>{{ date.date }}</td>
+              <td>{{ date.date }} {{ tutorials_by_id["1"].title }} </td>
               <td>
                 {% if date.noclass %}
                   No class - {{ date.title }}

@@ -21,25 +21,25 @@ tas:
     email: yza440
     officehour: "TBD"
 tutorials:
-  - tutorial: "0a"
-    title: "Probability, linear algebra and calculus"
-  - tutorial: "0b"
-    title: "Python/numpy/unix"
+  - tutorial: "0"
+    title: "Review of probability, linear algebra and calculus and useful python/unix commands"
+    components: ["Probability, linear algebra and calculus", "Python/numpy/unix"]
   - tutorial: "1"
     title: "Building language models"
   - tutorial: "2"
     title: "Building classifiers with pytorch"
-  - tutorial: "3a"
+  - tutorial: "3"
     title: "Neural BoW with pytorch"
-  - tutorial: "3b"
-    title: "Optimization and backprop"
+    components: ["Neural BoW with pytorch", "Optimization and backprop"]
   - tutorial: "4"
     title: "Using static word embeddings"
   - tutorial: "5"
-    title: "Using RNNs in pytorch"
+    title: "Neural language models with BoW/Fixed Window FFN"
   - tutorial: "6"
-    title: "Training/debugging networks and running experiments"
+    title: "Using RNNs in pytorch"
   - tutorial: "7"
+    title: "Training/debugging networks and running experiments"
+  - tutorial: "8"
     title: "Using Transformers in pytorch"
 group:
   minsize: 1
