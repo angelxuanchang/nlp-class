@@ -9,20 +9,20 @@ calendar: "https://calendar.google.com/calendar/ical/qgs97od9ef8t1582k2rqomv5ho%
 lastday: "Dec 6, 2022"
 midterm: "None"
 instructor: angelx
-officehour: "TBD"
+officehour: "Tue 11am-12pm"
 tas:
   - name: "Han-Hung Lee"
     email: hla300
-    officehour: "TBD"
+    officehour: "Mon 10am-11am"
   - name: "Hanxiao (Shawn) Jiang"
     email: hja40
-    officehour: "TBD"
+    officehour: "Fri 9am-10am"
   - name: "Yiming Zhang"
     email: yza440
-    officehour: "TBD"
+    officehour: "Wed 10am-11am"
 tutorials:
   - tutorial: "0"
-    title: "Review of probability, linear algebra and calculus and useful python/unix commands"
+    title: "Review of a) probability, linear algebra and calculus and b) useful python/unix commands"
     components: ["Probability, linear algebra and calculus", "Python/numpy/unix"]
   - tutorial: "1"
     title: "Building language models"
@@ -46,8 +46,8 @@ group:
   maxsize: 3
 hwdates:
   - hw: "0"
-    startdate: "Sept TBD, 2022"
-    deadline: "Sept TBD, 2022"
+    startdate: "Sept 12, 2022"
+    deadline: "Sept 16, 2022"
   - hw: "1"
     startdate: "Sept TBD, 2022"
     deadline: "Sept TBD, 2022"

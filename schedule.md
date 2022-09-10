@@ -9,7 +9,7 @@ active_tab: syllabus
 
 ## Schedule
 
-The schedule is preliminary and subject to change.
+The schedule is preliminary and subject to change.   Slides will be updated as the term progresses.
 
 <style type="text/css">
     .bs-example{

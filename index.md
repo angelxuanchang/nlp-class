@@ -14,7 +14,8 @@ while at the other end of the line your words are [spoken in
 Chinese](https://www.youtube.com/watch?v=Nu-nlQqFCKg).  Imagine a
 [computer animated representation of
 yourself](http://mitpress.mit.edu/books/embodied-conversational-agents)
-speaking fluently what you have written in an email. Imagine
+speaking fluently what you have written in an email. Imagine a computer [writing new poetry and stories](https://www.gwern.net/GPT-3) from a prompt or [generating art 
+based on descriptions](https://huggingface.co/spaces/stabilityai/stable-diffusion). Imagine
 automatically uncovering protein/drug interactions in [petabytes
 of medical abstracts](http://fable.chop.edu/). Imagine feeding a
 computer an ancient script that no living person can read, then
@@ -62,7 +63,7 @@ There are no formal prerequisites for this class.  However, you are expected to 
 * Proficiency in Python - Programming assignments will be in python (numpy and pytorch will be used).
 * Calculus and Linear Algebra (MATH 151, MATH 232/240) - You will need to be comfortable with taking multivariable derivatives
 * Basic Probability and Statistics (STAT 270)
-* Basic Machine Learning (CMPT 419/726) is strongly recommended
+* Basic Machine Learning (CMPT 410/726) is strongly recommended (Note: CMPT 410 was previously offered as CMPT 419 under the title "Machine Learning")
 
 There will be optional TA led tutorials that will help review these topics. 
 
