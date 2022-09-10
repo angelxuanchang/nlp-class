@@ -31,7 +31,7 @@ You can use [Canvas discussion]({{ site.canvas }}) to look for teammates.
 We will be checking that all group members are contributing equally
 to the homework submission and the final project.
 
-Along with your group members, register yourself as part of a group on both [Canvas]({{ site.canvas }}) and [Coursys]({{ site.coursys }}).  Please make sure you use exactly the same group name.  We will use Coursys for providing you feedback on the autograded portion of the homework.
+Along with your group members, register yourself as part of a group on [Coursys]({{ site.coursys }}).  Please make sure you use exactly the same group name.  We will use Coursys for providing you feedback on the autograded portion of the homework.
 
 Create a memorable name for your group. If you need help, [seek help](https://www.wordlab.com/name-generators/team-name-generator/).
 
@@ -69,7 +69,7 @@ On the `New Project` page, give your repo a name under the `Project
 name` field. The default name is `my-awesome-project` which is
 **not** what you should call your repo. Instead, name your repo:
 `nlpclass-{{ site.semcode }}-g-GROUP` where `GROUP` is the group
-you registered on [Canvas]({{ site.canvas }})/[Coursys]({{ site.coursys }}). For example, a
+you registered on [Coursys]({{ site.coursys }}). For example, a
 repository name might be `nlpclass-{{ site.semcode }}-g-ethicsgradient`
 Make sure you add the `g-` before your group name. It's important
 to name the repo exactly as you see here.
@@ -85,12 +85,12 @@ else so be considerate of others.
 * Do not use any strange characters in your group name.  
 Use alphanumeric characters [a-z0-9] only in your 
 group name, underscore and dashes are also permited (**please avoid spaces**).
-We use an automated process to align your group name in Canvas 
+We use an automated process to align your group name in Coursys 
 to your repo in gitlab.  If your group name and repo does not match 
-exactly, we will not be able to match your gitlab repo to your Canvas group.
-If you used spaces in your group name in Canvas by mistake, make sure that your
+exactly, we will not be able to match your gitlab repo to your Coursys group.
+If you used spaces in your group name in Coursys by mistake, make sure that your
 gitlab repo has dashes ('-') instead of spaces (because the internal
-system name used by Canvas will have dashes instead of spaces).
+system name used by Coursys will have dashes instead of spaces).
 
 Leave all other settings as they are and click the `Create Project` button
 at the bottom left of the page.
@@ -109,9 +109,9 @@ your newly created repo.
 
 The course instructor and the TAs need access to your repo in order to test
 and  grade your code. Add the instructor and TAs as a member of your
-repo by clicking on the Settings menu which looks like a gear icon <i class="fa fa-gear"></i>`Settings`
-on the left hand menu and selecting `Members` from the dropdown menu. On the page that loads up
-type in (or individually copy/paste) the following list of names in the `Add new user` box using a `,` to
+repo by clicking on the `Members` menu (on the left hand menu, above the <i class="fa fa-gear"></i>`Settings`). 
+On the page that loads up
+type in (or individually copy/paste) the following list of names in the `GitLab member or Email address` box using a `,` to
 delimit each username: <code>{{ site.instructor }}, {{ site.tas | map: "email" | join: ', '}}</code>. 
 
 Change the role permissions from `Guest` to `Developer` in the
@@ -169,7 +169,7 @@ In the terminal window, enter the commands
 
 where `USER` is your SFU username, `GROUPUSER` is the SFU username of
 the person who created the group repository and `GROUP` is the name of the
-group you have already setup on [Canvas]({{ site.canvas }}). If
+group you have already setup on [Coursys]({{ site.coursys }}). If
 you skipped any of the above steps in setting up your GitLab repo
 this command will not work.  The system might prompt you for a
 username/password combo. Supply the usual answers. To avoid entering
@@ -261,7 +261,7 @@ have to submit the solution to the following task as your submission
 for Homework 0. It will serve as a guide for the steps to be taken
 for all subsequent homeworks in this course.
 
-Submission for each homework will be done on [Canvas]({{ site.canvas }}).
+Submission for each homework will be done on [Coursys]({{ site.coursys }}).
 
 ### Getting Started
 
@@ -402,7 +402,7 @@ You must create the following files:
 
 ### Run your solution on the data files
 
-To create the `output.zip` file for upload to Canvas do:
+To create the `output.zip` file for upload to Coursys do:
 
     python3 zipout.py
 
@@ -465,7 +465,7 @@ The report should include the following:
 
 Your report should be submitted as `report.pdf`  Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
 
-### Submit your homework on Canvas
+### Submit your homework on Coursys
 
 Once you are done with your homework submit all the relevant materials
 to Canvas for evaluation.
@@ -474,13 +474,13 @@ to Canvas for evaluation.
 #### Create output.zip
 
 Once you have a working solution in `answer/ensegment.py` create
-the `output.zip` for upload to Canvas using:
+the `output.zip` for upload to Coursys using:
 
     python3 zipout.py
 
 #### Create source.zip
 
-To create the `source.zip` file for upload to Canvas do:
+To create the `source.zip` file for upload to Coursys do:
 
     python3 zipsrc.py
 
@@ -492,9 +492,9 @@ You must have the following files or `zipsrc.py` will complain about it:
 In addition, each group member should write down a short description of what they
 did for this homework in `answer/README.username`.
 
-#### Upload to Canvas
+#### Upload to Coursys
 
-Go to `Programming Homework 0` on Canvas and do a group submission:
+Go to `Programming Homework 0` on Coursys and do a group submission:
 
 * Upload `output.zip` and `source.zip` and `report.pdf`
 * Make sure you have documented your approach in `answer/ensegment.ipynb`.
@@ -504,7 +504,7 @@ Go to `Programming Homework 0` on Canvas and do a group submission:
 
 The grading is split up into the following components:
 
-* Group setup done on Canvas.
+* Group setup done on Coursys.
 * GitLab setup including adding instructor and TA as Developer to the repository.
 * dev scores (see Table below)
 * test scores (see Table below)
@@ -528,5 +528,5 @@ Your F-score should be equal to or greater than the score listed for the corresp
 | .99 | .97 | 100 | A+ |
 {: .table}
 
-The score will be normalized to the marks on Canvas for the dev and test scores.
+The score will be normalized to the marks on Coursys for the dev and test scores.
 
