@@ -15,19 +15,19 @@ active_tab: homework
 ## Homework Questions 0: Probablity, linear algebra, and calculus
 
 <span class="text-info">Out on {{ site.hwdates[0].startdate }}.</span> 
-{% if site.hwdates[0].canvas %}
-<span>Posted on [Canvas]({{ site.hwdates[0].canvas }}).</span> 
+{% if site.hwdates[0].coursys %}
+<span>Posted on [Coursys]({{ site.hwdates[0].coursys }}).</span> 
 {% endif %}
 
 # Programming Homework 0: Setup
 
 Before getting started, note that homeworks are developed and best run on linux with a terminal.  You should also be able to use MacOS and a terminal, but Windows is not recommended.  If you only have a Windows machine and want to use that, you should install the Windows Linux Subsystem or a Linux Virtual Machine so that you can have a terminal for running your homework. 
 
-## Setup on Canvas
+## Setup on Coursys
 
 Find a group to work with for the homework assignments and the final
 course project. The group size should be {{ site.group.minsize }} to {{ site.group.maxsize }} people.
-You can use [Canvas discussion]({{ site.canvas }}) to look for teammates.
+You can use [Coursys discussion]({{ site.coursys }}) to look for teammates.
 We will be checking that all group members are contributing equally
 to the homework submission and the final project.
 
@@ -76,13 +76,13 @@ to name the repo exactly as you see here.
 
 **Selecting group names** Please take care when selecting a group name and 
 follow the guidelines below.
-* Please choose a group name that is distinctive and unlikely to be used 
+* Please choose a group name that is **distinctive** and unlikely to be used 
 by another group.  For instance, `group` is a poor group name.
 * Do not use any obscene words in your group name. Be mature about 
 your choice of group name. That does not mean it cannot be funny,
 just be aware that your choice of group name may offend someone
 else so be considerate of others.
-* Do not use any strange characters in your group name.  
+* **Do not use any strange characters** in your group name.  
 Use alphanumeric characters [a-z0-9] only in your 
 group name, underscore and dashes are also permited (**please avoid spaces**).
 We use an automated process to align your group name in Coursys 
@@ -451,6 +451,8 @@ F-score on both dev and test:
     dev.out score: 0.98
     test.out score: 0.97
 
+Note the scores above are just an example.  Your scores may differ.
+
 ### Preparing your report
 
 You should prepare a short (<1 page) report on what you did in this assignment.
@@ -468,7 +470,7 @@ Your report should be submitted as `report.pdf`  Using LaTex for preparing your 
 ### Submit your homework on Coursys
 
 Once you are done with your homework submit all the relevant materials
-to Canvas for evaluation.
+to Coursys for evaluation.
 
 
 #### Create output.zip
