@@ -42,7 +42,7 @@ terms of its analysis and the learning of language from observations.
 </ul>
 
 #### Asking for help
-* Ask for help on [Coursys]({{ site.coursys }})
+* Ask for help on [{{site.forumname}}]({{ site.forum }})
 * Instructor office hours: {{ site.officehour }} 
 * <b>No emails</b> to the TAs and strictly emails about personal matters to the instructor
 * Use only SFU email address and use either `cmpt413:` or`cmpt713:` as subject prefix

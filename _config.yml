@@ -2,6 +2,8 @@ exclude: ['README.md', 'assets/latex/', 'archive']
 timezone: US/Pacific
 markdown: kramdown
 coursys: "https://coursys.sfu.ca/2022fa-cmpt-413-x1/"
+forumname: Coursys Discussion Forum
+forum: "https://coursys.sfu.ca/2022fa-cmpt-413-x1/forum/"
 canvas: "https://canvas.sfu.ca/courses/64917"
 gradescope: "https://www.gradescope.ca/courses/7736"
 semcode: 1227
