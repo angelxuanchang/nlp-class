@@ -48,9 +48,10 @@ hwdates:
   - hw: "0"
     startdate: "Sept 12, 2022"
     deadline: "Sept 16, 2022"
+    coursys: https://coursys.sfu.ca/2022fa-cmpt-413-x1/pages/HWC-0/view
   - hw: "1"
-    startdate: "Sept TBD, 2022"
-    deadline: "Sept TBD, 2022"
+    startdate: "Sept 16, 2022"
+    deadline: "Sept 30, 2022"
   - hw: "2"
     startdate: "Sept TBD, 2022"
     deadline: "Oct TBD, 2022"
