@@ -208,9 +208,11 @@ server. Here is a typical `.gitignore` file.
     *.egg-info
     .ipynb_checkpoints
 
-## Python 3 Notebooks
+## Python 3 notebooks and virtualenv
 
-We will be using Python 3 notebooks for the homework submissions.
+We recommend the use of Python 3 notebooks and virtualenv to help with 
+your development.  We will be checking your code, and the Python notebook 
+can be used to point out key parts of your code.
 
 First set up a virtual environment to contain all the dependencies
 you need to run a Python3 notebook. To use virtualenv to manage
@@ -465,7 +467,7 @@ The report should include the following:
 * Discussion of alternative methods you tried and how well they worked (or didn't work)
 * Breakdown of contributions by each group member
 
-Your report should be submitted as `report.pdf`  Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
+Your report should be submitted as `report.pdf`.  Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
 
 ### Submit your homework on Coursys
 
