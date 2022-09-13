@@ -44,7 +44,7 @@ tutorials:
   - tutorial: "8"
     title: "Using Transformers in pytorch"
 group:
-  minsize: 1
+  minsize: 2
   maxsize: 3
 hwdates:
   - hw: "0"
