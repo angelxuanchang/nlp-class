@@ -115,7 +115,7 @@ type in (or individually copy/paste) the following list of names in the `GitLab 
 delimit each username: <code>{{ site.instructor }}, {{ site.tas | map: "email" | join: ', '}}</code>. 
 
 Change the role permissions from `Guest` to `Developer` in the
-dropdown menu. Click on `Add to Project` to add the instructor and
+dropdown menu. Click on `Invite` to add the instructor and
 all TAs as Developers to your github repo.
 
 ### Set up notifications
@@ -491,7 +491,7 @@ To create the `source.zip` file for upload to Coursys do:
 You must have the following files or `zipsrc.py` will complain about it:
 
 * `answer/ensegment.py` -- this is your solution to the homework. start by copying `default.py` as explained below.
-* `answer/ensegment.ipynb` -- this is the iPython notebook that will be your write-up for the homework.
+* `answer/ensegment.ipynb` -- this is the iPython notebook that will be the guide for your code for the homework.
 
 In addition, each group member should write down a short description of what they
 did for this homework in `answer/README.username`.
@@ -513,7 +513,7 @@ The grading is split up into the following components:
 * dev scores (see Table below)
 * test scores (see Table below)
 * Report quality 
-* Code content and quality (based on iPython notebook write-up)
+* Code content and quality (a good iPython notebook can help TAs understand your code)
 * Check if each group member has a `answer/README.username`.
 
 Your F-score should be equal to or greater than the score listed for the corresponding marks.
