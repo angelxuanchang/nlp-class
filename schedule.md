@@ -41,7 +41,10 @@ The schedule is preliminary and subject to change.   Slides will be updated as t
                   No class - {{ date.title }}
                 {% elsif date.title or date.tutorial %}
                   {% if date.title %}
-                    Lecture: {{ date.title }} <br/>
+                    {% if date.recorded %} 
+                      Recorded 
+                    {% endif %}  
+                      Lecture: {{ date.title }} <br/>
                     {% if date.leclinks %}
                       {% for link in date.leclinks %}
                         [<a href="{{link.url}}">{{link.name}}</a>]

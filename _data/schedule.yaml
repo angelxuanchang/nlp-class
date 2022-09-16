@@ -8,12 +8,6 @@
       - name: "slides"
         url: "assets/lecture-slides/L1-intro.pdf"
     hwout: "0"
-  - date: "9/12" 
-    title: "Language Modeling I"
-    lecture: "lm"
-    leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L2-language-models-I.pdf"
   - date: "9/14" 
     tutorial: 0 
   - date: "9/16" 
@@ -22,15 +16,19 @@
 - week: 
   num: 2
   dates:
+  - date: "10/19" 
+    noclass: true
+    title: "Class canceled - National Day of Mourning"
   - date: "9/19" 
-    title: "Language Modeling II"
-    lecture: "classifiers"
+    title: "Language Modeling"
+    lecture: "lm"
+    recorded: true
     leclinks:
       - name: "LM slides"
         url: "assets/lecture-slides/L2-language-models-II.pdf"
-    readings: [ "jm4"]
   - date: "9/19" 
     title: "Text Classification (Naive Bayes and Evaluation)"
+    recorded: true
     lecture: "classifiers"
     leclinks:
       - name: "NB slides"

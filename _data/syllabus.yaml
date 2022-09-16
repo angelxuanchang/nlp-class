@@ -67,7 +67,7 @@
 - title: "Language models"
   tag: lm
   include: true
-  current: false
+  current: true
   notes:
     - title: "Language models I"
       url: "assets/lecture-slides/L2-language-models-I.pdf"
