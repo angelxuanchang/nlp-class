@@ -27,7 +27,7 @@ Before getting started, note that homeworks are developed and best run on linux 
 
 Find a group to work with for the homework assignments and the final
 course project. The group size should be {{ site.group.minsize }} to {{ site.group.maxsize }} people.
-You can use [Coursys discussion]({{ site.coursys }}) to look for teammates.
+You can use [{{site.forumname}}]({{ site.forum }}) to look for teammates.
 We will be checking that all group members are contributing equally
 to the homework submission and the final project.
 
@@ -35,11 +35,12 @@ Along with your group members, register yourself as part of a group on [Coursys]
 
 Create a memorable name for your group. If you need help, [seek help](https://www.wordlab.com/name-generators/team-name-generator/).
 
-<!-- Go to the [Course Discussion Page]({{ site.coursys }}) and select `Manage Subscription`.
+<!-- Go to the [{{site.forumname}}]({{ site.forum }}) and select `Manage Subscription`.
 Change the `Notification` to `Email me for new topics and replies`. It should look like this:
 
 ![Coursys Subscription](assets/img/coursys_subscription.png)
- -->
+-->
+
 ## Setup Git Repository
 
 ### Git Basics
@@ -457,17 +458,17 @@ Note the scores above are just an example.  Your scores may differ.
 
 ### Preparing your report
 
-You should prepare a short (<1 page) report on what you did in this assignment.
+You should prepare a short (<1 page) report on what you did in this assignment.  Your report should be organized into clear sections, with grammatical English (full-sentences).  Use figures, graphs, tables to compare results of different experiments.  
 
 The report should include the following:
 * Group name with names of group members
 * A summary of the task you are addressing (in this case, English word segmentation) and what you are aiming to achieve 
 * Short description of your method 
-* Results (both quantitative and qualitative) comparing your method to the baseline (default) solution 
+* Results (both quantitative and qualitative) comparing your method to the baseline (default) solution
 * Discussion of alternative methods you tried and how well they worked (or didn't work)
 * Breakdown of contributions by each group member
 
-Your report should be submitted as `report.pdf`.  Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
+Your report should be submitted as `report.pdf` to [Gradescope]({{ site.gradescope }}).  Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
 
 ### Submit your homework on Coursys
 
@@ -496,13 +497,15 @@ You must have the following files or `zipsrc.py` will complain about it:
 In addition, each group member should write down a short description of what they
 did for this homework in `answer/README.username`.
 
-#### Upload to Coursys
+#### Upload to Coursys and Gradescope
 
-Go to `Programming Homework 0` on Coursys and do a group submission:
+Go to `Programming Homework 0` on [Coursys]({{ site.coursys }}) and do a group submission:
 
-* Upload `output.zip` and `source.zip` and `report.pdf`
+* Upload `output.zip` and `source.zip`
 * Make sure you have documented your approach in `answer/ensegment.ipynb`.
 * Make sure each member of your group has documented their contribution to this homework in `answer/README.username` where `username` is your CSIL/GitLab username.
+
+Go to `HW0-P Report` on [Gradescope]({{ site.gradescope }}) and upload your `report.pdf`.
 
 ## Grading
 
