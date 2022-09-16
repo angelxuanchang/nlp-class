@@ -458,7 +458,7 @@ Note the scores above are just an example.  Your scores may differ.
 
 ### Preparing your report
 
-You should prepare a short (<1 page) report on what you did in this assignment.  Your report should be organized into clear sections, with grammatical English (full-sentences).  Use figures, graphs, tables to compare results of different experiments.  
+You should prepare a short (<1 page) report on what you did in this assignment.  Your report should be organized into clear sections, with grammatical English (full sentences).  Use figures, graphs, tables to compare results of different experiments.  
 
 The report should include the following:
 * Group name with names of group members

@@ -15,8 +15,8 @@ active_tab: homework
 ## Homework Questions 3: Sequence models and machine translation
 
 <span class="text-info">Out on {{ site.hwdates[3].startdate }}</span> 
-{% if site.hwdates[3].canvas %}
-<span>Posted on [Canvas]({{ site.hwdates[3].canvas }}).</span> 
+{% if site.hwdates[3].coursys %}
+<span>Posted on [Coursys]({{ site.hwdates[3].coursys }}).</span> 
 {% endif %}
 
 # Programming Homework 3: Robust Phrasal Chunking
@@ -394,7 +394,7 @@ You must create the following files:
 
 ## Run your solution on the data files
 
-To create the `output.zip` file for upload to Canvas do:
+To create the `output.zip` file for upload to {{ site.hwsubmit.name }} do:
 
     python3 zipout.py
 
@@ -423,7 +423,7 @@ evaluate your output on the test input after the submission deadline.
 
 ## Preparing your report
 
-You should prepare a short (1-2 pages) report on what you did in this assignment.
+You should prepare a short (1-2 pages) report on what you did in this assignment.  Your report should be organized into clear sections, with grammatical English (full sentences).  Use figures, graphs, tables to compare results of different experiments.  
 
 The report should include the following:
 * Group name with names of group members
@@ -435,21 +435,21 @@ The report should include the following:
 
 Your report should be submitted as `report.pdf`  Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
 
-## Submit your homework on Canvas
+## Submit your homework on {{ site.hwsubmit.name }}
 
 Once you are done with your homework submit all the relevant materials
-to Canvas for evaluation.
+to {{ site.hwsubmit.name }} for evaluation.
 
 ### Create output.zip
 
 Once you have a working solution in `answer/chunker.py` create
-the `output.zip` for upload to Canvas using:
+the `output.zip` for upload to {{ site.hwsubmit.name }} using:
 
     python3 zipout.py
 
 ### Create source.zip
 
-To create the `source.zip` file for upload to Canvas do:
+To create the `source.zip` file for upload to {{ site.hwsubmit.name }} do:
 
     python3 zipsrc.py
 
@@ -461,14 +461,16 @@ You must have the following files or `zipsrc.py` will complain about it:
 In addition, each group member should write down a short description of what they
 did for this homework in `answer/README.username`.
 
-### Upload to Canvas
+### Upload to {{ site.hwsubmit.name }} and Gradescope
 
-Go to `Programming Homework 3` on Canvas and do a group submission:
+Go to `Programming Homework 3` on {{ site.hwsubmit.name }} and do a group submission:
 
-* Upload `output.zip` and `source.zip` and `report.pdf`
+* Upload `output.zip` and `source.zip`
 * Make sure your `source.zip` matches your Gitlab repository.
 * Make sure you have documented your approach in `answer/chunker.ipynb`.
 * Make sure each member of your group has documented their contribution to this homework in `answer/README.username` where `username` is your CSIL/GitLab username.
+
+Go to `HW3-P Report` on [Gradescope]({{ site.gradescope }}) and upload your `report.pdf`.
 
 ## Grading
 
@@ -499,5 +501,5 @@ Your F-score should be equal to or greater than the score listed for the corresp
 | 78   | 72   | 100 | A+ |
 {: .table}
 
-The score will be normalized to the marks on Canvas for the dev and test scores.
+The score will be normalized to the marks on {{ site.hwsubmit.name }} for the dev and test scores.
 
