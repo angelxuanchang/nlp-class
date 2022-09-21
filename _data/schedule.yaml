@@ -26,7 +26,7 @@
     leclinks:
       - name: "LM slides"
         url: "assets/lecture-slides/L2-language-models.pdf"
-  - date: "9/20" 
+  - date: "9/21" 
     title: "Text Classification (Naive Bayes and Evaluation)"
     recorded: true
     lecture: "classifiers"
@@ -36,9 +36,9 @@
       - name: "Evaluation slides"
         url: "assets/lecture-slides/L3-classification-evaluation.pdf"
     readings: ["jm4"]
-    hwout: "1"
   - date: "9/21" 
     tutorial: 1
+    hwout: "1"
 - week: 
   num: 3
   dates:
@@ -59,9 +59,6 @@
         url: "assets/lecture-slides/L6-neural-nets-2.pdf"
   - date: "9/28" 
     tutorial: 2
-  - date: "9/30" 
-    hwdue: "1"
-    hwout: "2"
 - week: 
   num: 4
   dates:
@@ -73,8 +70,10 @@
         url: "assets/lecture-slides/L7-wordvectors.pdf"
       - name: "WV slides 2"
         url: "assets/lecture-slides/L8-word2vec.pdf"
-  - date: "10/4" 
+  - date: "10/5" 
     tutorial: 3
+    hwdue: "1"
+    hwout: "2"
 - week: 
   num: 5
   dates:
@@ -97,7 +96,6 @@
         url: "assets/lecture-slides/L9-sequence-modeling.pdf"
   - date: "10/19" 
     tutorial: 5
-  - date: "10/21" 
     hwdue: "2"
     hwout: "3"
 - week: 
