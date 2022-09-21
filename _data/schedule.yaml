@@ -16,17 +16,17 @@
 - week: 
   num: 2
   dates:
-  - date: "10/19" 
+  - date: "9/19" 
     noclass: true
     title: "Class canceled - National Day of Mourning"
-  - date: "9/19" 
+  - date: "9/20" 
     title: "Language Modeling"
     lecture: "lm"
     recorded: true
     leclinks:
       - name: "LM slides"
-        url: "assets/lecture-slides/L2-language-models-II.pdf"
-  - date: "9/19" 
+        url: "assets/lecture-slides/L2-language-models.pdf"
+  - date: "9/20" 
     title: "Text Classification (Naive Bayes and Evaluation)"
     recorded: true
     lecture: "classifiers"

@@ -69,10 +69,8 @@
   include: true
   current: true
   notes:
-    - title: "Language models I"
-      url: "assets/lecture-slides/L2-language-models-I.pdf"
-    - title: "Language models II"
-      url: "assets/lecture-slides/L2-language-models-II.pdf"
+    - title: "Language models"
+      url: "assets/lecture-slides/L2-language-models.pdf"
     - title: "Exercise: n-gram Language Models"
       url: "assets/notes/lm.html"
       soln: "assets/notes/lm_soln.html"
