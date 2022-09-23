@@ -38,7 +38,7 @@ active_tab: resources
 * Deep learning for NLP
     * [TorchText](https://torchtext.readthedocs.io/en/latest/)
 
-* Word Embeddings
+* Static Word Embeddings
     * [Word2Vec](https://code.google.com/archive/p/word2vec/)
     * [GloVe](https://nlp.stanford.edu/projects/glove/)
     * [FastText](https://fasttext.cc/) 

@@ -516,6 +516,14 @@
       author: "Devlin et al. 2018"
       url: "https://arxiv.org/pdf/1810.04805.pdf"
       optional: true
+    - title: "Emergent linguistic structure in artificial neural networks trained by self-supervision"
+      author: "Manning et al. 2020"
+      url: "https://www.pnas.org/doi/10.1073/pnas.1907367117"
+      optional: true
+    - title: "A Primer in BERTology: What We Know About How BERT Works"
+      author: "Rogers, Kovaleva, and Rumshisky"
+      url: "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00349/96482/A-Primer-in-BERTology-What-We-Know-About-How-BERT"
+      optional: true
 - title: Constituency Parsing, Ambiguity and Context-Free Grammars
   tag: cfg
   include: true
