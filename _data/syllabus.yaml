@@ -142,7 +142,7 @@
 - title: "Feedforward neural networks"
   tag: ff
   include: true
-  current: false
+  current: true
   notes:
     - title: "Feedforward neural networks I"
       url: "assets/lecture-slides/L5-neural-nets-1.pdf"
