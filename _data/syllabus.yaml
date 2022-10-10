@@ -67,7 +67,7 @@
 - title: "Language models"
   tag: lm
   include: true
-  current: true
+  current: false
   notes:
     - title: "Language models"
       url: "assets/lecture-slides/L2-language-models.pdf"
@@ -101,7 +101,7 @@
 - title: "Text classification"
   tag: classifiers
   include: true
-  current: true
+  current: false
   notes:
     - title: "Naive Bayes"
       url: "assets/lecture-slides/L3-classification-naivebayes.pdf"
@@ -198,7 +198,7 @@
 - title: "Neural Network Models and Training (training tips in tutorial)"
   tag: dl4nlp
   include: true
-  current: false
+  current: true
   notes:
     - title: "Training Neural Networks I (from UMich EECS498)"
       url: "https://web.eecs.umich.edu/~justincj/slides/eecs498/FA2020/598_FA2020_lecture10.pdf"
@@ -228,7 +228,7 @@
 - title: "Word Vectors"
   tag: wordvec
   include: true
-  current: false
+  current: true
   notes: 
     - title: "Word vectors (vector space models)"
       url: "assets/slides/L7-wordvectors.pdf"
