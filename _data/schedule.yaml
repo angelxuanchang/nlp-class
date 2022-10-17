@@ -115,7 +115,7 @@
     lecture: "rnn"
   - date: "10/26" 
     tutorial: 6
-  - date: "10/28" 
+  - date: "10/26" 
     project: "Project title and abstract"
 - week: 
   num: 8
@@ -134,9 +134,8 @@
         url: "assets/lecture-slides/L13-transformers.pdf"
   - date: "11/1" 
     tutorial: 7
-  - date: "11/1" 
-    hwdue: "3"
-    hwout: "4"
+  - date: "11/3" 
+    project: "Project proposal"
 - week: 
   num: 9
   dates:
@@ -153,7 +152,8 @@
       - name: "slides"
         url: "assets/lecture-slides/L17-project-tips-analysis.pdf"
   - date: "11/7" 
-    project: "Project proposal"
+    hwdue: "3"
+    hwout: "4"
   - date: "11/9"
     tutorial: 8
 - week: 
