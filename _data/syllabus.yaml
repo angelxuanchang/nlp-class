@@ -688,7 +688,7 @@
 - title: "Grounded Language"
   tag: grounding
   include: true
-  current: true
+  current: false
   notes:
     - title: "Grounded Natural Language"
       url: "assets/slides/grounding.pdf"
