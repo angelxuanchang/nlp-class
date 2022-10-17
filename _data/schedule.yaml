@@ -134,8 +134,9 @@
         url: "assets/lecture-slides/L13-transformers.pdf"
   - date: "11/1" 
     tutorial: 7
-  - date: "11/3" 
-    project: "Project proposal"
+  - date: "11/1" 
+    hwdue: "3"
+    hwout: "4"
 - week: 
   num: 9
   dates:
@@ -151,11 +152,10 @@
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L17-project-tips-analysis.pdf"
+  - date: "11/7" 
+    project: "Project proposal"
   - date: "11/9"
     tutorial: 8
-  - date: "11/11" 
-    hwdue: "3"
-    hwout: "4"
 - week: 
   num: 10
   dates:
