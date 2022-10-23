@@ -49,7 +49,12 @@
       - name: "LR slides"
         url: "assets/lecture-slides/L4-classification-logistic.pdf"
     readings: ["jm5"]
-  - date: "9/26" 
+  - date: "9/28" 
+    tutorial: 2
+- week: 
+  num: 4
+  dates:
+  - date: "10/3" 
     title: "Text Classification (Neural Networks)"
     lecture: "ff"
     leclinks:
@@ -57,19 +62,6 @@
         url: "assets/lecture-slides/L5-neural-nets-1.pdf"
       - name: "NN slides 2"
         url: "assets/lecture-slides/L6-neural-nets-2.pdf"
-  - date: "9/28" 
-    tutorial: 2
-- week: 
-  num: 4
-  dates:
-  - date: "10/3" 
-    title: "Word Vectors"
-    lecture: "wordvec"
-    leclinks:
-      - name: "WV slides 1"
-        url: "assets/lecture-slides/L7-wordvectors.pdf"
-      - name: "WV slides 2"
-        url: "assets/lecture-slides/L8-word2vec.pdf"
   - date: "10/5" 
     tutorial: 3
     hwdue: "1"
@@ -86,14 +78,13 @@
   num: 6
   dates:
   - date: "10/17" 
-    title: "Neural language models"
-    lecture: "nlm"
-  - date: "10/17" 
-    title: "Sequence Modeling (HMMs)"
-    lecture: "hmm"
+    title: "Word Vectors"
+    lecture: "wordvec"
     leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L9-sequence-modeling.pdf"
+      - name: "WV slides 1"
+        url: "assets/lecture-slides/L7-wordvectors.pdf"
+      - name: "WV slides 2"
+        url: "assets/lecture-slides/L8-word2vec.pdf"
   - date: "10/19" 
     tutorial: 5
     hwdue: "2"
@@ -102,17 +93,19 @@
   num: 7
   dates:
   - date: "10/24" 
-    title: "Neural Sequence Modeling (RNNs)"
+    title: "Sequence Modeling (HMMs)"
+    lecture: "hmm"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L9-sequence-modeling.pdf"
+  - date: "10/24" 
+    title: "Neural Sequence Modeling (RNNs/LSTMs/GRUs)"
     lecture: "rnn"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L10-RNN.pdf"
-  - date: "10/24" 
-    title: "Sequence Modeling (LSTMs/GRUs)"
-    leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L11-LSTM-GRU.pdf"
-    lecture: "rnn"
   - date: "10/26" 
     tutorial: 6
   - date: "10/26" 

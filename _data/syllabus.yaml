@@ -142,7 +142,7 @@
 - title: "Feedforward neural networks"
   tag: ff
   include: true
-  current: true
+  current: false
   notes:
     - title: "Feedforward neural networks I"
       url: "assets/lecture-slides/L5-neural-nets-1.pdf"
@@ -198,7 +198,7 @@
 - title: "Neural Network Models and Training (training tips in tutorial)"
   tag: dl4nlp
   include: true
-  current: true
+  current: false
   notes:
     - title: "Training Neural Networks I (from UMich EECS498)"
       url: "https://web.eecs.umich.edu/~justincj/slides/eecs498/FA2020/598_FA2020_lecture10.pdf"
@@ -228,7 +228,7 @@
 - title: "Word Vectors"
   tag: wordvec
   include: true
-  current: true
+  current: false
   notes: 
     - title: "Word vectors (vector space models)"
       url: "assets/slides/L7-wordvectors.pdf"
@@ -268,7 +268,7 @@
 - title: "Sequence Models (Hidden Markov Models)"
   tag: hmm
   include: true
-  current: false
+  current: true
   notes:
     - title: "Sequence Models"
       url: "assets/lecture-slides/L9-sequence-modeling.pdf"
@@ -338,7 +338,7 @@
 - title: "Sequence Models (RNNs)"
   tag: rnn
   include: true
-  current: false
+  current: true
   notes:
     - title: "Recursive Neural Networks"
       url: "assets/lecture-slides/L10-RNN.pdf"
