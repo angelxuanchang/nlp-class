@@ -181,7 +181,7 @@
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L21-dialogue.pdf"
-  - date: "11/25" 
+  - date: "11/23" 
     hwdue: "4"
 - week: 
   num: 12
