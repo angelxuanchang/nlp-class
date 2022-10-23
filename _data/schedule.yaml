@@ -126,9 +126,9 @@
       - name: "slides"
         url: "assets/lecture-slides/L13-transformers.pdf"
   - date: "11/1" 
-    tutorial: 7
-  - date: "11/3" 
     project: "Project proposal"
+  - date: "11/2" 
+    tutorial: 7
 - week: 
   num: 9
   dates:
