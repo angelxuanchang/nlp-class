@@ -61,9 +61,10 @@ hwdates:
     coursys: https://coursys.sfu.ca/2022fa-cmpt-413-x1/pages/HW2-C/view
   - hw: "3"
     startdate: "Oct 24, 2022"
-    deadline: "Nov 7, 2022"
+    deadline: "Nov 9, 2022"
+    coursys: https://coursys.sfu.ca/2022fa-cmpt-413-x1/pages/HW3-C/view
   - hw: "4"
-    startdate: "Nov 7, 2022"
+    startdate: "Nov 9, 2022"
     deadline: "Nov 23, 2022"
   - hw: "project"
     startdate: "Oct 19, 2022"
