@@ -268,7 +268,7 @@
 - title: "Sequence Models (Hidden Markov Models)"
   tag: hmm
   include: true
-  current: true
+  current: false
   notes:
     - title: "Sequence Models"
       url: "assets/lecture-slides/L9-sequence-modeling.pdf"
@@ -392,7 +392,7 @@
 - title: "Sequence to Sequence models and Neural Machine Translation"
   tag: seq2seq
   include: true
-  current: false
+  current: true
   notes:
     - title: "Sequence to sequence models"
       url: "assets/lecture-slides/L12-sequence-generation.pdf"
