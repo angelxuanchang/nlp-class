@@ -167,10 +167,13 @@ Make sure the following points are in your proposal.
     * How will the work be allocated between the team members?
 * Reference - provide references using BibTex 
 
-Go to [Coursys]({{ site.coursys }}). Under the `Project Proposal`
+<!-- Go to [Coursys]({{ site.coursys }}). Under the `Project Proposal`
 activity submit the following files:
 
-* `proposal.pdf`: this is the project proposal report
+* `proposal.pdf`: this is the project proposal report -->
+
+Go to [Gradescope]({{ site.gradescope }}). Under the `Project Proposal`
+assignment submit your `proposal.pdf`
 
 
 ### Project milestone (due on {{ site.hwdates[5].milestone }})
@@ -217,12 +220,15 @@ A good structure for the milestone report will include the following sections.  
 
 Grading of the milestone will be based on the progress and the quality of writing.  
 
-Go to [Coursys]({{ site.coursys }}). Under the `Project Milestone`
+Go to [Gradescope]({{ site.gradescope }}). Under the `Project Milestone`
+assignment submit your `milestone.pdf`
+
+<!-- Go to [Coursys]({{ site.coursys }}). Under the `Project Milestone`
 activity submit the following files:
 
 * `milestone.pdf`: this is the project milestone report
 
-Optionally, you can also upload `source.zip` and `output.zip` for your project.  These will not be graded.
+Optionally, you can also upload `source.zip` and `output.zip` for your project.  These will not be graded. -->
 
 
 ### Project Write-up (due on {{ site.hwdates[5].deadline }})
@@ -265,11 +271,14 @@ the following sections and **must** cover the following information:
 
 Please read this [guide to presenting your work](assets/cached/cs224u/cs224u-2019-presenting.pdf). Also available is a [video tutorial covering the same material](https://www.youtube.com/watch?v=WXLb4h2A724).
 
-### Submit your project on Coursys
+### Submit your project on Coursys and Gradescope
 
-Go to [Coursys]({{ site.coursys }}). Under the `Final Project Report`
+<!-- Go to [Coursys]({{ site.coursys }}). Under the `Final Project Report`
 activity submit the following pdf files:
-* `report.pdf`: this is the final project report
+* `report.pdf`: this is the final project report -->
+
+Go to [Gradescope]({{ site.gradescope }}). Under the `Final Project Report`
+assignment submit your `report.pdf`
 
 Go to [Coursys]({{ site.coursys }}). Under the `Final Project`
 activity submit the following zip files:

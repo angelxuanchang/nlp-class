@@ -99,13 +99,11 @@
       - name: "slides"
         url: "assets/lecture-slides/L9-sequence-modeling.pdf"
   - date: "10/24" 
-    title: "Neural Sequence Modeling (RNNs/LSTMs/GRUs)"
+    title: "Neural Sequence Modeling (RNNs)"
     lecture: "rnn"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L10-RNN.pdf"
-      - name: "slides"
-        url: "assets/lecture-slides/L11-LSTM-GRU.pdf"
   - date: "10/26" 
     tutorial: 6
   - date: "10/26" 
@@ -113,18 +111,18 @@
 - week: 
   num: 8
   dates:
+  - date: "10/24" 
+    title: "Neural Sequence Modeling (LSTM/GRUs)"
+    lecture: "rnn"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L11-LSTM-GRU.pdf"
   - date: "10/31" 
     title: "Sequence-to-Sequence models"
     lecture: "seq2seq"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L12-sequence-generation.pdf"
-  - date: "10/31" 
-    title: "Transformers"
-    lecture: "transformers"
-    leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L13-transformers.pdf"
   - date: "11/1" 
     project: "Project proposal"
   - date: "11/1" 
@@ -132,6 +130,12 @@
 - week: 
   num: 9
   dates:
+  - date: "11/7" 
+    title: "Transformers"
+    lecture: "transformers"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L13-transformers.pdf"
   - date: "11/7" 
     title: "Contextual Word Embeddings"
     lecture: "cwe"
@@ -144,11 +148,10 @@
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L17-project-tips-analysis.pdf"
-  - date: "11/7" 
-    hwdue: "3"
-    hwout: "4"
   - date: "11/9"
     tutorial: 8
+    hwdue: "3"
+    hwout: "4"
 - week: 
   num: 10
   dates:
