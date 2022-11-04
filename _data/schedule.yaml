@@ -111,7 +111,7 @@
 - week: 
   num: 8
   dates:
-  - date: "10/24" 
+  - date: "10/31" 
     title: "Neural Sequence Modeling (LSTM/GRUs)"
     lecture: "rnn"
     leclinks:
