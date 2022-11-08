@@ -398,10 +398,10 @@
       url: "assets/lecture-slides/L12-sequence-generation.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Machine Translation and Encoder-Decoder Models (J+M chapter 11)"
-      abbr: "J+M chapter 11" 
-      tag: jm11
-      url: "https://web.stanford.edu/~jurafsky/slp3/11.pdf"
+      title: "Machine Translation and Encoder-Decoder Models (J+M chapter 10)"
+      abbr: "J+M chapter 10" 
+      tag: jm10
+      url: "https://web.stanford.edu/~jurafsky/slp3/10.pdf"
       optional: false
 - title: "Neural Machine Translation"
   tag: nmt
@@ -425,10 +425,10 @@
       url: "https://arxiv.org/pdf/1703.01619.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Machine Translation and Encoder-Decoder Models (J+M chapter 11)"
-      abbr: "J+M chapter 11" 
-      tag: jm11
-      url: "https://web.stanford.edu/~jurafsky/slp3/11.pdf"
+      title: "Machine Translation and Encoder-Decoder Models (J+M chapter 10)"
+      abbr: "J+M chapter 10" 
+      tag: jm10
+      url: "https://web.stanford.edu/~jurafsky/slp3/10.pdf"
       optional: true
     - author: Jacob Eisenstein
       title: "Machine Translation (Natural Language Processing chapter 18)"
@@ -504,6 +504,12 @@
     - title: "Contextualized Word Embeddings"
       url: "assets/lecture-slides/L14-contextualized-word-embeddings.pdf"
   readings:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Transfer Learning with Pretrained Language Models and Contextual Embeddings (J+M chapter 11)"
+      abbr: "J+M chapter 11" 
+      tag: jm11
+      url: "https://web.stanford.edu/~jurafsky/slp3/11.pdf"
+      optional: false
     - title: "Illustrated BERT"
       author: "Jay Alammar"
       url: "http://jalammar.github.io/illustrated-bert/"
