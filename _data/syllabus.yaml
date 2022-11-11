@@ -338,7 +338,7 @@
 - title: "Sequence Models (RNNs)"
   tag: rnn
   include: true
-  current: true
+  current: false
   notes:
     - title: "Recursive Neural Networks"
       url: "assets/lecture-slides/L10-RNN.pdf"
@@ -392,7 +392,7 @@
 - title: "Sequence to Sequence models and Neural Machine Translation"
   tag: seq2seq
   include: true
-  current: true
+  current: false
   notes:
     - title: "Sequence to sequence models"
       url: "assets/lecture-slides/L12-sequence-generation.pdf"
@@ -473,7 +473,7 @@
 - title: "Transformers"
   tag: transformers
   include: true
-  current: false
+  current: true
   notes:
     - title: "Transformers"
       url: "assets/lecture-slides/L13-transformers.pdf"
