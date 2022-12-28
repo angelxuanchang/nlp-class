@@ -6,6 +6,37 @@ caption: "1928 woodcut by M. C. Escher showing the Tower of Babel."
 title: "Projects from previous terms"
 active_tab: project
 ---
+# Fall 2022 Final Projects
+* Automatic essay evaluation
+* Predicting Quality of Text Generators
+* Sentiment Analysis of Customer Support Interactions on Twitter
+* Multi-Modal Emotion: Classifying Human Emotion in Video Segments
+* Toxic Comment Classification Optimization
+* Sentiment Analysis for IMDB Comments
+* Market Trend Inference By Sentiment Classification Of Financial News Headlines
+* Identification and Categorization of Offensive Language in Social Media
+* Logical Sentence Comparator
+* CipherSniffer
+* Synthesizing an Approach to QNLI Classification
+* Emotion Detection from Text using BERT-CNN
+* Spam detection of Amazon Product Review
+* Identifying and Classifying Hate Speech Using NLP
+* Bitcoin Sentiment Analysis
+* Book Genre Prediction
+* Understanding the relationship beween comments and code
+* Benchmarking QA Models
+* Fact Checking Public Health Claims
+* Fake News Stance Detection using Feature Combination and Reduction
+* Predicting TikTok Sentiment Analysis Based on Google Play Store Reviews
+* Sentiment Classification for Financial Speculation
+* Product Attribute Value Extraction via Question-Answering Approach
+* Sentiment Analysis on Movie Reviews
+* Towards a post-BERT NLP architecture
+* Snuffing Out Fake News Through Stance Detection
+* Identify toxic and harassing online comments
+* Sentiment Analysis on Movie Reviews
+* Sentiment Analysis of Movie Reviews: Positive or Negative
+* Generating MTG Cards With a RNN
 
 # Fall 2021 Final Projects
 * Comparison of Language Models on COVID-19 Tweets Text Classification

@@ -264,7 +264,7 @@ have to submit the solution to the following task as your submission
 for Homework 0. It will serve as a guide for the steps to be taken
 for all subsequent homeworks in this course.
 
-Submission for each homework will be done on [Coursys]({{ site.coursys }}).
+Submission for each homework will be done on [Canvas]({{ site.canvas }}).
 
 ### Getting Started
 
@@ -405,7 +405,7 @@ You must create the following files:
 
 ### Run your solution on the data files
 
-To create the `output.zip` file for upload to Coursys do:
+To create the `output.zip` file for upload to {{ site.hwsubmit.name }} do:
 
     python3 zipout.py
 
@@ -470,22 +470,22 @@ The report should include the following:
 
 Your report should be submitted as `report.pdf` to [Gradescope]({{ site.gradescope }}).  Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
 
-### Submit your homework on Coursys
+### Submit your homework on {{ site.hwsubmit.name }}
 
 Once you are done with your homework submit all the relevant materials
-to Coursys for evaluation.
+to {{ site.hwsubmit.name }} for evaluation.
 
 
 #### Create output.zip
 
 Once you have a working solution in `answer/ensegment.py` create
-the `output.zip` for upload to Coursys using:
+the `output.zip` for upload to {{ site.hwsubmit.name }} using:
 
     python3 zipout.py
 
 #### Create source.zip
 
-To create the `source.zip` file for upload to Coursys do:
+To create the `source.zip` file for upload to {{ site.hwsubmit.name }} do:
 
     python3 zipsrc.py
 
@@ -497,7 +497,7 @@ You must have the following files or `zipsrc.py` will complain about it:
 In addition, each group member should write down a short description of what they
 did for this homework in `answer/README.username`.
 
-#### Upload to Coursys and Gradescope
+#### Upload to {{ site.hwsubmit.name }} and Gradescope
 
 Go to `Programming Homework 0` on [Coursys]({{ site.coursys }}) and do a group submission:
 

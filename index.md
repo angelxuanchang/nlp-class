@@ -53,7 +53,7 @@ Course lectures will be held in person at the Burnaby campus
 * Wed 1:00PM - 2:20PM AQ3159
 * Last day of classes: {{ site.lastday }}
 
-Links to course material will be made available on [Coursys]({{ site.coursys }}/pages/).
+Links to course material will be made available on [Canvas]({{ site.canvas }}.
 
 <!-- #### Calendar
 * [Subscribe]({{ site.calendar }})
@@ -77,7 +77,7 @@ There will be optional TA led tutorials that will help review these topics.
 
 
 #### Grading
-* Submit homework source code and check your grades on [Gradescope]({{ site.gradescope }}) and [Coursys]({{ site.coursys }})
+* Submit homework source code and check your grades on [Gradescope]({{ site.gradescope }}) and [Canvas]({{ site.canvas }})
 * Programming setup and diagnostic homework (5%)
   * HW0 due on {{ site.hwdates[0].deadline }} 
 * Four homeworks (64% total - 16% each, with 8% for programming and 8% for question answering). Due dates:
