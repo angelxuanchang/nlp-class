@@ -43,9 +43,10 @@ active_tab: resources
     * [GloVe](https://nlp.stanford.edu/projects/glove/)
     * [FastText](https://fasttext.cc/) 
 
-* Contextual Word Embeddings 
-    * [ELMo](https://allennlp.org/elmo)
-    * [Huggingface Transformers](https://huggingface.co/transformers/) Support for various BERT models
+* Pretrained language models 
+    * [HuggingFace course on transformers](https://huggingface.co/course/chapter1/1) 
+       * [HuggingFace transformers](https://huggingface.co/transformers/) Docummentation for various transformer based models from HuggingFace
+    * [OpenAI API](https://beta.openai.com/overview)
 
 * Machine Translation
     * [SFUTranslate](https://github.com/sfu-natlang/SFUTranslate) SFU NLL's MT toolkit (designed to be modern and flexible) 
