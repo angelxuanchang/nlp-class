@@ -4,6 +4,7 @@
   - date: "1/4" 
     title: "Introduction"
     lecture: "intro"
+    recorded: true
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L1-intro.pdf"
@@ -17,9 +18,32 @@
         url: "assets/lecture-slides/L2-language-models.pdf"
   - date: "1/6" 
     tutorial: 0 
-- week: 
+- week:
   num: 1
   dates:
+  - date: "1/9"
+    tutorial: 1     
+  - date: "1/11" 
+    title: "Text Classification (Naive Bayes and Evaluation)"
+    lecture: "classifiers"
+    leclinks:
+      - name: "NB slides"
+        url: "assets/lecture-slides/L3-classification-naivebayes.pdf"
+      - name: "Evaluation slides"
+        url: "assets/lecture-slides/L3-classification-evaluation.pdf"
+    readings: ["jm4"]
+  - date: "1/12" 
+    title: "Text Classification (Logistic regression)"
+    lecture: "classifiers"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L4-Classification-Logistic.pdf"
+    readings: [ "jm5"]
+- week: 
+  num: 2
+  dates:
+  - date: "1/16" 
+    tutorial: 2
   - date: "1/18" 
     title: "Text Classification (Neural Networks)"
     lecture: "ff"
@@ -32,11 +56,11 @@
     leclinks:
       - name: "NN slides 2"
         url: "assets/lecture-slides/L6-neural-nets-2.pdf"
-  - date: "1/20" 
-    tutorial: 2
 - week: 
-  num: 2
+  num: 3
   dates:
+  - date: "1/23" 
+    tutorial: 4
   - date: "1/25" 
     title: "Word Vectors (count-based, PPMI)"
     lecture: "wordvec"
@@ -51,11 +75,11 @@
     leclinks:
       - name: "WV slides 2"
         url: "assets/lecture-slides/L8-word2vec.pdf"
-  - date: "1/27" 
-    tutorial: 4
 - week: 
   num: 4
   dates:
+  - date: "1/30" 
+    tutorial: 5
   - date: "2/1" 
     title: "Sequence Modeling (HMMs)"
     lecture: "hmm"
@@ -68,11 +92,11 @@
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L9-sequence-modeling.pdf"
-  - date: 2/3" 
-    tutorial: 5
 - week: 
   num: 5
   dates:
+  - date: "2/6" 
+    tutorial: 6
   - date: "2/8" 
     title: "Neural Sequence Modeling (RNNs)"
     lecture: "rnn"
@@ -87,11 +111,11 @@
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L11-LSTM-GRU.pdf"
-  - date: "2/10" 
-    tutorial: 6
 - week: 
   num: 6
   dates:
+  - date: "2/13" 
+    tutorial: 7
   - date: "2/15" 
     title: "Sequence-to-Sequence models"
     lecture: "seq2seq"
@@ -120,6 +144,8 @@
 - week: 
   num: 8
   dates:
+  - date: "2/27" 
+    tutorial: 8
   - date: "3/1" 
     title: "Contextual Word Embeddings"
     lecture: "cwe"
@@ -130,11 +156,11 @@
     title: "Pretrained large language models"
     lecture: "llm"
     project: "Project proposal"
-  - date: "3/3" 
-    tutorial: 8
 - week: 
   num: 9
   dates:
+  - date: "3/6" 
+    tutorial: 9
   - date: "3/8" 
     title: "Constituency Parsing"
     lecture: "cfg"
@@ -148,8 +174,6 @@
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L16-dependency-parsing.pdf"
-  - date: "11/9"
-    tutorial: 9
 - week: 
   num: 10
   dates:
