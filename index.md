@@ -7,7 +7,7 @@ title: Course Information
 active_tab: main_page 
 ---
 
-## Natural Language Processing <span class="text-muted">Fall 2022</span>
+## Natural Language Processing <span class="text-muted">Spring 2023</span>
 
 Imagine a world where you can pick up a phone and talk in English,
 while at the other end of the line your words are [spoken in
@@ -49,7 +49,8 @@ terms of its analysis and the learning of language from observations.
 
 #### Time and place
 Course lectures will be held in person at the Burnaby campus
-* Mon 2:30PM - 5:20PM AQ3159
+* Mon 1:00PM - 2:20PM AQ3159
+* Wed 1:00PM - 2:20PM AQ3159
 * Last day of classes: {{ site.lastday }}
 
 Links to course material will be made available on [Coursys]({{ site.coursys }}/pages/).

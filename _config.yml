@@ -1,27 +1,24 @@
 exclude: ['README.md', 'assets/latex/', 'archive']
 timezone: US/Pacific
 markdown: kramdown
-coursys: "https://coursys.sfu.ca/2022fa-cmpt-413-x1/"
+coursys: "https://coursys.sfu.ca/2023sp-cmpt-713-g2/"
 forumname: Coursys Discussion Forum
 forum: "https://coursys.sfu.ca/2022fa-cmpt-413-x1/forum/"
-canvas: "https://canvas.sfu.ca/courses/64917"
+canvas: "https://canvas.sfu.ca/courses/75055"
 gradescope: "https://www.gradescope.ca/courses/7736"
-semcode: 1227
+semcode: 1231
 calendar: "https://calendar.google.com/calendar/ical/qgs97od9ef8t1582k2rqomv5ho%40group.calendar.google.com/public/basic.ics"
-lastday: "Dec 6, 2022"
+lastday: "Apr 11, 2023"
 midterm: "None"
 instructor: angelx
-officehour: "Tue 11am-12pm"
+officehour: "Wed 3pm-4pm"
 tas:
-  - name: "Han-Hung Lee"
-    email: hla300
-    officehour: "Mon 10am-11am"
-  - name: "Hanxiao (Shawn) Jiang"
-    email: hja40
-    officehour: "Fri 9am-10am"
-  - name: "Yiming Zhang"
-    email: yza440
-    officehour: "Wed 10am-11am"
+  - name: "Yilong (Jetic) Gu"
+    email: jeticg
+    officehour: "TBD"
+  - name: "Ruiqi Wang"
+    email: hja40rwa135
+    officehour: "TBD"
 tutorials:
   - tutorial: "0"
     title: "Review of a) probability, linear algebra and calculus and b) useful python/unix commands"
@@ -50,33 +47,33 @@ group:
   maxsize: 3
 hwdates:
   - hw: "0"
-    startdate: "Sept 12, 2022"
-    deadline: "Sept 16, 2022"
-    coursys: https://coursys.sfu.ca/2022fa-cmpt-413-x1/pages/HWC-0/view
+    startdate: "Jan 4, 2022"
+    deadline: "Jan 11, 2022"
+    canvas: https://canvas.sfu.ca/courses/75055/assignments/831465
   - hw: "1"
-    startdate: "Sept 21, 2022"
-    deadline: "Oct 5, 2022"
-    coursys: https://coursys.sfu.ca/2022fa-cmpt-413-x1/pages/HW-1-C/view
+    startdate: "Jan 11, 2023"
+    deadline: "Jan 25, 2023"
+    canvas: https://canvas.sfu.ca/courses/75055/assignments/831466
   - hw: "2"
-    startdate: "Oct 5, 2022"
-    deadline: "Oct 19, 2022"
-    coursys: https://coursys.sfu.ca/2022fa-cmpt-413-x1/pages/HW2-C/view
+    startdate: "Jan 25, 2023"
+    deadline: "Feb 8, 2023"
+    canvas: https://canvas.sfu.ca/courses/75055/assignments/831467
   - hw: "3"
-    startdate: "Oct 24, 2022"
-    deadline: "Nov 9, 2022"
-    coursys: https://coursys.sfu.ca/2022fa-cmpt-413-x1/pages/HW3-C/view
+    startdate: "Feb 8, 2023"
+    deadline: "Feb 22, 2023"
+    canvas: https://canvas.sfu.ca/courses/75055/assignments/831468
   - hw: "4"
-    startdate: "Nov 9, 2022"
-    deadline: "Nov 28, 2022"
-    coursys: https://coursys.sfu.ca/2022fa-cmpt-413-x1/pages/HW4-C/view
+    deadline: "Feb 22, 2023"
+    deadline: "Mar  8, 2023"
+    canvas: https://canvas.sfu.ca/courses/75055/assignments/831469
   - hw: "project"
-    startdate: "Oct 19, 2022"
-    deadline: "Dec 7, 2022"
+    startdate: "Feb 1, 2023"
+    deadline: "Apr 12, 2023"
     time: "Poster session: ???"
     location: "TBD"
-    abstract: "Oct 26, 2022"
-    proposal: "Nov 1, 2022"
-    milestone: "Nov 18, 2022"
-    poster: "Video due on Dec 4, 2022"
+    abstract: "Feb 22, 2023"
+    proposal: "Mar 1, 2023"
+    milestone: "Mar 22, 2023"
+    poster: "Video due on Apr 10, 2023"
 hwsubmit:
-  name: "Coursys"
+  name: "Canvas"
