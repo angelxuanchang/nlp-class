@@ -32,6 +32,8 @@
       - name: "Evaluation slides"
         url: "assets/lecture-slides/L3-classification-evaluation.pdf"
     readings: ["jm4"]
+    hwdue: "0"
+    hwout: "1"
   - date: "1/12" 
     title: "Text Classification (Logistic regression)"
     lecture: "classifiers"

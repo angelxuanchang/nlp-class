@@ -461,16 +461,14 @@ You must have the following files or `zipsrc.py` will complain about it:
 In addition, each group member should write down a short description of what they
 did for this homework in `answer/README.username`.
 
-### Upload to {{ site.hwsubmit.name }} and Gradescope
+### Upload to {{ site.hwsubmit.name }}
 
 Go to `Programming Homework 3` on {{ site.hwsubmit.name }} and do a group submission:
 
-* Upload `output.zip` and `source.zip`
+* Upload `output.zip` and `source.zip` and `report.pdf`
 * Make sure your `source.zip` matches your Gitlab repository.
 * Make sure you have documented your approach in `answer/chunker.ipynb`.
 * Make sure each member of your group has documented their contribution to this homework in `answer/README.username` where `username` is your CSIL/GitLab username.
-
-Go to `HW3-P Report` on [Gradescope]({{ site.gradescope }}) and upload your `report.pdf`.
 
 ## Grading
 

@@ -374,16 +374,14 @@ did for this homework in `answer/README.username`.
 Make sure that your have updated your GitLab repository with your submission source code.
 
 
-### Upload to {{ site.hwsubmit.name }} and Gradescope
+### Upload to {{ site.hwsubmit.name }}
 
 Go to `Programming Homework 1` on {{ site.hwsubmit.name }} and do a group submission:
 
-* Upload `output.zip` and `source.zip`
+* Upload `output.zip` and `source.zip` and `report.pdf`
 * Make sure your `source.zip` matches your Gitlab repository.
 * Make sure you have documented your approach in `answer/zhsegment.ipynb`.
 * Make sure each member of your group has documented their contribution to this homework in `answer/README.username` where `username` is your CSIL/GitLab username.
-
-Go to `HW1-P Report` on [Gradescope]({{ site.gradescope }}) and upload your `report.pdf`.
 
 ## Grading
 

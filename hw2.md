@@ -496,12 +496,10 @@ did for this homework in `answer/README.username`.
 
 Go to `Programming Homework 2` on {{ site.hwsubmit.name }} and do a group submission:
 
-* Upload `output.zip` and `source.zip`
+* Upload `output.zip` and `source.zip` and `report.pdf`
 * Make sure your `source.zip` matches your Gitlab repository.
 * Make sure you have documented your approach in `answer/lexsub.ipynb`.
 * Make sure each member of your group has documented their contribution to this homework in `answer/README.username` where `username` is your CSIL/GitLab username.
-
-Go to `HW2-P Report` on [Gradescope]({{ site.gradescope }}) and upload your `report.pdf`.
 
 ## Grading
 
