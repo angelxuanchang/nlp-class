@@ -23,7 +23,7 @@ active_tab: homework
 
 Before getting started, note that homeworks are developed and best run on linux with a terminal.  You should also be able to use MacOS and a terminal, but Windows is not recommended.  If you only have a Windows machine and want to use that, you should install the Windows Linux Subsystem or a Linux Virtual Machine so that you can have a terminal for running your homework. 
 
-## Setup on Coursys
+## Setup group on Coursys
 
 Find a group to work with for the homework assignments and the final
 course project. The group size should be {{ site.group.minsize }} to {{ site.group.maxsize }} people.
@@ -33,7 +33,10 @@ to the homework submission and the final project.
 
 Along with your group members, register yourself as part of a group on [Coursys]({{ site.coursys }}).  Please make sure you use exactly the same group name.  We will use Coursys for providing you feedback on the autograded portion of the homework.
 
+Note that you will setup your group on Coursys, and we will copy the groupnames on to Canvas so your homework submission can also be done via Canvas.
+
 Create a memorable name for your group. If you need help, [seek help](https://www.wordlab.com/name-generators/team-name-generator/).
+Please DO NOT call your group `group` or `nlp-group` or `cmpt713` or `none`.
 
 <!-- Go to the [{{site.forumname}}]({{ site.forum }}) and select `Manage Subscription`.
 Change the `Notification` to `Email me for new topics and replies`. It should look like this:
@@ -78,7 +81,7 @@ to name the repo exactly as you see here.
 **Selecting group names** Please take care when selecting a group name and 
 follow the guidelines below.
 * Please choose a group name that is **distinctive** and unlikely to be used 
-by another group.  For instance, `group` is a poor group name.
+by another group.  For instance, `group`, `nlp-group`, `cmpt713`, `none` are all poor group names.
 * Do not use any obscene words in your group name. Be mature about 
 your choice of group name. That does not mean it cannot be funny,
 just be aware that your choice of group name may offend someone

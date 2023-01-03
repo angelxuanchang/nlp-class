@@ -56,6 +56,8 @@
     leclinks:
       - name: "NN slides 2"
         url: "assets/lecture-slides/L6-neural-nets-2.pdf"
+  - date: "1/20" 
+    tutorial: 3
 - week: 
   num: 3
   dates:
@@ -75,11 +77,13 @@
     leclinks:
       - name: "WV slides 2"
         url: "assets/lecture-slides/L8-word2vec.pdf"
+  - date: "1/27" 
+    tutorial: 5
 - week: 
   num: 4
   dates:
   - date: "1/30" 
-    tutorial: 5
+    tutorial: 6
   - date: "2/1" 
     title: "Sequence Modeling (HMMs)"
     lecture: "hmm"
@@ -96,7 +100,7 @@
   num: 5
   dates:
   - date: "2/6" 
-    tutorial: 6
+    tutorial: 7
   - date: "2/8" 
     title: "Neural Sequence Modeling (RNNs)"
     lecture: "rnn"
@@ -115,7 +119,7 @@
   num: 6
   dates:
   - date: "2/13" 
-    tutorial: 7
+    tutorial: 8
   - date: "2/15" 
     title: "Sequence-to-Sequence models"
     lecture: "seq2seq"
@@ -136,8 +140,6 @@
   - date: "2/22" 
     noclass: true
     title: "No class - Reading break"
-    hwdue: "3"
-    hwout: "4"
   - date: "2/23" 
     noclass: true
     title: "No class - Reading break"
@@ -145,7 +147,9 @@
   num: 8
   dates:
   - date: "2/27" 
-    tutorial: 8
+    tutorial: 9
+    hwdue: "3"
+    hwout: "4"
   - date: "3/1" 
     title: "Contextual Word Embeddings"
     lecture: "cwe"
@@ -159,15 +163,12 @@
 - week: 
   num: 9
   dates:
-  - date: "3/6" 
-    tutorial: 9
   - date: "3/8" 
     title: "Constituency Parsing"
     lecture: "cfg"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L15-constituency-parsing.pdf"
-    hwdue: "4"
   - date: "3/9" 
     title: "Dependency parsing"
     lecture: "dependency"
@@ -177,6 +178,8 @@
 - week: 
   num: 10
   dates:
+  - date: "3/13"
+    hwdue: "4"
   - date: "3/15" 
     title: "Final project tips, model debugging and analysis"
     lecture: "analysis"
