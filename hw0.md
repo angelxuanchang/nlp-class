@@ -471,7 +471,7 @@ The report should include the following:
 * Discussion of alternative methods you tried and how well they worked (or didn't work)
 * Breakdown of contributions by each group member
 
-Your report should be submitted as `report.pdf` to [Gradescope]({{ site.gradescope }}).  Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
+Your report should be submitted as `report.pdf` to [Canvas]({{ site.canvas }}).  Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
 
 ### Submit your homework on {{ site.hwsubmit.name }}
 
@@ -504,11 +504,9 @@ did for this homework in `answer/README.username`.
 
 Go to `Programming Homework 0` on [Coursys]({{ site.coursys }}) and do a group submission:
 
-* Upload `output.zip` and `source.zip`
+* Upload `output.zip` and `source.zip` and `report.pdf`
 * Make sure you have documented your approach in `answer/ensegment.ipynb`.
 * Make sure each member of your group has documented their contribution to this homework in `answer/README.username` where `username` is your CSIL/GitLab username.
-
-Go to `HW0-P Report` on [Gradescope]({{ site.gradescope }}) and upload your `report.pdf`.
 
 ## Grading
 
