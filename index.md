@@ -49,8 +49,8 @@ terms of its analysis and the learning of language from observations.
 
 #### Time and place
 Course lectures will be held in person at the Burnaby campus
-* Mon 1:00PM - 2:20PM AQ3159
 * Wed 1:00PM - 2:20PM AQ3159
+* Thu 1:00PM - 2:20PM AQ3159
 * Last day of classes: {{ site.lastday }}
 
 Links to course material will be made available on [Canvas]({{ site.canvas }}.
