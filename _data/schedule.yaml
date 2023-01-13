@@ -39,7 +39,7 @@
     lecture: "classifiers"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L4-Classification-Logistic.pdf"
+        url: "assets/lecture-slides/L4-classification-logistic.pdf"
     readings: [ "jm5"]
 - week: 
   num: 2
