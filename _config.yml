@@ -15,10 +15,10 @@ officehour: "Wed 3pm-4pm"
 tas:
   - name: "Yilong (Jetic) Gu"
     email: jeticg
-    officehour: "TBD"
+    officehour: "Tue 3-4pm, TASC 9404"
   - name: "Ruiqi Wang"
     email: rwa135
-    officehour: "TBD"
+    officehour: "Mon 3-4pm, Zoom"
 tutorials:
   - tutorial: "0"
     title: "Review of a) probability, linear algebra and calculus and b) useful python/unix commands"
