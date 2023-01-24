@@ -101,7 +101,7 @@
 - title: "Text classification"
   tag: classifiers
   include: true
-  current: true
+  current: false
   notes:
     - title: "Naive Bayes"
       url: "assets/lecture-slides/L3-classification-naivebayes.pdf"
@@ -142,7 +142,7 @@
 - title: "Feedforward neural networks"
   tag: ff
   include: true
-  current: true
+  current: false
   notes:
     - title: "Feedforward neural networks I"
       url: "assets/lecture-slides/L5-neural-nets-1.pdf"
@@ -228,7 +228,7 @@
 - title: "Word Vectors"
   tag: wordvec
   include: true
-  current: false
+  current: true
   notes: 
     - title: "Word vectors (vector space models)"
       url: "assets/slides/L7-wordvectors.pdf"
