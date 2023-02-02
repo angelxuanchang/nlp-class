@@ -131,7 +131,7 @@ that describes what topic/problem your group will work on, the scope of the proj
 and the data you plan to use.
 The title/abstract is not graded, but you will receive feedback on the feasibility of the project. 
 
-To submit, go to [Coursys]({{ site.coursys }}). Under the `Project Abstract`
+To submit, go to [Canvas]({{ site.canvas }}). Under the `Project Abstract`
 activity, enter your Title and Abstract. Your abstract should
 be about 250 words (please definitely use less than 1000 words).
 
@@ -172,7 +172,7 @@ activity submit the following files:
 
 * `proposal.pdf`: this is the project proposal report -->
 
-Go to [Gradescope]({{ site.gradescope }}). Under the `Project Proposal`
+Go to [Canvas]({{ site.canvas }}). Under the `Project Proposal`
 assignment submit your `proposal.pdf`
 
 
@@ -220,7 +220,7 @@ A good structure for the milestone report will include the following sections.  
 
 Grading of the milestone will be based on the progress and the quality of writing.  
 
-Go to [Gradescope]({{ site.gradescope }}). Under the `Project Milestone`
+Go to [Canvas]({{ site.canvas }}). Under the `Project Milestone`
 assignment submit your `milestone.pdf`
 
 <!-- Go to [Coursys]({{ site.coursys }}). Under the `Project Milestone`
@@ -271,18 +271,17 @@ the following sections and **must** cover the following information:
 
 Please read this [guide to presenting your work](assets/cached/cs224u/cs224u-2019-presenting.pdf). Also available is a [video tutorial covering the same material](https://www.youtube.com/watch?v=WXLb4h2A724).
 
-### Submit your project on Coursys and Gradescope
+### Submit your project on Canvas
 
-<!-- Go to [Coursys]({{ site.coursys }}). Under the `Final Project Report`
-activity submit the following pdf files:
-* `report.pdf`: this is the final project report -->
-
-Go to [Gradescope]({{ site.gradescope }}). Under the `Final Project Report`
+<!-- Go to [Gradescope]({{ site.gradescope }}). Under the `Final Project Report`
 assignment submit your `report.pdf`
 
 Go to [Coursys]({{ site.coursys }}). Under the `Final Project`
-activity submit the following zip files:
+activity submit the following zip files: -->
 
+Go to [Canvas]({{ site.canvas }}). Under the `Final Project Report`
+activity submit the following pdf files:
+* `report.pdf`: this is the final project report
 * `source.zip`: this zip file should contain your iPython notebook and only the source code you have written (along with a requirements.txt for a virtualenv). Do not include any data files in this zipfile. Please also include a README.username file as you have done for all your homeworks in this zip file.
 * `output.zip`: output of your project implementation on a dataset. please include the evaluation code and references to allow us to check the evaluation you present in your write-up. Note this should only be your output on the test data file of some dataset plus any evaluation code and clear instructions on how to run the evaluation script.  Do not include large models or data in this zip file.  If you have large models or data that you need to share with us, please put them in a networked file storage (e.g. SFU vault) and provide a link and/or instructions for downloading the data and/or models.
 
@@ -313,7 +312,7 @@ The final projects for this course will be graded using the following criteria:
 The project marks are distributed as follows:
 
 * Proposal. Project proposal. 20 marks (see the section on _Project Proposal_ for grading details)
-* Milestone. Description of progress and project plans. 20 marks (see the section on _Project Milestone_ and the assignment rubric on Coursys for grading details)
-* Work. Work done in the project. Results obtained. 26 marks (see the section on _Grading of the Final Project Work_ and the assignment rubric on Coursys for grading details) 
-* Report. Description and analysis of what was done. 26 marks (see the section on _Project Write-up_  and the assignment rubric on Coursys for grading details)
-* Poster. Performance at the online poster session and presentation quality. 20 marks (15 marks for poster video, and 5 marks poster interactive session, see the assignment rubric on Coursys for grading details)
+* Milestone. Description of progress and project plans. 20 marks (see the section on _Project Milestone_ and the assignment rubric on Canvas for grading details)
+* Work. Work done in the project. Results obtained. 26 marks (see the section on _Grading of the Final Project Work_ and the assignment rubric on Canvas for grading details) 
+* Report. Description and analysis of what was done. 26 marks (see the section on _Project Write-up_  and the assignment rubric on Canvas for grading details)
+* Poster. Performance at the online poster session and presentation quality. 20 marks (15 marks for poster video, and 5 marks poster interactive session, see the assignment rubric on Canvas for grading details)
