@@ -53,7 +53,7 @@ Course lectures will be held in person at the Burnaby campus
 * Thu 1:00PM - 2:20PM AQ3159
 * Last day of classes: {{ site.lastday }}
 
-Links to course material will be made available on [Canvas]({{ site.canvas }}.
+Links to course material will be made available on [Canvas]({{ site.canvas }}).
 
 <!-- #### Calendar
 * [Subscribe]({{ site.calendar }})
