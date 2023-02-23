@@ -63,7 +63,7 @@ hwdates:
     deadline: "Feb 22, 2023"
     canvas: https://canvas.sfu.ca/courses/75055/assignments/831468
   - hw: "4"
-    deadline: "Feb 22, 2023"
+    startdate: "Feb 22, 2023"
     deadline: "Mar  8, 2023"
     canvas: https://canvas.sfu.ca/courses/75055/assignments/831469
   - hw: "project"
@@ -72,7 +72,7 @@ hwdates:
     time: "Poster session: ???"
     location: "TBD"
     abstract: "Feb 22, 2023"
-    proposal: "Mar 1, 2023"
+    proposal: "Mar 2, 2023"
     milestone: "Mar 22, 2023"
     poster: "Video due on Apr 10, 2023"
 hwsubmit:
