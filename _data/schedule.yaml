@@ -74,7 +74,7 @@
     hwdue: "1"
     hwout: "2"
   - date: "1/26" 
-    title: "Word Vectors (count-based, PPMI)"
+    title: "Word Vectors (word2vec)"
     lecture: "wordvec"
     leclinks:
       - name: "WV slides 2"
@@ -123,17 +123,17 @@
   - date: "2/13" 
     tutorial: 8
   - date: "2/15" 
-    title: "Sequence-to-Sequence models"
+    title: "Project overviewer and Sequence-to-Sequence models"
     lecture: "seq2seq"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L12-sequence-generation.pdf"
   - date: "2/16" 
-    title: "Transformers"
-    lecture: "transformers"
+    title: "Attention for seq2seq models"
+    lecture: "seq2seq"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L13-transformers.pdf"
+        url: "assets/lecture-slides/L12-sequence-generation.pdf"
   - date: "2/17" 
     project: "Project title and abstract"
 - week: 
@@ -153,14 +153,17 @@
     hwdue: "3"
     hwout: "4"
   - date: "3/1" 
+    title: "Transformers"
+    lecture: "transformers"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L13-transformers.pdf"
+  - date: "3/2" 
     title: "Contextual Word Embeddings"
     lecture: "cwe"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L14-contextualized-word-embeddings.pdf"
-  - date: "3/2" 
-    title: "Pretrained large language models"
-    lecture: "llm"
     project: "Project proposal"
 - week: 
   num: 9
@@ -203,37 +206,42 @@
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L19-memory-networks.pdf"
-    project: "Project milestone"
   - date: "3/23" 
-    title: "Text Generation"
-    lecture: "textgen"
+    title: "Pretraining"
+    lecture: "pretraining"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L20-text-generation.pdf"
-  - date: "11/23" 
+        url: "assets/lecture-slides/L20-pretraining.pdf"
+    project: "Project milestone"
 - week: 
   num: 12
   dates:
   - date: "3/29" 
+    title: "Text Generation"
+    lecture: "textgen"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L21-text-generation.pdf"
+  - date: "3/30" 
     title: "Dialogue"
     lecture: "dialogue"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L21-dialogue.pdf"
-  - date: "3/30" 
-    title: "Semantic parsing"
-    lecture: "semparse"
-    leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L22-semantic-parsing.pdf"
+        url: "assets/lecture-slides/L22-dialogue.pdf"
 - week: 
   num: 13
   dates:
   - date: "4/5" 
     title: "Grounding"
     lecture: "grounding"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L23-grounding.pdf"
   - date: "4/6"
-    title: "Conclusion"
+    title: "Conclusion and final project presentations"
     lecture: "conclusion"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L24-conclusion.pdf"
   - date: "4/11"
     project: "Final project report"
