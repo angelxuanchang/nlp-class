@@ -228,7 +228,7 @@
 - title: "Word Vectors"
   tag: wordvec
   include: true
-  current: true
+  current: false
   notes: 
     - title: "Word vectors (vector space models)"
       url: "assets/slides/L7-wordvectors.pdf"

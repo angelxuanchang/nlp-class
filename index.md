@@ -77,7 +77,7 @@ There will be optional TA led tutorials that will help review these topics.
 
 
 #### Grading
-* Submit homework source code and check your grades on [Gradescope]({{ site.gradescope }}) and [Canvas]({{ site.canvas }})
+* Submit homework source code and check your grades on [Canvas]({{ site.canvas }})
 * Programming setup and diagnostic homework (5%)
   * HW0 due on {{ site.hwdates[0].deadline }} 
 * Four homeworks (64% total - 16% each, with 8% for programming and 8% for question answering). Due dates:
