@@ -1,13 +1,12 @@
 ---
 layout: default
-img: 20news_tsne
-img_link: https://lvdmaaten.github.io/tsne/
-caption: "t-Distributed Stochastic Neighbor Embedding (t-SNE) is a technique that is commonly used for the visualization of high-dimensional data such as 100d or 300d word vectors."
-title: "Homework | Lexical Substitution"
+img: bratconll2k
+caption: Explore phrasal chunking interactively using Brat
+title: Homework 2 | BERT Finetuning for Robust Phrasal Chunking
 active_tab: homework
 ---
 
-# Homework 2
+# Homework 2: BERT Finetuning for Robust Phrasal Chunking
 
 <span class="text-info">Start on {{ site.hwdates[2].startdate }}</span> |
 <span class="text-warning">Due on {{ site.hwdates[2].deadline }}</span>
@@ -27,7 +26,7 @@ If you have already cloned my homework repository `nlp-class-hw` for
 previous homeworks then go into that directory and update the directory:
 
     git pull origin/master
-    cd nlp-class-hw/lexsub
+    cd nlp-class-hw/bertchunker
 
 If you don't have that directory anymore then simply clone the
 repository again:
@@ -41,14 +40,16 @@ Clone your own repository from GitLab if you haven’t done it already:
 Note that the `USER` above is the SFU username of the person in
 your group that set up the GitLab repository.
 
-Then copy over the contents of the `lexsub` directory into your
+Then copy over the contents of the `bertchunker` directory into your
 `hw2` directory in your repository.
 
 Set up the virtual environment:
 
-    python3 -m venv venv
+    python3.10 -m venv venv
     source venv/bin/activate
     pip3 install -r requirements.txt
+
+You must use Python 3.10 (or later) for this homework.
 
 Note that if you do not change the requirements then after you have
 set up the virtual environment `venv` you can simply run the following
@@ -58,344 +59,404 @@ command to get started with your development for the homework:
 
 ## Background
 
-In this homework we will be exploring the task of finding a suitable
-substitution for a target word in a sentence. For example, in the
-following set of sentences the word **dry** can be replaced with
-different words provided in the second column. Either `dull` or
-`teetotal` or `parched` can be suitable replacements for the word
-**dry** depending on the context.
+The syntax of a natural language, similar to the syntax of a programming language involves
+the arrangement of tokens into meaningful groups. Phrasal chunking is the task of finding 
+non-recursive syntactic groups of words. For example, the sentence:
 
-| 16  | the problem is , aari seems to have no memory of their love other than a **dry** recitation as if he is reading a script of who he is supposed to be . | dull boring soulless uninteresting flat |
-| 29  | she proved that in two years in illinois they had voted ninety-six towns **dry** , and that at that rate we would soon get over montana and have it dry . | alcohol_free teetotal | 
-| 5   | if the mixture is too **dry** , add some water ; if it is too soft, add some flour . |  parched unmoistened desiccated stodgy |
-{: .table}
+> He reckons the current account deficit will narrow to only # 1.8 billion in September .
 
-The first column is the index of the target word (also shown in
-bold-face in the examples above) which we need to substitute with
-another word/phrase that is a suitable replacement in the context
-of this sentence. In some cases the substitute provided by human
-annotators for this dataset might be a phrase, e.g. `alcohol_free`
-is a substitute for `dry` in the second example above.
+can be divided into phrasal chunks as follows[^1]:
 
-This task is closely related to the task of identifying the different
-[_word senses_](https://en.wikipedia.org/wiki/Word-sense_disambiguation) of the target word. 
+> [NP <span style="color: DarkBlue">He</span>] 
+[VP <span style="color: BlueViolet">reckons</span>] 
+[NP <span style="color: DarkBlue">the current account deficit</span>] 
+[VP <span style="color: BlueViolet">will narrow</span>] 
+[PP <span style="color: red">to</span>] 
+[NP <span style="color: DarkBlue">only # 1.8 billion</span>] 
+[PP <span style="color: red">in</span>] 
+[NP <span style="color: DarkBlue">September</span>] .
 
-The dataset we will be using in this homework was collected by
-asking humans to provide words (and sometimes phrases) as substitutes
-for particular target words.  They were provided with the full
-sentence so that they can choose the substitute word based on the
-context.
+[^1]: *Caveat*: If you have a linguistic background, you might find the verb phrases `VP` and prepositional phrases `PP` are different from what you might be used to. In this task, the `VP` is a verb and verb modifiers like auxiliaries (`were`) or modals (`might`), and the `PP` simply contains the preposition. This difference is because of the fact that the chunks are non-recursive (cannot contain other phrases) -- we need trees for full syntax.
 
-The data we will be using for this homework is taken from the
-following shared task data:
+## Data set
 
-> [SemEval-2007 Task 10: English Lexical Substitution Task](https://www.aclweb.org/anthology/S07-1009/). Diana McCarthy, Roberto Navigli. 
+The train and test data consist of three columns separated by spaces.
+Each word has been put on a separate line and there is an empty
+line after each sentence.
 
-The data and the evaluation have been modified to make it a simpler
-task specifically for this homework. Your task will be to provide
-10 guesses as to the appropriate substitute word and if any of the
-10 guesses match the substitute word preferred by the human annotator
-it will be considered correct. We will be using a simplified form
-of the various evaluation scores provided in the above paper. Your
-program  will be allowed 10 guesses and we check if any of them
-match the set of words provided by the human annotators.
+The first column contains the current word, the second column is
+the part-of-speech tag for that word, and the third column is
+the chunk tag.
 
-This homework will explore the use of word vectors aka word
-embeddings for this task. We will be using a pre-trained collection
-of word vectors that has been trained on a large corpus of text
-data.
+Here is an example of the file format:
 
-## Default solution
+    He        PRP  B-NP
+    reckons   VBZ  B-VP
+    the       DT   B-NP
+    current   JJ   I-NP
+    account   NN   I-NP
+    deficit   NN   I-NP
+    will      MD   B-VP
+    narrow    VB   I-VP
+    to        TO   B-PP
+    only      RB   B-NP
+    #         #    I-NP
+    1.8       CD   I-NP
+    billion   CD   I-NP
+    in        IN   B-PP
+    September NNP  B-NP
+    .         .    O
 
-The default solution is provided in `default.py`. To use the default
-as your solution:
+The chunk tags contain the name of the chunk type, for example I-NP
+for noun phrase words and I-VP for verb phrase words.  Most chunk
+types have two types of chunk tags, B-CHUNK for the first word of
+the chunk and I-CHUNK for each other word in the chunk. See the
+Appendix below for a detailed description of the part-of-speech
+tags and the chunk tags in this data set. The full set of tags
+for this task is in the file `data/tagset.txt`.
 
-    cp default.py answer/lexsub.py
-    cp default.ipynb answer/lexsub.ipynb
-    python3 zipout.py
-    python3 check.py
+The sequence of labels, `B-NP`, ..., `I-NP` represents a single
+phrasal chunk. For instance, the following sequence of labels:
 
-The default solution will look for the file `glove.6B.100d.magnitude`
-in the data directory. 
+    the       DT   B-NP
+    current   JJ   I-NP
+    account   NN   I-NP
+    deficit   NN   I-NP
 
-You can either download the word vectors file from:
+gives us the NP phrase:
 
-    http://magnitude.plasticity.ai/glove/medium/glove.6B.100d.magnitude
+> [NP <span style="color: DarkBlue">the current account deficit</span>] 
 
-Or you can use the same file directly on CSIL from the following directory:
+The O chunk tag is used for tokens which are not part of any chunk.
 
-    /usr/shared/CMPT/courses/nlp-class/lexsub/glove.6B.100d.magnitude
+The data set comes from the Conference on Natural Language Learning:
+[CoNLL 2000 shared task](http://www.cnts.ua.ac.be/conll2000/chunking/)[^2].
 
-There is also a text file available that is compatible with
-[gensim](https://radimrehurek.com/gensim/). 
+[^2]: [Introduction to the CoNLL-2000 Shared Task: Chunking](https://www.aclweb.org/anthology/W00-0726/)
 
-    /usr/shared/CMPT/courses/nlp-class/lexsub/glove.6B.100d.txt
+There is a helpful program `count_sentences.py` which allows you
+to count how many sentences are in a CoNLL formatted file.
 
-Please do not copy over the file into your CSIL directory as it is
-quite large and you can go over your disk quota. Instead modify
-`default.py` to use the full path to the above file which is
-accessible on the CSIL machines or use the command line option
-for `default.py` to access the word vectors.
+This homework is not just about phrasal chunking but **robust**
+phrasal chunking. The input data in dev and test files have been
+infected with noise so the input to your chunker will look like
+this:
 
-    python3 default.py -w /usr/shared/CMPT/courses/nlp-class/lexsub/glove.6B.100d.magnitude > output.txt
+    Rqckwell NNP
+    , ,
+    based VBN
+    in IN
+    El NNP
+    Segundo NNP
+    , ,
+    Calief. NNP
+    , ,
+    is VBZ
+    an DT
+    aerospace NN
+    , ,
+    electronics NNS
+    , ,
+    automotive JJ
+    and CC
+    graphics NNS
+    concern VBP
+    . .
 
-And then you can check the score on the dev output file called `output.txt` by running:
+As you see the words have been infected with noise so
+that it contains several spelling mistakes, e.g. `Rockwell` 
+is now `Rqckwell`. The training data is clean and any
+model trained on the training data will treat these 
+noisy words as unknown words.
 
-    python3 lexsub_check.py
-
-Make sure that the command line options are kept as they are in
-`default.py`. You can add to them but you must not delete any
-command line options that exist in `default.py`.
-
-Submitting the default solution without modification will get you
-zero marks.
-
-The default solution produces 10 candidates for each lexical
-substitution and if any of them match the substitute words
-preferred by a group of human annotators then that substitution
-is marked as correct.
-
-The overall score reported is the precision score over the entire
-data set which is described in detail in the "Check your performance" section below.
-
-Your solution should produce exactly 10 guesses for each lexical
-substitution just like the default solution.
-
-## The Challenge
-
-Your task is to _improve the performance as much as possible_. The
-score is explained in detail in the "Check your performance" section below. You can
-only use the pre-trained word vectors file that has been provided
-to you as described in the `Default solution` section above.
-You cannot use any other word vectors or word embeddings.
+The input files do not have the output chunk labels
+which appear in `data/reference/dev.out` for input `data/input/dev.txt`.
 
 ## Data files
 
 The data files provided are:
 
-* `data/input` -- input files `dev.txt` and `test.txt`
+* `data/train.txt.gz` -- the training data used to train the `answer/default.py` model
+* `data/input` -- input files `dev.txt` and `test.txt` infected with noise
 * `data/reference/dev.out` -- the reference output for the `dev.txt` input file
-* `data/lexicons` -- lexicon files that contain the word-word relations used for the Baseline method described below
 
-In addition you must use the pre-trained word vectors from `glove.6B.100d.magnitude`.
+## Default solution
 
-`pymagnitude` is the Python library to use in order to access the
-word vectors in `glove.6B.100d.magnitude`.  It is already in
-`requirements.txt` so if you have set up your virtual environment
-correctly you should be able to run:
+The default solution is provided in `answer/default.py`. To use the default
+as your solution:
 
-    python3
-    >>> from pymagnitude import *
-    >>> wv = Magnitude("data/glove.6B.100d.magnitude")
-    >>> len(wv) # how many words in this word vector file
-    400000
-    >>> wv.dim # the dimensionality of each word vector
-    100
-    >>> wv.most_similar("cat", topn=5)
-    [('dog', 0.87980753), ('rabbit', 0.7424427), ('cats', 0.7323004), ('monkey', 0.72887105), ('pet', 0.719014)]
+    cd answer
+    cp default.py bertchunker.py
+    cp default.ipynb bertchunker.ipynb
+    cd ..
+    python3 zipout.py
+    python3 check.py
 
-The following code snippet prints out the first 5 components of the
-word vector for 10 words out of the entire vocabulary:
+The default solution will look for the file `chunker.pt`
+in the data directory. If it does not find this file it
+will start training on the `data/train.txt.gz` file. This
+will take about 15-20 minutes.
 
-    >>> for key, vector in wv[:10]:
-    ...     print(key, vector[:5])
-    ...
-    the [-0.0065612 -0.0420655  0.1250817 -0.0686479  0.0142879]
-    , [-0.0193882  0.0199032  0.1077039 -0.0978882  0.1213604]
-    . [-0.0622309  0.0383524  0.0848841 -0.1186634 -0.0702856]
-    of [-0.0242819 -0.0385573  0.1426693  0.0269912  0.0849883]
-    to [-0.0294079  0.0077549  0.0295846 -0.0076247 -0.0139113]
-    and [-0.012695   0.0408041  0.004187  -0.0893432  0.0598521]
-    in [ 0.0140624 -0.0364279  0.0271868  0.0219427  0.0627435]
-    a [-0.043387   0.007049  -0.0032453 -0.0278637  0.1032215]
-    " [-0.0462585 -0.0359123  0.0266947 -0.1106516 -0.0430477]
-    's [ 0.0883406 -0.0303955  0.1102929 -0.1025762 -0.0295324]
+You can also download the [`chunker.pt` model
+file](https://drive.google.com/file/d/1Cob8vewgpvNhJ2KnZlYq2Tntkgc0l2yx/view)
+that was trained using `default.py`.
 
-More information is available on the
-[Magnitude](https://github.com/plasticityai/magnitude) GitHub page.
+Please do not commit the file into your git repository as it is
+moderately large and you can go over your disk quota. 
 
-The lexicon files are as follows:
+If you have a `chunker.pt` in the `data` directory then you can simply run:
 
-* `framenet.txt`: from the [Framenet](https://framenet.icsi.berkeley.edu/fndrupal/) project
-* `ppdb-xl.txt`: from the [PPDB](http://paraphrase.org) project
-* `wordnet-synonyms+.txt`: from [Wordnet](https://wordnet.princeton.edu/)
-* `wordnet-synonyms.txt`: smaller set of synonyms from [Wordnet](https://wordnet.princeton.edu/) for use during development
+    python3 answer/default.py > output.txt
 
-Each file contains a list of words that are assumed to be semantically
-related to each other. If you consider each ontology as a graph
-then each line in the above files represents an edge between each
-pair of words on that line.  For example, the line:
+And then you can check the score on the dev output file called `output.txt` by running:
 
-    faulty incorrect wrong defective
+    python3 conlleval.py -o output.txt
 
-tells that that there is an undirected graph edge representing a
-semantic relation between each pair of words on this line, e.g.
-`faulty-incorrect`, `faulty-defective`, `incorrect-defective`, and
-so on.
+which produces the following detailed evaluation:
 
-## Baseline 
+    processed 23663 tokens with 11896 phrases; found: 11847 phrases; correct: 10764.
+    accuracy:  94.01%; (non-O)
+    accuracy:  94.37%; precision:  90.86%; recall:  90.48%; FB1:  90.67
+                 ADJP: precision:  79.29%; recall:  69.47%; FB1:  74.06  198
+                 ADVP: precision:  74.25%; recall:  74.62%; FB1:  74.44  400
+                CONJP: precision:  66.67%; recall:  85.71%; FB1:  75.00  9
+                 INTJ: precision: 100.00%; recall: 100.00%; FB1: 100.00  1
+                   NP: precision:  90.22%; recall:  91.57%; FB1:  90.89  6330
+                   PP: precision:  96.80%; recall:  94.31%; FB1:  95.54  2378
+                  PRT: precision:  80.56%; recall:  64.44%; FB1:  71.60  36
+                 SBAR: precision:  92.27%; recall:  75.53%; FB1:  83.06  194
+                   VP: precision:  90.48%; recall:  90.36%; FB1:  90.42  2301
+    (90.85844517599392, 90.48419636852724, 90.67093459124794)
 
-The baseline method is what you should implement first before you
-explore additional improvements to improve your score.
+For this homework we will be scoring your solution based on the FB1 score
+which is described in detail in the Accuracy section below. However the FB1
+score is not the only focus. You can focus on efficiency, model size, 
+experimental comparison with other approaches and many other choices.
 
-First, we will implement _retrofitting_ to combine the information
-about word senses from Wordnet in order to modify the default word vectors.
+Make sure that the command line options are kept as they are in
+`answer/default.py`. You can add to them but you must not delete any
+command line options that exist in `answer/default.py`.
 
-### Retrofitting Word Vectors with Semantic Lexicons
+Submitting the default solution without modification will get you
+zero marks.
 
-Information about word senses can be found in many semantic lexicons.
-The most widely used hand-curated semantic lexicon for the English
-language is the [Wordnet](https://wordnet.princeton.edu) ontology.
+### The default model
 
-For instance, if you search Wordnet for the word
-[dry](http://wordnetweb.princeton.edu/perl/webwn?s=dry&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=)
-you will see the various semantic relations of _dry_ with other
-words captured in Wordnet.  
+The model used in `answer/default.py` is a BERT-based Transformer
+model that is fine-tuned to predict the phrase chunking tags 
+for each (sub-word) token. It is trained on the data provided
+in `data/train.txt.gz` which has the ground truth phrase tags
+for each token and these sentences are used to fine-tune the
+BERT model.
 
-![Wordnet search for dry]({{ site.baseurl }}/assets/img/drywordnet.png "Synonym sets for dry on Wordnet"){:height="50%" width="50%"}
+The model structure can be examined using the following code,
+assuming that you are in the `nlp-class-hw/chunker` directory or
+if you have the `data` directory in your current directory with the
+training data and the model file:
 
-Of the many semantic relations in Wordnet
-the most useful to us for this task is that we can identify various
-groups of words with similar meanings. These groups of words are
-called _synsets_ (short for synonym sets). However, how do we use
-these semantic relations to augment the word representations we
-have in our pre-trained word vectors?  This is where retrofitting
-can be useful. The idea is to use the semantic relations from an
-ontology like Wordnet and modify or retrofit the word vectors to
-use that information. This can make the word vectors more useful
-for tasks like lexical substitution which depend on knowledge of
-various senses of the target word.
+    from default import *
+    chunker = FinetuneTagger('data/chunker', '.pt', 'distilbert-base-uncased')
+    print(chunker.model_str())
 
-To explain how retrofitting works we need to work with some notation.
-Let $w_i, w_j$ be words from the vocabulary $V$. Let ${\cal O}$ be
-an ontology (for example, Wordnet) that encodes semantic relations
-between words as described in the example above. We represent 
-the ontology as an undirected graph $(V, E)$ with one vertex $v \in V$
-for each word type and edges $(w_i, w_j) \in V \subseteq V \times V$
-indicating some semantic relationship.
+This prints out the model:
 
-The word vectors for our vocabulary $V$ can be represented by a
-matrix $\hat{Q}$ which has columns $(\hat{q}_1, \ldots, \hat{q}_n)$
-where $|V| = n$ so $\hat{q}_i$ is the word vector for word $w_i$.
-This matrix of word vectors $\hat{Q}$ has been provided to you as
-a pre-trained model (the 100 dimensional GloVe word vectors provided
+    TransformerModel(
+      (encoder): DistilBertModel(
+        (embeddings): Embeddings(
+          (word_embeddings): Embedding(30522, 768, padding_idx=0)
+          (position_embeddings): Embedding(512, 768)
+          (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (transformer): Transformer(
+          (layer): ModuleList(
+            (0-5): 6 x TransformerBlock(
+              (attention): MultiHeadSelfAttention(
+                (dropout): Dropout(p=0.1, inplace=False)
+                (q_lin): Linear(in_features=768, out_features=768, bias=True)
+                (k_lin): Linear(in_features=768, out_features=768, bias=True)
+                (v_lin): Linear(in_features=768, out_features=768, bias=True)
+                (out_lin): Linear(in_features=768, out_features=768, bias=True)
+              )
+              (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (ffn): FFN(
+                (dropout): Dropout(p=0.1, inplace=False)
+                (lin1): Linear(in_features=768, out_features=3072, bias=True)
+                (lin2): Linear(in_features=3072, out_features=768, bias=True)
+                (activation): GELUActivation()
+              )
+              (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            )
+          )
+        )
+      )
+      (classification_head): Linear(in_features=768, out_features=22, bias=True)
+    )
+
+Optimizing the above parameters to find the minimum loss on the
+training data by gradient descent is done automatically using Pytorch
+API calls in `answer/default.py`.
+
+### Hyperparameters
+
+For this homework we will enforce that the base BERT model should not
+be changed. Use `distilbert-base-uncased` as your base BERT model.
+You can change the fine-tuning model and parameters as you wish.
+
+### Pytorch
+
+You will need to use some Pytorch API calls to solve this homework.
+We do not expect you to already know Pytorch in great detail.
+The following links will help you get started but you can learn
+a lot of the Pytorch basics by understanding `default.py` and
+the process of solving this homework.
+
+Some useful links if you feel lost at the beginning:
+
+* [60 mins intro to Pytorch](https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)
+* [Introduction to the transformers library](https://huggingface.co/docs/transformers/notebooks)
+
+Read the source code in `default.py` in detail.
+
+## The Challenge
+
+Your task is to _improve the accuracy as much as possible while
+keeping the hyperparameters used in the default solution for the
+phrasal chunker_. The score is explained in detail in the Accuracy
+section below. With substantial computational resources and using
+large pre-trained models (which are beyond the scope of this homework)
+the [state of the art accuracy on this
+dataset](https://nlpprogress.com/english/shallow_syntax.html) has
+reached an F1-score above 97 percent (typically by using more 
+information than just the training data available for this
+task).
+
+However, the numbers from that leaderboard do not apply to the dev
+and test data in this homework. The dev and test data used here are
+much more challenging than the standard CoNLL 2000 chunking task
+because several typos have been introduced into the data (as explained
 above).
 
-The objective of retrofitting is to use the ontology graph ${\cal O}$
-in order to learn a matrix $Q = (q_1, \ldots, q_n)$ such that the
-columns of the matrix $Q$ are close (in vector space) to the word vectors in 
-$\hat{Q} = (\hat{q}_1, \ldots, \hat{q}_n)$
-(so $q_i$ is close to $\hat{q}_i$) and at the same time the columns
-of the matrix $Q$ are close (in vector space) to the word vectors
-of other words that are adjacent vertices in ${\cal O}$. So if $(w_i, w_j)$
-are connected by an edge in the ontology then we want $q_i$ and $q_j$ to
-be close in vector space. Retrofitting involves combining these two
-criteria to modify the word vectors for the words in our vocabulary.
+## Improving the model
 
-For example, the following figure shows how the semantic relations
-in the ontology (the edges between the white nodes) can be used to
-learn new retrofitted word vectors (the white nodes). For each word
-the figures shows a link between the white node for that word (which
-represents the retrofitted word vectors we wish to learn) and the
-grey node for the same word (which comes from the pre-trained word
-vectors).
+Here are some specific things you can try to improve the accuracy
+of the fine-tuned model:
 
-![Word graph image]({{ site.baseurl }}/assets/img/retrofit.png "Word graph with edges between related words showing the observed (grey) and the inferred (white) word vector representations."){:height="50%" width="50%"}
+1. Deal with misspellings in the dev and test data using adversarial training (more details below).
+1. Use more than the last layer of the Transformer since lower layers of a pre-trained LLM tend to reflect "syntax" while higher levels tend to reflect "semantics" (waving hands profusely).
+1. Use two different optimizers with different learning rates for the pre-trained encoder layers and the classification head layer. For instance, the classification head parameters might be better learned with an SGD optimizer and a learning rate of $$0.1$$.
+1. Improve the classification head using either:
+    1. multi-layer perceptron (MLP)
+    1. CRF
+    1. mini-Transformer.
 
-The distance between two word vectors is represented by the Euclidean distance.
-Our objective function $L$ for finding $Q$ can be written as: 
+You only need to try one or two of these ideas to improve your model
+for this homework. Dealing with misspellings should be sufficient to
+get an F-score of higher than 94 on the dev set.
 
-$$ L(Q) = \sum_{i=1}^n \left[ \alpha_i || q_i - \hat{q}_i ||^2 + \sum_{(i,j) \in E} \beta_{ij} || q_i - q_j ||^2 \right] $$
+### Dealing with Misspellings
 
-The algorithm to find $Q$ is as follows:
+A very simple idea for dealing with the misspellings in the dev and
+test data is to realize that the training data is not similarly
+noisy. Augmenting the training data with additional noisy examples
+can help the model handle misspellings at inference time.
 
-- Initialize $Q$ to be equal to the vectors in $\hat{Q}$
-- For iterations $t = 1 \ldots T$
-    - Take the derivative of $L(Q)$ wrt each $q_i$ word vector and assign it to zero to get an update:
+For more advanced approach, look into adversarial training as
+explained in the following paper:
 
-        $$ q_i = \frac{\sum_{j:(i,j) \in E} \beta_{ij} q_j + \alpha_i \hat{q}_i}{\sum_{j:(i,j) \in E} \beta_{ij} + \alpha_i} $$
+> [Combating Adversarial Misspellings with Robust Word Recognition](https://www.aclweb.org/anthology/P19-1561/). Danish Pruthi, Bhuwan Dhingra, Zachary C. Lipton. ACL 2019.
 
-In practice set $T = 10$ which should correspond to changes in
-Euclidean distance of adjacent vertices of roughly $10^{-2}$.  At
-first, set $\alpha_i = 1$ for all $i$ and $\beta_{ij} = 1$ for all
-$i,j$. You can try different weighting schemes to see if you get
-an improvement.
+### Improving the classification head
 
-See the `Data files` section above which explains how to iterate
-through the vocabulary using `pymagnitude` functions.
+The classification head in `default.py` is a single linear layer. You could experiment with more expressive feed-forward networks like the following model. 
 
-Since `pymagnitude` only offers read-only access to word vectors
-you will have to write your retrofitted word vectors to a file with
-the word as first column followed by a space delimited list of 100
-floating point numbers. For example, one line of this file will
-look like this:
+        FFN(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (lin1): Linear(in_features=768, out_features=3072, bias=True)
+            (lin2): Linear(in_features=3072, out_features=768, bias=True)
+            (classification_head): Linear(in_features=768, out_features=22, bias=True)
+        )
 
-    the -0.038194 -0.24487 ...97 numbers here... 0.27062
+You can experiment with `lin1` having more parameters than the input or fewer parameters.
 
-Once you have written the retrofitted word vectors to this text file you can convert it into a `pymagnitude` format
-using the pymagnitude convertor:
+### CRF Layer
 
-    $ python3 -m pymagnitude.converter -i data/glove.6B.100d.retrofit.txt -o data/glove.6B.100d.retrofit.magnitude
-    Detected GloVe format! Converting to word2vec format first...(this may take some time)
-    Loading vectors... (this may take some time)
-    Found 400000 key(s)
-    Each vector has 100 dimension(s)
-    Creating magnitude format...
-    Writing vectors... (this may take some time)
-    0% completed
-    1% completed
-    ...
-    99% completed
-    Committing written vectors... (this may take some time)
-    ...
-    Successfully converted '/var/folders/.../...txt' to 'data/glove.6B.100d.retrofit.magnitude'!
+A Conditional Random Field (CRF) layer can look at consistent labels
+(e.g. `I` tags always follow `B` tags for the same span, and other
+such consistencies) and produce more coherent label sequences.
 
-If you are using `gensim` you can directly load up the retrofitted
-text file or convert it into the `gensim` binary format.
+For an input sequence $$\mathbf{x} = (x_{1}, \ldots, x_{n})$$ and a sequence
+of predictions for the output labels $$\mathbf{y} = (y_{1}, \ldots, y_{n})$$
+we define a score for the output sequence of labels to be:
 
-You can use your retrofitted word vectors with the code in `default.py`
-or an augmented version of `default.py` that uses a better method
-to find the 10 substitute words for each target word (described
-below in the `Using Context Based Similarity` section).
+<p>$$\textit{score}(\mathbf{x}, \mathbf{y}) = \sum_{i=0}^n C_{y_{i-1},y_{i}} + \sum_{i=1}^n P_{i,y_{i}}$$</p>
 
-### Background Reading
+The log probability we want to compute is:
 
-For more details read the original paper that introduced the
-idea of retrofitting word vectors:
+<p>$$\textit{log}(g(\mathbf{y} | \mathbf{x})) =  \textit{log}(\textit{softmax}_{\mathbf{x}}(\textit{score}(\mathbf{x}, \mathbf{y})))$$</p>
 
-> [Retrofitting Word Vectors to Semantic Lexicons](https://www.aclweb.org/anthology/N15-1184/). Faruqui et. al. NAACL 2015.
+where $$C(y_{i-1},y_{i})$$ (or $$C_{i-1}$$ for short) is the
+transition probability from the labels in the previous time step
+to the labels in the current time step $$i$$ and $$P_{i,y_{i}}$$
+(or $$p(y_{i})$$ for one position and $$p(\mathbf{y})$$ for the
+entire sequence)  is the probability of producing label $$y_{i}$$
+at time step $$i$$. The `softmax` over the sequence $$\mathbf{x}$$
+is computed using `tag_space` from `default.py` as follows:
+`tag_scores = softmax(tag_space, dim=-1)` (compare with how
+`tag_scores` is computed in `default.py`).
 
-You can also view the source code that implements retrofitting on
-GitHub:
+Let $$n$$ be the length of the sentence aka ``tag_scores.size(1)``,
+$$B$$ be the batch size aka ``tag_scores.size(0)``, `tagset_size`
+is the same as ``tag_scores.size(3)``, and let $$C_{i-1}$$ be the
+new variable to store the probability distribution over pairs of
+labels (commented out, but called `crf_layer` in `default.py`).
 
-> [https://github.com/mfaruqui/retrofitting](https://github.com/mfaruqui/retrofitting)
+You can compute $$\mathbf{y}$$ by calling `tag_scores.argmax(-1)`.
+Note that because of batching it has two subscripts $$y_{b,i}$$
+where $$b$$ is each sentence in the batch and $$i$$ is the position
+in that sentence.
 
-You can view the implementation but you must implement the algorithm
-yourself and apply it to the lexical substitution task.
+Here is a pseudo-code for the `forward` function in `TransformerModel`
+which includes a CRF layer that you can add to `default.py` assuming
+`tag_space` is computed as before (also see the comments in the code).
 
-You are welcome to design your own model, as long as you have
-implemented the Baseline model first. One possible extension is
-to use the context words around the target word to find a better
-guess for the substitute word.
+1. For $$b$$ in $$B$$ and $$i$$ in $$n$$
+   1. $$C_{b,i-1} = C(y_{b,i-1})$$ (you will need to use `unsqueeze(0)` here to create a tensor that can be used to concatenate for all $$b$$ values).
+   1. $$C_{i-1} = \textit{softmax}([ C_{1,i-1}, \ldots, C_{B,i-1} ])$$ (you will need to use `unsqueeze(0)` here as well).
+   1. $$g_{i} = C_{i-1} + p(y_{i})$$ which computes $$\textit{softmax}(\textit{score}(\mathbf{x}, \mathbf{y}))$$ for the entire batch and $$p(y_{i})$$ is given by `tag_scores[:, i, :]`.
+1. return $$g = \textit{log}([ g_{0}, \ldots, g_{n} ])$$ (here the concatenation happens for `dim=1` which is the sentence length).
 
-### Using Context Based Similarity
+Each time the pseudo-code uses $$[ v_{1} \ldots v_{q} ]$$ for some
+tensors $$v_{i}$$ it means you should use `torch.cat` to concatenate
+the vectors. You can create an array and append to it for each
+$$v_{i}$$ and call `torch.cat` on that array.  For the corner case
+of $$C_{b,0}$$ which is the first token in the sentence for each
+$$b$$ in the batch you can use $$C_{b,n}$$ as the previous time
+step since $$C_{b,-1}$$ doesn't exist.
 
-You should also augment the default solution to use the
-context around the target word to find better substitute words. You
-can use the context-based similarity approaches in the following, 
-but do not use their contextual embeddings. 
-You must still only use the GloVe embeddings provided
-to you.
+The paper that introduced the use of a CRF layer in neural networks is:
 
-> [A Simple Word Embedding Model for Lexical Substitution](https://www.aclweb.org/anthology/W15-1501/). Oren Melamud, Omer Levy, Ido Dagan. 1st Workshop on Vector Space Modeling for NLP. 2015.
+> [Neural Architectures for Named Entity Recognition](https://arxiv.org/abs/1603.01360). Guillaume Lample, Miguel Ballesteros, Sandeep Subramanian, Kazuya Kawakami, Chris Dyer. NAACL 2016.
 
+Based on the original CRF paper (which you don't really need to dive into but linked here for completeness):
+
+> [Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data](https://dl.acm.org/doi/10.5555/645530.655813). John Lafferty, Andrew McCallum, Fernando Pereira. ICML 2001.
+
+**Some caveats**: Implementing a CRF layer is a good exercise since
+it is complicated to implement and will teach you a lot of PyTorch.
+However, while many state of the art (SOTA) implementations use a
+CRF layer, the representation power of a CRF layer is likely
+superseded by the representations learned using self-attention
+already in the BERT encoder. Instead of using a CRF layer, it might
+be easier and more accurate to use multi-head self attention in the
+classification head.
 
 ## Required files
 
 You must create the following files:
 
-* `answer/lexsub.py` -- this is your solution to the homework. start by copying `default.py` as explained below.
-* `answer/lexsub.ipynb` -- this is the iPython notebook that will be your write-up for the homework.
+* `answer/bertchunker.py` -- this is your solution to the homework. start by copying `default.py` as explained below.
+* `answer/bertchunker.ipynb` -- this is the iPython notebook that will be your write-up for the homework.
 
 ## Run your solution on the data files
 
@@ -413,21 +474,9 @@ To check your performance on the dev set:
 
     python3 check.py
 
-The output score is a precision score where you get 10 guesses for
-each example in the dataset but you are not penalized for getting
-any guess wrong.  For each example $i$ in the dataset, let $H_i$
-be the set of substitutes provided by the human annotators for the
-given target word. There can be upto 5 different words (or phrases)
-in the set $H_i$.  Your output for example $i$ consists of 10 guesses
-which we represent as the set $O_i$. If the intersection of these
-two sets $H_i \cap O_i$ is non empty we increment the count of true
-positives $tp$. If the intersection is empty we increment the false
-positives counter $fp$. The _score_ for this task is then defined as the
-precision score $P$:
-
-$$P = \frac{tp}{tp + fp}$$
-
-For more options:
+The output score is the $F_{\beta=1}$ score or [FB1 score](https://en.wikipedia.org/wiki/F1_score)
+which is the harmonic mean of the precision and recall
+computed over all the output phrasal chunks.
 
     python3 check.py -h
 
@@ -438,17 +487,6 @@ In particular use the log file to check your output evaluation:
 The performance on `data/input/test.txt` will not be shown.  We will
 evaluate your output on the test input after the submission deadline.
 
-The default solution gets a very poor F-score on the dev and test set:
-
-    $ python3 check.py
-    dev.out score: 27.8920
-    test.out score: 36.0000
-
-Implementing the Baseline method should give you an improved
-performance on the dev set:
-
-    $ python3 check.py
-    dev.out score: 40.5167
 
 ## Preparing your report
 
@@ -473,8 +511,8 @@ to {{ site.hwsubmit.name }} for evaluation.
 
 ### Create output.zip
 
-Once you have a working solution in `answer/lexsub.py` create
-the `output.zip` for upload to {{ site.hwsubmit.name }} using:
+Once you have a working solution in `answer/bertchunker.py` create
+the `output.zip` for upload to Coursys using:
 
     python3 zipout.py
 
@@ -486,8 +524,8 @@ To create the `source.zip` file for upload to {{ site.hwsubmit.name }} do:
 
 You must have the following files or `zipsrc.py` will complain about it:
 
-* `answer/lexsub.py` -- this is your solution to the homework. start by copying `default.py` as explained below.
-* `answer/lexsub.ipynb` -- this is the iPython notebook that will be your write-up for the homework.
+* `answer/bertchunker.py` -- this is your solution to the homework. start by copying `default.py` as explained below.
+* `answer/bertchunker.ipynb` -- this is the iPython notebook that will be your write-up for the homework.
 
 In addition, each group member should write down a short description of what they
 did for this homework in `answer/README.username`.
@@ -496,10 +534,10 @@ did for this homework in `answer/README.username`.
 
 Go to `Programming Homework 2` on {{ site.hwsubmit.name }} and do a group submission:
 
-* Upload `output.zip` and `source.zip` and `report.pdf`
-* Make sure your `source.zip` matches your Gitlab repository.
-* Make sure you have documented your approach in `answer/lexsub.ipynb`.
-* Make sure each member of your group has documented their contribution to this homework in `answer/README.username` where `username` is your CSIL/GitLab username.
+* Upload `output.zip` and `source.zip`
+* Make sure you have documented your approach in `answer/bertchunker.ipynb`.
+* Check if each group member has a `answer/README.username`.
+* Make sure that your have updated your GitLab repository with your submission source code.
 
 ## Grading
 
@@ -509,26 +547,25 @@ The grading is split up into the following components:
 * test scores (see Table below)
 * Report quality 
 * Code content and quality
-   * Make sure that you are not using any external data sources in your solution. You must only use the provided word vector file.
-   * Make sure you have implemented retrofitting yourself.
-   * Do **not** submit the retrofitted word vector file but you should provide a script that produces the retrofitted `.magnitude` word vectors used by your Baseline solution.
+   * Make sure that you are not using any external data sources in your solution.
+   * Make sure you have implemented the fine-tuning model improvements yourself without using external libraries.
 * Check if each group member has a `answer/README.username`.
 
 Your F-score should be equal to or greater than the score listed for the corresponding marks.
 
 | **Score(dev)** | **Score(test)** | **Marks** | **Grade** |
-| 28 | 36   | 0   | F  |
-| 30 | 37   | 55  | D  |
-| 32 | 37.5 | 60  | C- |
-| 33 | 38   | 65  | C  |
-| 35 | 38.5 | 70  | C+ |
-| 37 | 39   | 75  | B- |
-| 38 | 39.5 | 80  | B  |
-| 40 | 40   | 85  | B+ |
-| 42 | 40.5 | 90  | A- |
-| 48 | 41   | 95  | A  |
-| 60 | 42   | 100 | A+ |
+| Nan  | Nan  | 0   | F  |
+| 90.5 | 82   | 55  | D  |
+| 91   | 83   | 60  | C- |
+| 91.5 | 84   | 65  | C  |
+| 92   | 85   | 70  | C+ |
+| 92.5 | 86   | 75  | B- |
+| 93   | 87   | 80  | B  |
+| 93.5 | 88   | 85  | B+ |
+| 94   | 90   | 90  | A- |
+| 94.5 | 92   | 95  | A  |
+| 96   | 95   | 100 | A+ |
 {: .table}
 
-The score will be normalized to the marks on Coursys for the dev and test scores.
+The score will be normalized to the marks on {{ site.hwsubmit.name }} for the dev and test scores.
 

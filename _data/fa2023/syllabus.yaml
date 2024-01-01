@@ -1,0 +1,519 @@
+- title: "Course Introduction"
+  tag: intro
+  include: true
+  current: false
+  notes:
+    - title: "Course introduction"
+      url: "assets/slides/intro-to-nlp.pdf"
+    - title: "Brief History of NLP"
+      url: "assets/slides/intro-history-of-nlp.pdf"
+    - title: "Learning from Text (in-class exercise)"
+      url: "assets/slides/intro-learning-from-text.pdf"
+  links:
+    - author: Lillian Lee
+      title: "I'm sorry Dave, I'm afraid I can't do that"
+      url: "http://www.cs.cornell.edu/home/llee/papers/cstb.pdf"
+    - author: Richard Sutton
+      title: "The Bitter Lesson"
+      url: "http://www.incompleteideas.net/IncIdeas/BitterLesson.html"
+    - title: "SHRDLU"
+      video: "https://youtu.be/QAJz4YKUwqw"
+      url: "https://youtu.be/QAJz4YKUwqw"
+      optional: true
+    - title: "IBM Watson competes in Jeopardy!"
+      video: "https://www.youtube.com/watch?v=lI-M7O_bRNg"
+      url: "https://www.youtube.com/watch?v=lI-M7O_bRNg"
+      optional: true
+    - author: Rick Rashid 
+      title: "Speech Recognition Breakthrough for the Spoken, Translated Word by Rick Rashid"
+      video: "https://www.youtube.com/watch?v=Nu-nlQqFCKg"
+      url: "https://www.youtube.com/watch?v=Nu-nlQqFCKg"
+      optional: true
+    - author: Anoop Sarkar
+      title: "NLP and Text Visualization"
+      url: "assets/slides/wikihistory.pdf"
+      optional: true
+    - author: "Various Allen Institute AI2 Researchers"
+      title: "NLP Highlights podcast"
+      url: "https://soundcloud.com/nlp-highlights"
+      optional: true
+    - author: "Sean Welleck"
+      title: "The Thesis Review"
+      url: "https://soundcloud.com/thesis-review"
+      optional: true
+    - author: "Devi Parikh and Dhruv Batra"
+      title: "Humans of AI: Stories, Not Stats"
+      url: "http://www.humanstories.ai"
+      optional: true
+- title: "n-gram Language models"
+  tag: lm
+  include: true
+  current: false
+  notes:
+    - title: "Probability models and language"
+      url: "assets/slides/prob.pdf"
+    - title: "Language models"
+      url: "assets/slides/lm.pdf"
+    - title: "Exercise: n-gram Language Models"
+      url: "assets/notes/lm.html"
+    - title: "The unreasonable effectiveness of Character-level Language Models"
+      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/goldberg_lm.ipynb"
+      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/goldberg_lm.ipynb"
+      author: "Yoav Goldberg"
+  links:
+    - title: "Python tidbits for NLP"
+      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/python-tidbits.ipynb"
+      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/python-tidbits.ipynb"
+    - author: Peter Norvig
+      title: "Natural Language Corpus Data: Beautiful Data"
+      url: "http://norvig.com/ngrams/"
+      download: "http://norvig.com/ngrams/ngrams.zip"
+    - author: Claude Shannon
+      title: "A Mathematical Theory of Communication"
+      url: http://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication
+      optional: true
+    - author: Claude Shannon
+      title: "Prediction and Entropy of Printed English"
+      url: http://languagelog.ldc.upenn.edu/myl/Shannon1950.pdf
+      optional: true
+    - author: Michael Collins
+      title: "Language models"
+      download: "http://www.cs.columbia.edu/~mcollins/courses/nlp2011/notes/lm.pdf"
+      url: "assets/mcollins-notes/lm.pdf"
+      optional: true
+  links:
+    - author: Stanley Chen and Joshua Goodman
+      title: "A Bit of Progress in Language Modeling"
+      url: "https://arxiv.org/abs/cs/0108005"
+      optional: true
+    - author: Ciprian Chelba, Tomas Mikolov, Mike Schuster, Qi Ge, and Thorsten Brants
+      title: "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling"
+      url: "https://arxiv.org/abs/1312.3005"
+      optional: true
+- title: "Word Vectors"
+  tag: w2v
+  include: true
+  current: false
+  notes: 
+    - title: "Word Vectors"
+      url: "assets/slides/wordvectors.pdf"
+    - title: "Singular Value Decomposition for NLP"
+      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/svd.ipynb"
+      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/svd.ipynb"
+    - title: "Training word2vec in Pytorch"
+      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/word2vec.ipynb"
+      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/word2vec.ipynb"
+    - title: "Exercise: word2vec"
+      url: "assets/notes/word2vec.html"
+  links:
+    - title: "Vector space models (Jurafsky and Martin)"
+      url: "assets/cached/slp3/vector1.pdf"
+      optional: true
+    - title: "Word2Vec (Jurafsky and Martin)"
+      url: "assets/cached/slp3/vector2.pdf"
+      optional: true
+- title: "Feedforward neural networks, Sequence Prediction, and n-gram LMs"
+  tag: ff
+  include: true
+  current: false
+  notes:
+    - title: "Sequence prediction"
+      url: "assets/slides/linearseq.pdf"
+    - title: "Feedforward neural networks"
+      url: "assets/slides/ff.pdf"
+    - title: "Multi-layer Perceptrons for n-gram LMs"
+      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/mlp.ipynb"
+      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/mlp.ipynb"
+    - title: "Intro to Feedforward networks"
+      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/ff.ipynb"
+      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/ff.ipynb"
+    - title: "Feedforward networks and XOR"
+      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/xor.ipynb"
+      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/xor.ipynb"
+  links:
+    - author: Michael Collins
+      title: "Feedforward neural networks"
+      url: "http://www.cs.columbia.edu/~mcollins/cs4705-spring2018/notes/ff.pdf"
+      download: "assets/mcollins-notes/ff.pdf"
+    - title: "Pytorch Internals"
+      author: "Edward Z. Yang"
+      url: "http://blog.ezyang.com/2019/05/pytorch-internals/"
+      optional: true
+    - title: "Exercise: Nothing but Net(works)"
+      author: Tom McCoy
+      url: "https://naclo.org/resources/problems/2017/N2017-HS.pdf"
+      optional: true
+    - title: "Efficient Backprop"
+      url: "http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf"
+      author: "LeCun, Bottou, Orr and Muller"
+      optional: true
+    - title: "What Every Computer Scientist Should Know About Floating-Point Arithmetic"
+      url: "https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html"
+      author: "D. Goldberg"
+      optional: true
+    - title: "Gradient checks and parameter updates"
+      url: "http://cs231n.github.io/neural-networks-3/"
+      author: "Andrej Karpathy"
+      optional: true
+    - title: "Revisiting Simple Neural Probabilistic Language Models"
+      url: "https://aclanthology.org/2021.naacl-main.407/"
+      author: "Simeng Sun, Mohit Iyyer"
+      optional: true
+    - author: Erik F. Tjong Kim Sang and Sabine Buchholz
+      title: "Introduction to the CoNLL-2000 Shared Task: Chunking"
+      url: "http://www.cnts.ua.ac.be/conll2000/pdf/12732tjo.pdf"
+      optional: true
+- title: "Tokenization"
+  tag: bpe 
+  include: true
+  current: false
+  notes:
+    - title: "Lecture notes"
+      url: "assets/slides/tokenization.pdf"
+    - title: "Tokenization into Sub-words with Byte-Pair Encoding"
+      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/bpe.ipynb"
+      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/bpe.ipynb"
+  links:
+    - title: "BPE tutorial at Huggingface"
+      url: "https://huggingface.co/learn/nlp-course/chapter6/5?fw=pt"
+      author: "Huggingface"
+      optional: true
+- title: "Cross Attention"
+  tag: cross_attention
+  include: true
+  current: false
+  notes:
+    - title: "Lecture notes"
+      url: "assets/slides/cross_attention.pdf"
+    - title: "Alignment Exercise"
+      author: "Kevin Knight"
+      url: "assets/slides/centauri-arcturan-align.pdf"
+    - title: "Exercise: Philae Obelisk"
+      url: "assets/notes/philae-obelisk.html"
+    - title: "Neural Machine Translation by Jointly Learning to Align and Translate"
+      author: "Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio"
+      url: "https://arxiv.org/abs/1409.0473"
+  links:
+    - author: Adam Lopez
+      title: "Word Alignment and the Expectation-Maximization Algorithm"
+      url: "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.421.5497&rep=rep1&type=pdf"
+      optional: true
+    - author: Kevin Knight
+      title: "A Statistical MT Tutorial Workbook"
+      url: http://www.isi.edu/natural-language/mt/wkbk.pdf
+      optional: true
+    - title: "Sequence to Sequence Learning with Neural Networks"
+      author: "Ilya Sutskever, Oriol Vinyals, Quoc V. Le"
+      url: "https://arxiv.org/abs/1409.3215"
+    - title: "Effective Approaches to Attention-based Neural Machine Translation"
+      author: "Minh-Thang Luong, Hieu Pham, Christopher D. Manning"
+      url: "https://arxiv.org/abs/1508.04025"
+- title: "Self Attention"
+  tag: self_attention
+  include: true
+  current: false
+  notes:
+    - title: "Lecture notes"
+      url: "assets/slides/self_attention.pdf"
+    - title: "Transformer code tutorial"
+      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/transformer.ipynb"
+      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/transformer.ipynb"
+    - title: "Attention is all you need"
+      author: "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin"
+      url: "https://arxiv.org/abs/1706.03762"
+    - title: "Transformer: A Novel Neural Network Architecture for Language Understanding"
+      author: "posted by Jakob Uszkoreit"
+      url: "https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html"
+    - title: "Stanford cs224n lecture notes on self attention"
+      author: "John Hewitt"
+      url: "https://web.stanford.edu/class/cs224n/readings/cs224n-self-attention-transformers-2023_draft.pdf"
+    - title: "The Annotated Transformer"
+      author: "Austin Huang, Suraj Subramanian, Jonathan Sum, Khalid Almubarak, and Stella Biderman. Original by Sasha Rush"
+      url: "http://nlp.seas.harvard.edu/annotated-transformer/#positional-encoding"
+    - title: "The Illustrated Transformer"
+      author: "Jay Alammar"
+      url: "http://jalammar.github.io/illustrated-transformer/"
+  links:
+    - title: "RASPy: Think like a Transformer"
+      author: "Sasha Rush"
+      url: "https://srush.github.io/raspy/"
+    - title: "Convolutional Sequence to Sequence Learning"
+      author: "Jonas Gehring, Michael Auli, David Grangier, Denis Yarats, Yann N. Dauphin"
+      url: "https://arxiv.org/abs/1705.03122"
+    - title: "Layer Normalization"
+      author: "Jimmy Lei Ba, Jamie Ryan Kiros, Geoffrey E. Hinton"
+      url: "https://arxiv.org/abs/1607.06450"
+    - title: "Dropout: A Simple Way to Prevent Neural Networks from Overfitting"
+      author: "Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, Ruslan Salakhutdinov"
+      url: "https://jmlr.org/papers/v15/srivastava14a.html"
+    - title: "Improving Transformer Optimization Through Better Initialization"
+      author: "Xiao Shi Huang, Felipe Perez, Jimmy Ba, Maksims Volkovs"
+      url: "https://proceedings.mlr.press/v119/huang20f.html"
+    - title: "A Mathematical Framework for Transformer Circuits"
+      author: "Anthropic"
+      url: "https://transformer-circuits.pub/2021/framework/index.html"
+    - title: "Analyzing Multi-Head Self-Attention: Specialized Heads Do the Heavy Lifting, the Rest Can Be Pruned"
+      author: "Elena Voita, David Talbot, Fedor Moiseev, Rico Sennrich, Ivan Titov"
+      url: "https://aclanthology.org/P19-1580/"
+- title: "Benchmark datasets"
+  tag: "benchmarks"
+  include: true
+  current: false
+  notes:
+    - title: Lecture notes
+      url: "assets/slides/benchmarks.pdf"
+    - title: "AI and the Everything in the Whole Wide World Benchmark"
+      author: "Deborah Raji, Emily Denton, Emily M. Bender, Alex Hanna, Amandalynne Paullada"
+      url: "https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/084b6fbb10729ed4da8c3d3f5a3ae7c9-Abstract-round2.html"
+    - title: "Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data"
+      author: "Emily M. Bender, Alexander Koller"
+      url: "https://aclanthology.org/2020.acl-main.463"
+  links:
+    - title: "GLUE"
+      url: "https://gluebenchmark.com"
+    - title: "SuperGLUE"
+      url: "https://super.gluebenchmark.com"
+    - title: "Swag"
+      url: "https://rowanzellers.com/swag/"
+    - title: "HellaSwag"
+      url: "https://rowanzellers.com/hellaswag/"
+    - title: "LAMBADA"
+      url: "https://zenodo.org/record/2630551"
+    - title: "BabyLM Challenge"
+      url: "https://babylm.github.io"
+    - title: "CoQA"
+      url: "https://stanfordnlp.github.io/coqa/"
+    - title: "Natural Questions"
+      url: "https://ai.google.com/research/NaturalQuestions"
+    - title: "CNN/Daily Mail Summarization Dataset"
+      url: "https://github.com/abisee/cnn-dailymail"
+- title: "Pre-training Language Models"
+  tag: "bert"
+  include: true
+  current: false
+  notes:
+    - title: Lecture notes
+      url: "assets/slides/pre_training.pdf"
+    - title: "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+      author: "Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova"
+      url: "https://arxiv.org/abs/1810.04805"
+    - title: "Improving language understanding with unsupervised learning"
+      author: "Alec Radford, Karthik Narasimhan, Tim Salimans, Ilya Sutskever"
+      url: "https://openai.com/research/language-unsupervised"
+  links:
+    - title: "Semi-supervised Sequence Learning"
+      author: "Andrew M. Dai, Quoc V. Le"
+      url: "https://arxiv.org/abs/1511.01432"
+    - title: "Deep contextualized word representations"
+      author: "Matthew E. Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark, Kenton Lee, Luke Zettlemoyer"
+      url: "https://arxiv.org/abs/1802.05365"
+    - title: "RoBERTa: A Robustly Optimized BERT Pretraining Approach"
+      author: "Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke Zettlemoyer, Veselin Stoyanov"
+      url: "https://arxiv.org/abs/1907.11692"
+    - title: "Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context"
+      author: "Zihang Dai, Zhilin Yang, Yiming Yang, Jaime Carbonell, Quoc V. Le, Ruslan Salakhutdinov"
+      url: "https://arxiv.org/abs/1901.02860"
+    - title: "ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators"
+      author: "Kevin Clark, Minh-Thang Luong, Quoc V. Le, Christopher D. Manning"
+      url: "https://arxiv.org/abs/2003.10555"
+    - title: "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"
+      author: "Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, Peter J. Liu"
+      url: "https://arxiv.org/abs/1910.10683"
+    - title: "ALBERT: A Lite BERT for Self-supervised Learning of Language Representations"
+      author: "Zhenzhong Lan, Mingda Chen, Sebastian Goodman, Kevin Gimpel, Piyush Sharma, Radu Soricut"
+      url: "https://arxiv.org/abs/1909.11942"
+- title: "Decoding"
+  tag: "decoding"
+  include: true
+  current: false
+  notes:
+    - title: "Lecture notes"
+      url: "assets/slides/decoding.pdf"
+    - title: "Intro to Generation with LLMs"
+      author: "Huggingface"
+      url: "https://huggingface.co/docs/transformers/llm_tutorial"
+    - title: "Generation Strategies"
+      author: "Huggingface"
+      url: "https://huggingface.co/docs/transformers/generation_strategies"
+    - title: "Contrastive Search"
+      author: "Tian Lan"
+      url: "https://huggingface.co/blog/introducing-csearch#62-example-two---opt"
+    - title: "Categorical Reparameterization with Gumbel-Softmax"
+      author: "Eric Jang, Shixiang Gu, Ben Poole"
+      url: "https://arxiv.org/abs/1611.01144v5"
+  links:
+    - title: "A Contrastive Framework for Neural Text Generation"
+      author: "Yixuan Su, Tian Lan, Yan Wang, Dani Yogatama, Lingpeng Kong, Nigel Collier"
+      url: "https://arxiv.org/abs/2202.06417"
+- title: "Parameter-efficient Fine Tuning"
+  tag: "peft"
+  include: true
+  current: false
+  notes:
+    - title: Lecture notes
+      url: "assets/slides/peft.pdf"
+    - title: "Prefix-Tuning: Optimizing Continuous Prompts for Generation"
+      author: "Xiang Lisa Li, Percy Liang"
+      url: "https://arxiv.org/abs/2101.00190"
+    - title: "AdaMix: Mixture-of-Adaptations for Parameter-efficient Model Tuning"
+      author: "Yaqing Wang, Sahaj Agarwal, Subhabrata Mukherjee, Xiaodong Liu, Jing Gao, Ahmed Hassan Awadallah, Jianfeng Gao"
+      url: "https://arxiv.org/abs/2205.12410"
+    - title: "LoRA: Low-Rank Adaptation of Large Language Models"
+      author: "Edward J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen"
+      url: "https://arxiv.org/abs/2106.09685"
+    - title: "Adapter methods"
+      author: "docs.adapterhub.ml"
+      url: "https://docs.adapterhub.ml/overview.html"
+  links:
+    - title: "AdapterHub: A Framework for Adapting Transformers"
+      author: "Jonas Pfeiffer, Andreas Rücklé, Clifton Poth, Aishwarya Kamath, Ivan Vulić, Sebastian Ruder, Kyunghyun Cho, Iryna Gurevych"
+      url: "https://aclanthology.org/2020.emnlp-demos.7/"
+    - title: "Parameter-Efficient Transfer Learning for NLP"
+      author: "Neil Houlsby, Andrei Giurgiu, Stanislaw Jastrzebski, Bruna Morrone, Quentin de Laroussilhe, Andrea Gesmundo, Mona Attariyan, Sylvain Gelly"
+      url: "https://arxiv.org/abs/1902.00751"
+    - title: "Simple, Scalable Adaptation for Neural Machine Translation"
+      author: "Ankur Bapna, Naveen Arivazhagan, Orhan Firat"
+      url: "https://arxiv.org/abs/1909.08478"
+    - title: "AdapterFusion: Non-Destructive Task Composition for Transfer Learning"
+      author: "Jonas Pfeiffer, Aishwarya Kamath, Andreas Rücklé, Kyunghyun Cho, Iryna Gurevych"
+      url: "https://aclanthology.org/2021.eacl-main.39/"
+    - title: "Parameter-Efficient Tuning with Special Token Adaptation"
+      author: "Xiaocong Yang, James Y. Huang, Wenxuan Zhou, Muhao Chen"
+      url: "https://aclanthology.org/2023.eacl-main.60/"
+- title: "Few-shot and in-context learning"
+  tag: "fewshot"
+  include: true
+  current: true
+  notes:
+    - title: Lecture notes
+      url: "assets/slides/fewshot.pdf"
+    - title: "Language Models are Unsupervised Multitask Learners"
+      author: "Open AI"
+      url: "https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf"
+    - title: "Language Models are Few-Shot Learners"
+      author: "Open AI"
+      url: "https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf"
+    - title: "GPT-4 Technical Report"
+      author: "Open AI"
+      url: "https://arxiv.org/abs/2303.08774"
+    - title: "Rethinking the Role of Demonstrations: What Makes In-Context Learning Work?"
+      author: "Sewon Min, Xinxi Lyu, Ari Holtzman, Mikel Artetxe, Mike Lewis, Hannaneh Hajishirzi, Luke Zettlemoyer"
+      url: "https://arxiv.org/abs/2202.12837"
+    - title: "In-Context Learning Learns Label Relationships but Is Not Conventional Learning"
+      author: "Jannik Kossen, Yarin Gal, Tom Rainforth"
+      url: "https://arxiv.org/abs/2307.12375"
+  links:
+    - title: "In-context Examples Selection for Machine Translation"
+      author: "Sweta Agrawal, Chunting Zhou, Mike Lewis, Luke Zettlemoyer, Marjan Ghazvininejad"
+      url: "https://aclanthology.org/2023.findings-acl.564/"
+    - title: "How Good Are GPT Models at Machine Translation? A Comprehensive Evaluation"
+      author: "Amr Hendy, Mohamed Abdelrehim, Amr Sharaf, Vikas Raunak, Mohamed Gabr, Hitokazu Matsushita, Young Jin Kim, Mohamed Afify, Hany Hassan Awadalla"
+      url: "https://arxiv.org/abs/2302.09210"
+- title: "Instruction tuning and Preference Optimization"
+  tag: "instruct"
+  include: true
+  current: false
+  notes:
+    - title: Lecture notes
+      url: "assets/slides/instruct_tuning.pdf"
+    - title: "Direct Preference Optimization: Your Language Model is Secretly a Reward Model"
+      author: "Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher D. Manning, Chelsea Finn"
+      url: "https://arxiv.org/abs/2305.18290"
+  links:
+    - title: "Scaling Instruction-Finetuned Language Models"
+      author: "Google"
+      url: "https://arxiv.org/abs/2210.11416"
+    - title: "Proximal Policy Optimization Algorithms"
+      author: "John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, Oleg Klimov"
+      url: "https://arxiv.org/abs/1707.06347"
+    - title: "LIMA: Less Is More for Alignment"
+      author: "Chunting Zhou, Pengfei Liu, Puxin Xu, Srini Iyer, Jiao Sun, Yuning Mao, Xuezhe Ma, Avia Efrat, Ping Yu, Lili Yu, Susan Zhang, Gargi Ghosh, Mike Lewis, Luke Zettlemoyer, Omer Levy"
+      url: "https://arxiv.org/abs/2305.11206"
+- title: "Scaling Laws for LLMs"
+  tag: "scaling"
+  include: true
+  current: false
+  notes:
+    - title: Lecture notes
+      url: "assets/slides/scaling.pdf"
+    - title: "Scaling Laws for Neural Language Models"
+      author: "Open AI"
+      url: "https://arxiv.org/abs/2001.08361"
+    - title: "Training Compute-Optimal Large Language Models"
+      author: "Google Deepmind"
+      url: "https://arxiv.org/abs/2203.15556"
+    - title: "GLaM: Efficient Scaling of Language Models with Mixture-of-Experts"
+      author: "Google"
+      url: "https://arxiv.org/abs/2112.06905"
+    - title: "PaLM: Scaling Language Modeling with Pathways"
+      author: "Google"
+      url: "https://arxiv.org/abs/2204.02311"
+  links:
+    - title: "AI and Compute"
+      author: "OpenAI"
+      url: "https://openai.com/research/ai-and-compute"
+    - title: "Scaling laws notebook"
+      author: "Andrej Karpathy"
+      url: "https://github.com/karpathy/nanoGPT/blob/master/scaling_laws.ipynb"
+    - title: "The FLOPs Calculus of Language Model Training"
+      author: "Dzmitry Bahdanau"
+      url: "https://medium.com/@dzmitrybahdanau/the-flops-calculus-of-language-model-training-3b19c1f025e4"
+    - title: "The AI Brick Wall – A Practical Limit For Scaling Dense Transformer Models, and How GPT 4 Will Break Past It"
+      author: "Dylan Patel"
+      url: "https://www.semianalysis.com/p/the-ai-brick-wall-a-practical-limit"
+- title: "Neural Network Models and Training"
+  tag: dl4nlp
+  include: false
+  current: false
+  notes:
+    - title: "Training Neural Networks I (from UMich EECS498)"
+      url: "https://web.eecs.umich.edu/~justincj/slides/eecs498/FA2020/598_FA2020_lecture10.pdf"
+      video: "https://www.youtube.com/watch?v=lGbQlr1Ts7w&list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r"
+      author: "Justin Johnson"
+    - title: "Training Neural Networks II (from UMich EECS498)"
+      url: "https://web.eecs.umich.edu/~justincj/slides/eecs498/FA2020/598_FA2020_lecture11.pdf"
+      video: "https://www.youtube.com/watch?v=WUazOtlti0g&list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r"
+      author: "Justin Johnson"
+  links:
+    - title: "An overview of gradient descent optimization algorithms"
+      author: "Sebastian Ruder"
+      url: "https://ruder.io/optimizing-gradient-descent/"
+      optional: true
+    - title: "Deep Learning for MT Winter School"
+      url: "http://dl4mt.computing.dcu.ie/"
+      optional: true
+    - title: "Visualizing Optimization Algorithms"
+      author: "Alec Radford"
+      url: "http://imgur.com/a/Hqolp"
+      optional: true
+    - title: "Learning representations by back-propagating errors"
+      author: "Rumelhart, Hinton and Williams"
+      citation: "Nature, 1986"
+      url: "https://www.iro.umontreal.ca/~vincentp/ift3395/lectures/backprop_old.pdf"
+      optional: true
+- title: "Recurrent Language models"
+  tag: nlm
+  include: false
+  current: false
+  notes:
+    - title: "Neural Language model"
+      url: "assets/slides/nlm.pdf"
+    - title: "RNN based Neural Language model (experiments)"
+      url: "assets/slides/nlm-mikolov.pdf"
+      author: Tomas Mikolov
+    - title: "RNN Language model notebook"
+      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/rnnlm.ipynb"
+      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/rnnlm.ipynb"
+  links:
+    - title: "How to implement a recurrent neural network"
+      author: "peterroelants.github.io"
+      url: "http://peterroelants.github.io/posts/rnn_implementation_part01/"
+      optional: true
+    - title: "Neural Machine Translation and Sequence-to-sequence Models: A Tutorial"
+      author: "Graham Neubig"
+      citation: "arXiv"
+      url: "https://arxiv.org/pdf/1703.01619.pdf"
+      optional: true
+    - title: "Statistical language models based on neural networks"
+      author: Tomas Mikolov
+      url: "http://www.fit.vutbr.cz/~imikolov/rnnlm/thesis.pdf"

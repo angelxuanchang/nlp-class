@@ -1,48 +1,28 @@
 ---
 layout: default
-img: mayhem
-img_link: http://en.wikipedia.org/wiki/Text_segmentation
-caption: Segmentation is harder than it seems.
-title: "Homework | Chinese Word Segmentation"
+img: 20news_tsne
+caption: "t-Distributed Stochastic Neighbor Embedding (t-SNE) is a technique that is commonly used for the visualization of high-dimensional data such as 100d or 300d word vectors."
+title: Homework 1 | Contextual Spell Checking
 active_tab: homework
 ---
 
-# Homework 1
+# Homework 1: Contextual Spell Checking
 
 <span class="text-info">Start on {{ site.hwdates[1].startdate }}</span> |
 <span class="text-warning">Due on {{ site.hwdates[1].deadline }}</span>
 
-## Homework Questions 1: Language models and text classification
+### Getting Started
 
-<span class="text-info">Out on {{ site.hwdates[1].startdate }}</span> 
-{% if site.hwdates[1].coursys %}
-<span>Posted on [Coursys]({{ site.hwdates[1].coursys }}).</span> 
-{% endif %}
-
-# Programming Homework 1: Chinese Word Segmentation
-
-
-## Getting Started
-
-If you have already cloned my homework repository `nlp-class-hw` for
-Homework 0 then go into that directory and update the directory:
-
-    git pull origin/master
-    cd nlp-class-hw/zhsegment
-
-If you don't have that directory anymore then simply clone the
-repository again:
+Get started:
 
     git clone https://github.com/angelxuanchang/nlp-class-hw.git
+    cd nlp-class-hw/spellchk
 
-Clone your own repository from GitLab if you haven’t done it already:
+Clone your repository if you haven’t done it already:
 
     git clone git@csil-git1.cs.surrey.sfu.ca:USER/nlpclass-{{ site.semcode }}-g-GROUP.git
 
-Note that the `USER` above is the SFU username of the person in
-your group that set up the GitLab repository.
-
-Then copy over the contents of the `zhsegment` directory into your
+Then copy over the contents of the `spellchk` directory into your
 `hw1` directory in your repository.
 
 Set up the virtual environment:
@@ -57,40 +37,63 @@ command to get started with your development for the homework:
 
     source venv/bin/activate
 
-## Background
+### Background
 
-Word segmentation is the task of restoring missing word boundaries.
-This homework is on Chinese word segmentation, a language in which
-word boundaries are not usually provided. For instance here is an
-example Chinese sentence without word boundaries:
+Given a sentence with a typo in it:
 
-    北京大学生比赛
+    it will put your maind into non-stop learning.
 
-This can be segmented a few different ways and one segmentation
-leads to a particular meaning (indicated by the English translation
-below):
+The task is to correct the typo word `maind` to the most plausible
+substitution, e.g.:
 
-    北京 大学生 比赛
-    Beijing student competition
+    it will put your mind into non-stop learning.
 
-A different segmentation leads to a different meaning (and translation):
+There are many ways to solve this problem but we are going
+to use a large language model to solve this task. We will
+take the typo word and replace it with a `[MASK]` token
+and ask the language model to suggest the most plausible
+token it could be. Because the language model has been
+trained on a lot of English data, it is able to capture
+the semantic meaning of what should be in the `[MASK]`
+position and use that to predict a token that fits in
+this sentence.
 
-    北京大学 生 比赛
-    Peking University Health Competition
+Since this task is part of a setup homework, we will
+simplify the task and include the indices of the typo
+words in the sentence, so the words to be replaced
+with the correct words have been provided to you.
 
-We will be using _training data_ collected from Chinese sentences
-that have been segmented by human experts.  We will run the word
-segmentation program that you will write for this homework on _test
-data_ that will be automatically evaluated against a reference
-segmentation.
+The input contains a comma separated list of token
+indices followed by a tab character and followed by
+the sentence with at least one typo in it.
 
-## Default solution
+Here is an example input:
+
+    0,3     thier house was father away from my place
+
+The typo words are in position 0 (`thier`) and 3 (`father`). Notice
+how the typo words can be found in a dictionary, so just using a
+number of edits away from a dictionary word is not an approach that
+will work for this task.
+
+The input will be a file of such inputs with locations of the
+typos and the sentence. The output should also include the
+locations indices:
+
+    0,3     their house was farther away from my place
+
+We have provided a default solution for this task and all the
+mechanisms for running your solution on two sets of data: dev and
+test data. The answers for dev data are provided, but the answers
+for test data are not distributed.
+
+### Default solution
 
 The default solution is provided in `default.py`. To use the default
 as your solution:
 
-    cp default.py answer/zhsegment.py
-    cp default.ipynb answer/zhsegment.ipynb
+    cp answer/default.py answer/spellchk.py
+    cp answer/default.ipynb answer/spellchk.ipynb
     python3 zipout.py
     python3 check.py
 
@@ -98,180 +101,69 @@ Make sure that the command line options are kept as they are in
 `default.py`. You can add to them but you must not delete any
 command line options that exist in `default.py`.
 
-Submitting the default solution without modification will get you
-zero marks.
+The default solution uses a large language model from the `transformers`
+library by [huggingface](https://huggingface.co) and a mask token
+replacement task which is a task used to train the language model
+on Wikipedia and the Books corpus.
 
-The default solution simply identifies each Chinese character as a
-word. So if the input is a sequence of characters (without word
-boundaries): $$c_0, \ldots, c_n$$. Then the output is simply a
-sequence of words $$w_0 w_1 \ldots w_n$$ where $$w_i == c_i$$.
+Here is how the default solution uses the recommended language
+model to solve this task:
 
-The score reported is [F-score](http://en.wikipedia.org/wiki/F1_score) which combines
-[precision and recall](http://en.wikipedia.org/wiki/Precision_and_recall) into a single score.
-F-score is explained further below.
+    from transformers import pipeline
+    fill_mask = pipeline('fill-mask', model='distilbert-base-uncased')
+    mask = fill_mask.tokenizer.mask_token
+    print(fill_mask(f"it will put your {mask} into non-stop learning.")[0])
 
-## The Challenge
+This will produce the output:
 
-Your task is to _improve the F-score as much as possible_ which is explained
-in detail in the "Check your performance" section below. To help you do
-this the `data` directory contains two files:
+    {
+        'score': 0.11389569193124771,
+        'token': 2568,
+        'token_str': 'mind',
+        'sequence': 'it will put your mind into non - stop learning.'
+    }
 
-    count_1w.txt : unigram counts of Chinese words
-    count_2w.txt : bigram counts of Chinese word pairs
+In this case, the output is correct, but the most plausible
+substitution is not always the best candidate for a correction.
 
-You can also optionally use the data used to create the above count files which is in `train.txt.bz2` in the `data` directory.
 
-<!-- You can also use a larger dataset provided to you via this link: [wseg_simplified_cn.txt.bz2](https://vault.sfu.ca/index.php/s/ghsaEeqtvV5IYLF) which contains 1M Chinese sentences with word segments (bzip2 compressed). This link is only available for SFU students. You must not give a copy of this data set to **anybody**. 
- -->
-## Data files
+<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i>
+Use the <code>distilbert-base-uncased</code> language model for this homework.
+</div>
+
+### The Challenge
+
+Your task is to improve the accuracy on this task as much as possible.
+The definition of accuracy is provided below.  You cannot use any
+external data sources. You can use a Python 3 library that provides
+some helper functions but not any spelling correction modules or
+models.
+
+You can get a much higher accuracy by changing the function
+`select_correction` with 1-2 lines to take into account something
+that isn't taken into account by the default solution. Even
+though, it is 1-2 lines, the solution may not be obvious or
+trivial.
+
+You should approach this challenge based on a careful examination
+of the source code of the default solution and the output of the
+default solution on the various inputs.
+
+### Data files
 
 The data files provided are:
 
-* `data/count_1w.txt` -- unigram word counts (from segmented Chinese data)
-* `data/count_2w.txt` -- bigram word counts (from segmented Chinese data)
-* `data/input` -- input files `dev.txt` and `test.txt`
-* `data/reference/dev.out` -- the reference output for the `dev.txt` input file
+* `data/input` -- input files `dev.tsv` and `test.tsv`
+* `data/reference/dev.out` -- the reference output for the `dev.tsv` input file
 
-## Baseline 
-
-The baseline method is what you should implement first before you
-explore additional improvements to improve the F-score. You **must**
-implement the iterative approach shown below to replace the recursive
-approach with memoization.
-
-A simple baseline uses a unigram language model over Chinese words.
-The input is a sequence of Chinese characters (without word
-boundaries): $$c_0, \ldots, c_n$$.
-
-Let us define a word as a sequence of characters: $$w_i^j$$ is
-a word that spans from character $$i$$ to character $$j$$. So
-one possible word sequence is $$w_0^3 w_4^{10} w_{11}^n$$. We
-can score this sequence using unigram probabilities.
-
-<p>$$\arg\max_{w_0^i, w_{i+1}^j, \ldots, w_{n-k}^n} P_w(w_0^i) \times P_w(w_{i+1}^j) \times \ldots \times P_w(w_{n-k}^n)$$</p>
-
-The unigram probability $$P_w$$ can be constructed using the data
-in `count_1w.txt`. The model is simple, an unigram model, but the
-search is over all possible ways to form word sequences for the
-input sequence of characters. The argmax over all such sequences
-will give you the baseline system. The $$\arg\max$$ above can be computed
-using the following recursive search over $$segment(c_0, \ldots, c_n)$$:
-
-<p>$$\begin{eqnarray}
-segment(c_i, \ldots, c_j) &=& \arg\max_{\forall k <= L} P_w(w_i^k) \times segment(c_{k+1}, \ldots, c_j) \\
-segment(\emptyset) &=& 1.0
-\end{eqnarray}$$</p>
-
-where $$L = min(maxlen, j)$$ in order to avoid considering segmentations
-of very long words which are going to be very unlikely.
-$$segment(\emptyset)$$ is the base case of the recursion: an input
-of length zero, which results in a segmentation of length zero with
-probability $$1.0$$.
-
-One could [memoize](http://en.wikipedia.org/wiki/Memoization)
-$$segment$$ in order to avoid the slow exploration of the exponentially
-many segmentations.  However Chinese sentences (especially in the
-newswire domain) are very long in terms of number of characters. A
-recursive approach is not computationally efficient enough to tackle
-real-world data.  An alternative is to do this iteratively. The
-following pseudo-code illustrates how to find the argmax iteratively.
-
-NLP is not just about better machine learning models. It also
-involves the use of clever algorithms for training and inference
-that allow NLP-based applications to work on real-world data. In
-this homework, we introduce a dynamic programming approach that is
-widely used in many NLP tasks (not just segmentation, but also
-parsing, etc.). The goal of this homework is to show how dynamic
-programming combined with a probability model can enable faster and
-memory efficient inference.
-
-### Algorithm: Iterative segmenter
-
----
-**## Data Structures ##**
-
-`input`
-: the input sequence of characters
-
-`chart`
-: the dynamic programming table to store the argmax for every prefix of `input`
-: indexed by character position in `input`
-
-`Entry`
-: each entry in the `chart` has four components: Entry(`word`, `start-position`, `log-probability`, `back-pointer`)
-: the `back-pointer` in each `entry` links it to a previous entry that it extends
-
-`heap`
-: a list or priority queue containing the entries to be expanded, sorted on `start-position` or `log-probability`
-{: .dl-horizontal}
-
----
-**## Initialize the `heap` ##**
-
-* for each `word` that matches `input` at position 0    
-    * insert Entry(`word`, 0, $$\log P_w$$(`word`), $$\emptyset$$) into `heap`
-{: .list-unstyled}
-
-**## Iteratively fill in `chart[i]` for all `i` ##**
-
-* while `heap` is nonempty:
-    * `entry` = top entry in the `heap`
-    * get the `endindex` based on the length of the word in `entry`
-    * if `chart`[`endindex`] has a previous entry, `preventry`
-        * if `entry` has a higher probability than `preventry`:
-            * `chart`[`endindex`] = `entry`
-        * if `entry` has a lower or equal probability than `preventry`:
-            * continue  **## we have already found a good segmentation until `endindex` ##**
-    * else 
-        * `chart`[`endindex`] = `entry`
-    * for each `newword` that matches `input` starting at position `endindex`+1
-        * `newentry` = Entry(`newword`, `endindex`+1, `entry`.`log-probability` + $$\log P_w$$(`newword`), `entry`)
-        * if `newentry` does not exist in `heap`:
-            * insert `newentry` into `heap`
-{: .list-unstyled}
-
-**## Get the best segmentation ##**
-
-* `finalindex` is the length of `input`
-* `finalentry` = `chart`[`finalindex`] 
-* The best segmentation starts from `finalentry` and follows the `back-pointer` recursively until the first word
-{: .list-unstyled}
----
-
-It might help to examine [an example
-run](https://gist.github.com/anoopsarkar/da67c6566a7268bb53b7) of
-the above pseudo-code on a particular input. To keep the example
-short, the segmenter in the example assumes that unknown words can
-only be on length one. You will get a better F-score if you allow
-unknown words of arbitrary length (with the appropriate smoothed
-probability score).
-
-## Your Task
-
-Developing a segmenter using the above pseudo-code that uses unigram probabilities is
-good enough to get close to the baseline system. But getting closer to the oracle
-score will be a more interesting challenge. In addition to getting a good score
-you **must** experiment with at least one extension of the
-baseline or an additional model of your
-choice and document your work. Here are some ideas:
-
-* Use the bigram model to score word segmentation candidates.
-* Do better _smoothing_ of the unigram and bigram probability models.
-* More advanced methods[^1]
-
-[^1]: If you are ambitious, you can use more advanced machine learning methods such as [global linear models](http://anoopsarkar.github.io/papers/pdf/cnwseg-ai2009.pdf) or [neural networks](http://aclweb.org/anthology/P/P16/P16-1039.pdf) or [bidirectional RNNs](https://arxiv.org/abs/1808.06511) or [transition-based neural language models](http://aclweb.org/anthology/P/P16/P16-1040.pdf). In particular you might want to pay attention to the error analysis for out of vocabulary words in these papers. Even without fancy neural networks the same analysis might help you improve your performance.
-
-But the sky's the limit! You are welcome to design your own model, as long 
-as you have implemented the Baseline model first.
-
-## Required files
+### Required files
 
 You must create the following files:
 
-* `answer/zhsegment.py` -- this is your solution to the homework. start by copying `default.py` as explained below.
-* `answer/zhsegment.ipynb` -- this is the iPython notebook that will be your write-up for the homework.
+* `answer/spellchk.py` -- this is your solution to the homework. start by copying `default.py` as explained below.
+* `answer/spellchk.ipynb` -- this is the Python notebook that will be your write-up for the homework.
 
-## Run your solution on the data files
+### Run your solution on the data files
 
 To create the `output.zip` file for upload to {{ site.hwsubmit.name }} do:
 
@@ -281,21 +173,15 @@ For more options:
 
     python3 zipout.py -h
 
-## Check your performance
+### Check your accuracy
 
-To check your performance on the dev set:
+After you have run `zipout.py` you can check your accuracy on the
+dev set:
 
     python3 check.py
 
-The score reported is [F-score](http://en.wikipedia.org/wiki/F1_score) which combines
-[precision and recall](http://en.wikipedia.org/wiki/Precision_and_recall) into a single score.
-
-For this homework, _tp_ (true positives) is defined as the words that were found in the output that
-exist in the reference. If a word occurs in the output but not in reference it is counted as a _fp_
-(false positive) and vice versa is counted as a _fn_ (false negative).
-Precision $$p$$ is defined as $$\frac{tp}{tp+fp}$$. Recall $$r$$ is defined as $$\frac{tp}{tp+fn}$$.
-
-F-score is defined as $$2 \cdot \frac{p \cdot r}{p + r}$$.
+The score reported is the accuracy of getting the typo word corrected
+to the right token in the reference file.
 
 For more options:
 
@@ -305,31 +191,31 @@ In particular use the log file to check your output evaluation:
 
     python3 check.py -l log
 
-The performance on `data/input/test.txt` will not be shown.  We will
+The accuracy on `data/input/test.tsv` will not be shown.  We will
 evaluate your output on the test input after the submission deadline.
 
-The default solution gets a very poor F-score on the dev and test set:
+First run `zipout.py` to get the `output.zip` file.
+
+    $ python3 zipout.py -r default.py
+    Warning: output already exists. Existing files will be over-written.
+    running on input data/input/dev.tsv
+    running on input data/input/test.tsv
+    output.zip created
+
+Once you have `output.zip` you can run the scorer. The default
+solution gets a very poor accuracy on the dev and test set:
 
     $ python3 check.py
-    dev.out score: 0.27
-    test.out score: 0.33
+    test.out score: 0.22
+    dev.out score: 0.23
 
-Implementing a greedy search gets an F-score of 0.66 on dev
-while the Baseline method with unigram counts gets 0.89 on
-the dev set.
-
-Implementing the Baseline method augmented with bigram counts 
-as a bigram model $$P(w_i \mid w_{i-1})$$ should give you an
-improved F-score:
+It is fairly easy to reach a higher score with some fairly minor
+changes to the default solution.
 
     $ python3 check.py
-    dev.out score: 0.90
-    test.out score: 0.77
+    test.out score: 0.70
+    dev.out score: 0.68
 
-By careful analysis of the output (even without any knowledge of
-the Chinese language) should give you some further ideas to consolidate
-certain types of characters into words based on regularity how they
-combine into words in the training set.
 
 ## Preparing your report
 
@@ -350,14 +236,14 @@ Your report should be submitted as `report.pdf`  Using LaTex for preparing your 
 Once you are done with your homework submit all the relevant materials
 to {{ site.hwsubmit.name }} for evaluation.
 
-### Create output.zip
+#### Create output.zip
 
-Once you have a working solution in `answer/zhsegment.py` create
-the `output.zip` for upload to {{ site.hwsubmit.name }} using:
+Once you have a working solution in `answer/spellchk.py` create
+the `output.zip` for upload to Coursys using:
 
     python3 zipout.py
 
-### Create source.zip
+#### Create source.zip
 
 To create the `source.zip` file for upload to {{ site.hwsubmit.name }} do:
 
@@ -365,14 +251,11 @@ To create the `source.zip` file for upload to {{ site.hwsubmit.name }} do:
 
 You must have the following files or `zipsrc.py` will complain about it:
 
-* `answer/zhsegment.py` -- this is your solution to the homework. start by copying `default.py` as explained below.
-* `answer/zhsegment.ipynb` -- this is the iPython notebook that will be your write-up for the homework.
+* `answer/spellchk.py` -- this is your solution to the homework. start by copying `default.py` as explained below.
+* `answer/spellchk.ipynb` -- this is the Python notebook that will be your write-up for the homework.
 
-In addition, each group member should write down a short description of what they
-did for this homework in `answer/README.username`.
-
-Make sure that your have updated your GitLab repository with your submission source code.
-
+In addition, each group member should write down a short description
+of what they did for this homework in the Python notebook.
 
 ### Upload to {{ site.hwsubmit.name }}
 
@@ -380,7 +263,7 @@ Go to `Programming Homework 1` on {{ site.hwsubmit.name }} and do a group submis
 
 * Upload `output.zip` and `source.zip` and `report.pdf`
 * Make sure your `source.zip` matches your Gitlab repository.
-* Make sure you have documented your approach in `answer/zhsegment.ipynb`.
+* Make sure you have documented your approach in `answer/spellchk.ipynb`.
 * Make sure each member of your group has documented their contribution to this homework in `answer/README.username` where `username` is your CSIL/GitLab username.
 
 ## Grading
@@ -395,20 +278,22 @@ The grading is split up into the following components:
 * Check if each group member has a `answer/README.username`.
 * Make sure that your have updated your GitLab repository with your submission source code.
 
-Your F-score should be equal to or greater than the score listed for the corresponding marks.
+Your accuracy should be equal to or greater than the scores listed
+for dev and test data to obtain the corresponding marks (dev and
+test sets are marked separately).
 
-| **F-score(dev)** | **F-score(test)** | **Marks** | **Grade** |
-| 27 | 33 | 0   | F  |
-| 50 | 45 | 55  | D  |
-| 55 | 50 | 60  | C- |
-| 60 | 55 | 65  | C  |
-| 65 | 60 | 70  | C+ |
-| 70 | 65 | 75  | B- |
-| 75 | 70 | 80  | B  |
-| 80 | 73 | 85  | B+ |
-| 85 | 76 | 90  | A- |
-| 90 | 78 | 95  | A  |
-| 92 | 80 | 100 | A+ |
+| **dev accuracy** | **test accuracy** | **Marks** | **Grade** |
+| .00 | .00 | 0   | F  |
+| .23 | .22 | 55  | D  |
+| .30 | .28 | 60  | C- |
+| .36 | .34 | 65  | C  |
+| .42 | .40 | 70  | C+ |
+| .48 | .46 | 75  | B- |
+| .54 | .52 | 80  | B  |
+| .60 | .58 | 85  | B+ |
+| .65 | .64 | 90  | A- |
+| .68 | .70 | 95  | A  |
+| .76 | .78 | 100 | A+ |
 {: .table}
 
 

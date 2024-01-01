@@ -7,7 +7,7 @@ title: Course Information
 active_tab: main_page 
 ---
 
-## Natural Language Processing <span class="text-muted">Spring 2023</span>
+## Natural Language Processing <span class="text-muted">{{ site.semester }}</span>
 
 Imagine a world where you can pick up a phone and talk in English,
 while at the other end of the line your words are [spoken in
@@ -46,14 +46,15 @@ terms of its analysis and the learning of language from observations.
 * Instructor office hours: {{ site.officehour }} 
 * <b>No emails</b> to the TAs and strictly emails about personal matters to the instructor
 * Use only SFU email address and use either `cmpt413:` or`cmpt713:` as subject prefix
+* Always post to the [{{site.forumname}}]({{ site.forum }}) instead of email. If you have to email use your SFU email address only.
 
 #### Time and place
 Course lectures will be held in person at the Burnaby campus
-* Wed 1:00PM - 2:20PM AQ3159
-* Thu 1:00PM - 2:20PM AQ3159
+* Mon 12:30-2:20pm [SWH10041](http://www.sfu.ca/campuses/maps-and-directions/burnaby-map.html)
+* Wed 12:30-1:20pm [SWH10041](http://www.sfu.ca/campuses/maps-and-directions/burnaby-map.html)
 * Last day of classes: {{ site.lastday }}
 
-Links to course material will be made available on [Canvas]({{ site.canvas }}).
+Links to course material will be made available on [Coursys]({{ site.coursys }}).
 
 <!-- #### Calendar
 * [Subscribe]({{ site.calendar }})
@@ -77,7 +78,7 @@ There will be optional TA led tutorials that will help review these topics.
 
 
 #### Grading
-* Submit homework source code and check your grades on [Canvas]({{ site.canvas }})
+* Submit homework source code and check your grades on [Coursys]({{ site.coursys }})
 * Programming setup and diagnostic homework (5%)
   * HW0 due on {{ site.hwdates[0].deadline }} 
 * Four homeworks (64% total - 16% each, with 8% for programming and 8% for question answering). Due dates:

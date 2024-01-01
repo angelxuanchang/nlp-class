@@ -69,7 +69,7 @@ In some cases you can also extend your homework code to produce innovative proje
 
 ### Information Extraction
 
-* [Drug-Drug Interaction Extraction](http://labda.inf.uc3m.es/DrugDDI/DrugDDI.html)
+* [Drug-Drug Interaction Extraction](https://github.com/zha204/ddi-corpus-database)
 * [Web named entities](http://nlp.uned.es/weps/weps-3/data)
 * [Twitter sequence prediction tasks](http://www.cs.cmu.edu/~ark/TweetNLP/)
 * [WNUT Emerging and Rare entity recognition shared task](http://noisy-text.github.io/2017/emerging-rare-entities.html)
@@ -220,16 +220,19 @@ A good structure for the milestone report will include the following sections.  
 
 Grading of the milestone will be based on the progress and the quality of writing.  
 
-Go to [Canvas]({{ site.canvas }}). Under the `Project Milestone`
-assignment submit your `milestone.pdf`
+<!-- Go to [Canvas]({{ site.canvas }}). Under the `Project Milestone`
+assignment submit your `milestone.pdf` -->
 
-<!-- Go to [Coursys]({{ site.coursys }}). Under the `Project Milestone`
+Go to [Coursys]({{ site.coursys }}). Under the `Project Milestone`
 activity submit the following files:
 
 * `milestone.pdf`: this is the project milestone report
 
-Optionally, you can also upload `source.zip` and `output.zip` for your project.  These will not be graded. -->
+Optionally, you can also upload `source.zip` and `output.zip` for your project.  These will not be graded.
 
+<!-- * Final Project Poster Session:
+    * Time: {{ site.hwdates[5].deadline }} {{ site.hwdates[5].time }}. 
+    * Location: {{ site.hwdates[5].location }} -->
 
 ### Project Write-up (due on {{ site.hwdates[5].deadline }})
 

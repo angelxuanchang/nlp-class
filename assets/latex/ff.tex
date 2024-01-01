@@ -195,6 +195,21 @@ non-differentiable or undefined if $z = 0$ \\
 \end{block}
 \end{frame}
 
+\begin{frame}{The GeLU Transfer Function}
+\begin{block}{Gaussian Error Linear Unit (GELU):}
+\[ g(z) = \{ \frac{z}{2} (1 + (\sqrt{\frac{2}{\pi}} \times (z + 0.044715 \times z^3))) \} \]
+or
+\[ g(z) = \{ \frac{z}{2} (1 + \textrm{tanh}(\sqrt{\frac{2}{\pi}} \times (z + 0.044715 \times z^3))) \} \]
+Transfer function of choice for Transformer language models.
+\end{block}
+
+\pause
+\begin{center}
+\includegraphics[scale=0.25]{figures/ff/gelu.png}
+\end{center}
+\end{frame}
+
+
 \begin{frame}{Desperately Seeking Transfer Functions}
 \framesubtitle{from \cite{Ramachandran2017}}
 \begin{block}{Enumeration of non-linear functions}
@@ -288,6 +303,9 @@ And similarly for $b$:
 \begin{block}{A single layer feedforward model consists of:}
 \begin{itemize}[<+->]
 \item An integer $d$ specifying the input dimension. Each input to the network is $x \in \mathbb{R}^d$
+  \begin{itemize}
+  \item Think of it as a $d$ dimensional word embedding
+  \end{itemize}
 \item An integer $m$ specifying the number of hidden units
 \item A parameter matrix $W \in \mathbb{R}^{m \times d}$. The vector $W_k \in \mathbb{R}^d$ for $1 \leq k \leq m$ is the $k$th row of $W$
 \item A vector $b \in \mathbb{R}^d$ of bias parameters

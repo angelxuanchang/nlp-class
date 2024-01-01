@@ -6,8 +6,9 @@ Forked from http://anoopsarkar.github.io/nlp-class which was cloned from https:/
 
 ## Installation
 
+    sudo gem update --system 3.2.3
     sudo gem install jekyll bundler
-    sudo bundle install
+    bundle install
 
 ## Deploy
 
