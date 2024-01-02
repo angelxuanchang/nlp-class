@@ -1,24 +1,27 @@
 exclude: ['README.md', 'assets/latex/', 'archive', 'venv']
 timezone: US/Pacific
 markdown: kramdown
-coursys: "https://coursys.sfu.ca/2023sp-cmpt-713-g2/"
-forumname: Canvas Discussion Forum
-forum: "https://canvas.sfu.ca/courses/75055/discussion_topics"
-canvas: "https://canvas.sfu.ca/courses/75055"
+coursys: "https://coursys.sfu.ca/2024sp-cmpt-413-x1/"
+forumname: Coursys Discussion Forum
+forum: "https://coursys.sfu.ca/2024sp-cmpt-413-x1/forum/"
+canvas: "none"
 gradescope: "https://www.gradescope.ca/courses/7736"
-semcode: 1231
+semcode: 1241
 calendar: "https://calendar.google.com/calendar/ical/qgs97od9ef8t1582k2rqomv5ho%40group.calendar.google.com/public/basic.ics"
-lastday: "Apr 11, 2023"
+lastday: "Apr 10, 2024"
 midterm: "None"
 instructor: angelx
 officehour: "Wed 3pm-4pm"
 tas:
-  - name: "Yilong (Jetic) Gu"
-    email: jeticg
-    officehour: "Tue 3-4pm, TASC 9404"
-  - name: "Ruiqi Wang"
-    email: rwa135
-    officehour: "Mon 3-4pm, Zoom"
+  - name: "Yiming Zhang"
+    email: yza440
+    officehour: "TBD"
+  - name: "ZeMing Gong"
+    email: zmgong
+    officehour: "TBD"
+  - name: "Xiaohao Sun"
+    email: xsa55
+    officehour: "TBD"
 tutorials:
   - tutorial: "0"
     title: "Review of a) probability, linear algebra and calculus and b) useful python/unix commands"
@@ -42,38 +45,40 @@ tutorials:
     title: "Training/debugging networks and running experiments"
   - tutorial: "9"
     title: "Using Transformers in pytorch"
+  - tutorial: "10"
+    title: "Prompting large language models"
 group:
   minsize: 2
   maxsize: 3
 hwdates:
   - hw: "0"
-    startdate: "Jan 4, 2022"
-    deadline: "Jan 11, 2022"
+    startdate: "Jan 8, 2024"
+    deadline: "Jan 17, 2024"
     canvas: https://canvas.sfu.ca/courses/75055/assignments/831465
   - hw: "1"
-    startdate: "Jan 11, 2023"
-    deadline: "Jan 25, 2023"
+    startdate: "Jan 17, 2024"
+    deadline: "Jan 31, 2024"
     canvas: https://canvas.sfu.ca/courses/75055/assignments/831466
   - hw: "2"
-    startdate: "Jan 25, 2023"
-    deadline: "Feb 8, 2023"
+    startdate: "Jan 31, 2024"
+    deadline: "Feb 14, 2024"
     canvas: https://canvas.sfu.ca/courses/75055/assignments/831467
   - hw: "3"
-    startdate: "Feb 8, 2023"
-    deadline: "Feb 22, 2023"
+    startdate: "Feb 14, 2024"
+    deadline: "Feb 28, 2024"
     canvas: https://canvas.sfu.ca/courses/75055/assignments/831468
   - hw: "4"
-    startdate: "Feb 22, 2023"
-    deadline: "Mar  8, 2023"
+    startdate: "Feb 28, 2024"
+    deadline: "Mar  13, 2024"
     canvas: https://canvas.sfu.ca/courses/75055/assignments/831469
   - hw: "project"
-    startdate: "Feb 1, 2023"
-    deadline: "Apr 12, 2023"
+    startdate: "Feb 1, 2024"
+    deadline: "Apr 10, 2024"
     time: "Poster session: ???"
     location: "TBD"
-    abstract: "Feb 22, 2023"
-    proposal: "Mar 2, 2023"
-    milestone: "Mar 23, 2023"
-    poster: "Video due on Apr 6, 2023"
+    abstract: "Feb 15, 2024"
+    proposal: "Feb 29, 2024"
+    milestone: "Mar 21, 2024"
+    poster: "Video due on Apr 6, 2024"
 hwsubmit:
   name: "Canvas"

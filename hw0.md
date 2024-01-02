@@ -12,7 +12,7 @@ active_tab: homework
 <span class="text-info">Start on {{ site.hwdates[0].startdate }}</span> |
 <span class="text-warning">Due on {{ site.hwdates[0].deadline }}</span>
 
-## Homework Questions 0: Probablity, linear algebra, and calculus
+## Homework Questions 0: Probability, linear algebra, and calculus
 
 <span class="text-info">Out on {{ site.hwdates[0].startdate }}.</span> 
 {% if site.hwdates[0].coursys %}
@@ -41,11 +41,10 @@ Make sure there is no whitespace in your group name or anything that might cause
 
 Please DO NOT call your group `group` or `nlp-group` or `cmpt713` or `none`.
 
-<-- Go to the [{{site.forumname}}]({{ site.forum }}) and select `[Activity Digest]`.
+Go to the [{{site.forumname}}]({{ site.forum }}) and select `[Activity Digest]`.
 Change the `Digest Email Frequency:` to a setting that send you email notifications, like so:
 
 ![Coursys Subscription](assets/img/coursys_subscription.png)
--->
 
 ## Setup Git Repository
 
