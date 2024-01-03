@@ -1,0 +1,247 @@
+- week: 
+  num: 0
+  dates:
+  - date: "1/4" 
+    title: "Introduction"
+    lecture: "intro"
+    recorded: true
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L1-intro.pdf"
+    hwout: "0"
+  - date: "1/5" 
+    title: "Language Modeling"
+    lecture: "lm"
+    recorded: true
+    leclinks:
+      - name: "LM slides"
+        url: "assets/lecture-slides/L2-language-models.pdf"
+  - date: "1/6" 
+    tutorial: 0 
+- week:
+  num: 1
+  dates:
+  - date: "1/9"
+    tutorial: 1     
+  - date: "1/11" 
+    title: "Text Classification (Naive Bayes and Evaluation)"
+    lecture: "classifiers"
+    leclinks:
+      - name: "NB slides"
+        url: "assets/lecture-slides/L3-classification-naivebayes.pdf"
+      - name: "Evaluation slides"
+        url: "assets/lecture-slides/L3-classification-evaluation.pdf"
+    readings: ["jm4"]
+    hwdue: "0"
+    hwout: "1"
+  - date: "1/12" 
+    title: "Text Classification (Logistic regression)"
+    lecture: "classifiers"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L4-classification-logistic.pdf"
+    readings: [ "jm5"]
+- week: 
+  num: 2
+  dates:
+  - date: "1/16" 
+    tutorial: 2
+  - date: "1/18" 
+    title: "Text Classification (Neural Networks)"
+    lecture: "ff"
+    leclinks:
+      - name: "NN slides 1"
+        url: "assets/lecture-slides/L5-neural-nets-1.pdf"
+  - date: "1/19"
+    title: "Text Classification (Neural Networks)"
+    lecture: "ff"
+    leclinks:
+      - name: "NN slides 2"
+        url: "assets/lecture-slides/L6-neural-nets-2.pdf"
+  - date: "1/20" 
+    tutorial: 3
+- week: 
+  num: 3
+  dates:
+  - date: "1/23" 
+    tutorial: 4
+  - date: "1/25" 
+    title: "Word Vectors (count-based, PPMI)"
+    lecture: "wordvec"
+    leclinks:
+      - name: "WV slides 1"
+        url: "assets/lecture-slides/L7-wordvectors.pdf"
+    hwdue: "1"
+    hwout: "2"
+  - date: "1/26" 
+    title: "Word Vectors (word2vec)"
+    lecture: "wordvec"
+    leclinks:
+      - name: "WV slides 2"
+        url: "assets/lecture-slides/L8-word2vec.pdf"
+  - date: "1/27" 
+    tutorial: 5
+- week: 
+  num: 4
+  dates:
+  - date: "1/30" 
+    tutorial: 6
+  - date: "2/1" 
+    title: "Sequence Modeling (HMMs)"
+    lecture: "hmm"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L9-sequence-modeling.pdf"
+  - date: "2/2" 
+    title: "HMM Decoding"
+    lecture: "hmm"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L9-sequence-modeling.pdf"
+- week: 
+  num: 5
+  dates:
+  - date: "2/6" 
+    tutorial: 7
+  - date: "2/8" 
+    title: "Neural Sequence Modeling (RNNs)"
+    lecture: "rnn"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L10-RNN.pdf"
+    hwdue: "2"
+    hwout: "3"
+  - date: "2/9" 
+    title: "Neural Sequence Modeling (LSTM/GRUs)"
+    lecture: "rnn"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L11-LSTM-GRU.pdf"
+- week: 
+  num: 6
+  dates:
+  - date: "2/13" 
+    tutorial: 8
+  - date: "2/15" 
+    title: "Project overviewer and Sequence-to-Sequence models"
+    lecture: "seq2seq"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L12-sequence-generation.pdf"
+  - date: "2/16" 
+    title: "Attention for seq2seq models"
+    lecture: "seq2seq"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L12-sequence-generation.pdf"
+  - date: "2/17" 
+    project: "Project title and abstract"
+- week: 
+  num: 7
+  dates:
+  - date: "2/22" 
+    noclass: true
+    title: "No class - Reading break"
+  - date: "2/23" 
+    noclass: true
+    title: "No class - Reading break"
+- week: 
+  num: 8
+  dates:
+  - date: "2/27" 
+    tutorial: 9
+    hwdue: "3"
+    hwout: "4"
+  - date: "3/1" 
+    title: "Transformers"
+    lecture: "transformers"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L13-transformers.pdf"
+  - date: "3/2" 
+    title: "Contextual Word Embeddings"
+    lecture: "cwe"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L14-contextualized-word-embeddings.pdf"
+    project: "Project proposal"
+- week: 
+  num: 9
+  dates:
+  - date: "3/8" 
+    title: "Constituency Parsing"
+    lecture: "cfg"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L15-constituency-parsing.pdf"
+  - date: "3/9" 
+    title: "Dependency parsing"
+    lecture: "dependency"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L16-dependency-parsing.pdf"
+- week: 
+  num: 10
+  dates:
+  - date: "3/13"
+    hwdue: "4"
+  - date: "3/15" 
+    title: "Final project tips, model debugging and analysis"
+    lecture: "analysis"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L17-project-tips-analysis.pdf"
+  - date: "3/16" 
+    title: "Question Answering"
+    lecture: "qa"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L18-question-answering.pdf"
+- week: 
+  num: 11
+  dates:
+  - date: "3/22" 
+    title: "Memory Networks (Jetic Gu)"
+    lecture: "memnet"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L19-memory-networks.pdf"
+  - date: "3/23" 
+    title: "Pretraining"
+    lecture: "pretraining"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L20-pretraining.pdf"
+    project: "Project milestone"
+- week: 
+  num: 12
+  dates:
+  - date: "3/29" 
+    title: "Text Generation"
+    lecture: "textgen"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L21-text-generation.pdf"
+  - date: "3/30" 
+    title: "Dialogue"
+    lecture: "dialogue"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L22-dialogue.pdf"
+- week: 
+  num: 13
+  dates:
+  - date: "4/5" 
+    title: "Grounding"
+    lecture: "grounding"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L23-grounding.pdf"
+  - date: "4/6"
+    title: "Conclusion and final project presentations"
+    lecture: "conclusion"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L24-conclusion.pdf"
+  - date: "4/11"
+    project: "Final project report"

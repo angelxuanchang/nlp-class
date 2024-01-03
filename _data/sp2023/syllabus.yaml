@@ -1,0 +1,797 @@
+- title: "Course Introduction"
+  tag: intro
+  include: true
+  current: false
+  notes:
+    - title: "Course introduction"
+      url: "assets/lecture-slides/L1-intro.pdf"
+    - title: "Introduction to NLP Tasks"
+      url: "assets/slides/nlptasks.pdf"
+  readings:
+    - author: Lillian Lee
+      title: "I'm sorry Dave, I'm afraid I can't do that"
+      url: "http://www.cs.cornell.edu/home/llee/papers/cstb.pdf"
+      optional: false
+    - author: Percy Liang
+      title: "Talking to Computers in Natural Language"
+      url: "https://cs.stanford.edu/~pliang/papers/talking-xrds2014.pdf"
+      optional: true
+    - author: Julia Hirschberg and Christopher D. Manning 
+      title: "Advances in Natural Language Processing"
+      url: "https://cs224d.stanford.edu/papers/advances.pdf"
+      optional: true
+  links:
+    - author: Rick Rashid 
+      title: "Speech Recognition Breakthrough for the Spoken, Translated Word by Rick Rashid"
+      video: "https://www.youtube.com/watch?v=Nu-nlQqFCKg"
+      url: "https://www.youtube.com/watch?v=Nu-nlQqFCKg"
+      optional: true
+    - title: "IBM Watson competes in Jeopardy!"
+      video: "https://www.youtube.com/watch?v=lI-M7O_bRNg"
+      url: "https://www.youtube.com/watch?v=lI-M7O_bRNg"
+      optional: true
+    - author: Rick Rashid 
+      title: "Speech Recognition Breakthrough for the Spoken, Translated Word by Rick Rashid"
+      video: "https://www.youtube.com/watch?v=Nu-nlQqFCKg"
+      url: "https://www.youtube.com/watch?v=Nu-nlQqFCKg"
+      optional: true
+    - author: Anoop Sarkar
+      title: "NLP and Text Visualization"
+      url: "assets/slides/wikihistory.pdf"
+      optional: true
+    - author: "Various Allen Institute AI2 Researchers"
+      title: "NLP Highlights podcast"
+      url: "https://soundcloud.com/nlp-highlights"
+      optional: true
+- title: "Probability models and language (reviewed in tutorial)"
+  tag: probintro
+  include: true
+  current: false
+  notes:
+    - title: "Probability models and language"
+      url: "assets/slides/prob.pdf"
+    - title: "Python Notebook: Probability Models for NLP"
+      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/probintro.ipynb"
+      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/probintro.ipynb"
+  links:
+    - title: "Python tidbits for NLP"
+      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/python-tidbits.ipynb"
+      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/python-tidbits.ipynb"
+    - author: Peter Norvig
+      title: "Natural Language Corpus Data: Beautiful Data"
+      url: "http://norvig.com/ngrams/"
+      download: "http://norvig.com/ngrams/ngrams.zip"
+    - author: Claude Shannon
+      title: "A Mathematical Theory of Communication"
+      url: http://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication
+      optional: true
+    - author: Claude Shannon
+      title: "Prediction and Entropy of Printed English"
+      url: http://languagelog.ldc.upenn.edu/myl/Shannon1950.pdf
+      optional: true
+- title: "Language models"
+  tag: lm
+  include: true
+  current: false
+  notes:
+    - title: "Language models"
+      url: "assets/lecture-slides/L2-language-models.pdf"
+    - title: "Exercise: n-gram Language Models"
+      url: "assets/notes/lm.html"
+      soln: "assets/notes/lm_soln.html"
+    - title: "The unreasonable effectiveness of Character-level Language Models"
+      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/goldberg_lm.ipynb"
+      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/goldberg_lm.ipynb"
+      author: "Yoav Goldberg"
+  readings:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Language Modeling with N-Grams (J+M chapter 3)"
+      abbr: "J+M chapter 3" 
+      url: "https://web.stanford.edu/~jurafsky/slp3/3.pdf"
+      optional: false
+    - author: Michael Collins
+      title: "Language models"
+      download: "http://www.cs.columbia.edu/~mcollins/courses/nlp2011/notes/lm.pdf"
+      url: "assets/mcollins-notes/lm.pdf"
+      optional: true
+  links:
+    - author: Stanley Chen and Joshua Goodman
+      title: "A Bit of Progress in Language Modeling"
+      url: "https://arxiv.org/abs/cs/0108005"
+      optional: true
+    - author: Ciprian Chelba, Tomas Mikolov, Mike Schuster, Qi Ge, and Thorsten Brants
+      title: "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling"
+      url: "https://arxiv.org/abs/1312.3005"
+      optional: true
+- title: "Text classification"
+  tag: classifiers
+  include: true
+  current: false
+  notes:
+    - title: "Naive Bayes"
+      url: "assets/lecture-slides/L3-classification-naivebayes.pdf"
+    - title: "Logistic regression"
+      url: "assets/lecture-slides/L4-classification-logistic.pdf"
+    - title: "Evaluation"
+      url: "assets/lecture-slides/L3-classification-evaluation.pdf"
+    - title: "Python Notebook: Naive Bayes Classifiers"
+      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/naivebayes.ipynb"
+      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/naivebayes.ipynb"
+    - title: "Python Notebook: Log-linear Models"
+      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/loglinear.ipynb"
+      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/loglinear.ipynb"
+    - title: "Exercise: Log linear models"
+      url: "assets/notes/loglinear.html"
+      soln: "assets/notes/loglinear_soln.html"
+    - title: "Exercise: Linear combinations"
+      url: "assets/notes/linearb.html"
+      soln: "assets/notes/linearb_solution.pdf"
+  readings:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Naive Bayes and Sentiment Classification (J+M chapter 4)"
+      abbr: "J+M chapter 4" 
+      tag: "jm4"
+      url: "https://web.stanford.edu/~jurafsky/slp3/4.pdf"
+      optional: false
+    - author: Dan Jurafsky and James H. Martin
+      title: "Logistic Regression (J+M chapter 5)"
+      abbr: "J+M chapter 5" 
+      tag: "jm5"
+      url: "https://web.stanford.edu/~jurafsky/slp3/5.pdf"
+      optional: false
+    - author: Michael Collins
+      title: "Log-linear models, MEMMs and CRFs"
+      url: "http://www.cs.columbia.edu/~mcollins/crf.pdf"
+      download: "assets/mcollins-notes/crf.pdf"
+      optional: true
+- title: "Feedforward neural networks"
+  tag: ff
+  include: true
+  current: false
+  notes:
+    - title: "Feedforward neural networks I"
+      url: "assets/lecture-slides/L5-neural-nets-1.pdf"
+    - title: "Feedforward neural networks II"
+      url: "assets/lecture-slides/L6-neural-nets-2.pdf"
+    - title: "Python Notebook: Feedforward networks and XOR"
+      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/ff.ipynb"
+      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/ff.ipynb"
+    - title: "Exercise: Nothing but Net(works)"
+      author: Tom McCoy
+      url: "http://www.nacloweb.org/resources/problems/2017/N2017-H.pdf"
+  readings:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Neural Networks and Neural Language Models (J+M chapter 7)"
+      abbr: "J+M chapter 7" 
+      url: "https://web.stanford.edu/~jurafsky/slp3/7.pdf"
+      optional: false
+    - author: Michael Collins
+      title: "Feedforward neural networks"
+      url: "http://www.cs.columbia.edu/~mcollins/cs4705-spring2018/notes/ff.pdf"
+      download: "assets/mcollins-notes/ff.pdf"
+      optional: true
+    - author: "Yoav Goldberg"
+      title: "A Primer on Neural Network Models for Natural Language Processing"
+      url: "https://u.cs.biu.ac.il/~yogo/nnlp.pdf"
+      optional: true
+  links:
+    - title: "A Review of the Neural History of Natural Language Processing"
+      url: "https://ruder.io/a-review-of-the-recent-history-of-nlp/index.html"
+      author: "Sebastian Ruder"
+      optional: true
+    - title: "Natural Language Understanding with Distributed Representation"
+      author: "Kyunghyun Cho"
+      url: "http://arxiv.org/abs/1511.07916"
+      optional: true
+    - title: "Efficient Backprop"
+      url: "http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf"
+      author: "LeCun, Bottou, Orr and Muller"
+      optional: true
+    - title: "What Every Computer Scientist Should Know About Floating-Point Arithmetic"
+      url: "https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html"
+      author: "D. Goldberg"
+      optional: true
+    - title: "Gradient checks and parameter updates"
+      url: "http://cs231n.github.io/neural-networks-3/"
+      author: "Andrej Karpathy"
+      optional: true
+    - author: Michael Collins
+      title: "Computational Graphs, and Backpropagation"
+      url: "http://www.cs.columbia.edu/~mcollins/ff2.pdf"
+      download: "assets/mcollins-notes/ff2.pdf"
+      optional: true
+- title: "Neural Network Models and Training (training tips in tutorial)"
+  tag: dl4nlp
+  include: false
+  current: false
+  notes:
+    - title: "Training Neural Networks I (from UMich EECS498)"
+      url: "https://web.eecs.umich.edu/~justincj/slides/eecs498/FA2020/598_FA2020_lecture10.pdf"
+      video: "https://www.youtube.com/watch?v=lGbQlr1Ts7w&list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r"
+      author: "Justin Johnson"
+    - title: "Training Neural Networks II (from UMich EECS498)"
+      url: "https://web.eecs.umich.edu/~justincj/slides/eecs498/FA2020/598_FA2020_lecture11.pdf"
+      video: "https://www.youtube.com/watch?v=WUazOtlti0g&list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r"
+      author: "Justin Johnson"
+  links:
+    - title: "An overview of gradient descent optimization algorithms"
+      author: "Sebastian Ruder"
+      url: "https://ruder.io/optimizing-gradient-descent/"
+      optional: true
+    - title: "Deep Learning for MT Winter School"
+      url: "http://dl4mt.computing.dcu.ie/"
+      optional: true
+    - title: "Visualizing Optimization Algorithms"
+      author: "Alec Radford"
+      url: "http://imgur.com/a/Hqolp"
+      optional: true
+    - title: "Learning representations by back-propagating errors"
+      author: "Rumelhart, Hinton and Williams"
+      citation: "Nature, 1986"
+      url: "https://www.iro.umontreal.ca/~vincentp/ift3395/lectures/backprop_old.pdf"
+      optional: true
+- title: "Word Vectors"
+  tag: wordvec
+  include: true
+  current: false
+  notes: 
+    - title: "Word vectors (vector space models)"
+      url: "assets/slides/L7-wordvectors.pdf"
+    - title: "Word2Vec"
+      url: "assets/slides/L8-word2vec.pdf"
+    - title: "Python Notebook: Singular Value Decomposition for NLP"
+      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/svd.ipynb"
+      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/svd.ipynb"
+    - title: "Exercise: word2vec"
+      url: "assets/notes/word2vec.html"
+      soln: "assets/notes/word2vec_soln.html"
+  readings:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Vector Semantics and Embeddings (J+M chapter 6)"
+      abbr: "J+M chapter 6" 
+      url: "https://web.stanford.edu/~jurafsky/slp3/6.pdf"
+      optional: false
+    - author: Omer Levy, Yoav Goldberg, and Ido Dagan
+      title: "Improving Distributional Similarity with Lessons Learned from Word Embeddings"
+      url: "https://www.aclweb.org/anthology/Q15-1016.pdf"
+      optional: true
+  papers:
+    - author: Mikolov et al,
+      title: "Efficient Estimation of Word Representations in Vector Space"
+      url: "https://arxiv.org/pdf/1301.3781.pdf"
+      comments: "Original word2vec paper"
+    - author: Mikolov et al,
+      title: "Distributed Representations of Words and Phrases and their Compositionality"
+      url: "http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf"
+      comments: "Negative sampling for word2vec"
+    - author: "Jeffrey Pennington, Richard Socher, Christopher D. Manning"
+      title: "GloVe: Global Vectors for Word Representation"
+      url: "https://nlp.stanford.edu/pubs/glove.pdf"
+    - author: "Sanjeev Arora, Yingyu Liang, Tengyu Ma"
+      title: "A Simple but Tough-to-beat Baseline for Sentence Embeddings"
+      url: "https://openreview.net/pdf?id=SyK00v5xx"
+- title: "Sequence Models (Hidden Markov Models)"
+  tag: hmm
+  include: true
+  current: false
+  notes:
+    - title: "Sequence Models"
+      url: "assets/lecture-slides/L9-sequence-modeling.pdf"
+    - title: "Hidden Markov Models"
+      url: "assets/slides/hmm.pdf"
+    - title: "Python Notebook: Viterbi algorithm for HMMs"
+      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/hmm.ipynb"
+      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/hmm.ipynb"
+  readings:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Hidden Markov Models (J+M Appendix A.1-A.4)"
+      abbr: "J+M Appendix A" 
+      tag: "jmA"
+      url: "https://web.stanford.edu/~jurafsky/slp3/A.pdf"
+      optional: false
+  links:
+    - author: Anoop Sarkar
+      title: "Introduction to Hidden Markov Models"
+      video: "http://youtu.be/D9TvSfkcN-8"
+      url: "http://youtu.be/D9TvSfkcN-8"
+    - author: Anoop Sarkar
+      title: "N-grams versus HMMs"
+      video: "http://youtu.be/sxziC8Zh8Kw"
+      url: "http://youtu.be/sxziC8Zh8Kw"
+    - author: Anoop Sarkar
+      title: "Parsing with HMMs"
+      video: "http://youtu.be/0OQIBTWqjFY"
+      url: "http://youtu.be/0OQIBTWqjFY"
+    - author: Anoop Sarkar
+      title: "Viterbi algorithm for HMMs"
+      video: "http://youtu.be/TymbVHmJWQ8"
+      url: "http://youtu.be/TymbVHmJWQ8"
+    - author: Anoop Sarkar
+      title: "Language models and HMMs"
+      video: "http://youtu.be/dxEQeUd4JBs"
+      url: "http://youtu.be/dxEQeUd4JBs"
+    - author: Anoop Sarkar
+      title: "Supervised learning of HMMs"
+      video: "http://youtu.be/0dp3Digvfcw"
+      url: "http://youtu.be/0dp3Digvfcw"
+    - author: Anoop Sarkar
+      title: "Lagrange multipliers for HMM parameter updates"
+      video: "http://youtu.be/ZUcb_UJK1UM"
+      url: "http://youtu.be/ZUcb_UJK1UM"
+      optional: true
+    - author: Michael Collins
+      title: "Hidden Markov Models"
+      download: "assets/mcollins-notes/hmms-spring2013.pdf"
+      url: "assets/mcollins-notes/hmms-spring2013.pdf"
+      optional: true
+    - author: Michael Collins
+      title: "Forward-backward algorithm"
+      download: "assets/mcollins-notes/fb.pdf"
+      url: "assets/mcollins-notes/fb.pdf"
+      optional: true
+- title: "Linear models for sequence prediction"
+  tag: linearseq
+  include: false
+  current: false
+  notes:
+    - title: "Linear models for sequence prediction"
+      url: "assets/slides/linearseq.pdf"
+  links:
+    - author: Erik F. Tjong Kim Sang and Sabine Buchholz
+      title: "Introduction to the CoNLL-2000 Shared Task: Chunking"
+      url: "http://www.cnts.ua.ac.be/conll2000/pdf/12732tjo.pdf"
+- title: "Sequence Models (RNNs)"
+  tag: rnn
+  include: true
+  current: false
+  notes:
+    - title: "Recursive Neural Networks"
+      url: "assets/lecture-slides/L10-RNN.pdf"
+    - title: "LSTMs and GRUs"
+      url: "assets/lecture-slides/L11-LSTM-GRU.pdf"
+    - title: "RNN based Neural Language model (experiments)"
+      url: "assets/slides/nlm-mikolov.pdf"
+      author: Tomas Mikolov
+    - title: "Python Notebook: RNN Language model"
+      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/rnnlm.ipynb"
+      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/rnnlm.ipynb"
+  readings:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Deep Learning Architectures for Sequence Processing (J+M chapter 9)"
+      abbr: "J+M chapter 9" 
+      tag: "jm9"
+      url: "https://web.stanford.edu/~jurafsky/slp3/9.pdf"
+      optional: false
+    - author: "Christopher Olah"
+      title: "Understanding LSTM Networks"
+      url: "http://colah.github.io/posts/2015-08-Understanding-LSTMs/"
+      optional: true
+  links:
+    - title: "How to implement a recurrent neural network"
+      author: "peterroelants.github.io"
+      url: "http://peterroelants.github.io/posts/rnn_implementation_part01/"
+      optional: true
+    - title: "Statistical language models based on neural networks"
+      author: Tomas Mikolov
+      url: "http://www.fit.vutbr.cz/~imikolov/rnnlm/thesis.pdf"
+      optional: true
+- title: "Machine Translation"
+  tag: smt
+  include: false
+  current: false 
+  notes:
+    - title: "Introduction to Machine Translation"
+      url: "assets/slides/mt.pdf"
+    - title: "Anoop's Introduction to Machine Translation"
+      url: "assets/slides/mtintro.pdf"
+    - title: "Exercise: Philae Obelisk"
+      url: "assets/notes/philae-obelisk.html"
+  links:
+    - author: Adam Lopez
+      title: "Word Alignment and the Expectation-Maximization Algorithm"
+      url: "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.421.5497&rep=rep1&type=pdf"
+    - author: Kevin Knight
+      title: "A Statistical MT Tutorial Workbook"
+      url: http://www.isi.edu/natural-language/mt/wkbk.pdf
+      optional: true
+- title: "Sequence to Sequence models and Neural Machine Translation"
+  tag: seq2seq
+  include: true
+  current: false
+  notes:
+    - title: "Sequence to sequence models"
+      url: "assets/lecture-slides/L12-sequence-generation.pdf"
+  readings:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Machine Translation and Encoder-Decoder Models (J+M chapter 10)"
+      abbr: "J+M chapter 10" 
+      tag: jm10
+      url: "https://web.stanford.edu/~jurafsky/slp3/10.pdf"
+      optional: false
+- title: "Neural Machine Translation"
+  tag: nmt
+  include: false
+  current: false
+  notes:
+    - title: "Neural Machine Translation (Part 1)"
+      author: Jetic Gu
+      url: "assets/slides/03-2019-1010_NMT_Lecture.pdf"
+    - title: "Neural Machine Translation (Part 2)"
+      author: Jetic Gu
+      url: "assets/slides/03-2019-1012_NMT_Lecture2.pdf"
+    - title: "Neural Machine Translation Tutorial"
+      author: "Thang Luong, Kyunghyun Cho and Chris Manning"
+      citation: "Tutorial at ACL 2016"
+      url: "https://sites.google.com/site/acl16nmt/"
+      download: "assets/slides/Luong-Cho-Manning-NMT-ACL2016-v4-edited.pdf"
+    - title: "Neural Machine Translation and Sequence-to-sequence Models: A Tutorial"
+      author: "Graham Neubig"
+      citation: "arXiv"
+      url: "https://arxiv.org/pdf/1703.01619.pdf"
+  readings:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Machine Translation and Encoder-Decoder Models (J+M chapter 10)"
+      abbr: "J+M chapter 10" 
+      tag: jm10
+      url: "https://web.stanford.edu/~jurafsky/slp3/10.pdf"
+      optional: true
+    - author: Jacob Eisenstein
+      title: "Machine Translation (Natural Language Processing chapter 18)"
+      abbr: "Eisenstein chapter 18" 
+      tag: je18
+      url: "https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf"
+      optional: true
+    - author: Philipp Koehn
+      title: "Neural Machine Translation"
+      url: "https://arxiv.org/pdf/1709.07809.pdf"
+      optional: true
+    - title: "Neural Machine Translation and Sequence-to-sequence Models: A Tutorial"
+      author: "Graham Neubig"
+      citation: "arXiv"
+      url: "https://arxiv.org/pdf/1703.01619.pdf"
+      optional: true
+  links:
+    - title: "Neural Machine Translation: Breaking the Performance Plateau"
+      author: Rico Sennrich
+      url: "http://www.meta-net.eu/events/meta-forum-2016/slides/09_sennrich.pdf"
+      download: "assets/cached/09_sennrich.pdf"
+      optional: true
+    - title: "Several Studies on Natural Language and Back-propagation"
+      author: "Robert B. Allen"
+      url: "http://boballen.info/RBA/PAPERS/NL-BP/nl-bp.pdf"
+      download: "assets/cached/10.1.1.716.2719.pdf"
+      optional: true
+    - title: "Learning recursive distributed representations for holistic computation"
+      author: Lonnie Chrisman
+      url: "http://repository.cmu.edu/cgi/viewcontent.cgi?article=3061&context=compsci"
+      optional: true
+    - title: "A connectionist approach to machine translation"
+      author: "M. A. Castano and F. Casacuberta"
+      citation: "EUROSPEECH. 1997"
+      url: "https://pdfs.semanticscholar.org/a0ee/55dbdb798546f9e573ee6df9519b6bd1179d.pdf"
+      optional: true
+    - title: "Asynchronous translations with recurrent neural nets"
+      author: "R. Neco and M. Forcada"
+      citation: "International Conference on Neural Networks, vol 4, pages 2535-2540"
+      url: "http://www.cs.brandeis.edu/~gregws/cs113/asynchronous-translations-with-recurrent.pdf"
+      optional: true
+- title: "Transformers"
+  tag: transformers
+  include: true
+  current: false
+  notes:
+    - title: "Transformers"
+      url: "assets/lecture-slides/L13-transformers.pdf"
+  readings:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Deep Learning Architectures for Sequence Processing (J+M chapter 9.4)"
+      abbr: "J+M chapter 9.4" 
+      tag: "jm9.4"
+      url: "https://web.stanford.edu/~jurafsky/slp3/9.pdf"
+      optional: false
+    - title: "Attention Is All You Need"
+      author: "Vaswani et al. 2017"
+      url: "https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf"
+      optional: true
+    - title: "The Annotated Transformer"
+      author: "Alexander Rush"
+      url: "https://nlp.seas.harvard.edu/2018/04/03/attention.html"
+      optional: true
+  links:
+    - title: "Illustrated Transformer"
+      author: "Jay Alammar"
+      url: "http://jalammar.github.io/illustrated-transformer/"
+- title: "Contextualized Word Embeddings"
+  tag: cwe
+  include: true
+  current: false
+  notes:
+    - title: "Contextualized Word Embeddings"
+      url: "assets/lecture-slides/L14-contextualized-word-embeddings.pdf"
+  readings:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Transfer Learning with Pretrained Language Models and Contextual Embeddings (J+M chapter 11)"
+      abbr: "J+M chapter 11" 
+      tag: jm11
+      url: "https://web.stanford.edu/~jurafsky/slp3/11.pdf"
+      optional: false
+    - title: "Illustrated BERT"
+      author: "Jay Alammar"
+      url: "http://jalammar.github.io/illustrated-bert/"
+      optional: true
+    - title: "Contextual Word Representations: A Contextual Introduction"
+      author: "Noah A. Smith"
+      url: "https://arxiv.org/pdf/1902.06006.pdf"
+      optional: true
+    - title: "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+      author: "Devlin et al. 2018"
+      url: "https://arxiv.org/pdf/1810.04805.pdf"
+      optional: true
+    - title: "Emergent linguistic structure in artificial neural networks trained by self-supervision"
+      author: "Manning et al. 2020"
+      url: "https://www.pnas.org/doi/10.1073/pnas.1907367117"
+      optional: true
+    - title: "A Primer in BERTology: What We Know About How BERT Works"
+      author: "Rogers, Kovaleva, and Rumshisky"
+      url: "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00349/96482/A-Primer-in-BERTology-What-We-Know-About-How-BERT"
+      optional: true
+- title: Constituency Parsing, Ambiguity and Context-Free Grammars
+  tag: cfg
+  include: true
+  current: false
+  notes:
+    - title: "Constituency Parsing"
+      url: "assets/lecture-slides/L15-constituency-parsing.pdf"
+    - title: "Phrase structure parsing (Berkeley)"
+      author: "David Bamman"
+      url: "http://people.ischool.berkeley.edu/~dbamman/nlp20_slides/14_phrase_structure_parsing.pdf"  
+    - title: "Formal Ambiguity"
+      url: "assets/slides/ambiguity.pdf"
+    - title: "Exercise: CFGs"
+      url: "assets/notes/cfgquiz.pdf"
+    - title: "Python Notebook: Context-free grammars"
+      url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/cfg.ipynb"
+      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/cfg.ipynb"
+  readings:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Constituency Grammars (J+M chapter 12.1-12.2)"
+      url: "https://web.stanford.edu/~jurafsky/slp3/12.pdf"
+      abbr: "J+M chapter 12.1-12.2" 
+      optional: false
+    - author: Dan Jurafsky and James H. Martin
+      title: "Constituency Parsing (J+M chapter 13.1-13.4)"
+      abbr: "J+M chapter 13.1-13.4" 
+      url: "https://web.stanford.edu/~jurafsky/slp3/13.pdf"
+      optional: false
+    - author: Dan Jurafsky and James H. Martin
+      title: "Statistical Constituency Parsing (J+M chapter Appendix C.1-C.4)"
+      abbr: "J+M Appendix C.1-C.4" 
+      url: "https://web.stanford.edu/~jurafsky/slp3/C.pdf"
+      optional: true
+  links:
+    - author: Michael Collins
+      title: "Probabilistic Context-free Grammars"
+      url: "http://www.cs.columbia.edu/~mcollins/courses/nlp2011/notes/pcfgs.pdf"
+      download: "assets/mcollins-notes/pcfgs.pdf"
+    - author: Michael Collins
+      title: "Lexicalized Context-free Grammars"
+      url: "http://www.cs.columbia.edu/~mcollins/courses/nlp2011/notes/lexpcfgs.pdf"
+      download: "assets/mcollins-notes/lexpcfgs.pdf"
+    - title: "Exercise: Grammar Rules!"
+      author: "Andrea Schalley and Patrick Littell"
+      url: "http://nacloweb.org/resources/problems/2013/N2013-F.pdf"
+      optional: true
+    - title: "Exercise: Twodee"
+      author: "Jason Eisner"
+      url: "http://www.naclo.cs.cmu.edu/problems2013/N2013-H.pdf"
+      optional: true
+    - title: "Exercise: One, Two, Tree"
+      author: "Noah Smith, Kevin Gimpel, and Jason Eisner"
+      url: "http://www.naclo.cs.cmu.edu/problems2012/N2012-R.pdf"
+      optional: true
+    - title: "Exercise: OrwellSpeak"
+      author: "Jason Eisner"
+      url: "http://www.naclo.cs.cmu.edu/problems2009/N2009-M.pdf"
+      optional: true
+- title: "Dependency Parsing"
+  tag: dependency
+  include: true
+  current: false
+  notes:
+    - title: "Dependency Parsing"
+      url: "assets/lecture-slides/L16-dependency-parsing.pdf"
+  readings:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Dependency Parsing (J+M chapter 14)"
+      abbr: "J+M chapter 14" 
+      url: "https://web.stanford.edu/~jurafsky/slp3/14.pdf"
+      optional: false
+- title: "Semantic Parsing"
+  tag: semparse
+  include: true
+  current: false
+  notes:
+    - title: "Semantic Parsing"
+      url: "assets/lecture-slides/L22-semantic-parsing.pdf"
+  readings:
+    - author: Percy Liang
+      title: "Learning Executable Semantic Parsers for Natural Language Understanding"
+      url: "https://cs.stanford.edu/~pliang/papers/executable-cacm2016.pdf"
+      optional: false
+    - author: Dan Jurafsky and James H. Martin
+      title: "Logical Representations of Sentence Meaning (J+M chapter 15)"
+      abbr: "J+M chapter 15" 
+      url: "https://web.stanford.edu/~jurafsky/slp3/15.pdf"
+      optional: true
+  links:
+    - author: Bill MacCartney
+      title: "Tutorial: SippyCup introduction to semantic parsing"
+      url: "https://nbviewer.jupyter.org/github/wcmac/sippycup/blob/master/sippycup-unit-0.ipynb"
+      optional: true
+- title: "Question Answering"
+  tag: qa
+  include: true
+  current: false
+  notes:
+    - title: "Question Answering"
+      url: "assets/lecture-slides/L18-question-answering.pdf"
+  readings:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Questing Answering (J+M chapter 23)"
+      abbr: "J+M chapter 23" 
+      url: "https://web.stanford.edu/~jurafsky/slp3/23.pdf"
+      optional: true
+- title: "Memory Networks"
+  tag: memnet
+  include: true
+  current: false
+  notes:
+    - title: "Memory Networks"
+      url: "assets/lecture-slides/L19-memory-networks.pdf"
+  readings:
+    - author: "Weston et al. 2014"
+      title: "Memory Networks"
+      url: "https://arxiv.org/pdf/1410.3916.pdf"
+      optional: true
+    - author: "Sukhbaatar et al. 2014"
+      title: "End-to-End Memory Networks"
+      url: "https://arxiv.org/pdf/1503.08895.pdf"
+      optional: true
+    - author: "Graves et al. 2014"
+      title: "Neural Turing Machine"
+      url: "https://arxiv.org/pdf/1410.5401.pdf"
+      optional: true
+- title: "Text Generation"
+  tag: textgen
+  include: true
+  current: false
+  notes:
+    - title: "Text Generation"
+      url: "assets/lecture-slides/L20-text-generation.pdf"
+  readings:
+    - author: "Holtzman et al. 2020"
+      title: "The curious case of text degeneration"
+      url: "https://openreview.net/pdf?id=rygGQyrFvH"
+      optional: true
+- title: "Dialogue"
+  tag: dialogue
+  include: true
+  current: false
+  notes:
+    - title: "Dialogue"
+      url: "assets/lecture-slides/L21-dialogue.pdf"
+  readings:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Dialog Systems and Chatbots (J+M chapter 24)"
+      abbr: "J+M chapter 24" 
+      url: "https://web.stanford.edu/~jurafsky/slp3/24.pdf"
+      optional: true
+- title: "Coreference Resolution"
+  tag: coref
+  include: false
+  current: false
+  readings:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Coreference Resolution (J+M chapter 21)"
+      abbr: "J+M chapter 21" 
+      url: https://web.stanford.edu/~jurafsky/slp3/21.pdf
+      optional: true
+- title: "Grounded Language"
+  tag: grounding
+  include: true
+  current: false
+  notes:
+    - title: "Grounded Natural Language"
+      url: "assets/slides/grounding.pdf"
+- title: Word Alignment
+  tag: align
+  include: false
+  current: false 
+  notes:
+    - title: "Word Alignment"
+      url: "assets/slides/ibm123.pdf"
+  links:
+    - title: "In-class Alignment Exercise"
+      url: "assets/slides/centauri-arcturan.pdf"
+    - author: Michael Collins
+      title: "Statistical Machine Translation: IBM Models 1 and 2"
+      url: "http://www.cs.columbia.edu/~mcollins/ibm12.pdf"
+      download: "assets/mcollins-notes/ibm12.pdf"
+    - author: Philipp Koehn
+      title: "Statistical Machine Translation"
+      url: "http://www.statmt.org/book"
+      optional: true
+- title: "Translation Evaluation"
+  tag: mteval
+  include: false
+  current: false
+  notes:
+    - author: Philipp Koehn
+      title: "Evaluation"
+      url: "assets/slides/08-evaluation.pdf"
+    - author: Anoop Sarkar
+      title: "Edit distance"
+      url: "assets/slides/editdist.pdf"
+    - author: Blake Allen and Patrick Littell
+      title: "Exercise: Levenshtein's Fine Signs"
+      url: "assets/notes/N2014-C.pdf"
+    - title: "Exercise: aw-TOM-uh-tuh"
+      author: "Patrick Littell"
+      url: "http://www.naclo.cs.cmu.edu/problems2008/N2008-I.pdf"
+  links:
+    - author: Anoop Sarkar
+      title: "Introducing edit distance"
+      video: "http://youtu.be/IDGsJdFZCmE"
+      url: "http://youtu.be/IDGsJdFZCmE"
+    - author: Anoop Sarkar
+      title: "Computing edit distance (part one)"
+      video: "http://youtu.be/Dv_bdR7LpS0"
+      url: "http://youtu.be/Dv_bdR7LpS0"
+    - author: Anoop Sarkar
+      title: "Computing edit distance (part two)"
+      video: "http://youtu.be/E606vHFGTvA"
+      url: "http://youtu.be/E606vHFGTvA"
+- title: "Phrase based translation"
+  tag: pbmt
+  include: false
+  current: false
+  notes:
+    - author: Philipp Koehn
+      title: "Decoding"
+      url: "assets/slides/06-decoding.pdf"
+    - author: Philipp Koehn
+      title: "Phrase-based models"
+      url: "assets/slides/05-phrase-based-models.pdf"
+    - title: "Stack Decoder demo"
+      author: "Matt Post"
+      url: "assets/demos/stack-decoder/stack-decoder.html"
+    - title: "Exercise: Udihe"
+      author: "B. Iomdin"
+      url: "assets/notes/inclass-udihe.pdf"
+  links:
+    - author: Michael Collins
+      title: "Statistical Machine Translation: Phrase-based models"
+      url: "http://www.cs.columbia.edu/~mcollins/pb.pdf"
+      download: "assets/mcollins-notes/pb.pdf"
+- title: "Discriminative Training for Machine Translation"
+  tag: statmt
+  include: false
+  current: false
+  notes:
+    - author: "Philipp Koehn, Barry Haddow and Matthias Huck"
+      title: "Discriminative Training"
+      url: "assets/slides/09-discriminative-training.pdf"
+  links:
+    - author: "Mark Hopkins and Jonathan May"
+      title: "Tuning as Ranking"
+      url: "http://www.aclweb.org/anthology/D11-1125"
+- title: "Expectation-Maximization"
+  tag: em
+  include: false
+  current: false
+  readings:
+    - author: "Michael Collins"
+    - title: "The Naive Bayes Model, Maximum-Likelihood Estimation, and the EM Algorithm"
+    - url: "http://www.cs.columbia.edu/~mcollins/em.pdf"
+    - download: "assets/mcollins-notes/em.pdf"
+    - optional: true
