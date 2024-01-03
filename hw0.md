@@ -62,27 +62,27 @@ In this course, your programs will be managed and archived using
   you have a combined backup and means to undo any changes you ever
   make. This is how software engineers manage their code projects.
 
-### Create new repository on Gitlab
+### Create new repository on SFU Github
 
 Decide in your group the person that will create the repository on
-GitLab and invite the other group members as a Maintainer. That person
+SFU Github and invite the other group members as a Maintainer. That person
 should follow the instructions in this section.
 
-Go to [the SFU Gitlab server](http://gitlab.cs.sfu.ca){:target="_blank"}
+Go to [the SFU Github server](https://github.sfu.ca/){:target="_blank"}
 which is on the web at
-[gitlab.cs.sfu.ca](http://gitlab.cs.sfu.ca){:target="_blank"}.  Log
+[github.sfu.ca](https://github.sfu.ca/){:target="_blank"}.  Log
 in with your SFU username and password, the same one you use to
 check your e-mail on SFU Connect.
 
-Once logged in, you will see a list of your existing repos if you
+Once logged in, go to `Repositories` at the top and 
+you will see a list of your existing repos if you
 have created any in the past. Create a new repository for this class
-by clicking the `New Project` button at the top right of the page.
-![New Project](assets/img/newproject.png)
+by clicking the `New` button at the top right of the page.
+![New](assets/img/newproject.png)
 
-On the `New Project` page, select `Create a Blank Project` and then
-give your repo a name under the `Project name` field. The default
-name is `my-awesome-project` which is **not** what you should call
-your repo. Instead, name your repo: `nlpclass-{{ site.semcode
+On the `Create a new repository` page, 
+give your repo a name under the `Repository name` field. 
+Name your repo: `nlpclass-{{ site.semcode
 }}-g-GROUP` where `GROUP` is the group you registered on [Coursys]({{
 site.coursys }}). For example, a repository name might be `nlpclass-{{
 site.semcode }}-g-ethicsgradient` Make sure you add the `g-` before
@@ -101,13 +101,15 @@ else so be considerate of others.
 Use alphanumeric characters [a-z0-9] only in your 
 group name, underscore and dashes are also permited (**please avoid spaces**).
 We use an automated process to align your group name in Coursys 
-to your repo in gitlab.  If your group name and repo does not match 
-exactly, we will not be able to match your gitlab repo to your Coursys group.
+to your repo in github.  If your group name and repo does not match 
+exactly, we will not be able to match your github repo to your Coursys group.
 If you used spaces in your group name in Coursys by mistake, make sure that your
-gitlab repo has dashes ('-') instead of spaces (because the internal
+github repo has dashes ('-') instead of spaces (because the internal
 system name used by Coursys will have dashes instead of spaces).
 
-Leave all other settings as they are and click the `Create Project` button
+Since we will be using Python, choose `Python` as the `.gitignore` template.
+
+Leave all other settings as they are and click the `Create repository` button
 at the bottom left of the page.
 
 Make sure you do not change the default setting of `Private`. Your
@@ -121,22 +123,18 @@ Plagiarism is a serious academic offense.
 Your repo has now been created. You will be taken to a web page for
 your newly created repo.
 
-### Add the instructor and TA as Developers
+### Add the instructor and TA and other team members as Collaborators
 
-**This is the most important step in the setup of your GitLab repository**
+**This is the most important step in the setup of your Github repository**
 
 The course instructor and the TAs need access to your repo in order to test
-and  grade your code. Add the instructor and TAs as a member of your
-repo by clicking on the `Members` menu (on the left hand menu, above the <i class="fa fa-gear"></i>`Settings`). 
-On the page that loads up
-type in (or individually copy/paste) the following list of names in the `GitLab member or Email address` box using a `,` to
-delimit each username: <code>{{ site.instructor }}, {{ site.tas | map: "email" | join: ', '}}</code>. 
+and  grade your code. Open the <i class="fa fa-gear"></i>`Settings` page and click on the `Collaborators` (left panel)
+to add the instructor and TAs as a member of your repo. 
+On the access page that loads up, click on `Add people` in the `Manage access` and add <code>{{ site.instructor }}, {{ site.tas | map: "email" | join: ', '}}</code>. 
 
-Change the role permissions from `Guest` to `Developer` in the
-dropdown menu. Click on `Invite` to add the instructor and
-all TAs as Developers to your github repo.
+You should remember to add the other team members of the group as Collaborators as well.
 
-### Set up notifications
+<!-- ### Set up notifications
 
 Next you should set up notifications about Issues in your repository.
 Go to `User Settings` from the upper right corner menu. Select
@@ -144,34 +142,39 @@ Go to `User Settings` from the upper right corner menu. Select
 you can select `Notification` where you should pick the `Global
 notification level` to `Watch` and also select `Receive notifications
 about your own activity`.  You can also set notifications specifically
-for your repository to `Watch`.
+for your repository to `Watch`. -->
 
 ### Setup SSH Key
 
 Next we will set up the Secure Shell (ssh) keys so you can access
-your repo without a password. First follow [the instructions on
-setting up your SSH key pair](https://csil-git1.cs.surrey.sfu.ca/help/ssh/README)
-available at [csil-git1.cs.surrey.sfu.ca/help/ssh/README](https://csil-git1.cs.surrey.sfu.ca/help/ssh/README).
+your repo without a password. 
+
+Go to [this page](https://github.sfu.ca/settings/keys):
+[https://github.sfu.ca/settings/keys](https://github.sfu.ca/settings/keys) and you will see a page for entering your SSH key.
+
+First follow [the instructions on
+setting up your SSH key pair](https://docs.github.com/en/enterprise-server@3.9/authentication/connecting-to-github-with-ssh).
+You should [check for existing keys](https://docs.github.com/en/enterprise-server@3.9/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys) and [create new SSH keys](https://docs.github.com/en/enterprise-server@3.9/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) if needed.  
+Use `USER@sfu.ca` as your email (where `USER` is your SFU username).
+
 **Follow the instructions for Linux**.
 
-Now we have to copy your public key to the GitLab server.
-**The [instructions](https://csil-git1.cs.surrey.sfu.ca/help/ssh/README) ask
-you to use `xclip` which may not be installed on all the CSIL machines.
-If you cannot find `xclip` ("Command not found") then do the
-following steps**
+Now we have to copy your public key to the Github server.
+
+Follow the [instructions here](https://docs.github.com/en/enterprise-server@3.9/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+to copy and add your key to your github.
 
 If you have set up your SSH key correctly then you will have a public key. View it
 
-    cat ~/.ssh/id_rsa.pub
+    cat ~/.ssh/id_ed25519.pub
 
 This will show you the public key. Use the `Terminal` copy command to **copy**
 this into your clipboard.
 
-Then go to [this page](https://csil-git1.cs.surrey.sfu.ca/profile):
-[csil-git1.cs.surrey.sfu.ca/profile](https://csil-git1.cs.surrey.sfu.ca/profile)
-and select `SSH Keys` from the left menu.
+Make sure that you are at [this page](https://github.sfu.ca/settings/keys):
+[https://github.sfu.ca/settings/keys](https://github.sfu.ca/settings/keys).
 
-Use the web browser to paste command to **paste** your public key into the `Key`
+Click on `New SSH Key` and use the web browser to **paste** your public key into the `Key`
 box and give it a `Title` (e.g. 'CSIL' is a reasonable title) and then `Add key`.
 
 ### Clone your Repository
@@ -186,12 +189,12 @@ In the terminal window, enter the commands
     git config --global core.editor nano         # or set it to your favourite editor
     git config --global push.default current
     cd $HOME
-    git clone git@csil-git1.cs.surrey.sfu.ca:GROUPUSER/nlpclass-{{ site.semcode }}-g-GROUP.git
+    git clone git@github.sfu.ca:GROUPUSER/nlpclass-{{ site.semcode }}-g-GROUP.git
 
 where `USER` is your SFU username, `GROUPUSER` is the SFU username of
 the person who created the group repository and `GROUP` is the name of the
 group you have already setup on [Coursys]({{ site.coursys }}). If
-you skipped any of the above steps in setting up your GitLab repo
+you skipped any of the above steps in setting up your Github repo
 this command will not work.  The system might prompt you for a
 username/password combo. Supply the usual answers. To avoid entering
 your username/password over and over again you can set up [passwordless
@@ -216,18 +219,18 @@ When you print your working directory it should look like this:
 Add a file `README.md` to this directory using your favourite editor
 and then `git add README.md` and `git commit -m "Initial hw0 commit"`
 and then `git push` to send your new directory and file to the
-GitLab server. Open up GitLab on a web browser to check that you
+Github server. Open up Github on a web browser to check that you
 can see `hw0/README.md` in your repository on the web browser.
 
-Add a `.gitignore` file at the top level of your git repository
-to avoid committing and pushing useless files to the GitLab
+<!-- Add a `.gitignore` file at the top level of your git repository
+to avoid committing and pushing useless files to the Github
 server. Here is a typical `.gitignore` file.
 
     venv
     __pycache__
     .DS_Store
     *.egg-info
-    .ipynb_checkpoints
+    .ipynb_checkpoints -->
 
 ## Python 3 notebooks and virtualenv
 
@@ -523,14 +526,14 @@ Go to `Programming Homework 0` on [Coursys]({{ site.coursys }}) and do a group s
 
 * Upload `output.zip` and `source.zip` and `report.pdf`
 * Make sure you have documented your approach in `answer/ensegment.ipynb`.
-* Make sure each member of your group has documented their contribution to this homework in `answer/README.username` where `username` is your CSIL/GitLab username.
+* Make sure each member of your group has documented their contribution to this homework in `answer/README.username` where `username` is your CSIL/Github username.
 
 ## Grading
 
 The grading is split up into the following components:
 
 * Group setup done on Coursys.
-* GitLab setup including adding instructor and TA as Developer to the repository.
+* Github setup including adding instructor and TA as Developer to the repository.
 * dev scores (see Table below)
 * test scores (see Table below)
 * Report quality 
