@@ -35,12 +35,12 @@ repository again:
 
     git clone https://github.com/angelxuanchang/nlp-class-hw.git
 
-Clone your own repository from GitLab if you haven’t done it already:
+Clone your own repository from GitHub if you haven’t done it already:
 
-    git clone git@csil-git1.cs.surrey.sfu.ca:USER/advnlpclass-{{ site.semcode }}-g-GROUP.git
+    git clone git@githubsfu.ca:USER/nlpclass-{{ site.semcode }}-g-GROUP.git
 
 Note that the `USER` above is the SFU username of the person in
-your group that set up the GitLab repository.
+your group that set up the Github repository.
 
 Then copy over the contents of the `prefixtune` directory into your
 `hw4` directory in your repository.

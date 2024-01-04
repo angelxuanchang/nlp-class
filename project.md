@@ -238,12 +238,12 @@ Optionally, you can also upload `source.zip` and `output.zip` for your project. 
 
 You must submit your project write-up as a PDF document.
 In addition you must submit a Python notebook `project.ipynb` and your source
-code for your project in your GitLab repository:
+code for your project in your Github repository:
 
     git@csil-git1.cs.surrey.sfu.ca:USER/nlpclass-{{ site.semcode }}-g-GROUP.git
 
 Put all your project files into the directory `project` in your
-GitLab repository.
+Github repository.
 
 Make sure you have a `requirements.txt` file for your project 
 so that we can use a virtual environment to run your code.

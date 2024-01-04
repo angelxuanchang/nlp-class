@@ -35,12 +35,12 @@ repository again:
 
     git clone https://github.com/angelxuanchang/nlp-class-hw.git
 
-Clone your own repository from GitLab if you haven’t done it already:
+Clone your own repository from Github if you haven’t done it already:
 
-    git clone git@csil-git1.cs.surrey.sfu.ca:USER/nlpclass-{{ site.semcode }}-g-GROUP.git
+    git clone git@github.sfu.ca:USER/nlpclass-{{ site.semcode }}-g-GROUP.git
 
 Note that the `USER` above is the SFU username of the person in
-your group that set up the GitLab repository.
+your group that set up the Github repository.
 
 Then copy over the contents of the `neuralmt` directory into your
 `hw3` directory in your repository.
@@ -282,9 +282,9 @@ did for this homework in `answer/README.username`.
 Go to `Programming Homework 3` on {{ site.hwsubmit.name }} and do a group submission:
 
 * Upload `output.zip` and `source.zip` and `report.pdf`
-* Make sure your `source.zip` matches your Gitlab repository.
+* Make sure your `source.zip` matches your Github repository.
 * Make sure you have documented your approach in `answer/neuralmt.ipynb`.
-* Make sure each member of your group has documented their contribution to this homework in `answer/README.username` where `username` is your CSIL/GitLab username.
+* Make sure each member of your group has documented their contribution to this homework in `answer/README.username` where `username` is your CSIL/Github username.
 
 ## Grading
 

@@ -33,12 +33,12 @@ repository again:
 
     git clone https://github.com/angelxuanchang/nlp-class-hw.git
 
-Clone your own repository from GitLab if you haven’t done it already:
+Clone your own repository from Github if you haven’t done it already:
 
-    git clone git@csil-git1.cs.surrey.sfu.ca:USER/nlpclass-{{ site.semcode }}-g-GROUP.git
+    git clone git@github.sfu.ca:USER/nlpclass-{{ site.semcode }}-g-GROUP.git
 
 Note that the `USER` above is the SFU username of the person in
-your group that set up the GitLab repository.
+your group that set up the Github repository.
 
 Then copy over the contents of the `bertchunker` directory into your
 `hw2` directory in your repository.
@@ -537,7 +537,7 @@ Go to `Programming Homework 2` on {{ site.hwsubmit.name }} and do a group submis
 * Upload `output.zip` and `source.zip`
 * Make sure you have documented your approach in `answer/bertchunker.ipynb`.
 * Check if each group member has a `answer/README.username`.
-* Make sure that your have updated your GitLab repository with your submission source code.
+* Make sure that your have updated your Github repository with your submission source code.
 
 ## Grading
 

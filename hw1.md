@@ -262,9 +262,9 @@ of what they did for this homework in the Python notebook.
 Go to `Programming Homework 1` on {{ site.hwsubmit.name }} and do a group submission:
 
 * Upload `output.zip` and `source.zip` and `report.pdf`
-* Make sure your `source.zip` matches your Gitlab repository.
+* Make sure your `source.zip` matches your Github repository.
 * Make sure you have documented your approach in `answer/spellchk.ipynb`.
-* Make sure each member of your group has documented their contribution to this homework in `answer/README.username` where `username` is your CSIL/GitLab username.
+* Make sure each member of your group has documented their contribution to this homework in `answer/README.username` where `username` is your CSIL/Github username.
 
 ## Grading
 
@@ -276,7 +276,7 @@ The grading is split up into the following components:
 * Code content and quality
   * Make sure that iterative search algorithm is implemented as described in the Baseline section above
 * Check if each group member has a `answer/README.username`.
-* Make sure that your have updated your GitLab repository with your submission source code.
+* Make sure that your have updated your Github repository with your submission source code.
 
 Your accuracy should be equal to or greater than the scores listed
 for dev and test data to obtain the corresponding marks (dev and

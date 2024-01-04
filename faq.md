@@ -78,7 +78,7 @@ How to ask a question on [{{site.forumname}}]({{ site.forum }}):
     * Testcases: write testcases to stress test the code. Provide the testcases in your submission.
 * **Warning**: if you are missing a `README.username` file in your group source submission then that `username` might get zero marks.  Note that is it not sufficient to have a `README.username` without actually contributing to the assignment.  If you do not contribute to the assignment (as indicated in the report and the git commit logs), you will also receive zero marks for the assignment.
 * Use `git` for version control and effective collaboration. See the section below on setting up `git` for this course.
-* Keep an eye out for comments from the instructor or TAs on your GitLab code repository for each homework.
+* Keep an eye out for comments from the instructor or TAs on your Github code repository for each homework.
 
 ### Academic Honesty
 
