@@ -6,19 +6,17 @@ title: Homework 2 | BERT Finetuning for Robust Phrasal Chunking
 active_tab: homework
 ---
 
-# Homework 2: BERT Finetuning for Robust Phrasal Chunking
-
 <span class="text-info">Start on {{ site.hwdates[2].startdate }}</span> |
 <span class="text-warning">Due on {{ site.hwdates[2].deadline }}</span>
 
-## Homework Questions 2: Word vectors and neural networks
+<!-- ## Homework Questions 2: Word vectors and neural networks
 
 <span class="text-info">Out on {{ site.hwdates[2].startdate }}</span> 
 {% if site.hwdates[2].coursys %}
 <span>Posted on [Coursys]({{ site.hwdates[2].coursys }}).</span> 
-{% endif %}
+{% endif %} -->
 
-# Programming Homework 2: Lexical Substitution
+# Programming Homework 2: BERT Finetuning for Robust Phrasal Chunking
 
 ## Getting Started
 

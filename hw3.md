@@ -7,8 +7,6 @@ title: Homework 3 | Cross Attention
 active_tab: homework
 ---
 
-# Homework 3: Attention
-
 <span class="text-info">Start on {{ site.hwdates[3].startdate }}</span> |
 <span class="text-warning">Due on {{ site.hwdates[3].deadline }}</span>
 
@@ -19,7 +17,7 @@ active_tab: homework
 <span>Posted on [Coursys]({{ site.hwdates[3].coursys }}).</span> 
 {% endif %}
 
-# Programming Homework 3: Robust Phrasal Chunking
+# Programming Homework 3: Attention
 
 
 ## Getting Started

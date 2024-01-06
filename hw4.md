@@ -7,19 +7,17 @@ title: Homework 4 | Prefix Tuning for Text Generation
 active_tab: homework
 ---
 
-# Homework 4: Prefix Tuning for Text Generation
-
 <span class="text-info">Start on {{ site.hwdates[4].startdate }}</span> |
 <span class="text-warning">Due on {{ site.hwdates[4].deadline }}</span>
 
-## Homework Questions 4: Parsing and contextual word embeddings
+<!-- ## Homework Questions 4: Parsing 
 
 <span class="text-info">Out on {{ site.hwdates[4].startdate }}</span> 
 {% if site.hwdates[4].coursys %}
 <span>Posted on [Coursys]({{ site.hwdates[4].coursys }}).</span> 
-{% endif %}
+{% endif %} -->
 
-# Programming Homework 4: Attention
+# Programming Homework 4: Prefix Tuning for Text Generation
 
 
 ## Getting Started
