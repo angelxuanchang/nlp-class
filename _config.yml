@@ -29,9 +29,9 @@ tutorials:
   - tutorial: "1"
     title: "Building language models"
   - tutorial: "2"
-    title: "Building classifiers with pytorch"
-  - tutorial: "3"
     title: "Learning pytorch"
+  - tutorial: "3"
+    title: "Building classifiers with pytorch"
   - tutorial: "4"
     title: "Neural BoW with pytorch"
     components: ["Neural BoW with pytorch", "Optimization and backprop"]
