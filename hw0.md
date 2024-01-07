@@ -74,13 +74,15 @@ which is on the web at
 in with your SFU username and password, the same one you use to
 check your e-mail on SFU Connect.
 
-Once logged in, go to `Repositories` at the top and 
+Once logged in, on the left panel,  
 you will see a list of your existing repos if you
-have created any in the past. Create a new repository for this class
-by clicking the `New` button at the top right of the page.
-![New](assets/img/newproject.png)
+have created any in the past. 
 
-On the `Create a new repository` page, 
+Create a new repository for this class
+by clicking the `New` button ![New](assets/img/newproject.png){:width="10%"} 
+(at the top right of the left panel) which will open [https://github.sfu.ca/new](https://github.sfu.ca/new). 
+
+On the [`Create a new repository` page](https://github.sfu.ca/new), 
 give your repo a name under the `Repository name` field. 
 Name your repo: `nlpclass-{{ site.semcode
 }}-g-GROUP` where `GROUP` is the group you registered on [Coursys]({{
