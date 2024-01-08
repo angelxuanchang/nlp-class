@@ -298,7 +298,10 @@ Get started:
 
 Clone your repository if you haven’t done it already:
 
-    git clone git@csil-git1.cs.surrey.sfu.ca:USER/nlpclass-{{ site.semcode }}-g-GROUP.git
+    git clone git@github.sfu.ca:GROUPUSER/nlpclass-{{ site.semcode }}-g-GROUP.git
+
+where `GROUPUSER` is the SFU username of the person who created the group repository 
+and `GROUP` is the name of the group you have setup on [Coursys]({{ site.coursys }}).
 
 Then copy over the contents of the `ensegment` directory into your
 `hw0` directory in your repository.
