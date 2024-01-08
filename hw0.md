@@ -33,8 +33,6 @@ to the homework submission and the final project.
 
 Along with your group members, register yourself as part of a group on [Coursys]({{ site.coursys }}).  Please make sure you use exactly the same group name.  We will use Coursys for providing you feedback on the autograded portion of the homework.
 
-Note that you will setup your group on Coursys, and we will copy the groupnames on to Canvas so your homework submission can also be done via Canvas.
-
 Create a memorable name for your group. If you need help, [seek help](https://www.wordlab.com/name-generators/team-name-generator/).
 
 Make sure there is no whitespace in your group name or anything that might cause a mojibake (please use plain ascii).
@@ -493,7 +491,7 @@ The report should include the following:
 * Discussion of alternative methods you tried and how well they worked (or didn't work)
 * Breakdown of contributions by each group member
 
-Your report should be submitted as `report.pdf` to [Canvas]({{ site.canvas }}).  Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
+Your report should be submitted as `report.pdf` to [Coursys]({{ site.coursys }}).  Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
 
 ### Submit your homework on {{ site.hwsubmit.name }}
 
