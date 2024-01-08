@@ -82,4 +82,5 @@ hwdates:
     milestone: "Mar 21, 2024"
     poster: "Video due on Apr 6, 2024"
 hwsubmit:
-  name: "Canvas"
+  name: "Coursys"
+  url:  "https://coursys.sfu.ca/2024sp-cmpt-413-x1/"

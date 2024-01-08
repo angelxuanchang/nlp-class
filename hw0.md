@@ -522,7 +522,7 @@ did for this homework in `answer/README.username`.
 
 #### Upload to {{ site.hwsubmit.name }} and Gradescope
 
-Go to `Programming Homework 0` on [Coursys]({{ site.coursys }}) and do a group submission:
+Go to `Programming Homework 0` on [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}) and do a group submission:
 
 * Upload `output.zip` and `source.zip` and `report.pdf`
 * Make sure you have documented your approach in `answer/ensegment.ipynb`.
@@ -532,7 +532,7 @@ Go to `Programming Homework 0` on [Coursys]({{ site.coursys }}) and do a group s
 
 The grading is split up into the following components:
 
-* Group setup done on Coursys.
+* Group setup done on {{ site.hwsubmit.name }}.
 * Github setup including adding instructor and TA as Developer to the repository.
 * dev scores (see Table below)
 * test scores (see Table below)
