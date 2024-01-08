@@ -5,7 +5,7 @@ coursys: "https://coursys.sfu.ca/2024sp-cmpt-413-x1/"
 forumname: Coursys Discussion Forum
 forum: "https://coursys.sfu.ca/2024sp-cmpt-413-x1/forum/"
 canvas: "none"
-gradescope: "https://www.gradescope.ca/courses/7736"
+gradescope: "https://www.gradescope.ca/courses/14929"
 semcode: 1241
 semester: "Spring 2024"
 calendar: "https://calendar.google.com/calendar/ical/qgs97od9ef8t1582k2rqomv5ho%40group.calendar.google.com/public/basic.ics"
@@ -16,13 +16,13 @@ officehour: "Wed 1:30pm-2:30pm"
 tas:
   - name: "Yiming Zhang"
     email: yza440
-    officehour: "TBD"
+    officehour: "Thursday 3pm"
   - name: "ZeMing Gong"
     email: zmgong
-    officehour: "TBD"
+    officehour: "Friday 1:30pm"
   - name: "Xiaohao Sun"
     email: xsa55
-    officehour: "TBD"
+    officehour: "Tuesday 3pm"
 tutorials:
   - tutorial: "0"
     title: "Review of a) probability, linear algebra and calculus and b) useful python/unix commands"
