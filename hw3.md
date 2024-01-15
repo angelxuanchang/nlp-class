@@ -7,14 +7,16 @@ title: Homework 3 | Cross Attention
 active_tab: homework
 ---
 
+# Homework 3
+
 <span class="text-info">Start on {{ site.hwdates[3].startdate }}</span> |
 <span class="text-warning">Due on {{ site.hwdates[3].deadline }}</span>
 
-## Homework Questions 3: Sequence models and machine translation
+## Homework Questions 3: Text generation and attention
 
 <span class="text-info">Out on {{ site.hwdates[3].startdate }}</span> 
-{% if site.hwdates[3].coursys %}
-<span>Posted on [Coursys]({{ site.hwdates[3].coursys }}).</span> 
+{% if site.hwdates[3].hwc-url %}
+<span>Posted on [Coursys]({{ site.hwdates[3].hwc-url }}).</span> 
 {% endif %}
 
 # Programming Homework 3: Attention
@@ -247,7 +249,8 @@ The report should include the following:
 * Discussion of alternative methods you tried and how well they worked (or didn't work)
 * Breakdown of contributions by each group member
 
-Your report should be submitted as `report.pdf`  Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
+Your report should be submitted as `report.pdf` to  to [Gradescope]({{site.hwdates[3].hwp-report-submit-url}}).
+Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
 
 ## Submit your homework on {{ site.hwsubmit.name }}
 
@@ -279,7 +282,10 @@ did for this homework in `answer/README.username`.
 
 Go to `Programming Homework 3` on {{ site.hwsubmit.name }} and do a group submission:
 
-* Upload `output.zip` and `source.zip` and `report.pdf`
+* Upload `output.zip` and `source.zip` and `report.pdf` to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}/+hwp3/)
+{% if site.hwdates[3].hwp-report-submit-url %}
+* Please also upload your `report.pdf` to [Gradescope]({{site.hwdates[3].hwp-report-submit-url}}) HW3-P Report
+{% endif %}
 * Make sure your `source.zip` matches your Github repository.
 * Make sure you have documented your approach in `answer/neuralmt.ipynb`.
 * Make sure each member of your group has documented their contribution to this homework in `answer/README.username` where `username` is your CSIL/Github username.

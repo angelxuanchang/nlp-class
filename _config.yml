@@ -55,23 +55,28 @@ hwdates:
   - hw: "0"
     startdate: "Jan 8, 2024"
     deadline: "Jan 17, 2024"
-    canvas: https://canvas.sfu.ca/courses/75055/assignments/831465
+    hwc-url: https://coursys.sfu.ca/2024sp-cmpt-413-x1/pages/HW0-C/view
+    hwp-report-submit-url: https://www.gradescope.ca/courses/14929/assignments/70204
   - hw: "1"
     startdate: "Jan 17, 2024"
     deadline: "Jan 31, 2024"
-    canvas: https://canvas.sfu.ca/courses/75055/assignments/831466
+    hwc-url: https://coursys.sfu.ca/2024sp-cmpt-413-x1/pages/HW1-C/view
+    hwp-report-submit-url: https://www.gradescope.ca/courses/14929/assignments/70206
   - hw: "2"
     startdate: "Jan 31, 2024"
     deadline: "Feb 14, 2024"
-    canvas: https://canvas.sfu.ca/courses/75055/assignments/831467
+    hwc-url: https://coursys.sfu.ca/2024sp-cmpt-413-x1/pages/HW2-C/view
+    hwp-report-submit-url: https://www.gradescope.ca/courses/14929/assignments/70208
   - hw: "3"
     startdate: "Feb 14, 2024"
     deadline: "Feb 28, 2024"
-    canvas: https://canvas.sfu.ca/courses/75055/assignments/831468
+    hwc-url: https://coursys.sfu.ca/2024sp-cmpt-413-x1/pages/HW3-C/view
+    hwp-report-submit-url: https://www.gradescope.ca/courses/14929/assignments/70210
   - hw: "4"
     startdate: "Feb 28, 2024"
     deadline: "Mar  13, 2024"
-    canvas: https://canvas.sfu.ca/courses/75055/assignments/831469
+    hwc-url: https://coursys.sfu.ca/2024sp-cmpt-413-x1/pages/HW4-C/view
+    hwp-report-submit-url: https://www.gradescope.ca/courses/14929/assignments/70212
   - hw: "project"
     startdate: "Feb 1, 2024"
     deadline: "Apr 10, 2024"

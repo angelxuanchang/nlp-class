@@ -6,15 +6,17 @@ title: Homework 2 | BERT Finetuning for Robust Phrasal Chunking
 active_tab: homework
 ---
 
+# Homework 2
+
 <span class="text-info">Start on {{ site.hwdates[2].startdate }}</span> |
 <span class="text-warning">Due on {{ site.hwdates[2].deadline }}</span>
 
-<!-- ## Homework Questions 2: Word vectors and neural networks
+## Homework Questions 2: Word representations and sequence models
 
 <span class="text-info">Out on {{ site.hwdates[2].startdate }}</span> 
-{% if site.hwdates[2].coursys %}
-<span>Posted on [Coursys]({{ site.hwdates[2].coursys }}).</span> 
-{% endif %} -->
+{% if site.hwdates[2].hwc-url %}
+<span>Posted on [Coursys]({{ site.hwdates[2].hwc-url }}).</span> 
+{% endif %}
 
 # Programming Homework 2: BERT Finetuning for Robust Phrasal Chunking
 
@@ -490,7 +492,7 @@ evaluate your output on the test input after the submission deadline.
 
 You should prepare a short (1-2 pages) report on what you did in this assignment.  Your report should be organized into clear sections, with grammatical English (full sentences).  Use figures, graphs, tables to compare results of different experiments.  
 
-In your report, you should compare the performance of the default solution, vs the retrofitting approach, vs the context-based similarity approach, vs any other methods you attempted.  You should discuss which approach worked the best and what errors were made by different approaches.
+In your report, you should compare the performance of the default solution, vs using the MLP layer or CRF layer, vs any other methods you attempted.  You should discuss which approach worked the best and what errors were made by different approaches.
 
 The report should include the following:
 * Group name with names of group members
@@ -500,7 +502,8 @@ The report should include the following:
 * Discussion of alternative methods you tried and how well they worked (or didn't work)
 * Breakdown of contributions by each group member
 
-Your report should be submitted as `report.pdf`  Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
+Your report should be submitted as `report.pdf` to [Gradescope]({{site.hwdates[2].hwp-report-submit-url}}).
+Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
 
 ## Submit your homework on {{ site.hwsubmit.name }}
 
@@ -532,7 +535,10 @@ did for this homework in `answer/README.username`.
 
 Go to `Programming Homework 2` on {{ site.hwsubmit.name }} and do a group submission:
 
-* Upload `output.zip` and `source.zip`
+* Upload `output.zip` and `source.zip` and `report.pdf` to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}/+hwp2/)
+{% if site.hwdates[2].hwp-report-submit-url %}
+* Please also upload your `report.pdf` to [Gradescope]({{site.hwdates[2].hwp-report-submit-url}}) HW2-P Report
+{% endif %}
 * Make sure you have documented your approach in `answer/bertchunker.ipynb`.
 * Check if each group member has a `answer/README.username`.
 * Make sure that your have updated your Github repository with your submission source code.

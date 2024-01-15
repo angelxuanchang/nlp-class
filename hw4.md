@@ -7,14 +7,16 @@ title: Homework 4 | Prefix Tuning for Text Generation
 active_tab: homework
 ---
 
+# Homework 4
+
 <span class="text-info">Start on {{ site.hwdates[4].startdate }}</span> |
 <span class="text-warning">Due on {{ site.hwdates[4].deadline }}</span>
 
 <!-- ## Homework Questions 4: Parsing 
 
 <span class="text-info">Out on {{ site.hwdates[4].startdate }}</span> 
-{% if site.hwdates[4].coursys %}
-<span>Posted on [Coursys]({{ site.hwdates[4].coursys }}).</span> 
+{% if site.hwdates[4].hwc-url %}
+<span>Posted on [Coursys]({{ site.hwdates[4].hwc-url }}).</span> 
 {% endif %} -->
 
 # Programming Homework 4: Prefix Tuning for Text Generation
@@ -309,7 +311,8 @@ The report should include the following:
 * Discussion of alternative methods you tried and how well they worked (or didn't work)
 * Breakdown of contributions by each group member
 
-Your report should be submitted as `report.pdf`  Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
+Your report should be submitted as `report.pdf` to  to [Gradescope]({{site.hwdates[4].hwp-report-submit-url}}).
+Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
 
 ## Submit your homework on {{ site.hwsubmit.name }}
 
@@ -340,7 +343,10 @@ Each group member should write about what they did for this homework in the Pyth
 
 Go to `Programming Homework 4` on {{ site.hwsubmit.name }} and do a group submission:
 
-* Upload `output.zip` and `source.zip`
+* Upload `output.zip` and `source.zip` and `report.pdf` to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}/+hwp4/)
+{% if site.hwdates[4].hwp-report-submit-url %}
+* Please also upload your `report.pdf` to [Gradescope]({{site.hwdates[4].hwp-report-submit-url}}) HW4-P Report
+{% endif %}
 * Make sure you have documented your approach in `answer/prefixtune.ipynb`.
 * Make sure each member of your group has documented their contribution to this homework in the Python notebook.
 

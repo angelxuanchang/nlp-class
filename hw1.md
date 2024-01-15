@@ -6,10 +6,19 @@ title: Homework 1 | Contextual Spell Checking
 active_tab: homework
 ---
 
-# Homework 1: Contextual Spell Checking
+# Homework 1
 
 <span class="text-info">Start on {{ site.hwdates[1].startdate }}</span> |
 <span class="text-warning">Due on {{ site.hwdates[1].deadline }}</span>
+
+## Homework Questions 1: Language models and text classification
+
+<span class="text-info">Out on {{ site.hwdates[1].startdate }}.</span> 
+{% if site.hwdates[1].hwc-url %}
+<span>Posted on [Coursys]({{ site.hwdates[1].hwc-url }}).</span> 
+{% endif %}
+
+# Programming Homework 1: Contextual Spell Checking
 
 ### Getting Started
 
@@ -219,7 +228,9 @@ changes to the default solution.
 
 ## Preparing your report
 
-You should prepare a short (1-2 pages) report on what you did in this assignment.  Your report should be organized into clear sections, with grammatical English (full sentences).  Use figures, graphs, tables to compare results of different experiments.  
+You should prepare a short (1-2 pages) report on what you did in this assignment.  
+Your report should be organized into clear sections, with grammatical English (full sentences).  
+Use figures, graphs, tables to compare results of different experiments.  
 
 The report should include the following:
 * Group name with names of group members
@@ -229,7 +240,8 @@ The report should include the following:
 * Discussion of alternative methods you tried and how well they worked (or didn't work)
 * Breakdown of contributions by each group member
 
-Your report should be submitted as `report.pdf`  Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
+Your report should be submitted as `report.pdf` to [Gradescope]({{site.hwdates[1].hwp-report-submit-url}}). 
+Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
 
 ## Submit your homework on {{ site.hwsubmit.name }}
 
@@ -257,11 +269,14 @@ You must have the following files or `zipsrc.py` will complain about it:
 In addition, each group member should write down a short description
 of what they did for this homework in the Python notebook.
 
-### Upload to {{ site.hwsubmit.name }}
+### Upload to {{ site.hwsubmit.name }} and Gradescope
 
 Go to `Programming Homework 1` on {{ site.hwsubmit.name }} and do a group submission:
 
-* Upload `output.zip` and `source.zip` and `report.pdf`
+* Upload `output.zip` and `source.zip` and `report.pdf` to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}/+hwp1/)
+{% if site.hwdates[1].hwp-report-submit-url %}
+* Please also upload your `report.pdf` to [Gradescope]({{site.hwdates[1].hwp-report-submit-url}}) HW1-P Report
+{% endif %}
 * Make sure your `source.zip` matches your Github repository.
 * Make sure you have documented your approach in `answer/spellchk.ipynb`.
 * Make sure each member of your group has documented their contribution to this homework in `answer/README.username` where `username` is your CSIL/Github username.
