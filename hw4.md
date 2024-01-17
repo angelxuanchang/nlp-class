@@ -343,9 +343,9 @@ Each group member should write about what they did for this homework in the Pyth
 
 Go to `Programming Homework 4` on {{ site.hwsubmit.name }} and do a group submission:
 
-* Upload `output.zip` and `source.zip` and `report.pdf` to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}/+hwp4/)
+* Upload `output.zip` and `source.zip` to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}/+hwp4/)
 {% if site.hwdates[4].hwp-report-submit-url %}
-* Please also upload your `report.pdf` to [Gradescope]({{site.hwdates[4].hwp-report-submit-url}}) HW4-P Report
+* Please upload your `report.pdf` to [Gradescope]({{site.hwdates[4].hwp-report-submit-url}}) HW4-P Report
 {% endif %}
 * Make sure you have documented your approach in `answer/prefixtune.ipynb`.
 * Make sure each member of your group has documented their contribution to this homework in the Python notebook.

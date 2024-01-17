@@ -282,9 +282,9 @@ did for this homework in `answer/README.username`.
 
 Go to `Programming Homework 3` on {{ site.hwsubmit.name }} and do a group submission:
 
-* Upload `output.zip` and `source.zip` and `report.pdf` to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}/+hwp3/)
+* Upload `output.zip` and `source.zip` to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}/+hwp3/)
 {% if site.hwdates[3].hwp-report-submit-url %}
-* Please also upload your `report.pdf` to [Gradescope]({{site.hwdates[3].hwp-report-submit-url}}) HW3-P Report
+* Please upload your `report.pdf` to [Gradescope]({{site.hwdates[3].hwp-report-submit-url}}) HW3-P Report
 {% endif %}
 * Make sure your `source.zip` matches your Github repository.
 * Make sure you have documented your approach in `answer/neuralmt.ipynb`.

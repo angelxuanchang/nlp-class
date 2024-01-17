@@ -528,9 +528,9 @@ did for this homework in `answer/README.username`.
 
 Go to `Programming Homework 0` on [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}) and do a group submission:
 
-* Upload `output.zip` and `source.zip` and `report.pdf` to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}/+hwp0/)
+* Upload `output.zip` and `source.zip` to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}/+hwp0/)
 {% if site.hwdates[0].hwp-report-submit-url %}
-* Please also upload your `report.pdf` to [Gradescope]({{site.hwdates[0].hwp-report-submit-url}}) HW0-P Report
+* Please upload your `report.pdf` to [Gradescope]({{site.hwdates[0].hwp-report-submit-url}}) HW0-P Report
 {% endif %}
 * Make sure you have documented your approach in `answer/ensegment.ipynb`.
 * Make sure each member of your group has documented their contribution to this homework in `answer/README.username` where `username` is your CSIL/Github username.

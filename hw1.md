@@ -273,9 +273,9 @@ of what they did for this homework in the Python notebook.
 
 Go to `Programming Homework 1` on {{ site.hwsubmit.name }} and do a group submission:
 
-* Upload `output.zip` and `source.zip` and `report.pdf` to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}/+hwp1/)
+* Upload `output.zip` and `source.zip` {{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}/+hwp1/)
 {% if site.hwdates[1].hwp-report-submit-url %}
-* Please also upload your `report.pdf` to [Gradescope]({{site.hwdates[1].hwp-report-submit-url}}) HW1-P Report
+* Please upload your `report.pdf` to [Gradescope]({{site.hwdates[1].hwp-report-submit-url}}) HW1-P Report
 {% endif %}
 * Make sure your `source.zip` matches your Github repository.
 * Make sure you have documented your approach in `answer/spellchk.ipynb`.

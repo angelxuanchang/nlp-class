@@ -535,9 +535,9 @@ did for this homework in `answer/README.username`.
 
 Go to `Programming Homework 2` on {{ site.hwsubmit.name }} and do a group submission:
 
-* Upload `output.zip` and `source.zip` and `report.pdf` to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}/+hwp2/)
+* Upload `output.zip` and `source.zip` to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}/+hwp2/)
 {% if site.hwdates[2].hwp-report-submit-url %}
-* Please also upload your `report.pdf` to [Gradescope]({{site.hwdates[2].hwp-report-submit-url}}) HW2-P Report
+* Please upload your `report.pdf` to [Gradescope]({{site.hwdates[2].hwp-report-submit-url}}) HW2-P Report
 {% endif %}
 * Make sure you have documented your approach in `answer/bertchunker.ipynb`.
 * Check if each group member has a `answer/README.username`.
