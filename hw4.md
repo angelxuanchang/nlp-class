@@ -345,7 +345,9 @@ Go to `Programming Homework 4` on {{ site.hwsubmit.name }} and do a group submis
 
 * Upload `output.zip` and `source.zip` to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}/+hwp4/)
 {% if site.hwdates[4].hwp-report-submit-url %}
-* Please upload your `report.pdf` to [Gradescope]({{site.hwdates[4].hwp-report-submit-url}}) HW4-P Report
+* Please upload your `report.pdf` to [Gradescope]({{site.hwdates[4].hwp-report-submit-url}}) HW4-P Report.  
+Only one person need to submit for the group, but please [add your group members](https://help.gradescope.com/article/m5qz2xsnjy-student-add-group-members)
+so that they can see the submission and specify the name of your group in the report.
 {% endif %}
 * Make sure you have documented your approach in `answer/prefixtune.ipynb`.
 * Make sure each member of your group has documented their contribution to this homework in the Python notebook.

@@ -530,7 +530,9 @@ Go to `Programming Homework 0` on [{{ site.hwsubmit.name }}]({{ site.hwsubmit.ur
 
 * Upload `output.zip` and `source.zip` to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}/+hwp0/)
 {% if site.hwdates[0].hwp-report-submit-url %}
-* Please upload your `report.pdf` to [Gradescope]({{site.hwdates[0].hwp-report-submit-url}}) HW0-P Report
+* Please upload your `report.pdf` to [Gradescope]({{site.hwdates[0].hwp-report-submit-url}}) HW0-P Report.
+Only one person need to submit for the group, but please [add your group members](https://help.gradescope.com/article/m5qz2xsnjy-student-add-group-members)
+so that they can see the submission and specify the name of your group in the report.
 {% endif %}
 * Make sure you have documented your approach in `answer/ensegment.ipynb`.
 * Make sure each member of your group has documented their contribution to this homework in `answer/README.username` where `username` is your CSIL/Github username.
