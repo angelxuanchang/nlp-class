@@ -22,25 +22,23 @@
   num: 1
   dates:
   - date: "1/15" 
-    title: "Text classification"
+    title: "LM smoothing and evaluation; Text classification - Naive Bayes"
     lecture: "classifiers"
     leclinks:
       - name: "NB slides"
         url: "assets/lecture-slides/L3-classification-naivebayes.pdf"
+    readings: ["jm4"]
+  - date: "1/16" 
+    tutorial: 2
+  - date: "1/17" 
+    title: "Text classification - Logistic Regression"
+    lecture: "classifiers"
+    leclinks:
       - name: "Logistic regression slides"
         url: "assets/lecture-slides/L4-classification-logistic.pdf"
       - name: "Evaluation slides"
         url: "assets/lecture-slides/L3-classification-evaluation.pdf"
-    readings: ["jm4", "jm5"]
-  - date: "1/16" 
-    tutorial: 2
-  - date: "1/17" 
-    title: "Word Representations"
-    lecture: "wordvec"
-    leclinks:
-      - name: "WV slides 1"
-        url: "assets/lecture-slides/L7-wordvectors.pdf"
-    readings: [ "jm5"]
+    readings: ["jm5"]
     hwdue: "0"
     hwout: "1"
   - date: "1/19" 
@@ -49,17 +47,17 @@
   num: 2
   dates:
   - date: "1/22" 
+    title: "Word Representations"
+    lecture: "wordvec"
+    leclinks:
+      - name: "WV slides 1"
+        url: "assets/lecture-slides/L7-wordvectors.pdf"
+  - date: "1/24" 
     title: "Word Representations and neural language models"
     lecture: "wordvec"
     leclinks:
       - name: "WV slides 2"
         url: "assets/lecture-slides/L8-word2vec.pdf"
-  - date: "1/24"
-    title: "Sequence modeling"
-    lecture: "hmm"
-    leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L9-sequence-modeling.pdf"
   - date: "2/2" 
     tutorial: 5
 - week: 
