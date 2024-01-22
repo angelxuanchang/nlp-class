@@ -47,9 +47,11 @@
   num: 2
   dates:
   - date: "1/22" 
-    title: "Word Representations"
+    title: "NN review and word Representations"
     lecture: "wordvec"
     leclinks:
+      - name: "Neural network review"
+        url: "assets/lecture-slides/L5-neural-nets.pdf"
       - name: "WV slides 1"
         url: "assets/lecture-slides/L7-wordvectors.pdf"
   - date: "1/24" 
