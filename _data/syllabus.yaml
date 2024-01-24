@@ -234,9 +234,9 @@
   current: false
   notes: 
     - title: "Word vectors (vector space models)"
-      url: "assets/slides/L7-wordvectors.pdf"
+      url: "assets/lecture-slides/L6-wordvectors.pdf"
     - title: "Word2Vec"
-      url: "assets/slides/L8-word2vec.pdf"
+      url: "assets/lecture-slides/L7-word2vec.pdf"
     - title: "Python Notebook: Singular Value Decomposition for NLP"
       url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/svd.ipynb"
       download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/svd.ipynb"

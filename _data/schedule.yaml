@@ -59,7 +59,7 @@
     lecture: "wordvec"
     leclinks:
       - name: "WV slides 2"
-        url: "assets/lecture-slides/L8-word2vec.pdf"
+        url: "assets/lecture-slides/L7-word2vec.pdf"
   - date: "2/2" 
     tutorial: 5
 - week: 
