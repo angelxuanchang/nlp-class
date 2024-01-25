@@ -355,7 +355,13 @@
       download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/rnnlm.ipynb"
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Deep Learning Architectures for Sequence Processing (J+M chapter 9)"
+      title: "Sequence Labeling for Parts of Speech and Named Entities (J+M chapter 8)"
+      abbr: "J+M chapter 8" 
+      tag: "jm8"
+      url: "https://web.stanford.edu/~jurafsky/slp3/8.pdf"
+      optional: false
+    - author: Dan Jurafsky and James H. Martin
+      title: "RNNs and LSTMs (J+M chapter 9)"
       abbr: "J+M chapter 9" 
       tag: "jm9"
       url: "https://web.stanford.edu/~jurafsky/slp3/9.pdf"
@@ -399,13 +405,6 @@
   notes:
     - title: "Sequence to sequence models"
       url: "assets/lecture-slides/L12-sequence-generation.pdf"
-  readings:
-    - author: Dan Jurafsky and James H. Martin
-      title: "Machine Translation and Encoder-Decoder Models (J+M chapter 10)"
-      abbr: "J+M chapter 10" 
-      tag: jm10
-      url: "https://web.stanford.edu/~jurafsky/slp3/10.pdf"
-      optional: false
 - title: "Neural Machine Translation"
   tag: nmt
   include: false
@@ -482,10 +481,10 @@
       url: "assets/lecture-slides/L13-transformers.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Deep Learning Architectures for Sequence Processing (J+M chapter 9.4)"
-      abbr: "J+M chapter 9.4" 
-      tag: "jm9.4"
-      url: "https://web.stanford.edu/~jurafsky/slp3/9.pdf"
+      title: "Transformers and Large Language Models (J+M chapter 10)"
+      abbr: "J+M chapter 10" 
+      tag: jm10
+      url: "https://web.stanford.edu/~jurafsky/slp3/10.pdf"
       optional: false
     - title: "Attention Is All You Need"
       author: "Vaswani et al. 2017"
@@ -508,7 +507,7 @@
       url: "assets/lecture-slides/L14-contextualized-word-embeddings.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Transfer Learning with Pretrained Language Models and Contextual Embeddings (J+M chapter 11)"
+      title: "Fine-tuning and Masked Language Models (J+M chapter 11)"
       abbr: "J+M chapter 11" 
       tag: jm11
       url: "https://web.stanford.edu/~jurafsky/slp3/11.pdf"
@@ -552,14 +551,9 @@
       download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/cfg.ipynb"
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Constituency Grammars (J+M chapter 12.1-12.2)"
-      url: "https://web.stanford.edu/~jurafsky/slp3/12.pdf"
-      abbr: "J+M chapter 12.1-12.2" 
-      optional: false
-    - author: Dan Jurafsky and James H. Martin
-      title: "Constituency Parsing (J+M chapter 13.1-13.4)"
-      abbr: "J+M chapter 13.1-13.4" 
-      url: "https://web.stanford.edu/~jurafsky/slp3/13.pdf"
+      title: "Constituency Grammars (J+M chapter 17)"
+      url: "https://web.stanford.edu/~jurafsky/slp3/17.pdf"
+      abbr: "J+M chapter 17.1" 
       optional: false
     - author: Dan Jurafsky and James H. Martin
       title: "Statistical Constituency Parsing (J+M chapter Appendix C.1-C.4)"
@@ -600,9 +594,9 @@
       url: "assets/lecture-slides/L16-dependency-parsing.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Dependency Parsing (J+M chapter 14)"
-      abbr: "J+M chapter 14" 
-      url: "https://web.stanford.edu/~jurafsky/slp3/14.pdf"
+      title: "Dependency Parsing (J+M chapter 18)"
+      abbr: "J+M chapter 18" 
+      url: "https://web.stanford.edu/~jurafsky/slp3/18.pdf"
       optional: false
 - title: "Semantic Parsing"
   tag: semparse
@@ -617,9 +611,9 @@
       url: "https://cs.stanford.edu/~pliang/papers/executable-cacm2016.pdf"
       optional: false
     - author: Dan Jurafsky and James H. Martin
-      title: "Logical Representations of Sentence Meaning (J+M chapter 15)"
-      abbr: "J+M chapter 15" 
-      url: "https://web.stanford.edu/~jurafsky/slp3/15.pdf"
+      title: "Logical Representations of Sentence Meaning (J+M chapter 19)"
+      abbr: "J+M chapter 19" 
+      url: "https://web.stanford.edu/~jurafsky/slp3/19.pdf"
       optional: true
   links:
     - author: Bill MacCartney
@@ -680,9 +674,9 @@
       url: "assets/lecture-slides/L21-dialogue.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Dialog Systems and Chatbots (J+M chapter 24)"
-      abbr: "J+M chapter 24" 
-      url: "https://web.stanford.edu/~jurafsky/slp3/24.pdf"
+      title: "Chatbots and Dialogue Systems (J+M chapter 15)"
+      abbr: "J+M chapter 15" 
+      url: "https://web.stanford.edu/~jurafsky/slp3/15.pdf"
       optional: true
 - title: "Coreference Resolution"
   tag: coref
@@ -690,9 +684,9 @@
   current: false
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Coreference Resolution (J+M chapter 21)"
-      abbr: "J+M chapter 21" 
-      url: https://web.stanford.edu/~jurafsky/slp3/21.pdf
+      title: "Coreference Resolution (J+M chapter 26)"
+      abbr: "J+M chapter 26" 
+      url: https://web.stanford.edu/~jurafsky/slp3/26.pdf
       optional: true
 - title: "Grounded Language"
   tag: grounding
