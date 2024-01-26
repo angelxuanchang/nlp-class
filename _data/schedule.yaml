@@ -54,13 +54,15 @@
         url: "assets/lecture-slides/L5-neural-nets.pdf"
       - name: "WV slides 1"
         url: "assets/lecture-slides/L6-wordvectors.pdf"
+  - date: "1/23" 
+    tutorial: 4
   - date: "1/24" 
     title: "Word Representations and neural language models"
     lecture: "wordvec"
     leclinks:
       - name: "WV slides 2"
         url: "assets/lecture-slides/L7-word2vec.pdf"
-  - date: "2/2" 
+  - date: "1/26" 
     tutorial: 5
 - week: 
   num: 3
@@ -73,6 +75,8 @@
         url: "assets/lecture-slides/L10-RNN.pdf"
       - name: "slides"
         url: "assets/lecture-slides/L11-LSTM-GRU.pdf"
+  - date: "1/30" 
+    tutorial: 6
   - date: "1/31" 
     title: "Sequence-to-sequence models"
     lecture: "seq2seq"
@@ -81,6 +85,8 @@
         url: "assets/lecture-slides/L12-sequence-generation.pdf"
     hwdue: "1"
     hwout: "2"
+  - date: "2/2" 
+    tutorial: 7
 - week: 
   num: 4
   dates:

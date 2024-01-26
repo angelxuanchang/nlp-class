@@ -38,6 +38,9 @@ active_tab: resources
 * Deep learning for NLP
     * [TorchText](https://torchtext.readthedocs.io/en/latest/)
 
+* Sequence models
+    * [FairSeq](https://github.com/facebookresearch/fairseq)
+
 * Static Word Embeddings
     * [Word2Vec](https://code.google.com/archive/p/word2vec/)
     * [GloVe](https://nlp.stanford.edu/projects/glove/)
@@ -47,6 +50,7 @@ active_tab: resources
     * [HuggingFace course on transformers](https://huggingface.co/course/chapter1/1) 
        * [HuggingFace transformers](https://huggingface.co/transformers/) Docummentation for various transformer based models from HuggingFace
     * [OpenAI API](https://beta.openai.com/overview)
+    * [Llama](https://github.com/facebookresearch/llama)
 
 * Machine Translation
     * [SFUTranslate](https://github.com/sfu-natlang/SFUTranslate) SFU NLL's MT toolkit (designed to be modern and flexible) 

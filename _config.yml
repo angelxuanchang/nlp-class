@@ -34,10 +34,9 @@ tutorials:
   - tutorial: "3"
     title: "Building classifiers with pytorch"
   - tutorial: "4"
-    title: "Neural BoW with pytorch"
-    components: ["Neural BoW with pytorch", "Optimization and backprop"]
+    title: "Building text classifiers with word embeddings"
   - tutorial: "5"
-    title: "Using static word embeddings"
+    title: "Building text classifiers with pretrained word embeddings"
   - tutorial: "6"
     title: "Neural language models with BoW/Fixed Window FFN"
   - tutorial: "7"
