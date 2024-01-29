@@ -68,21 +68,21 @@
   num: 3
   dates:
   - date: "1/29" 
-    title: "Neural Sequence modeling"
+    title: "Sequence modeling I"
+    lecture: "hmm"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L9-sequence-modeling.pdf"
+  - date: "1/30" 
+    tutorial: 6
+  - date: "1/31"
+    title: "Sequence modeling II"
     lecture: "rnn"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L10-RNN.pdf"
+        url: "assets/lecture-slides/10-RNN.pdf"
       - name: "slides"
         url: "assets/lecture-slides/L11-LSTM-GRU.pdf"
-  - date: "1/30" 
-    tutorial: 6
-  - date: "1/31" 
-    title: "Sequence-to-sequence models"
-    lecture: "seq2seq"
-    leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L12-sequence-generation.pdf"
     hwdue: "1"
     hwout: "2"
   - date: "2/2" 
@@ -91,22 +91,26 @@
   num: 4
   dates:
   - date: "2/5" 
+    title: "Sequence-to-sequence models"
+    lecture: "seq2seq"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L12-sequence-generation.pdf"
+  - date: "2/7" 
     title: "Attention and transformers"
     lecture: "transformers"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L13-transformers.pdf"
-  - date: "2/7" 
+- week: 
+  num: 5
+  dates:
+  - date: "2/12" 
     title: "Contextual word embeddings and pretraining"
     lecture: "cwe"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L14-contextualized-word-embeddings.pdf"
-- week: 
-  num: 5
-  dates:
-  - date: "2/12" 
-    title: "Fine-tuning and adapting pretrained models"
   - date: "2/14" 
     title: "Benchmark datasets"
     hwdue: "2"
