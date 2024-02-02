@@ -68,7 +68,7 @@
   num: 3
   dates:
   - date: "1/29" 
-    title: "Sequence modeling I"
+    title: "Sequence modeling (HMMs)"
     lecture: "hmm"
     leclinks:
       - name: "slides"
@@ -76,13 +76,11 @@
   - date: "1/30" 
     tutorial: 6
   - date: "1/31"
-    title: "Sequence modeling II"
+    title: "Neural sequence modeling (RNNs)"
     lecture: "rnn"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/10-RNN.pdf"
-      - name: "slides"
-        url: "assets/lecture-slides/L11-LSTM-GRU.pdf"
     hwdue: "1"
     hwout: "2"
   - date: "2/2" 
@@ -91,9 +89,11 @@
   num: 4
   dates:
   - date: "2/5" 
-    title: "Sequence-to-sequence models"
+    title: "Neural Sequence Modeling (LSTM/GRU) and sequence-to-sequence models"
     lecture: "seq2seq"
     leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L11-LSTM-GRU.pdf"
       - name: "slides"
         url: "assets/lecture-slides/L12-sequence-generation.pdf"
   - date: "2/7" 
