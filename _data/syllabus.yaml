@@ -635,7 +635,7 @@
       optional: true
 - title: "Memory Networks"
   tag: memnet
-  include: true
+  include: false
   current: false
   notes:
     - title: "Memory Networks"

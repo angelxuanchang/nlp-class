@@ -80,7 +80,7 @@
     lecture: "rnn"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/10-RNN.pdf"
+        url: "assets/lecture-slides/L10-RNN.pdf"
     hwdue: "1"
     hwout: "2"
   - date: "2/2" 
