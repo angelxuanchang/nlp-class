@@ -101,6 +101,8 @@
     lecture: "transformers"
     leclinks:
       - name: "slides"
+        url: "assets/lecture-slides/L12b-sequence-generation-attention.pdf"
+      - name: "slides"
         url: "assets/lecture-slides/L13-transformers.pdf"
 - week: 
   num: 5
