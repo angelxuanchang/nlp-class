@@ -97,20 +97,20 @@
       - name: "slides"
         url: "assets/lecture-slides/L12-sequence-generation.pdf"
   - date: "2/7" 
-    title: "Attention and transformers"
+    title: "Attention in sequence-to-sequence models"
     lecture: "transformers"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L12b-sequence-generation-attention.pdf"
-      - name: "slides"
-        url: "assets/lecture-slides/L13-transformers.pdf"
 - week: 
   num: 5
   dates:
   - date: "2/12" 
-    title: "Contextual word embeddings and pretraining"
+    title: "Transformers and contextualized word embeddings"
     lecture: "cwe"
     leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L13-transformers.pdf"
       - name: "slides"
         url: "assets/lecture-slides/L14-contextualized-word-embeddings.pdf"
   - date: "2/14" 
