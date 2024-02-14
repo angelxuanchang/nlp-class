@@ -109,12 +109,15 @@
     title: "Transformers and contextualized word embeddings"
     lecture: "cwe"
     leclinks:
-      - name: "slides"
+      - name: "transformer slides"
         url: "assets/lecture-slides/L13-transformers.pdf"
-      - name: "slides"
+      - name: "cwe slides"
         url: "assets/lecture-slides/L14-contextualized-word-embeddings.pdf"
   - date: "2/14" 
     title: "Benchmark datasets"
+    leclinks:
+      - name: "slides"
+        url: "assets/slides/benchmarks.pdf"
     hwdue: "2"
     hwout: "3"
 - week: 
@@ -130,8 +133,13 @@
   num: 8
   dates:
   - date: "2/26" 
-    title: "Decoding"
-    lecture: "decoding"
+    title: "Pretraining and fine-tuning"
+    lecture: "pretraining"
+    leclinks:
+      - name: "pretraining slides"
+        url: "assets/lecture-slides/L20-pretraining.pdf"
+      - name: "fine-tuning slides"
+        url: "assets/slides/peft.pdf"
   - date: "2/28" 
     title: "Final project tips, model debugging and analysis"
     lecture: "analysis"
