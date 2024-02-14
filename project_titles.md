@@ -6,6 +6,33 @@ caption: "1928 woodcut by M. C. Escher showing the Tower of Babel."
 title: "Projects from previous terms"
 active_tab: project
 ---
+# Spring 2023 Final Projects
+* MIND News Recommendation System with OpenAI’s Pre-trained embeddings
+* English and Japanese Machine Translator
+* Polyglot Refinement: Neural Machine Translation for Low Resource Languages
+* Research Paper Summarization
+* Comparative Analysis of Adversarial Attacks on BERT-based NLP Models
+* Text Summarization of Academic Papers
+* Grammatical Error Correction using Recurrent Neural Networks
+* Syntactic Aware Cross Modality Alignment for Vision Language Navigation
+* Chatting Bot
+* Normalizing informal language using Deep Learning
+* Comparative Analysis of Deep Learning Models on Yahoo! Answers Dataset for Text Classification
+* Toxic Comment Classification
+* News Keywords Extraction Tool
+* The Role of Word Embeddings in the Task of Text Classification
+* Identify Key Information in Patient Notes from Medical Licensing Exams
+* Research Paper Title Generation based on the Abstract
+* CompareNet: Reproduction of Graph Neural Fake News Detection with External Knowledge
+* Exploring BERT-based Models’ Performance on SQuAD 2.0
+* Fake News Detection with various natural language processing models.
+* Fake News Classifier
+* Using Sentiment Classification to measure online perception
+* Comprehensive NLP Approaches to Plagiarism Detection
+* Aspect Based Sentiment Analysis For Restaurant Reviews
+* Identifying Sarcasm in Social Media Text using NLP Techniques
+* Comparison for Question-Answering System Performance using BERT, RoBERTa, ALBERT and XLNet Models
+
 # Fall 2022 Final Projects
 * Automatic essay evaluation
 * Predicting Quality of Text Generators

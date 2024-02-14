@@ -77,11 +77,11 @@ hwdates:
     hwc-url: https://coursys.sfu.ca/2024sp-cmpt-413-x1/pages/HW4-C/view
     hwp-report-submit-url: https://www.gradescope.ca/courses/14929/assignments/70212
   - hw: "project"
-    startdate: "Feb 1, 2024"
+    startdate: "Feb 15, 2024"
     deadline: "Apr 10, 2024"
     time: "Poster session: ???"
     location: "TBD"
-    abstract: "Feb 15, 2024"
+    abstract: "Feb 22, 2024"
     proposal: "Feb 29, 2024"
     milestone: "Mar 21, 2024"
     poster: "Video due on Apr 6, 2024"
