@@ -116,7 +116,9 @@
   - date: "2/14" 
     title: "Benchmark datasets"
     leclinks:
-      - name: "slides"
+      - name: "project info slides"
+        url: "assets/lecture-slides/project-information.pdf"
+      - name: "benchmark slides"
         url: "assets/slides/benchmarks.pdf"
     hwdue: "2"
     hwout: "3"
