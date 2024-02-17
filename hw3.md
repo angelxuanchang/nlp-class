@@ -49,7 +49,7 @@ Set up the virtual environment:
 
     python3 -m venv venv
     source venv/bin/activate
-    pip3 install -r requirements.txt
+    pip3 install -r requirements.txt 
 
 Note that if you do not change the requirements then after you have
 set up the virtual environment `venv` you can simply run the following
@@ -77,6 +77,12 @@ as your solution:
 The default solution will look for the file `seq2seq_E049.pt`
 pre-trained model file in the data directory. You do **not** 
 need to train a model for this homework.
+
+Download the trained pipelines for English and German:
+```
+  python3 -m spacy download en_core_web_sm
+  python3 -m spacy download de_core_news_sm
+```
 
 You can either download the `seq2seq_E049.pt` model file from:
 
