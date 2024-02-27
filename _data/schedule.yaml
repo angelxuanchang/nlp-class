@@ -150,8 +150,6 @@
         url: "assets/slides/fewshot.pdf"
     hwdue: "3"
     hwout: "4"
-  - date: "2/29" 
-    project: "Project proposal"
 - week: 
   num: 9
   dates:
@@ -161,6 +159,7 @@
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L15-constituency-parsing.pdf"
+    project: "Project proposal"
   - date: "3/6" 
     title: "Dependency parsing"
     lecture: "dependency"
