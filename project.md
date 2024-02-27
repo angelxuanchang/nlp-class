@@ -167,10 +167,12 @@ Make sure the following points are in your proposal.
     * How will the work be allocated between the team members?
 * Reference - provide references using BibTex 
 
-Go to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}). Under the `Project Proposal`
+<!-- Go to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}). Under the `Project Proposal`
 activity submit the following files:
 
-* `proposal.pdf`: this is the project proposal report 
+* `proposal.pdf`: this is the project proposal report  -->
+
+Please upload your `proposal.pdf` to [Gradescope]({{site.hwdates[5].proposal-submit-url}}) `Project Proposal`.  
 
 <!-- Go to [Canvas]({{ site.canvas }}). Under the `Project Proposal`
 assignment submit your `proposal.pdf` -->
@@ -223,12 +225,15 @@ Grading of the milestone will be based on the progress and the quality of writin
 <!-- Go to [Canvas]({{ site.canvas }}). Under the `Project Milestone`
 assignment submit your `milestone.pdf` -->
 
-Go to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}). Under the `Project Milestone`
-activity submit the following files:
+Please upload your `milestone.pdf` to [Gradescope]({{site.hwdates[5].milestone-submit-url}}) `Project Milestone`.  
 
-* `milestone.pdf`: this is the project milestone report
+Optionally, you can go to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}). Under the `Project Milestone`
+activity upload `source.zip` and `output.zip` for your project.  These will not be graded. 
+<!-- submit the following files: -->
 
-Optionally, you can also upload `source.zip` and `output.zip` for your project.  These will not be graded.
+<!-- * `milestone.pdf`: this is the project milestone report
+
+Optionally, you can also upload `source.zip` and `output.zip` for your project.  These will not be graded. -->
 
 <!-- * Final Project Poster Session:
     * Time: {{ site.hwdates[5].deadline }} {{ site.hwdates[5].time }}. 
@@ -279,13 +284,15 @@ Please read this [guide to presenting your work](assets/cached/cs224u/cs224u-201
 <!-- Go to [Gradescope]({{ site.gradescope }}). Under the `Final Project Report`
 assignment submit your `report.pdf` -->
 
-Go to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}). Under the `Final Project Report`
-activity submit the following pdf files:
+Please upload your `report.pdf` to [Gradescope]({{site.hwdates[5].report-submit-url}}) `Final Project Report`.  
+
+To submit your code and output, go to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}). Under the `Final Project Report`
+activity submit the following files:
 * `report.pdf`: this is the final project report
 * `source.zip`: this zip file should contain your iPython notebook and only the source code you have written (along with a requirements.txt for a virtualenv). Do not include any data files in this zipfile. Please also include a README.username file as you have done for all your homeworks in this zip file.
 * `output.zip`: output of your project implementation on a dataset. please include the evaluation code and references to allow us to check the evaluation you present in your write-up. Note this should only be your output on the test data file of some dataset plus any evaluation code and clear instructions on how to run the evaluation script.  Do not include large models or data in this zip file.  If you have large models or data that you need to share with us, please put them in a networked file storage (e.g. SFU vault) and provide a link and/or instructions for downloading the data and/or models.
 
-For the convenience of the TAs, you can do a duplicate submission of your `report.pdf` under the `Final Project` (in addition to `Final Project Report`). 
+<!-- For the convenience of the TAs, you can do a duplicate submission of your `report.pdf` under the `Final Project` (in addition to `Final Project Report`).  -->
 
 The instructions for submission and development are provided in more detail in [Homework 0](hw0.html).
 

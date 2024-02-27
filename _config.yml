@@ -83,8 +83,12 @@ hwdates:
     location: "TBD"
     abstract: "Feb 22, 2024"
     proposal: "Mar 4, 2024"
+    proposal-submit-url: https://www.gradescope.ca/courses/14929/assignments/70214
     milestone: "Mar 21, 2024"
+    milestone-submit-url: https://www.gradescope.ca/courses/14929/assignments/70213
     poster: "Video due on Apr 6, 2024"
+    video-submit-url: https://www.gradescope.ca/courses/14929/assignments/70216
+    report-submit-url: https://www.gradescope.ca/courses/14929/assignments/70217
 hwsubmit:
   name: "Coursys"
   url:  "https://coursys.sfu.ca/2024sp-cmpt-413-x1/"
