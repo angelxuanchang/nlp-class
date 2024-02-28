@@ -147,7 +147,7 @@
     title: "Few-shot and in-context learning"
     leclinks:
       - name: "slides"
-        url: "assets/slides/fewshot.pdf"
+        url: "assets/lecture-slides/L16-fewshot.pdf"
     hwdue: "3"
     hwout: "4"
 - week: 
