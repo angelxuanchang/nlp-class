@@ -174,9 +174,9 @@
     lecture: "instruct"
     leclinks:
       - name: "fine-tuning slides"
-        url: "assets/slides/peft.pdf"
+        url: "assets/lecture-slides/peft.pdf"
       - name: "instruction-tuning slides"
-        url: "assets/slides/instruct_tuning.pdf"
+        url: "assets/lecture-slides/instruct_tuning.pdf"
   - date: "3/13" 
     title: "Final project tips, model debugging and analysis"
     lecture: "analysis"
