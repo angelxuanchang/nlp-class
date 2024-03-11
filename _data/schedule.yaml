@@ -170,11 +170,13 @@
   num: 9
   dates:
   - date: "3/11" 
-    title: "Question Answering"
-    lecture: "qa"
+    title: "Parameter-efficient fine-tuning and instruction tuning"
+    lecture: "instruct"
     leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L18-question-answering.pdf"
+      - name: "fine-tuning slides"
+        url: "assets/slides/peft.pdf"
+      - name: "instruction-tuning slides"
+        url: "assets/slides/instruct_tuning.pdf"
   - date: "3/13" 
     title: "Final project tips, model debugging and analysis"
     lecture: "analysis"
@@ -186,9 +188,11 @@
   num: 11
   dates:
   - date: "3/18" 
-    title: "Dialogue"
+    title: "NLP applications"
     lecture: "dialogue"
     leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L18-question-answering.pdf"
       - name: "slides"
         url: "assets/lecture-slides/L22-dialogue.pdf"
   - date: "3/20" 
