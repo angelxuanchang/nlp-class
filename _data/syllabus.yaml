@@ -824,9 +824,10 @@
       url: "assets/lecture-slides/L18-question-answering.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Questing Answering (J+M chapter 23)"
-      abbr: "J+M chapter 23" 
-      url: "https://web.stanford.edu/~jurafsky/slp3/23.pdf"
+      title: "Questing Answering and Information Retrieval (J+M chapter 14)"
+      tag: "jm14"
+      abbr: "J+M chapter 14" 
+      url: "https://web.stanford.edu/~jurafsky/slp3/14.pdf"
       optional: true
 - title: "Memory Networks"
   tag: memnet
@@ -870,6 +871,7 @@
   readings:
     - author: Dan Jurafsky and James H. Martin
       title: "Chatbots and Dialogue Systems (J+M chapter 15)"
+      tag: "jm15"
       abbr: "J+M chapter 15" 
       url: "https://web.stanford.edu/~jurafsky/slp3/15.pdf"
       optional: true
@@ -879,9 +881,9 @@
   current: false
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Coreference Resolution (J+M chapter 26)"
-      abbr: "J+M chapter 26" 
-      url: https://web.stanford.edu/~jurafsky/slp3/26.pdf
+      title: "Coreference Resolution (J+M chapter 22)"
+      abbr: "J+M chapter 22" 
+      url: https://web.stanford.edu/~jurafsky/slp3/22.pdf
       optional: true
 - title: "Grounded Language"
   tag: grounding

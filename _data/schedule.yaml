@@ -189,12 +189,11 @@
   dates:
   - date: "3/18" 
     title: "NLP applications"
-    lecture: "dialogue"
+    lecture: "applications"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L18-question-answering.pdf"
-      - name: "slides"
-        url: "assets/lecture-slides/L22-dialogue.pdf"
+        url: "assets/lecture-slides/L18-applications.pdf"
+    readings: ["jm14", "jm15"]
   - date: "3/20" 
     title: "Scaling laws for LLMs"
     lecture: "scaling-laws"
