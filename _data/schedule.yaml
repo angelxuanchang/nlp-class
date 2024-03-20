@@ -199,7 +199,7 @@
     lecture: "scaling-laws"
     leclinks:
       - name: "slides"
-        url: "assets/slides/scaling.pdf"
+        url: "assets/lecture-slides/scaling.pdf"
   - date: "3/21" 
     project: "Project milestone"
 - week: 
