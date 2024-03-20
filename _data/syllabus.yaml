@@ -855,7 +855,7 @@
   current: false
   notes:
     - title: "Text Generation"
-      url: "assets/lecture-slides/L20-text-generation.pdf"
+      url: "assets/lecture-slides/L21-text-generation.pdf"
   readings:
     - author: "Holtzman et al. 2020"
       title: "The curious case of text degeneration"
@@ -867,7 +867,7 @@
   current: false
   notes:
     - title: "Dialogue"
-      url: "assets/lecture-slides/L21-dialogue.pdf"
+      url: "assets/lecture-slides/L22-dialogue.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
       title: "Chatbots and Dialogue Systems (J+M chapter 15)"
