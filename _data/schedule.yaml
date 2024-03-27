@@ -214,6 +214,9 @@
   - date: "3/27" 
     title: "LLM Agents"
     lecture: "llm-agents"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L20-LLM-agents.pdf"
 - week: 
   num: 13
   dates:
