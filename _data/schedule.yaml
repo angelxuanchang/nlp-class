@@ -223,8 +223,11 @@
   - date: "4/1" 
     noclass: true
     title: "No class - Easter"
-  - date: "4/3" 
-    title: "Guest lecture: Nick Vincent on Societal Impacts of Generative AI: Economic Factors and More"
+  - date: "4/3"
+    speaker: 
+      name: "Nick Vincent"
+      url: "https://www.nickmvincent.com/"  
+    title: "Societal Impacts of Generative AI: Economic Factors and More"
 - week: 
   num: 14
   dates:

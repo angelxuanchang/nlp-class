@@ -12,12 +12,12 @@ active_tab: homework
 <span class="text-info">Start on {{ site.hwdates[4].startdate }}</span> |
 <span class="text-warning">Due on {{ site.hwdates[4].deadline }}</span>
 
-<!-- ## Homework Questions 4: Parsing 
+## Homework Questions 4: Parsing and adapting LLMs
 
 <span class="text-info">Out on {{ site.hwdates[4].startdate }}</span> 
 {% if site.hwdates[4].hwc-url %}
 <span>Posted on [Coursys]({{ site.hwdates[4].hwc-url }}).</span> 
-{% endif %} -->
+{% endif %}
 
 # Programming Homework 4: Prefix Tuning for Text Generation
 

@@ -44,7 +44,11 @@ The schedule is preliminary and subject to change.   Slides will be updated as t
                     {% if date.recorded %} 
                       Recorded 
                     {% endif %}  
+                    {% if date.speaker %} 
+                      Guest Lecture by <a href="{{date.speaker.url}}">{{date.speaker.name}}</a>: {{ date.title }} <br/>
+                    {% else %}  
                       Lecture: {{ date.title }} <br/>
+                    {% endif %}  
                     {% if date.leclinks %}
                       {% for link in date.leclinks %}
                         [<a href="{{link.url}}">{{link.name}}</a>]

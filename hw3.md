@@ -12,7 +12,7 @@ active_tab: homework
 <span class="text-info">Start on {{ site.hwdates[3].startdate }}</span> |
 <span class="text-warning">Due on {{ site.hwdates[3].deadline }}</span>
 
-## Homework Questions 3: Text generation and attention
+## Homework Questions 3: Neural machine translation and transformers
 
 <span class="text-info">Out on {{ site.hwdates[3].startdate }}</span> 
 {% if site.hwdates[3].hwc-url %}
