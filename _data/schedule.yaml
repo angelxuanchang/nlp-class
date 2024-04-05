@@ -227,6 +227,9 @@
     speaker: 
       name: "Nick Vincent"
       url: "https://www.nickmvincent.com/"  
+    leclinks:
+      - name: "slides"
+        url: "https://coursys.sfu.ca/2024sp-cmpt-413-x1/pages/AI-Impacts/view"
     title: "Societal Impacts of Generative AI: Economic Factors and More"
 - week: 
   num: 14
