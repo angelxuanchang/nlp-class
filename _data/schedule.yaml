@@ -1,5 +1,5 @@
 - week: 
-  num: 0
+  num: 1
   dates:
   - date: "1/6" 
     title: "Introduction"
@@ -19,7 +19,7 @@
   - date: "1/10"
     tutorial: 1     
 - week:
-  num: 1
+  num: 2
   dates:
   - date: "1/13" 
     title: "LM smoothing and evaluation; Text classification - Naive Bayes"
@@ -44,7 +44,7 @@
   - date: "1/17" 
     tutorial: 3
 - week: 
-  num: 2
+  num: 3
   dates:
   - date: "1/20" 
     title: "NN review and word Representations"
@@ -65,7 +65,7 @@
   - date: "1/24" 
     tutorial: 5
 - week: 
-  num: 3
+  num: 4
   dates:
   - date: "1/27" 
     title: "Sequence modeling (HMMs)"
@@ -86,7 +86,7 @@
   - date: "1/31" 
     tutorial: 7
 - week: 
-  num: 4
+  num: 5
   dates:
   - date: "2/3" 
     title: "Neural Sequence Modeling (LSTM/GRU) and sequence-to-sequence models"
@@ -103,7 +103,7 @@
       - name: "slides"
         url: "assets/lecture-slides/L12b-sequence-generation-attention.pdf"
 - week: 
-  num: 5
+  num: 6
   dates:
   - date: "2/10" 
     title: "Transformers and contextualized word embeddings"
