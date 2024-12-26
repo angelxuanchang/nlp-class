@@ -1,28 +1,31 @@
 exclude: ['README.md', 'assets/latex/', 'archive', 'venv']
 timezone: US/Pacific
 markdown: kramdown
-coursys: "https://coursys.sfu.ca/2024sp-cmpt-413-x1/"
+coursys: "https://coursys.sfu.ca/2025sp-cmpt-413-x1/"
 forumname: Coursys Discussion Forum
-forum: "https://coursys.sfu.ca/2024sp-cmpt-413-x1/forum/"
+forum: "https://coursys.sfu.ca/2025sp-cmpt-413-x1/forum/"
 canvas: "none"
-gradescope: "https://www.gradescope.ca/courses/14929"
-semcode: 1241
-semester: "Spring 2024"
+gradescope: "https://www.gradescope.ca/courses/23839"
+semcode: 1251
+semester: "Spring 2025"
 calendar: "https://calendar.google.com/calendar/ical/qgs97od9ef8t1582k2rqomv5ho%40group.calendar.google.com/public/basic.ics"
-lastday: "Apr 10, 2024"
+lastday: "Apr 9, 2025"
 midterm: "None"
 instructor: angelx
 officehour: "Wed 1:30pm-2:30pm"
 tas:
-  - name: "Yiming Zhang"
-    email: yza440
-    officehour: "Thursday 3pm"
-  - name: "ZeMing Gong"
-    email: zmgong
-    officehour: "Friday 1:30pm"
+  - name: "Austin Wang"
+    email: atw7
+    officehour: "TBD"
+  - name: "Han-Hung Lee"
+    email: hla300
+    officehour: "TBD"
   - name: "Xiaohao Sun"
     email: xsa55
-    officehour: "Tuesday 3pm"
+    officehour: "TBD"
+  - name: "Chuanqi Tang"
+    email: cta156
+    officehour: "TBD"
 tutorials:
   - tutorial: "0"
     title: "Review of a) probability, linear algebra and calculus and b) useful python/unix commands"
@@ -52,43 +55,43 @@ group:
   maxsize: 3
 hwdates:
   - hw: "0"
-    startdate: "Jan 8, 2024"
-    deadline: "Jan 17, 2024"
+    startdate: "Jan 6, 2025"
+    deadline: "Jan 15, 2025"
     hwc-url: https://coursys.sfu.ca/2024sp-cmpt-413-x1/pages/HW0-C/view
-    hwp-report-submit-url: https://www.gradescope.ca/courses/14929/assignments/70204
+    hwp-report-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
   - hw: "1"
-    startdate: "Jan 17, 2024"
-    deadline: "Jan 31, 2024"
-    hwc-url: https://coursys.sfu.ca/2024sp-cmpt-413-x1/pages/HW1-C/view
-    hwp-report-submit-url: https://www.gradescope.ca/courses/14929/assignments/70206
+    startdate: "Jan 15, 2025"
+    deadline: "Jan 29, 2025"
+    hwc-url: https://coursys.sfu.ca/2025sp-cmpt-413-x1/pages/HW1-C/view
+    hwp-report-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
   - hw: "2"
-    startdate: "Jan 31, 2024"
-    deadline: "Feb 14, 2024"
-    hwc-url: https://coursys.sfu.ca/2024sp-cmpt-413-x1/pages/HW2-C/view
-    hwp-report-submit-url: https://www.gradescope.ca/courses/14929/assignments/70208
+    startdate: "Jan 29, 2025"
+    deadline: "Feb 12, 2025"
+    hwc-url: https://coursys.sfu.ca/2025sp-cmpt-413-x1/pages/HW2-C/view
+    hwp-report-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
   - hw: "3"
-    startdate: "Feb 14, 2024"
-    deadline: "Feb 28, 2024"
-    hwc-url: https://coursys.sfu.ca/2024sp-cmpt-413-x1/pages/HW3-C/view
-    hwp-report-submit-url: https://www.gradescope.ca/courses/14929/assignments/70210
+    startdate: "Feb 12, 2024"
+    deadline: "Feb 26, 2024"
+    hwc-url: https://coursys.sfu.ca/2025sp-cmpt-413-x1/pages/HW3-C/view
+    hwp-report-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
   - hw: "4"
-    startdate: "Feb 28, 2024"
-    deadline: "Mar  13, 2024"
-    hwc-url: https://coursys.sfu.ca/2024sp-cmpt-413-x1/pages/HW4-C/view
-    hwp-report-submit-url: https://www.gradescope.ca/courses/14929/assignments/70212
+    startdate: "Feb 26, 2024"
+    deadline: "Mar  12, 2024"
+    hwc-url: https://coursys.sfu.ca/2025sp-cmpt-413-x1/pages/HW4-C/view
+    hwp-report-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
   - hw: "project"
-    startdate: "Feb 15, 2024"
-    deadline: "Apr 11, 2024"
+    startdate: "Feb 11, 2024"
+    deadline: "Apr 10, 2024"
     time: "Poster session: ???"
     location: "TBD"
-    abstract: "Feb 22, 2024"
-    proposal: "Mar 4, 2024"
-    proposal-submit-url: https://www.gradescope.ca/courses/14929/assignments/70214
-    milestone: "Mar 21, 2024"
-    milestone-submit-url: https://www.gradescope.ca/courses/14929/assignments/70213
+    abstract: "Feb 19, 2024"
+    proposal: "Feb 24, 2024"
+    proposal-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
+    milestone: "Mar 19, 2024"
+    milestone-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
     poster: "Video due on Apr 6, 2024"
-    video-submit-url: https://www.gradescope.ca/courses/14929/assignments/70216
-    report-submit-url: https://www.gradescope.ca/courses/14929/assignments/70217
+    video-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
+    report-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
 hwsubmit:
   name: "Coursys"
-  url:  "https://coursys.sfu.ca/2024sp-cmpt-413-x1/"
+  url:  "https://coursys.sfu.ca/2025sp-cmpt-413-x1/"

@@ -50,8 +50,8 @@ terms of its analysis and the learning of language from observations.
 
 #### Time and place
 Course lectures will be held in person at the Burnaby campus
-* Mon 12:30-2:20pm [SWH10041](http://www.sfu.ca/campuses/maps-and-directions/burnaby-map.html)
-* Wed 12:30-1:20pm [SWH10041](http://www.sfu.ca/campuses/maps-and-directions/burnaby-map.html)
+* Mon 3:30-4:50pm [B9200](http://www.sfu.ca/campuses/maps-and-directions/burnaby-map.html)
+* Wed 3:30-4:50pm [B9200](http://www.sfu.ca/campuses/maps-and-directions/burnaby-map.html)
 * Last day of classes: {{ site.lastday }}
 
 Links to course material will be made available on [Coursys]({{ site.coursys }}).
