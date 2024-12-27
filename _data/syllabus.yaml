@@ -355,16 +355,10 @@
       download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/rnnlm.ipynb"
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Sequence Labeling for Parts of Speech and Named Entities (J+M chapter 8)"
+      title: "RNNs and LSTMs (J+M chapter 8)"
       abbr: "J+M chapter 8" 
       tag: "jm8"
       url: "https://web.stanford.edu/~jurafsky/slp3/8.pdf"
-      optional: false
-    - author: Dan Jurafsky and James H. Martin
-      title: "RNNs and LSTMs (J+M chapter 9)"
-      abbr: "J+M chapter 9" 
-      tag: "jm9"
-      url: "https://web.stanford.edu/~jurafsky/slp3/9.pdf"
       optional: false
     - author: "Christopher Olah"
       title: "Understanding LSTM Networks"
@@ -481,10 +475,10 @@
       url: "assets/lecture-slides/L13-transformers.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Transformers and Large Language Models (J+M chapter 10)"
-      abbr: "J+M chapter 10" 
-      tag: jm10
-      url: "https://web.stanford.edu/~jurafsky/slp3/10.pdf"
+      title: "Transformers (J+M chapter 9)"
+      abbr: "J+M chapter 9" 
+      tag: "jm9"
+      url: "https://web.stanford.edu/~jurafsky/slp3/9.pdf"
       optional: false
     - title: "Attention Is All You Need"
       author: "Vaswani et al. 2017"
@@ -507,7 +501,7 @@
       url: "assets/lecture-slides/L14-contextualized-word-embeddings.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Fine-tuning and Masked Language Models (J+M chapter 11)"
+      title: "Masked Language Models (J+M chapter 11)"
       abbr: "J+M chapter 11" 
       tag: jm11
       url: "https://web.stanford.edu/~jurafsky/slp3/11.pdf"
@@ -541,7 +535,7 @@
       url: "assets/slides/tokenization.pdf"
     - title: "Tokenization into Sub-words with Byte-Pair Encoding"
       url: "http://nbviewer.jupyter.org/github/anoopsarkar/nlp-class/blob/gh-pages/assets/notebooks/bpe.ipynb"
-      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/bpe.ipynb"
+      download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/bpe.ipynb"    
   links:
     - title: "BPE tutorial at Huggingface"
       url: "https://huggingface.co/learn/nlp-course/chapter6/5?fw=pt"
@@ -557,6 +551,13 @@
     - title: "Improving language understanding with unsupervised learning"
       author: "Alec Radford, Karthik Narasimhan, Tim Salimans, Ilya Sutskever"
       url: "https://openai.com/research/language-unsupervised"
+  readings:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Large Language Models (J+M chapter 10)"
+      abbr: "J+M chapter 10" 
+      tag: jm10
+      url: "https://web.stanford.edu/~jurafsky/slp3/10.pdf"
+      optional: false
   links:
     - title: "Semi-supervised Sequence Learning"
       author: "Andrew M. Dai, Quoc V. Le"
@@ -653,6 +654,12 @@
     - title: Lecture notes
       url: "assets/slides/fewshot.pdf"
   readings:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Model Alignment, Prompting, and In-Context Learning (J+M chapter 12.1, 12.2)"
+      abbr: "J+M chapter 12" 
+      tag: jm12
+      url: "https://web.stanford.edu/~jurafsky/slp3/12.pdf"
+      optional: false
     - title: "Language Models are Unsupervised Multitask Learners"
       author: "Open AI"
       url: "https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf"
@@ -686,6 +693,12 @@
       author: "Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher D. Manning, Chelsea Finn"
       url: "https://arxiv.org/abs/2305.18290"
   links:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Model Alignment, Prompting, and In-Context Learning (J+M chapter 12.3)"
+      abbr: "J+M chapter 12" 
+      tag: jm12
+      url: "https://web.stanford.edu/~jurafsky/slp3/12.pdf"
+      optional: false
     - title: "Scaling Instruction-Finetuned Language Models"
       author: "Google"
       url: "https://arxiv.org/abs/2210.11416"
@@ -746,8 +759,8 @@
       download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/cfg.ipynb"
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Constituency Grammars (J+M chapter 17)"
-      url: "https://web.stanford.edu/~jurafsky/slp3/17.pdf"
+      title: "Constituency Grammars (J+M chapter 18)"
+      url: "https://web.stanford.edu/~jurafsky/slp3/18.pdf"
       abbr: "J+M chapter 17.1" 
       optional: false
     - author: Dan Jurafsky and James H. Martin
@@ -789,9 +802,9 @@
       url: "assets/lecture-slides/L16-dependency-parsing.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Dependency Parsing (J+M chapter 18)"
-      abbr: "J+M chapter 18" 
-      url: "https://web.stanford.edu/~jurafsky/slp3/18.pdf"
+      title: "Dependency Parsing (J+M chapter 19)"
+      abbr: "J+M chapter 19" 
+      url: "https://web.stanford.edu/~jurafsky/slp3/19.pdf"
       optional: false
 - title: "Semantic Parsing"
   tag: semparse
@@ -824,7 +837,7 @@
       url: "assets/lecture-slides/L18-question-answering.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Questing Answering and Information Retrieval (J+M chapter 14)"
+      title: "Questing Answering, Information Retrieval, and RAG (J+M chapter 14)"
       tag: "jm14"
       abbr: "J+M chapter 14" 
       url: "https://web.stanford.edu/~jurafsky/slp3/14.pdf"
@@ -881,9 +894,9 @@
   current: false
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Coreference Resolution (J+M chapter 22)"
-      abbr: "J+M chapter 22" 
-      url: https://web.stanford.edu/~jurafsky/slp3/22.pdf
+      title: "Coreference Resolution and Entity Linking (J+M chapter 23)"
+      abbr: "J+M chapter 23" 
+      url: https://web.stanford.edu/~jurafsky/slp3/23.pdf
       optional: true
 - title: "Grounded Language"
   tag: grounding
