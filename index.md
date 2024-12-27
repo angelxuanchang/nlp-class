@@ -64,7 +64,7 @@ Links to course material will be made available on [Coursys]({{ site.coursys }})
 There are no formal prerequisites for this class.  However, you are expected to be familiar with the following:
 * Proficiency in Python - Programming assignments will be in python (numpy and pytorch will be used).
 * Calculus and Linear Algebra (MATH 151, MATH 232/240) - You will need to be comfortable with taking multivariable derivatives
-* Basic Probability and Statistics (STAT 270)
+* Basic Probability and Statistics (CMPT 210 or STAT 270)
 * Basic Machine Learning (CMPT 410/726) is strongly recommended (Note: CMPT 410 was previously offered as CMPT 419 under the title "Machine Learning")
 
 There will be optional TA led tutorials that will help review these topics. 
