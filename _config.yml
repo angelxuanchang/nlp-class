@@ -57,7 +57,7 @@ hwdates:
   - hw: "0"
     startdate: "Jan 6, 2025"
     deadline: "Jan 15, 2025"
-    hwc-url: https://coursys.sfu.ca/2024sp-cmpt-413-x1/pages/HW0-C/view
+    hwc-url: https://coursys.sfu.ca/2025sp-cmpt-413-x1/pages/HW0-C/view
     hwp-report-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
   - hw: "1"
     startdate: "Jan 15, 2025"
@@ -70,26 +70,26 @@ hwdates:
     hwc-url: https://coursys.sfu.ca/2025sp-cmpt-413-x1/pages/HW2-C/view
     hwp-report-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
   - hw: "3"
-    startdate: "Feb 12, 2024"
-    deadline: "Feb 26, 2024"
+    startdate: "Feb 12, 2025"
+    deadline: "Feb 26, 2025"
     hwc-url: https://coursys.sfu.ca/2025sp-cmpt-413-x1/pages/HW3-C/view
     hwp-report-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
   - hw: "4"
-    startdate: "Feb 26, 2024"
-    deadline: "Mar  12, 2024"
+    startdate: "Feb 26, 2025"
+    deadline: "Mar  12, 2025"
     hwc-url: https://coursys.sfu.ca/2025sp-cmpt-413-x1/pages/HW4-C/view
     hwp-report-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
   - hw: "project"
-    startdate: "Feb 11, 2024"
-    deadline: "Apr 10, 2024"
+    startdate: "Feb 11, 2025"
+    deadline: "Apr 10, 2025"
     time: "Poster session: ???"
     location: "TBD"
-    abstract: "Feb 19, 2024"
-    proposal: "Feb 24, 2024"
+    abstract: "Feb 19, 2025"
+    proposal: "Feb 24, 2025"
     proposal-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
-    milestone: "Mar 19, 2024"
+    milestone: "Mar 19, 2025"
     milestone-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
-    poster: "Video due on Apr 6, 2024"
+    poster: "Video due on Apr 6, 2025"
     video-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
     report-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
 hwsubmit:
