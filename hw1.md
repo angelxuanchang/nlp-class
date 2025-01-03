@@ -273,7 +273,7 @@ of what they did for this homework in the Python notebook.
 
 Go to `Programming Homework 1` on {{ site.hwsubmit.name }} and do a group submission:
 
-* Upload `output.zip` and `source.zip` {{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}/+hwp1/)
+* Upload `output.zip` and `source.zip` [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}/+hwp1/)
 {% if site.hwdates[1].hwp-report-submit-url %}
 * Please upload your `report.pdf` to [Gradescope]({{site.hwdates[1].hwp-report-submit-url}}) HW1-P Report.
 Only one person need to submit for the group, but please [add your group members](https://help.gradescope.com/article/m5qz2xsnjy-student-add-group-members)
