@@ -502,7 +502,7 @@ The report should include the following:
 * Discussion of alternative methods you tried and how well they worked (or didn't work)
 * Breakdown of contributions by each group member
 
-Your report should be submitted as `report.pdf` to [Gradescope]({{site.hwdates[2].hwp-report-submit-url}}).
+Your report should be submitted as `report.pdf` to [{{site.hwp-report-submit.name}}]({{site.hwdates[2].hwp-report-submit-url}}).
 Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
 
 ## Submit your homework on {{ site.hwsubmit.name }}
@@ -531,14 +531,14 @@ You must have the following files or `zipsrc.py` will complain about it:
 In addition, each group member should write down a short description of what they
 did for this homework in `answer/README.username`.
 
-### Upload to {{ site.hwsubmit.name }} and Gradescope
+### Upload to {{ site.hwsubmit.name }}
 
 Go to `Programming Homework 2` on {{ site.hwsubmit.name }} and do a group submission:
 
 * Upload `output.zip` and `source.zip` to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}/+hwp2/)
 {% if site.hwdates[2].hwp-report-submit-url %}
-* Please upload your `report.pdf` to [Gradescope]({{site.hwdates[2].hwp-report-submit-url}}) HW2-P Report.
-Only one person need to submit for the group, but please [add your group members](https://help.gradescope.com/article/m5qz2xsnjy-student-add-group-members)
+* Please upload your `report.pdf` to [{{site.hwp-report-submit.name}}]({{site.hwdates[2].hwp-report-submit-url}}) HW2-P Report.
+Only one person need to submit for the group, but please [add your group members]({{site.hwp-report-submit.specify-group-url}})
 so that they can see the submission and specify the name of your group in the report.
 {% endif %}
 * Make sure you have documented your approach in `answer/bertchunker.ipynb`.

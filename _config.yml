@@ -5,7 +5,6 @@ coursys: "https://coursys.sfu.ca/2025sp-cmpt-413-x1/"
 forumname: Coursys Discussion Forum
 forum: "https://coursys.sfu.ca/2025sp-cmpt-413-x1/forum/"
 canvas: "none"
-gradescope: "https://www.gradescope.ca/courses/23839"
 semcode: 1251
 semester: "Spring 2025"
 calendar: "https://calendar.google.com/calendar/ical/qgs97od9ef8t1582k2rqomv5ho%40group.calendar.google.com/public/basic.ics"
@@ -95,3 +94,10 @@ hwdates:
 hwsubmit:
   name: "Coursys"
   url:  "https://coursys.sfu.ca/2025sp-cmpt-413-x1/"
+hwp-report-submit:
+  name: "Crowdmark"
+  url:  "https://app.crowdmark.com/courses/spring-2025-cmpt413-d100-computational-linguistics-cmpt713-g100-natural-language-processing"
+  specify-group-url: "https://www.youtube.com/watch?v=N2LtHmdu09c"
+hwcsubmit:
+  name: "Crowdmark"
+  url:  "https://app.crowdmark.com/courses/spring-2025-cmpt413-d100-computational-linguistics-cmpt713-g100-natural-language-processing"
