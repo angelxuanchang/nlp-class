@@ -6,6 +6,39 @@ caption: "1928 woodcut by M. C. Escher showing the Tower of Babel."
 title: "Projects from previous terms"
 active_tab: project
 ---
+# Spring 2024 Final Projects
+* Toxic Text Classification
+* Real-time live caption Speech2text Finetuning on LJ Speech Dataset
+* Typologically Diverse Morphological Inflection
+* Hotel Recommendation System
+* Predicting Type Annotations
+* Combating Misinformation with BERT
+* Cross-Lingual Text Summarization with PEFT
+* Re-Implementing Folksonomication: Predicting Tags for Movies from Plot Synposes using Emotion Flow Encoded Neural Network
+* Enhancing Emotion Analysis in Text using NLP Techniques
+* Fine-tuning Distilled Large Language Models for Medical Question Answering
+* Question Generation for Academic Papers
+* Infinite Craft Lite: Using Word Embeddings and Potentially Attention to Recreate Infinite Craft
+* Identifying the presense of Intended Sarcasm Detection In English Text
+* GraphVQA: Language-Guided Graph Neural Networks for Scene Graph Question Answering
+* A Novel Natural-Language Processing Based Screening Tool for Depression in Text-based Conversational Data
+* Clickbait Detection on Reddit: A Machine Learning Approach
+* A Conversational Approach to Movie Recommendations
+* Comparing Natural Language Inference Performance on Modern Models using Gemma, Llama, and GPT 2.0
+* Leveraging Large Language Models to Improve Zero-shot Visual Classification
+* Adversarial suffix tuning for jailbreak attacks against large language models
+* Universal Dependencies Visualization
+* French to English Translation Model
+*  alla breve: prompt based small frame music sample generation​
+* Automating Financial Journalism: Natural Language Generation via Transformers
+* Github Issues Model
+* Semantic Synthesis - Recreating and Enhancing “Infinite Craft”
+* Toxic Comment Classification
+* Objective Sentiment Analysis on Amazon Reviews using Language Models
+* Violence Detection in Textual Data with SafetyNet
+* Toxic Comment Classification
+* Reddit Comment Popularity
+
 # Spring 2023 Final Projects
 * MIND News Recommendation System with OpenAI’s Pre-trained embeddings
 * English and Japanese Machine Translator
