@@ -15,7 +15,7 @@ active_tab: homework
 
 <span class="text-info">Out on {{ site.hwdates[1].startdate }}.</span> 
 {% if site.hwdates[1].hwc-url %}
-<span>Posted on [Coursys]({{ site.hwdates[1].hwc-url }}).</span> 
+<span>Posted on [{{site.hwc}}]({{ site.hwdates[1].hwc-url }}).</span> 
 {% endif %}
 
 # Programming Homework 1: Contextual Spell Checking

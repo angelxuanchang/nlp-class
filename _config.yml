@@ -56,28 +56,28 @@ hwdates:
   - hw: "0"
     startdate: "Jan 6, 2025"
     deadline: "Jan 15, 2025"
-    hwc-url: https://coursys.sfu.ca/2025sp-cmpt-413-x1/pages/HW0-C/view
-    hwp-report-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
+    hwc-url: https://app.crowdmark.com/student/assessments/hw0-c-f3037
+    hwp-report-submit-url: https://app.crowdmark.com/student/assessments/hw0-p-report
   - hw: "1"
     startdate: "Jan 15, 2025"
     deadline: "Jan 29, 2025"
-    hwc-url: https://coursys.sfu.ca/2025sp-cmpt-413-x1/pages/HW1-C/view
-    hwp-report-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
+    hwc-url: 
+    hwp-report-submit-url: https://app.crowdmark.com/student/assessments/hw1-p-report
   - hw: "2"
     startdate: "Jan 29, 2025"
     deadline: "Feb 12, 2025"
-    hwc-url: https://coursys.sfu.ca/2025sp-cmpt-413-x1/pages/HW2-C/view
-    hwp-report-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
+    hwc-url: 
+    hwp-report-submit-url: hhttps://app.crowdmark.com/student/assessments/hw2-p-report
   - hw: "3"
     startdate: "Feb 12, 2025"
     deadline: "Feb 26, 2025"
-    hwc-url: https://coursys.sfu.ca/2025sp-cmpt-413-x1/pages/HW3-C/view
-    hwp-report-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
+    hwc-url: 
+    hwp-report-submit-url: https://app.crowdmark.com/student/assessments/hw3-p-report
   - hw: "4"
     startdate: "Feb 26, 2025"
     deadline: "Mar  12, 2025"
-    hwc-url: https://coursys.sfu.ca/2025sp-cmpt-413-x1/pages/HW4-C/view
-    hwp-report-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
+    hwc-url: 
+    hwp-report-submit-url: https://app.crowdmark.com/student/assessments/hw4-p-report
   - hw: "project"
     startdate: "Feb 11, 2025"
     deadline: "Apr 10, 2025"
@@ -85,12 +85,12 @@ hwdates:
     location: "TBD"
     abstract: "Feb 19, 2025"
     proposal: "Feb 24, 2025"
-    proposal-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
+    proposal-submit-url: https://app.crowdmark.com/student/assessments/project-proposal
     milestone: "Mar 19, 2025"
-    milestone-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
+    milestone-submit-url: https://app.crowdmark.com/student/assessments/project-milestone
     poster: "Video due on Apr 6, 2025"
-    video-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
-    report-submit-url: https://www.gradescope.ca/courses/23839/assignments/xxx
+    video-submit-url: https://app.crowdmark.com/student/assessments/project-video
+    report-submit-url: https://app.crowdmark.com/student/assessments/project-report
 hwsubmit:
   name: "Coursys"
   url:  "https://coursys.sfu.ca/2025sp-cmpt-413-x1/"
@@ -98,6 +98,7 @@ hwp-report-submit:
   name: "Crowdmark"
   url:  "https://app.crowdmark.com/courses/spring-2025-cmpt413-d100-computational-linguistics-cmpt713-g100-natural-language-processing"
   specify-group-url: "https://www.youtube.com/watch?v=N2LtHmdu09c"
+hwc: "Crowdmark"
 hwcsubmit:
   name: "Crowdmark"
   url:  "https://app.crowdmark.com/courses/spring-2025-cmpt413-d100-computational-linguistics-cmpt713-g100-natural-language-processing"
