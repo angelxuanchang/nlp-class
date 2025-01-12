@@ -22,11 +22,13 @@
   num: 2
   dates:
   - date: "1/13" 
-    title: "LM smoothing and evaluation; Text classification - Naive Bayes"
+    title: "Text classification - Naive Bayes"
     lecture: "classifiers"
     leclinks:
       - name: "NB slides"
         url: "assets/lecture-slides/L3-classification-naivebayes.pdf"
+      - name: "Evaluation slides"
+        url: "assets/lecture-slides/L3-classification-evaluation.pdf"
     readings: ["jm4"]
   - date: "1/14" 
     tutorial: 2
@@ -36,8 +38,6 @@
     leclinks:
       - name: "Logistic regression slides"
         url: "assets/lecture-slides/L4-classification-logistic.pdf"
-      - name: "Evaluation slides"
-        url: "assets/lecture-slides/L3-classification-evaluation.pdf"
     readings: ["jm5"]
     hwdue: "0"
     hwout: "1"

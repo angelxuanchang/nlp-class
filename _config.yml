@@ -15,16 +15,16 @@ officehour: "Wed 1:30pm-2:30pm"
 tas:
   - name: "Austin Wang"
     email: atw7
-    officehour: "TBD"
+    officehour: "Thu 1:00pm-2:00pm (ASB9808)"
   - name: "Han-Hung Lee"
     email: hla300
-    officehour: "TBD"
+    officehour: "Tue 1:00pm-2:00pm (ASB9810)"
   - name: "Xiaohao Sun"
     email: xsa55
-    officehour: "TBD"
+    officehour: "Tue 1:00pm-2:00pm (ASB9810)"
   - name: "Chuanqi Tang"
     email: cta156
-    officehour: "TBD"
+    officehour: "Thu 1:00pm-2:00pm (ASB9808)"
 tutorials:
   - tutorial: "0"
     title: "Review of a) probability, linear algebra and calculus and b) useful python/unix commands"

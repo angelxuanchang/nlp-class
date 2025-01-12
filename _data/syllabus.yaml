@@ -106,7 +106,7 @@
 - title: "Text classification"
   tag: classifiers
   include: true
-  current: false
+  current: true
   notes:
     - title: "Naive Bayes"
       url: "assets/lecture-slides/L3-classification-naivebayes.pdf"
