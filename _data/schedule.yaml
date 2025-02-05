@@ -52,33 +52,33 @@
     leclinks:
       - name: "Neural network and classification review"
         url: "assets/lecture-slides/L5-neural-nets.pdf"
-      - name: "WV slides 1"
-        url: "assets/lecture-slides/L6-wordvectors.pdf"
   - date: "1/21" 
     tutorial: 4
   - date: "1/22" 
     title: "Word Representations and neural language models"
     lecture: "wordvec"
     leclinks:
-      - name: "WV slides 2"
-        url: "assets/lecture-slides/L7-word2vec.pdf"
+      - name: "WV slides 1"
+        url: "assets/lecture-slides/L6-wordvectors.pdf"
   - date: "1/24" 
     tutorial: 5
 - week: 
   num: 4
   dates:
   - date: "1/27" 
-    title: "Sequence modeling (HMMs)"
+    title: "Word2Vec"
+    lecture: "wordvec"
+    leclinks:
+      - name: "WV slides 2"
+        url: "assets/lecture-slides/L7-word2vec.pdf"
+  - date: "1/28" 
+    tutorial: 6
+  - date: "1/29"
+    title: "Sequence modeling (HMMs and RNNs)"
     lecture: "hmm"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L9-sequence-modeling.pdf"
-  - date: "1/28" 
-    tutorial: 6
-  - date: "1/29"
-    title: "Neural sequence modeling (RNNs)"
-    lecture: "rnn"
-    leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L10-RNN.pdf"
     hwdue: "1"
@@ -89,32 +89,31 @@
   num: 5
   dates:
   - date: "2/3" 
-    title: "Neural Sequence Modeling (LSTM/GRU) and sequence-to-sequence models"
-    lecture: "seq2seq"
+    title: "Neural Sequence Modeling (LSTM/GRU)"
+    lecture: "rnn"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L11-LSTM-GRU.pdf"
-      - name: "slides"
-        url: "assets/lecture-slides/L12-sequence-generation.pdf"
   - date: "2/5" 
-    title: "Attention in sequence-to-sequence models"
-    lecture: "transformers"
+    title: "Sequence-to-sequence models"
+    lecture: "seq2seq"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L12b-sequence-generation-attention.pdf"
+        url: "assets/lecture-slides/L12-sequence-generation.pdf"
 - week: 
   num: 6
   dates:
   - date: "2/10" 
     title: "Transformers and contextualized word embeddings"
-    lecture: "cwe"
+    lecture: "transformers"
     leclinks:
       - name: "transformer slides"
         url: "assets/lecture-slides/L13-transformers.pdf"
       - name: "cwe slides"
         url: "assets/lecture-slides/L14-contextualized-word-embeddings.pdf"
   - date: "2/12" 
-    title: "Benchmark datasets"
+    title: "Contextualized word embeedings and project information"
+    lecture: "cwe"
     leclinks:
       - name: "project info slides"
         url: "assets/lecture-slides/project-information.pdf"
@@ -206,7 +205,10 @@
   num: 12
   dates:
   - date: "3/24" 
-    title: "Guest Lecturer"
+    speaker: 
+      name: "Nick Vincent"
+      url: "https://www.nickmvincent.com/"  
+    title: "TBD"
   - date: "3/26" 
     title: "Guest Lecturer"
 - week: 
