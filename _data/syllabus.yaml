@@ -274,7 +274,7 @@
   current: false
   notes:
     - title: "Sequence Models"
-      url: "assets/lecture-slides/L9-sequence-modeling.pdf"
+      url: "assets/lecture-slides/L8-sequence-modeling.pdf"
     - title: "Hidden Markov Models"
       url: "assets/slides/hmm.pdf"
     - title: "Python Notebook: Viterbi algorithm for HMMs"
@@ -343,10 +343,10 @@
   include: true
   current: true
   notes:
-    - title: "Recursive Neural Networks"
-      url: "assets/lecture-slides/L10-RNN.pdf"
+    - title: "Recurrent Neural Networks"
+      url: "assets/lecture-slides/L9-RNN.pdf"
     - title: "LSTMs and GRUs"
-      url: "assets/lecture-slides/L11-LSTM-GRU.pdf"
+      url: "assets/lecture-slides/L10-LSTM-GRU.pdf"
     - title: "RNN based Neural Language model (experiments)"
       url: "assets/slides/nlm-mikolov.pdf"
       author: Tomas Mikolov
@@ -395,10 +395,10 @@
 - title: "Sequence to Sequence models and Neural Machine Translation"
   tag: seq2seq
   include: true
-  current: false
+  current: true
   notes:
     - title: "Sequence to sequence models"
-      url: "assets/lecture-slides/L12-sequence-generation.pdf"
+      url: "assets/lecture-slides/L11-sequence-generation.pdf"
 - title: "Neural Machine Translation"
   tag: nmt
   include: false

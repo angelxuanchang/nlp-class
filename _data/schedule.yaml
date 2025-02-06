@@ -78,9 +78,9 @@
     lecture: "hmm"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L9-sequence-modeling.pdf"
+        url: "assets/lecture-slides/L8-sequence-modeling.pdf"
       - name: "slides"
-        url: "assets/lecture-slides/L10-RNN.pdf"
+        url: "assets/lecture-slides/L9-RNN.pdf"
     hwdue: "1"
     hwout: "2"
   - date: "1/31" 
@@ -93,13 +93,13 @@
     lecture: "rnn"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L11-LSTM-GRU.pdf"
+        url: "assets/lecture-slides/L10-LSTM-GRU.pdf"
   - date: "2/5" 
     title: "Sequence-to-sequence models"
     lecture: "seq2seq"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L12-sequence-generation.pdf"
+        url: "assets/lecture-slides/L11-sequence-generation.pdf"
 - week: 
   num: 6
   dates:
