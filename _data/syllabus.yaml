@@ -341,7 +341,7 @@
 - title: "Sequence Models (RNNs)"
   tag: rnn
   include: true
-  current: true
+  current: false
   notes:
     - title: "Recurrent Neural Networks"
       url: "assets/lecture-slides/L9-RNN.pdf"
@@ -395,7 +395,7 @@
 - title: "Sequence to Sequence models and Neural Machine Translation"
   tag: seq2seq
   include: true
-  current: true
+  current: false
   notes:
     - title: "Sequence to sequence models"
       url: "assets/lecture-slides/L11-sequence-generation.pdf"
@@ -472,7 +472,7 @@
   current: true
   notes:
     - title: "Transformers"
-      url: "assets/lecture-slides/L13-transformers.pdf"
+      url: "assets/lecture-slides/L12-transformers.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
       title: "Transformers (J+M chapter 9)"
@@ -495,10 +495,10 @@
 - title: "Contextualized Word Embeddings"
   tag: cwe
   include: true
-  current: false
+  current: true
   notes:
     - title: "Contextualized Word Embeddings"
-      url: "assets/lecture-slides/L14-contextualized-word-embeddings.pdf"
+      url: "assets/lecture-slides/L13-contextualized-word-embeddings.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
       title: "Masked Language Models (J+M chapter 11)"

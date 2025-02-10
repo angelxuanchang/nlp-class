@@ -108,9 +108,9 @@
     lecture: "transformers"
     leclinks:
       - name: "transformer slides"
-        url: "assets/lecture-slides/L13-transformers.pdf"
+        url: "assets/lecture-slides/L12-transformers.pdf"
       - name: "cwe slides"
-        url: "assets/lecture-slides/L14-contextualized-word-embeddings.pdf"
+        url: "assets/lecture-slides/L13-contextualized-word-embeddings.pdf"
   - date: "2/12" 
     title: "Contextualized word embeedings and project information"
     lecture: "cwe"
