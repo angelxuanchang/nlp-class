@@ -1,9 +1,9 @@
 exclude: ['README.md', 'assets/latex/', 'archive', 'venv']
 timezone: US/Pacific
 markdown: kramdown
-coursys: "https://coursys.sfu.ca/2025sp-cmpt-413-x1/"
+coursys: "https://coursys.sfu.ca/2025sp-cmpt-713-x1/"
 forumname: Coursys Discussion Forum
-forum: "https://coursys.sfu.ca/2025sp-cmpt-413-x1/forum/"
+forum: "https://coursys.sfu.ca/2025sp-cmpt-713-x1/forum/"
 canvas: "none"
 semcode: 1251
 semester: "Spring 2025"

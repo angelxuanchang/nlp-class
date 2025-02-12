@@ -138,7 +138,7 @@
     lecture: "peft"
     leclinks:
       - name: "pretraining slides"
-        url: "assets/lecture-slides/L15-pretraining.pdf"
+        url: "assets/lecture-slides/L14-pretraining.pdf"
       - name: "fine-tuning slides"
         url: "assets/slides/peft.pdf"
   - date: "2/26" 
