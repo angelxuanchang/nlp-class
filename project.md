@@ -55,10 +55,8 @@ For your project proposal please submit a PDF file that describes
 what problem you plan to work on, what data you will use, and the basic approach you plan to take.
 
 The project proposal PDF should be 1-2 pages in the style of a conference (e.g. ACL/EMNLP) submission.  Your project milestone and final report should use the same template.  Links to acceptable templates are below:
-* [ACL style download](http://acl2020.org/downloads/acl2020-templates.zip)
-* [ACL style template Overleaf](https://www.overleaf.com/latex/templates/acl-2020-proceedings-template/zsrkcwjptpcd)
-* [EMNLP style download](https://2020.emnlp.org/files/emnlp2020-templates.zip)
-* [EMNLP style template Overleaf](https://www.overleaf.com/latex/templates/emnlp-2020/knvtcxwzhbbz)
+* [ACL style download](https://github.com/acl-org/acl-style-files)
+* [ACL style template Overleaf](https://www.overleaf.com/latex/templates/association-for-computational-linguistics-acl-conference/jvxskxpnznfj)
 
 Make sure the following points are in your proposal.
 
