@@ -100,10 +100,8 @@ For the final write-up you will need to also submit your code, so we encourage
 to get started early and submit preliminary code and results with the milestone.
 
 The project milestone PDF should be 3-6 pages in the style of a conference (e.g. ACL/EMNLP) submission.  Your final report should use the same template.  Links to acceptable templates are below:
-* [ACL style download](http://acl2020.org/downloads/acl2020-templates.zip)
-* [ACL style template Overleaf](https://www.overleaf.com/latex/templates/acl-2020-proceedings-template/zsrkcwjptpcd)
-* [EMNLP style download](https://2020.emnlp.org/files/emnlp2020-templates.zip)
-* [EMNLP style template Overleaf](https://www.overleaf.com/latex/templates/emnlp-2020/knvtcxwzhbbz)
+* [ACL style download](https://github.com/acl-org/acl-style-files)
+* [ACL style template Overleaf](https://www.overleaf.com/latex/templates/association-for-computational-linguistics-acl-conference/jvxskxpnznfj)
 
 Make sure the following points are covered.
 * Progress
