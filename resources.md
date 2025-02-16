@@ -47,6 +47,7 @@ active_tab: resources
 
 * Using LLMs
     * [Prompting Guide](https://www.promptingguide.ai/)
+    * [LangChain](https://github.com/langchain-ai/langchain) / [LangGraph](https://langchain-ai.github.io/langgraph/) for building LLM agents
 
 * Machine Translation
     * [SFUTranslate](https://github.com/sfu-natlang/SFUTranslate) SFU NLL's MT toolkit (designed to be modern and flexible) 
