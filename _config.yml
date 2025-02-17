@@ -66,12 +66,12 @@ hwdates:
   - hw: "2"
     startdate: "Jan 29, 2025"
     deadline: "Feb 12, 2025"
-    hwc-url: 
+    hwc-url: https://app.crowdmark.com/student/assessments/hw2-c-13592
     hwp-report-submit-url: hhttps://app.crowdmark.com/student/assessments/hw2-p-report
   - hw: "3"
     startdate: "Feb 12, 2025"
     deadline: "Feb 26, 2025"
-    hwc-url: 
+    hwc-url: https://app.crowdmark.com/student/assessments/hw3-c-d7756
     hwp-report-submit-url: https://app.crowdmark.com/student/assessments/hw3-p-report
   - hw: "4"
     startdate: "Feb 26, 2025"
@@ -85,7 +85,7 @@ hwdates:
     location: "TBD"
     abstract: "Feb 19, 2025"
     proposal: "Feb 24, 2025"
-    proposal-submit-url: https://app.crowdmark.com/student/assessments/project-proposal
+    proposal-submit-url: https://app.crowdmark.com/student/assessments/project-proposal-a27c2
     milestone: "Mar 19, 2025"
     milestone-submit-url: https://app.crowdmark.com/student/assessments/project-milestone
     poster: "Video due on Apr 6, 2025"
