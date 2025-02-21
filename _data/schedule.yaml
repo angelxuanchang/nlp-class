@@ -141,6 +141,7 @@
         url: "assets/lecture-slides/L14-pretraining.pdf"
       - name: "fine-tuning slides"
         url: "assets/slides/peft.pdf"
+    project: "Project proposal"
   - date: "2/26" 
     lecture: "fewshot"
     title: "Few-shot and in-context learning"
@@ -158,7 +159,6 @@
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L15-constituency-parsing.pdf"
-    project: "Project proposal"
   - date: "3/5" 
     title: "Dependency parsing"
     lecture: "dependency"
@@ -199,7 +199,6 @@
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/scaling.pdf"
-  - date: "3/21" 
     project: "Project milestone"
 - week: 
   num: 12
