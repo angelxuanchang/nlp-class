@@ -93,7 +93,7 @@ hwdates:
     report-submit-url: https://app.crowdmark.com/student/assessments/project-report
 hwsubmit:
   name: "Coursys"
-  url:  "https://coursys.sfu.ca/2025sp-cmpt-413-x1/"
+  url:  "https://coursys.sfu.ca/2025sp-cmpt-713-x1/"
 hwp-report-submit:
   name: "Crowdmark"
   url:  "https://app.crowdmark.com/courses/spring-2025-cmpt413-d100-computational-linguistics-cmpt713-g100-natural-language-processing"
