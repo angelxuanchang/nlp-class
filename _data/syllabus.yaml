@@ -469,7 +469,7 @@
 - title: "Transformers"
   tag: transformers
   include: true
-  current: true
+  current: false
   notes:
     - title: "Transformers"
       url: "assets/lecture-slides/L12-transformers.pdf"
@@ -495,7 +495,7 @@
 - title: "Contextualized Word Embeddings"
   tag: cwe
   include: true
-  current: true
+  current: false
   notes:
     - title: "Contextualized Word Embeddings"
       url: "assets/lecture-slides/L13-contextualized-word-embeddings.pdf"

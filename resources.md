@@ -18,13 +18,26 @@ active_tab: resources
     * [Deep learning](http://www.deeplearningbook.org/) by Ian Goodfellow and Yoshua Bengio and Aaron Courville
     * [Dive into deep learning](https://d2l.ai/index.html) by Aston Zhang, Zachary C. Lipton, Mu Li, and Alexander J. Smola
 
-### Debugging Neural Networks
+### Debugging and learning about neural networks
+* [Neural Networks: Zero to Hero from Andrej Karpathy](https://github.com/karpathy/nn-zero-to-hero)
 * [General tips from Andrej Karpathy for training neural networks](http://karpathy.github.io/2019/04/25/recipe/)
 * [Tips from Graham Neubig (CMU CS11-747) for debugging NLP models](http://www.phontron.com/class/nn4nlp2020/assets/slides/nn4nlp-10-debugging.pdf)
 
-
 ### Podcasts
 * [NLP highlights](https://player.fm/series/nlp-highlights) with Matt Gardner, Pradeep Dasigi, and Waleed Ammar 
+
+### Learning about LLMs and transformers
+* Andrej Karparthy videos on LLMs
+  * [Introduction](https://www.youtube.com/watch?v=zjkBMFhNj_g)
+  * [Deep dive](https://www.youtube.com/watch?v=7xTGNNLPyMI)
+  * [Using LLMs](https://www.youtube.com/watch?v=EWvNQjAaOHw)
+* Jay Alammar's illustrated guides
+  * [Transformers](https://jalammar.github.io/illustrated-transformer/)
+  * [GPT-2](https://jalammar.github.io/illustrated-gpt2/)
+  * [BERT](https://jalammar.github.io/illustrated-bert/)
+* Borealis tutorials 
+  * [Transformers](https://rbcborealis.com/research-blogs/tutorial-14-transformers-i-introduction/)
+  * [LLMs](https://rbcborealis.com/research-blogs/a-high-level-overview-of-large-language-models)
 
 ### Tools
 
