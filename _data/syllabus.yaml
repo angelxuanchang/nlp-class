@@ -702,6 +702,10 @@
     - title: "Scaling Instruction-Finetuned Language Models"
       author: "Google"
       url: "https://arxiv.org/abs/2210.11416"
+    - title: HuggingFace Blog on RLHF
+      url: https://huggingface.co/blog/rlhf
+    - title: Introduction to RL
+      url: https://spinningup.openai.com/en/latest/spinningup/rl_intro.html  
     - title: "Proximal Policy Optimization Algorithms"
       author: "John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, Oleg Klimov"
       url: "https://arxiv.org/abs/1707.06347"
