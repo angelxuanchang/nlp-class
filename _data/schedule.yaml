@@ -199,6 +199,7 @@
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/scaling.pdf"
+  - date: "3/20" 
     project: "Project milestone"
 - week: 
   num: 12
