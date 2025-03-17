@@ -169,11 +169,9 @@
   num: 10
   dates:
   - date: "3/10" 
-    title: "Parameter-efficient fine-tuning and instruction tuning"
+    title: "Instruction tuning and reinforcement learning from human feedback"
     lecture: "instruct"
     leclinks:
-      - name: "fine-tuning slides"
-        url: "assets/lecture-slides/peft.pdf"
       - name: "instruction-tuning slides"
         url: "assets/lecture-slides/instruct_tuning.pdf"
   - date: "3/12" 
@@ -187,18 +185,18 @@
   num: 11
   dates:
   - date: "3/17" 
-    title: "NLP applications"
-    lecture: "applications"
+    title: "Parameter efficient fine-tuning"
+    lecture: "peft"
     leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L18-applications.pdf"
+      - name: "fine-tuning slides"
+        url: "assets/lecture-slides/peft.pdf"
     readings: ["jm14", "jm15"]
-  - date: "3/19" 
-    title: "Scaling laws for LLMs"
-    lecture: "scaling-laws"
+  - date: "3/31" 
+    title: "Grounding"
+    lecture: "grounding"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/scaling.pdf"
+        url: "assets/lecture-slides/L23-grounding.pdf"
   - date: "3/20" 
     project: "Project milestone"
 - week: 
@@ -208,18 +206,18 @@
     speaker: 
       name: "Nick Vincent"
       url: "https://www.nickmvincent.com/"  
-    title: "TBD"
+    title: "Emerging Concerns with the Generative AI Data Paradigm (and how academic research and “public ai” can help)"
   - date: "3/26" 
     title: "Guest Lecturer"
 - week: 
   num: 13
   dates:
   - date: "3/31" 
-    title: "Grounding"
-    lecture: "grounding"
+    title: "Scaling laws for LLMs"
+    lecture: "scaling-laws"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L23-grounding.pdf"
+        url: "assets/lecture-slides/scaling.pdf"
   - date: "4/2"
     title: "LLM Agents"
     lecture: "llm-agents"
