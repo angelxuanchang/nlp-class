@@ -1,30 +1,30 @@
 exclude: ['README.md', 'assets/latex/', 'archive', 'venv']
 timezone: US/Pacific
 markdown: kramdown
-coursys: "https://coursys.sfu.ca/2025sp-cmpt-713-x1/"
+coursys: "https://coursys.sfu.ca/2026sp-cmpt-713-x1/"
 forumname: Coursys Discussion Forum
-forum: "https://coursys.sfu.ca/2025sp-cmpt-713-x1/forum/"
+forum: "https://coursys.sfu.ca/2026sp-cmpt-713-x1/forum/"
 canvas: "none"
-semcode: 1251
-semester: "Spring 2025"
+semcode: 1261
+semester: "Spring 2026"
 calendar: "https://calendar.google.com/calendar/ical/qgs97od9ef8t1582k2rqomv5ho%40group.calendar.google.com/public/basic.ics"
-lastday: "Apr 9, 2025"
+lastday: "Apr 8, 2026"
 midterm: "None"
 instructor: angelx
-officehour: "Wed 1:30pm-2:30pm"
+officehour: "Wed 1:00pm-2:00pm"
 tas:
+  - name: "Sonia Raychaudhuri"
+    email: qiruiw
+    officehour: "TBD"
+  - name: "Qirui Wu"
+    email: qiruiw
+    officehour: "TBD"
   - name: "Austin Wang"
     email: atw7
-    officehour: "Thu 1:00pm-2:00pm (ASB9808)"
-  - name: "Han-Hung Lee"
-    email: hla300
-    officehour: "Tue 2:00pm-3:00pm (ASB9810)"
+    officehour: "TBD"
   - name: "Xiaohao Sun"
     email: xsa55
-    officehour: "Tue 2:00pm-3:00pm (ASB9810)"
-  - name: "Chuanqi Tang"
-    email: cta156
-    officehour: "Thu 1:00pm-2:00pm (ASB9808)"
+    officehour: "TBD"
 tutorials:
   - tutorial: "0"
     title: "Review of a) probability, linear algebra and calculus and b) useful python/unix commands"
@@ -54,46 +54,46 @@ group:
   maxsize: 3
 hwdates:
   - hw: "0"
-    startdate: "Jan 6, 2025"
-    deadline: "Jan 15, 2025"
-    hwc-url: https://app.crowdmark.com/student/assessments/hw0-c-f3037
-    hwp-report-submit-url: https://app.crowdmark.com/student/assessments/hw0-p-report
-  - hw: "1"
-    startdate: "Jan 15, 2025"
-    deadline: "Jan 29, 2025"
-    hwc-url: https://app.crowdmark.com/student/assessments/hw1-c-de3d9
-    hwp-report-submit-url: https://app.crowdmark.com/student/assessments/hw1-p-report
-  - hw: "2"
-    startdate: "Jan 29, 2025"
-    deadline: "Feb 12, 2025"
-    hwc-url: https://app.crowdmark.com/student/assessments/hw2-c-13592
-    hwp-report-submit-url: hhttps://app.crowdmark.com/student/assessments/hw2-p-report
-  - hw: "3"
-    startdate: "Feb 12, 2025"
-    deadline: "Feb 26, 2025"
-    hwc-url: https://app.crowdmark.com/student/assessments/hw3-c-d7756
-    hwp-report-submit-url: https://app.crowdmark.com/student/assessments/hw3-p-report
-  - hw: "4"
-    startdate: "Feb 26, 2025"
-    deadline: "Mar  12, 2025"
+    startdate: "Jan 5, 2026"
+    deadline: "Jan 14, 2025"
     hwc-url: 
-    hwp-report-submit-url: https://app.crowdmark.com/student/assessments/hw4-p-report
-  - hw: "project"
+    hwp-report-submit-url: 
+  - hw: "1"
+    startdate: "Jan 14, 2025"
+    deadline: "Jan 28, 2025"
+    hwc-url: 
+    hwp-report-submit-url: 
+  - hw: "2"
+    startdate: "Jan 28, 2025"
+    deadline: "Feb 11, 2025"
+    hwc-url: 
+    hwp-report-submit-url: 
+  - hw: "3"
     startdate: "Feb 11, 2025"
-    deadline: "Apr 10, 2025"
+    deadline: "Feb 25, 2025"
+    hwc-url: 
+    hwp-report-submit-url: 
+  - hw: "4"
+    startdate: "Feb 25, 2025"
+    deadline: "Mar  11, 2025"
+    hwc-url: 
+    hwp-report-submit-url: 
+  - hw: "project"
+    startdate: "Feb 10, 2025"
+    deadline: "Apr 09, 2025"
     time: "Poster session: ???"
     location: "TBD"
-    abstract: "Feb 19, 2025"
-    proposal: "Feb 24, 2025"
-    proposal-submit-url: https://app.crowdmark.com/student/assessments/project-proposal-a27c2
-    milestone: "Mar 20, 2025"
-    milestone-submit-url: https://app.crowdmark.com/student/assessments/project-milestone
-    poster: "Video due on Apr 6, 2025"
-    video-submit-url: https://app.crowdmark.com/student/assessments/project-video
-    report-submit-url: https://app.crowdmark.com/student/assessments/project-report
+    abstract: "Feb 18, 2025"
+    proposal: "Feb 23, 2025"
+    proposal-submit-url: 
+    milestone: "Mar 19, 2025"
+    milestone-submit-url: 
+    poster: "Video due on Apr 5, 2025"
+    video-submit-url: 
+    report-submit-url: 
 hwsubmit:
   name: "Coursys"
-  url:  "https://coursys.sfu.ca/2025sp-cmpt-713-x1/"
+  url:  "https://coursys.sfu.ca/2026sp-cmpt-713-x1/"
 hwp-report-submit:
   name: "Crowdmark"
   url:  "https://app.crowdmark.com/courses/spring-2025-cmpt413-d100-computational-linguistics-cmpt713-g100-natural-language-processing"

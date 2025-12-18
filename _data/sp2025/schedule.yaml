@@ -1,27 +1,27 @@
 - week: 
   num: 1
   dates:
-  - date: "1/5" 
+  - date: "1/6" 
     title: "Introduction"
     lecture: "intro"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L1-intro.pdf"
     hwout: "0"
-  - date: "1/6" 
-    tutorial: 0 
   - date: "1/7" 
+    tutorial: 0 
+  - date: "1/8" 
     title: "Language Modeling"
     lecture: "lm"
     leclinks:
       - name: "LM slides"
         url: "assets/lecture-slides/L2-language-models.pdf"
-  - date: "1/9"
+  - date: "1/10"
     tutorial: 1     
 - week:
   num: 2
   dates:
-  - date: "1/12" 
+  - date: "1/13" 
     title: "Text classification - Naive Bayes"
     lecture: "classifiers"
     leclinks:
@@ -30,9 +30,9 @@
       - name: "Evaluation slides"
         url: "assets/lecture-slides/L3-classification-evaluation.pdf"
     readings: ["jm4"]
-  - date: "1/13" 
-    tutorial: 2
   - date: "1/14" 
+    tutorial: 2
+  - date: "1/15" 
     title: "Text classification - Logistic Regression"
     lecture: "classifiers"
     leclinks:
@@ -41,39 +41,39 @@
     readings: ["jm5"]
     hwdue: "0"
     hwout: "1"
-  - date: "1/16" 
+  - date: "1/17" 
     tutorial: 3
 - week: 
   num: 3
   dates:
-  - date: "1/19" 
+  - date: "1/20" 
     title: "NN review and word Representations"
     lecture: "ff"
     leclinks:
       - name: "Neural network and classification review"
         url: "assets/lecture-slides/L5-neural-nets.pdf"
-  - date: "1/20" 
-    tutorial: 4
   - date: "1/21" 
+    tutorial: 4
+  - date: "1/22" 
     title: "Word Representations and neural language models"
     lecture: "wordvec"
     leclinks:
       - name: "WV slides 1"
         url: "assets/lecture-slides/L6-wordvectors.pdf"
-  - date: "1/23" 
+  - date: "1/24" 
     tutorial: 5
 - week: 
   num: 4
   dates:
-  - date: "1/26" 
+  - date: "1/27" 
     title: "Word2Vec"
     lecture: "wordvec"
     leclinks:
       - name: "WV slides 2"
         url: "assets/lecture-slides/L7-word2vec.pdf"
-  - date: "1/27" 
+  - date: "1/28" 
     tutorial: 6
-  - date: "1/28"
+  - date: "1/29"
     title: "Sequence modeling (HMMs and RNNs)"
     lecture: "hmm"
     leclinks:
@@ -83,18 +83,18 @@
         url: "assets/lecture-slides/L9-RNN.pdf"
     hwdue: "1"
     hwout: "2"
-  - date: "1/30" 
+  - date: "1/31" 
     tutorial: 7
 - week: 
   num: 5
   dates:
-  - date: "2/2" 
+  - date: "2/3" 
     title: "Neural Sequence Modeling (LSTM/GRU)"
     lecture: "rnn"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L10-LSTM-GRU.pdf"
-  - date: "2/4" 
+  - date: "2/5" 
     title: "Sequence-to-sequence models"
     lecture: "seq2seq"
     leclinks:
@@ -103,7 +103,7 @@
 - week: 
   num: 6
   dates:
-  - date: "2/9" 
+  - date: "2/10" 
     title: "Transformers and contextualized word embeddings"
     lecture: "transformers"
     leclinks:
@@ -111,7 +111,7 @@
         url: "assets/lecture-slides/L12-transformers.pdf"
       - name: "cwe slides"
         url: "assets/lecture-slides/L13-contextualized-word-embeddings.pdf"
-  - date: "2/11" 
+  - date: "2/12" 
     title: "Contextualized word embeedings and project information"
     lecture: "cwe"
     leclinks:
@@ -124,7 +124,7 @@
 - week: 
   num: 7
   dates:
-  - date: "2/16" 
+  - date: "2/17" 
     noclass: true
     title: "No class - Reading break"
   - date: "2/19" 
@@ -133,7 +133,7 @@
 - week: 
   num: 8
   dates:
-  - date: "2/23" 
+  - date: "2/24" 
     title: "Pretraining and fine-tuning"
     lecture: "peft"
     leclinks:
@@ -142,7 +142,7 @@
       - name: "fine-tuning slides"
         url: "assets/slides/peft.pdf"
     project: "Project proposal"
-  - date: "2/25" 
+  - date: "2/26" 
     lecture: "fewshot"
     title: "Few-shot and in-context learning"
     leclinks:
@@ -153,13 +153,13 @@
 - week: 
   num: 9
   dates:
-  - date: "3/2" 
+  - date: "3/3" 
     title: "Constituency Parsing"
     lecture: "cfg"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L15-constituency-parsing.pdf"
-  - date: "3/4" 
+  - date: "3/5" 
     title: "Dependency parsing"
     lecture: "dependency"
     leclinks:
@@ -168,13 +168,13 @@
 - week: 
   num: 10
   dates:
-  - date: "3/9" 
+  - date: "3/10" 
     title: "Instruction tuning and reinforcement learning from human feedback"
     lecture: "instruct"
     leclinks:
       - name: "instruction-tuning slides"
         url: "assets/lecture-slides/instruct_tuning.pdf"
-  - date: "3/11" 
+  - date: "3/12" 
     title: "Final project tips, model debugging and analysis"
     lecture: "analysis"
     leclinks:
@@ -184,27 +184,33 @@
 - week: 
   num: 11
   dates:
-  - date: "3/16" 
+  - date: "3/17" 
     title: "Parameter efficient fine-tuning"
     lecture: "peft"
     leclinks:
       - name: "fine-tuning slides"
         url: "assets/lecture-slides/peft.pdf"
     readings: ["jm14", "jm15"]
-  - date: "3/18" 
+  - date: "3/31" 
     title: "Grounding"
     lecture: "grounding"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L23-grounding.pdf"
-  - date: "3/19" 
+  - date: "3/20" 
     project: "Project milestone"
 - week: 
   num: 12
   dates:
-  - date: "3/23" 
-    title: "Guest Lecture"
-  - date: "3/25" 
+  - date: "3/24" 
+    speaker: 
+      name: "Nick Vincent"
+      url: "https://www.nickmvincent.com/"  
+    leclinks:
+      - name: "slides"
+        url: "https://coursys.sfu.ca/2025sp-cmpt-713-x1/pages/Nick-Vincent-GenAI-Concerns/view"
+    title: "Emerging Concerns with the Generative AI Data Paradigm (and how academic research and “public ai” can help)"
+  - date: "3/26" 
     talks:
       - name: "Visual grounding in 3D"
         speaker: Austin Wang
@@ -222,13 +228,13 @@
 - week: 
   num: 13
   dates:
-  - date: "3/30" 
+  - date: "3/31" 
     title: "Scaling laws for LLMs"
     lecture: "scaling-laws"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/scaling.pdf"
-  - date: "4/1"
+  - date: "4/2"
     title: "LLM Agents"
     lecture: "llm-agents"
     leclinks:
@@ -237,14 +243,14 @@
 - week: 
   num: 14
   dates:
-  - date: "4/6" 
+  - date: "4/7" 
     title: "Final project presentations"
     lecture: "project"
-  - date: "4/8"
+  - date: "4/9"
     title: "Conclusion"
     lecture: "conclusion"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L24-conclusion.pdf"
-  - date: "4/9"
+  - date: "4/10"
     project: "Final project report"
