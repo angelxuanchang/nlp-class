@@ -6,6 +6,37 @@ caption: "1928 woodcut by M. C. Escher showing the Tower of Babel."
 title: "Projects from previous terms"
 active_tab: project
 ---
+# Spring 2025 Final Projects
+* LyricGen: Creative Song Lyric Generation
+* Aspect-Based Emotion Detection for Hotel Reviews: A Multi-Class Emotion Classification Approach
+* Machine Reading Comprehension with Enhanced Contextual Understanding
+* Sentiment Analysis
+* A Neural Approach to Fine-Tuning for Pinyin-to-Chinese Conversion
+* Healthcare Sentiment Analysis for Market Trends
+* Reinforcement Learning to Predict Responses of Chat Users
+* Experimental Analysis of Transformer-Based Language Models on Situations with Adversarial Generations
+* A Comparative Study of Language Models for Text Classification: BERT vs. Mamba
+* Towards Generative NPCs for Real-time Role-playing Games with Model Distillation
+* RAG for Dungeons and Dragons
+* Replication of Youtube's User-Generated Content Summarization and Topic Extraction Model
+* Abstractive Text Summarization: A Comparative Study of Seq2Seq and Transformer Models on the XSum Dataset
+* Reproducing Vocabulary Matching for Extending BERT Capabilities for a Low-Resource Language
+* MuseGPT: Generating Piano MIDI using Transformers
+* Online Troll Detection Project Proposal
+* Classification of News Articles with Text and Images
+* Personalized Chatbots with Emotion-Aware Responses
+* Transformer Is All You Need from Scratch
+* Benchmarking Retrieval Augmented Generation Indexing Methods for LLM Memory
+* Reproducing S1 — A Simple Test-Time Scaling Reasoning Model
+* Reproducing Adaptive Jailbreak Attacks on Safety-Aligned LLMs
+* Clickbait Headline Classification
+* Lightweight Distilled Model for Sentiment Analysis in Resource-Constrained Environments
+* Real-Time Emotion Identification from Speech
+* Automated Summarization of Reddit Threads using NLP
+* Evaluating the Impact of Emotional Prompting on LLM Moral Judgment in Everyday Dilemmas
+* Note-by-Note Melody Generation with Recurrent Neural Networks
+* Balancing Efficiency and Performance: Evaluating LoRA for Resource-Constrained * Fine-Tuning of BERT-Based Models
+
 # Spring 2024 Final Projects
 * Toxic Text Classification
 * Real-time live caption Speech2text Finetuning on LJ Speech Dataset

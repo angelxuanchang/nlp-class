@@ -206,9 +206,25 @@
     speaker: 
       name: "Nick Vincent"
       url: "https://www.nickmvincent.com/"  
+    leclinks:
+      - name: "slides"
+        url: "https://coursys.sfu.ca/2025sp-cmpt-713-x1/pages/Nick-Vincent-GenAI-Concerns/view"
     title: "Emerging Concerns with the Generative AI Data Paradigm (and how academic research and “public ai” can help)"
   - date: "3/26" 
-    title: "Guest Lecturer"
+    talks:
+      - name: "Visual grounding in 3D"
+        speaker: Austin Wang
+        url: "assets/lecture-slides/2025-03-26_CMPT-413_01_3DGrounding.pdf"
+      - name: "Text and 3D Representation Learning"
+        speaker: Han-Hung Lee
+        url: "assets/lecture-slides/2025-03-26_CMPT-413_02_Text3DRep"
+      - name: "Text-to-Scene Generation"
+        speaker: Austin Wang
+        url: "assets/lecture-slides/2025-03-26_CMPT-413_03_text-to-scene.pdf"
+      - name: "LLMs for modeling DNA"
+        speaker: Chuanqi Tang
+        url: "assets/lecture-slides/2025-03-26_CMPT-413_04_DNA.pdf"
+    title: "Overview of recent multimodal research"
 - week: 
   num: 13
   dates:

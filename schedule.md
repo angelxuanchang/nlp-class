@@ -55,6 +55,12 @@ The schedule is preliminary and subject to change.   Slides will be updated as t
                       {% endfor %}
                       <br/>
                     {% endif %} 
+                    {% if date.talks %}
+                      {% for talk in date.talks %}
+                        <a href="{{talk.url}}">{{talk.name}}</a> ({{talk.speaker}})
+                        <br/>
+                      {% endfor %}
+                    {% endif %} 
                   {% endif %} 
                   {% if date.tutorial != null %}
                     Tutorial (optional): {{ site.tutorials[date.tutorial].title }}<br/>

@@ -27,7 +27,7 @@ active_tab: resources
 * [NLP highlights](https://player.fm/series/nlp-highlights) with Matt Gardner, Pradeep Dasigi, and Waleed Ammar 
 
 ### Learning about LLMs and transformers
-* Andrej Karparthy videos on LLMs
+* Andrej Karparthy's videos on LLMs
   * [Introduction](https://www.youtube.com/watch?v=zjkBMFhNj_g)
   * [Deep dive](https://www.youtube.com/watch?v=7xTGNNLPyMI)
   * [Using LLMs](https://www.youtube.com/watch?v=EWvNQjAaOHw)
@@ -53,7 +53,7 @@ active_tab: resources
     * [FastText](https://fasttext.cc/) 
 
 * Pretrained language models 
-    * [HuggingFace course on transformers](https://huggingface.co/course/chapter1/1) 
+    * [HuggingFace course on LLMs](https://huggingface.co/course/chapter1/1) 
        * [HuggingFace transformers](https://huggingface.co/transformers/) Docummentation for various transformer based models from HuggingFace
     * [OpenAI API](https://beta.openai.com/overview)
     * [Llama](https://github.com/facebookresearch/llama)
