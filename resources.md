@@ -13,18 +13,20 @@ active_tab: resources
     * [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/) by [Dan Jurafsky](http://www.stanford.edu/~jurafsky) and [James Martin](http://www.cs.colorado.edu/~martin).
     * [Natural Language Processing](https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf) by [Jacob Eisenstein](https://jacobeisenstein.github.io/)
     * [A Primer on Neural Network Models for Natural Language Processing](http://u.cs.biu.ac.il/~yogo/nnlp.pdf) by Yoav Goldberg (see also [Neural Network methods for Natural Language Processing](http://www.morganclaypool.com/doi/10.2200/S00762ED1V01Y201703HLT037)).
+    * [Foundations of Large Language Models](https://arxiv.org/pdf/2501.09223) by [Tong Xiao](https://www.nlplab.com/members/xiaotong) and [Jingbo Zhu](https://www.nlplab.com/members/zhujingbo.html)
 
 * To learn more about deep learning
-    * [Deep learning](http://www.deeplearningbook.org/) by Ian Goodfellow and Yoshua Bengio and Aaron Courville
     * [Dive into deep learning](https://d2l.ai/index.html) by Aston Zhang, Zachary C. Lipton, Mu Li, and Alexander J. Smola
+    * [Deep learning](http://www.deeplearningbook.org/) by Ian Goodfellow and Yoshua Bengio and Aaron Courville
+    * [Understanding Deep Learning](https://udlbook.github.io/udlbook/) by Simon Prince
 
 ### Debugging and learning about neural networks
 * [Neural Networks: Zero to Hero from Andrej Karpathy](https://github.com/karpathy/nn-zero-to-hero)
 * [General tips from Andrej Karpathy for training neural networks](http://karpathy.github.io/2019/04/25/recipe/)
-* [Tips from Graham Neubig (CMU CS11-747) for debugging NLP models](http://www.phontron.com/class/nn4nlp2020/assets/slides/nn4nlp-10-debugging.pdf)
+* [Tips from Graham Neubig (CMU CS11-747) for debugging training of NLP models](http://www.phontron.com/class/nn4nlp2020/assets/slides/nn4nlp-10-debugging.pdf)
 
 ### Podcasts
-* [NLP highlights](https://player.fm/series/nlp-highlights) with Matt Gardner, Pradeep Dasigi, and Waleed Ammar 
+* [NLP highlights](https://player.fm/series/nlp-highlights) (from 2017 to 2023) with Matt Gardner, Pradeep Dasigi, and Waleed Ammar 
 
 ### Learning about LLMs and transformers
 * Andrej Karparthy's videos on LLMs
@@ -61,11 +63,7 @@ active_tab: resources
 * Using LLMs
     * [Prompting Guide](https://www.promptingguide.ai/)
     * [LangChain](https://github.com/langchain-ai/langchain) / [LangGraph](https://langchain-ai.github.io/langgraph/) for building LLM agents
-
-* Machine Translation
-    * [SFUTranslate](https://github.com/sfu-natlang/SFUTranslate) SFU NLL's MT toolkit (designed to be modern and flexible) 
-    * [JoeyNMT](https://github.com/joeynmt/joeynmt) Minimalist system for understanding NMT
-    * [OpenNMT](https://opennmt.net/) Comprehensive NMT framework
+    * [DSPy](https://dspy.ai/) for more flexible pipelines 
 
 * NLP pipelines
     * [AllenNLP](https://allennlp.org/) \[[demo](https://demo.allennlp.org/)\] Modern NLP tools using Pytorch from AI2 
@@ -97,11 +95,18 @@ In some cases you can also extend your homework code to produce innovative proje
 
 #### SemEval Shared Tasks
 
-* [SemEval 2018](http://alt.qcri.org/semeval2018/index.php?id=tasks)
-* [SemEval 2017](http://alt.qcri.org/semeval2017/index.php?id=tasks)
-* [SemEval 2016](http://alt.qcri.org/semeval2016/index.php?id=tasks)
-* [SemEval 2015](http://alt.qcri.org/semeval2015/index.php?id=tasks)
-* [SemEval 2014](http://alt.qcri.org/semeval2014/index.php?id=tasks)
+* [SemEval 2025](https://semeval.github.io/SemEval2025/tasks.html)
+* [SemEval 2024](https://semeval.github.io/SemEval2024/tasks.html)
+* [SemEval 2023](https://semeval.github.io/SemEval2023/tasks.html)
+* [SemEval 2022](https://semeval.github.io/SemEval2022/tasks.html)
+* [SemEval 2021](https://semeval.github.io/SemEval2021/tasks.html)
+* [SemEval 2020](https://alt.qcri.org/semeval2020/index.php?id=tasks)
+* [SemEval 2019](https://alt.qcri.org/semeval2019/index.php?id=tasks)
+* [SemEval 2018](https://alt.qcri.org/semeval2018/index.php?id=tasks)
+* [SemEval 2017](https://alt.qcri.org/semeval2017/index.php?id=tasks)
+* [SemEval 2016](https://alt.qcri.org/semeval2016/index.php?id=tasks)
+* [SemEval 2015](https://alt.qcri.org/semeval2015/index.php?id=tasks)
+* [SemEval 2014](https://alt.qcri.org/semeval2014/index.php?id=tasks)
 
 ### Classification Tasks
 
@@ -125,6 +130,13 @@ In some cases you can also extend your homework code to produce innovative proje
 
 ### Machine Translation
 
+* [WMT 2025 Shared Task](http://www.statmt.org/wmt25/)
+* [WMT 2024 Shared Task](http://www.statmt.org/wmt24/)
+* [WMT 2023 Shared Task](http://www.statmt.org/wmt23/)
+* [WMT 2022 Shared Task](http://www.statmt.org/wmt22/)
+* [WMT 2021 Shared Task](http://www.statmt.org/wmt21/)
+* [WMT 2020 Shared Task](http://www.statmt.org/wmt20/)
+* [WMT 2019 Shared Task](http://www.statmt.org/wmt19/)
 * [WMT 2018 Shared Task](http://www.statmt.org/wmt18/)
 * [WMT 2017 Shared Task](http://www.statmt.org/wmt17/)
 * [WMT 2016 Shared Task](http://www.statmt.org/wmt16/)
@@ -147,6 +159,7 @@ In some cases you can also extend your homework code to produce innovative proje
 
 ### Natural Language Understanding and Inference
 
+* [SuperGLUE](https://super.gluebenchmark.com/)
 * [GLUE Benchmark](https://gluebenchmark.com)
 * [RepEval 2017](https://repeval2017.github.io/shared/)
 * [The Stanford Natural Language Inference (SNLI) Corpus](https://nlp.stanford.edu/projects/snli/)
