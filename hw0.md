@@ -181,16 +181,16 @@ Go to [this page](https://github.sfu.ca/settings/keys):
 Follow the [instructions](https://docs.github.com/en/enterprise-server@3.9/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 to copy and add your key to your github.
 
-Click on `New SSH Key` and use the web browser to **paste** your public key into the `Key` box and give it a `Title` (e.g. 'CSIL' is a reasonable title) and then `Add key`.
+Click on `New SSH Key` and use the web browser to **paste** your public key into the `Key` box and give it a `Title` (e.g. 'CSIL' is a reasonable title if you are using CSIL) and then `Add key`.
 
 
 ### Clone your Repository
 
 <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i>
-Make sure you are connected to the SFU VPN before you interact with github.sfu.ca using ssh.
+Make sure you are connected to the [SFU VPN](https://sfu.teamdynamix.com/TDClient/255/ITServices/Requests/ServiceDet?ID=2613) before you interact with github.sfu.ca using ssh.  
 </div>
 
-Download a copy of your repo to your CSIL machine.  The action of
+Download a copy of your repo to your CSIL machine (see [FAQ](faq.html#csil) for how to access CSIL).  The action of
 making a local copy of your online repo is known as a "clone".
 
 In the terminal window, enter the commands

@@ -18,7 +18,7 @@ active_tab: faq
 
 ### Email policy
 
-* We will be using [{{site.forumname}}]({{ site.forum }}) for **all** discussions including asking for help. For syllabus, practice, homeworks, exams, or other clarification emails **do not** email me (the instructor) or the TA(s) directly.
+* We will be using [{{site.forumname}}]({{ site.forum }}) for **all** discussions including asking for help. For syllabus, practice, homeworks, exams, or other clarification emails **do not** email me (the instructor) or the TA(s) directly.  Please ask your questions on [{{site.forumname}}]({{ site.forum }}) so that all students benefit from clarification responses.
 * You can message the instructor and TA directly on the discussion board so you are much more likely to get a response on the discussion forum than sending email.
 * If you email the instructor directly for personal matters that are inappropriate for the {{site.forumname}}, use your SFU email address to send the email (do not use any other provider), and use either <code>cmpt413:</code> or <code>cmpt713:</code> as the prefix in your subject line.
 * Do not email the TAs directly (without cc:ing the instructor) under any circumstance.
@@ -101,25 +101,26 @@ How to ask a question on [{{site.forumname}}]({{ site.forum }}):
 
 ### CSIL
     
-* See [Remote access to CSIL](http://www.sfu.ca/computing/about/support/csil/unix/how-to-use-csil-linux-cpu-server.html) for accessing CSIL remotely.  Note that you will need to setup [SFU VPN](https://www.sfu.ca/information-systems/services/sfu-vpn.html) for off-campus remote access.
+* For remote access, you will need to setup [SFU VPN](https://www.sfu.ca/information-systems/services/sfu-vpn.html).
+* Use SSH via SFU VPN for [remote access to CSIL](https://www.sfu.ca/fas/computing/support/csil/remote-access.html). 
 * CSIL computers accept SSH connections on port 24 (rather than the usual port 22) so use `ssh -p 24 csil-cpu1.csil.sfu.ca` to connect.
-* If your local machine (e.g your laptop) has a different username from your SFU username (your username can be found by examining your SFU email address: username`sfu.ca), then prefix the SFU username to the ssh or scp command. `ssh (username)@fraser.sfu.ca`.
+* If your local machine (e.g your laptop) has a different username from your SFU username (your username can be found by examining your SFU email address: `[username]@sfu.ca`), then prefix the SFU username to the ssh or scp command. `ssh [username]@[hostname].csil.sfu.ca`.
 * You may want to refer to a quick Unix tutorial. There are several on the web. The following one covers most of what you need to use the Linux shell effectively: [Quick Unix Tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/index.html).
 *  On some CSIL Linux machines, in some rare cases, you might have to extend your CPU time limit for a process. If you are using tcsh then run the command "limit cputime 1800" to extend CPU time to 1800 secs or 30 mins. If you are using bash then use the command "ulimit -t 1800".
-* Professional Masters students have access to the lab machines in SECB 1010 and SECB 1013. Those machines have RTX 4000 GPUs. See [Computing Support](https://www.sfu.ca/computing/about/support/csil/change-log.html).
+* Professional Masters students have access to the lab machines in [SECB 1010 and SECB 1013](https://www.sfu.ca/fas/computing/support/csil/hardware-mpcs.html). Those machines have RTX 4000 GPUs. See [CSIL Hardware](https://www.sfu.ca/fas/computing/support/csil/hardware.html) for other types of machines that is available in CSIL.
 
 #### Using the computer from the command line shell
 
 In the instructions that follow, you will operate the computer using
 the text-based command-line interface, known as the "shell". Start
-off by reading [the CSIL guide to Linux](http://www.sfu.ca/computing/about/support/csil/unix.html){:target="_blank"}
+off by reading [the CSIL guide to Linux](https://www.sfu.ca/fas/computing/support/csil/unix.html){:target="_blank"}
 
 Are you confident you know how to use the shell? Do [the shell challenge](shell_fu.txt)
 to prove to yourself that you really know how to use the command shell.
 
 Stop! We know that students skip over links! If you are
 new to Linux, you really need to read up on some basics.
-Read [the CSIL guide to Linux](http://www.sfu.ca/computing/about/support/csil/unix.html){:target="_blank"} now!
+Read [the CSIL guide to Linux](https://www.sfu.ca/fas/computing/support/csil/unix.html){:target="_blank"} now!
 
 #### Logging in to CSIL
 
