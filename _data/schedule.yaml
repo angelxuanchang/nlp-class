@@ -2,7 +2,7 @@
   num: 1
   dates:
   - date: "1/5" 
-    title: "Introduction"
+    title: "Introduction (NLP histroy and basics of language modeling)"
     lecture: "intro"
     leclinks:
       - name: "slides"
@@ -22,7 +22,7 @@
   num: 2
   dates:
   - date: "1/12" 
-    title: "Text classification - Naive Bayes"
+    title: "Text classification - Naive Bayes and evaluation"
     lecture: "classifiers"
     leclinks:
       - name: "NB slides"
@@ -47,33 +47,28 @@
   num: 3
   dates:
   - date: "1/19" 
-    title: "NN review and word Representations"
+    title: "NN review and word representations"
     lecture: "ff"
     leclinks:
       - name: "Neural network and classification review"
         url: "assets/lecture-slides/L5-neural-nets.pdf"
+    leclinks:
+      - name: "WV slides 1"
+        url: "assets/lecture-slides/L6-wordvectors.pdf"
   - date: "1/20" 
     tutorial: 4
   - date: "1/21" 
     title: "Word Representations and neural language models"
     lecture: "wordvec"
     leclinks:
-      - name: "WV slides 1"
-        url: "assets/lecture-slides/L6-wordvectors.pdf"
+      - name: "WV slides 2"
+        url: "assets/lecture-slides/L7-word2vec.pdf"
   - date: "1/23" 
     tutorial: 5
 - week: 
   num: 4
   dates:
   - date: "1/26" 
-    title: "Word2Vec"
-    lecture: "wordvec"
-    leclinks:
-      - name: "WV slides 2"
-        url: "assets/lecture-slides/L7-word2vec.pdf"
-  - date: "1/27" 
-    tutorial: 6
-  - date: "1/28"
     title: "Sequence modeling (HMMs and RNNs)"
     lecture: "hmm"
     leclinks:
@@ -81,6 +76,14 @@
         url: "assets/lecture-slides/L8-sequence-modeling.pdf"
       - name: "slides"
         url: "assets/lecture-slides/L9-RNN.pdf"
+  - date: "1/27" 
+    tutorial: 6
+  - date: "1/28"
+    title: "Neural Sequence Modeling (LSTM/GRU)"
+    lecture: "rnn"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L10-LSTM-GRU.pdf"
     hwdue: "1"
     hwout: "2"
   - date: "1/30" 
@@ -89,31 +92,31 @@
   num: 5
   dates:
   - date: "2/2" 
-    title: "Neural Sequence Modeling (LSTM/GRU)"
-    lecture: "rnn"
+    title: "Sequence generation, attention and transformers"
+    lecture: "transformers"
     leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L10-LSTM-GRU.pdf"
-  - date: "2/4" 
-    title: "Sequence-to-sequence models"
-    lecture: "seq2seq"
-    leclinks:
-      - name: "slides"
+      - name: "sequence generation slides"
         url: "assets/lecture-slides/L11-sequence-generation.pdf"
+      - name: "transformer slides"
+        url: "assets/lecture-slides/L12-transformers.pdf"
+  - date: "2/4" 
+    title: "Contextualized word embeddings (masked language modeling)"
+    lecture: "cwe"
+    leclinks:
+      - name: "cwe slides"
+        url: "assets/lecture-slides/L13-contextualized-word-embeddings.pdf"
 - week: 
   num: 6
   dates:
   - date: "2/9" 
-    title: "Transformers and contextualized word embeddings"
-    lecture: "transformers"
+    title: "Pretrained LLMs"
+    lecture: "llms"
     leclinks:
-      - name: "transformer slides"
-        url: "assets/lecture-slides/L12-transformers.pdf"
-      - name: "cwe slides"
-        url: "assets/lecture-slides/L13-contextualized-word-embeddings.pdf"
+      - name: "slides"
+        url: "assets/lecture-slides/L14-pretrained-llms.pdf"
   - date: "2/11" 
-    title: "Contextualized word embeedings and project information"
-    lecture: "cwe"
+    title: "Tasks, benchmarks and project information"
+    lecture: "tasks"
     leclinks:
       - name: "project info slides"
         url: "assets/lecture-slides/project-information.pdf"
@@ -134,20 +137,21 @@
   num: 8
   dates:
   - date: "2/23" 
-    title: "Pretraining and fine-tuning"
+    title: "Using LLMs: Prompting and parameter efficient fine-tuning"
     lecture: "peft"
-    leclinks:
-      - name: "pretraining slides"
-        url: "assets/lecture-slides/L14-pretraining.pdf"
-      - name: "fine-tuning slides"
-        url: "assets/slides/peft.pdf"
-    project: "Project proposal"
-  - date: "2/25" 
-    lecture: "fewshot"
-    title: "Few-shot and in-context learning"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L16-fewshot.pdf"
+      - name: "fine-tuning slides"
+        url: "assets/lecture-slides/peft.pdf"
+    readings: ["jm14", "jm15"]
+    project: "Project proposal"
+  - date: "2/25" 
+    lecture: "instruct_tuning"
+    title: "Posttraining - instruction tuning"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/instruct_tuning.pdf"
     hwdue: "3"
     hwout: "4"
 - week: 
@@ -165,15 +169,16 @@
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L16-dependency-parsing.pdf"
+
 - week: 
   num: 10
   dates:
   - date: "3/9" 
-    title: "Instruction tuning and reinforcement learning from human feedback"
-    lecture: "instruct"
+    title: "Posttraining - preference alignment"
+    lecture: "preference"
     leclinks:
-      - name: "instruction-tuning slides"
-        url: "assets/lecture-slides/instruct_tuning.pdf"
+      - name: "slides"
+        url: "assets/lecture-slides/preference-alignment.pdf"
   - date: "3/11" 
     title: "Final project tips, model debugging and analysis"
     lecture: "analysis"
@@ -185,25 +190,22 @@
   num: 11
   dates:
   - date: "3/16" 
-    title: "Parameter efficient fine-tuning"
-    lecture: "peft"
-    leclinks:
-      - name: "fine-tuning slides"
-        url: "assets/lecture-slides/peft.pdf"
-    readings: ["jm14", "jm15"]
-  - date: "3/18" 
-    title: "Grounding"
+    title: "Grounding and multimodal models"
     lecture: "grounding"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L23-grounding.pdf"
+  - date: "3/18" 
+    title: "Information retrieval and RAG"
+    lecture: "rag"
+    leclinks:
   - date: "3/19" 
     project: "Project milestone"
 - week: 
   num: 12
   dates:
   - date: "3/23" 
-    title: "Guest Lecture"
+    title: "Guest Lecture (TBD)"
   - date: "3/25" 
     talks:
       - name: "Visual grounding in 3D"
@@ -218,12 +220,12 @@
       - name: "LLMs for modeling DNA"
         speaker: Chuanqi Tang
         url: "assets/lecture-slides/2025-03-26_CMPT-413_04_DNA.pdf"
-    title: "Overview of recent multimodal research"
+    title: "TBD - Spring 2025, TAs gave overview of recent multimodal research"
 - week: 
   num: 13
   dates:
   - date: "3/30" 
-    title: "Scaling laws for LLMs"
+    title: "Scaling laws and modern LLMs"
     lecture: "scaling-laws"
     leclinks:
       - name: "slides"
@@ -238,11 +240,11 @@
   num: 14
   dates:
   - date: "4/6" 
+    noclass: true
+    title: "No class - Easter Monday"
+  - date: "4/8"
     title: "Final project presentations"
     lecture: "project"
-  - date: "4/8"
-    title: "Conclusion"
-    lecture: "conclusion"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L24-conclusion.pdf"
