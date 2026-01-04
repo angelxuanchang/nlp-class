@@ -29,6 +29,7 @@ active_tab: resources
 * [NLP highlights](https://player.fm/series/nlp-highlights) (from 2017 to 2023) with Matt Gardner, Pradeep Dasigi, and Waleed Ammar 
 
 ### Learning about LLMs and transformers
+* [3Blue1Brown's videos on neural networks and LLMs](https://www.3blue1brown.com/topics/neural-networks)
 * Andrej Karparthy's videos on LLMs
   * [Introduction](https://www.youtube.com/watch?v=zjkBMFhNj_g)
   * [Deep dive](https://www.youtube.com/watch?v=7xTGNNLPyMI)
