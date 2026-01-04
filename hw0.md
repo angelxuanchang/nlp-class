@@ -561,7 +561,7 @@ The grading is split up into the following components:
 * Github setup including adding instructor and TAs as Collaborator to the repository.
 * dev scores (see Table below)
 * test scores (see Table below)
-* report quality 
+* documentation and analysis (e.g. report) quality 
 * code content and quality (a good iPython notebook can help TAs understand your code)
 * check if each group member has a `answer/README.username`.
 
