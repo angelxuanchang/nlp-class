@@ -167,7 +167,9 @@ Use `USER@sfu.ca` as your email (where `USER` is your SFU username).
 
 If you have set up your SSH key correctly then you will have a public key. To view it:
 
+```
   cat ~/.ssh/id_ed25519.pub
+```
 
 This will show you the public key. Use the `Terminal` copy command to **copy** this into your clipboard.
 
