@@ -58,7 +58,7 @@ How to ask a question on [{{site.forumname}}]({{ site.forum }}):
 ### Homework Submission and Grace Days
 
 * You have to submit several deliverables for each homework as specified on the homework pages.
-* Your homework solution will be submitted electronically on [Canvas]({{ site.canvas }}) and Crowdmark.
+* Your homework solution will be submitted electronically on [Coursys]({{ site.coursys }}) and Crowdmark.
 * Please include an `answer/README.md` file for any documentation outside of the source code especially for code obtained from elsewhere.
 * All homeworks are due by 11:59PM on the homework due date.
 * Each **programming** homework comes with 2 grace days. However the grace days only apply to those who have a valid submission on the due date. The default is usually a valid submission. For example, if your programming homework deadline is Wednesday 11:59PM and you submit a valid solution then you have until Friday night 11:59PM to modify your programming homework submission.
