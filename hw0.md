@@ -497,20 +497,20 @@ F-score on both dev and test:
 
 Note the scores above are just an example.  Your scores may differ.
 
-### Preparing your report
+### Preparing your python notebook to clearly document what you have done
 
-You should prepare a short (<1 page) report on what you did in this assignment.  Your report should be organized into clear sections, with grammatical English (full sentences).  Use figures, graphs, tables to compare results of different experiments.  
+You should prepare a clear summary of what you did in this assignment.  For your documentation and analysis should be organized into clear sections, with grammatical English (full sentences).  Use figures, graphs, tables to compare results of different experiments.  
 
-The report should include the following:
-* Group name with names of group members
+The documentation and analysis in your python notebook should include the following:
+<!-- * Group name with names of group members -->
 * A summary of the task you are addressing (in this case, English word segmentation) and what you are aiming to achieve 
 * Short description of your method 
 * Results (both quantitative and qualitative) comparing your method to the baseline (default) solution
 * Discussion of alternative methods you tried and how well they worked (or didn't work)
-* Breakdown of contributions by each group member
+<!-- * Breakdown of contributions by each group member -->
 
-Your report should be submitted as `report.pdf` to [{{site.hwp-report-submit.name}}]({{site.hwdates[0].hwp-report-submit-url}}).  
-Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
+<!-- Your report should be submitted as `report.pdf` to [{{site.hwp-report-submit.name}}]({{site.hwdates[0].hwp-report-submit-url}}).  
+Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required. -->
 
 ### Submit your homework on {{ site.hwsubmit.name }}
 
@@ -534,10 +534,9 @@ To create the `source.zip` file for upload to {{ site.hwsubmit.name }} do:
 You must have the following files or `zipsrc.py` will complain about it:
 
 * `answer/ensegment.py` -- this is your solution to the homework. start by copying `default.py` as explained below.
-* `answer/ensegment.ipynb` -- this is the iPython notebook that will be the guide for your code for the homework.
+* `answer/ensegment.ipynb` -- this is the iPython notebook that will be the documentation of what you have done and guide for your code for the homework.
 
-In addition, each group member should write down a short description of what they
-did for this homework in `answer/README.username`.
+In addition, each group member should write down a short description of what they did for this homework in `answer/README.username`.
 
 #### Upload to {{ site.hwsubmit.name }}
 
@@ -557,12 +556,12 @@ so that they can see the submission and specify the name of your group in the re
 The grading is split up into the following components:
 
 * Group setup done on {{ site.hwsubmit.name }}.
-* Github setup including adding instructor and TA as Developer to the repository.
+* Github setup including adding instructor and TAs as Collaborator to the repository.
 * dev scores (see Table below)
 * test scores (see Table below)
-* Report quality 
-* Code content and quality (a good iPython notebook can help TAs understand your code)
-* Check if each group member has a `answer/README.username`.
+* report quality 
+* code content and quality (a good iPython notebook can help TAs understand your code)
+* check if each group member has a `answer/README.username`.
 
 Your F-score should be equal to or greater than the score listed for the corresponding marks.
 
