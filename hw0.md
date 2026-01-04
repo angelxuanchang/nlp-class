@@ -28,6 +28,7 @@ Before getting started, note that homeworks are developed and best run on linux 
 Find a group to work with for the homework assignments and the final
 course project. The group size should be {{ site.group.minsize }} to {{ site.group.maxsize }} people.
 You can use [{{site.forumname}}]({{ site.forum }}) to look for teammates.
+
 We will be checking that all group members are contributing equally
 to the homework submission and the final project.
 
@@ -35,11 +36,20 @@ Along with your group members, register yourself as part of a group on [Coursys]
 
 Create a memorable name for your group. If you need help, [seek help](https://www.wordlab.com/name-generators/team-name-generator/).
 
-Make sure there is no whitespace in your group name or anything that might cause a mojibake (please use plain ascii).
-
-Please DO NOT call your group `group` or `nlp-group` or `cmpt713` or `none`.
+**Selecting group names** Please take care when selecting a group name and 
+follow the guidelines below.
+* Please choose a group name that is **distinctive** and unlikely to be used 
+by another group.  For instance, `group`, `nlp-group`, `cmpt713`, `none` are all poor group names.
+* Do not use any obscene words in your group name. Be mature about 
+your choice of group name. That does not mean it cannot be funny,
+just be aware that your choice of group name may offend someone
+else so be considerate of others.
+* **Do not use any strange characters** in your group name.  
+Use alphanumeric characters [a-z0-9] only in your 
+group name, underscore and dashes are also permited (**please avoid spaces**).
 
 Go to the [{{site.forumname}}]({{ site.forum }}) and select `[Activity Digest]`.
+
 Change the `Digest Email Frequency:` to a setting that send you email notifications, like so:
 
 ![Coursys Subscription](assets/img/coursys_subscription.png)
@@ -63,43 +73,52 @@ In this course, your programs will be managed and archived using
 ### Create new repository on SFU Github
 
 Decide in your group the person that will create the repository on
-SFU Github and invite the other group members as a Maintainer. That person
-should follow the instructions in this section.
+[SFU Github](https://github.sfu.ca/){:target="_blank"} and invite the other group members as a Collaborator (see below on how to add users to your repo). That main github owner (who created the github repo) should follow the instructions in this section.
 
 Go to [the SFU Github server](https://github.sfu.ca/){:target="_blank"}
 which is on the web at
 [github.sfu.ca](https://github.sfu.ca/){:target="_blank"}.  Log
 in with your SFU username and password, the same one you use to
-check your e-mail on SFU Connect.
+check your e-mail on the SFU Outlook mail server. You should
+enable 2FA if you have not done so already and also go through
+the 2FA authentication.
 
-Once logged in, on the left panel,  
-you will see a list of your existing repos if you
-have created any in the past. 
+Once logged in, you will see a list of your existing repos if you
+have created any in the past. Create a new **Private** repository for this class by going to [https://github.sfu.ca/new](https://github.sfu.ca/new){:target="_blank"}.
+From the UI, you can click the `New Repository` button (if this is your
+first repository on SFU Github) or `New` button ![New](assets/img/newproject.png){:width="10%"} (at the top right of the left panel). 
 
-Create a new repository for this class
-by clicking the `New` button ![New](assets/img/newproject.png){:width="10%"} 
-(at the top right of the left panel) which will open [https://github.sfu.ca/new](https://github.sfu.ca/new). 
-
-On the [`Create a new repository` page](https://github.sfu.ca/new), 
+On the [`Create a new repository` page](https://github.sfu.ca/new){:target="_blank"}, 
 give your repo a name under the `Repository name` field. 
-Name your repo: `nlpclass-{{ site.semcode
+You must name your repo: `nlpclass-{{ site.semcode
 }}-g-GROUP` where `GROUP` is the group you registered on [Coursys]({{
 site.coursys }}). For example, a repository name might be `nlpclass-{{
 site.semcode }}-g-ethicsgradient` Make sure you add the `g-` before
-your group name. It's important to name the repo exactly as you see
-here.
+your group name. **It's important to name the repo exactly as you see
+here.**
 
-**Selecting group names** Please take care when selecting a group name and 
-follow the guidelines below.
-* Please choose a group name that is **distinctive** and unlikely to be used 
-by another group.  For instance, `group`, `nlp-group`, `cmpt713`, `none` are all poor group names.
-* Do not use any obscene words in your group name. Be mature about 
-your choice of group name. That does not mean it cannot be funny,
-just be aware that your choice of group name may offend someone
-else so be considerate of others.
-* **Do not use any strange characters** in your group name.  
-Use alphanumeric characters [a-z0-9] only in your 
-group name, underscore and dashes are also permited (**please avoid spaces**).
+Write an optional `Description`.
+
+Make sure that you mark the repository at `Private'.
+
+> **_Important:_** You **must** choose this repository to be
+> `Private`. We will not accept any repository for the homeworks in
+> this course that is marked as `Public`.  Your repo must be visible
+> only to yourself and your group members. **You must not give access
+> to your repo to any other students except your group members, the
+> TA(s) and the instructor.**.
+> 
+> Plagiarism is a serious academic offense. At any point in the future you are also not allowed to either mark this repository as Public or copy the code to a different public repository (on Github or elsewhere).
+
+Since we will be using Python, choose `Python` as the `.gitignore` template.
+
+Leave all other settings as they are and click the `Create repository` button
+at the bottom left of the page.
+
+Your repo has now been created. You will be taken to the web page
+for your newly created repo.
+
+
 We use an automated process to align your group name in Coursys 
 to your repo in github.  If your group name and repo does not match 
 exactly, we will not be able to match your github repo to your Coursys group.
@@ -107,77 +126,67 @@ If you used spaces in your group name in Coursys by mistake, make sure that your
 github repo has dashes ('-') instead of spaces (because the internal
 system name used by Coursys will have dashes instead of spaces).
 
-Since we will be using Python, choose `Python` as the `.gitignore` template.
 
-Leave all other settings as they are and click the `Create repository` button
-at the bottom left of the page.
-
-Make sure you do not change the default setting of `Private`. Your
-repo must be visible only to yourself and your group members
-
-**You must not give access to your repo to any other students except
-your group members**.
-
-Plagiarism is a serious academic offense.
-
-Your repo has now been created. You will be taken to a web page for
-your newly created repo.
 
 ### Add the instructor and TA and other team members as Collaborators
 
 **This is the most important step in the setup of your Github repository**
 
 The course instructor and the TAs need access to your repo in order to test
-and  grade your code. Open the <i class="fa fa-gear"></i>`Settings` page and click on the `Collaborators` (left panel)
-to add the instructor and TAs as a member of your repo. 
-On the access page that loads up, click on `Add people` in the `Manage access` and add <code>{{ site.instructor }}, {{ site.tas | map: "email" | join: ', '}}</code>. 
+and  grade your code. 
+Open the <i class="fa fa-gear"></i>`Settings` page and click on the `Collaborators` (left panel) to add the instructor and TAs as a member of your repo. 
+On the access page that loads up, click on `Add people` in the `Manage access` and add <code>{{ site.instructor }}, {{ site.tas | map: "email" | join: ', '}}</code> and invite them as a Collaborator. 
 
-You should remember to add the other team members of the group as Collaborators as well.
+You should remember to add the other team members of the group as Collaborators as well.  If they have not visit [SFU Github](https://github.sfu.ca/){:target="_blank"} before, they need to visit it so that their username become registered with SFU Github.
 
-<!-- ### Set up notifications
+### Set up notifications
 
-Next you should set up notifications about Issues in your repository.
-Go to `User Settings` from the upper right corner menu. Select
-`Preferences` menu which should take you to `User Settings` where
-you can select `Notification` where you should pick the `Global
-notification level` to `Watch` and also select `Receive notifications
-about your own activity`.  You can also set notifications specifically
-for your repository to `Watch`. -->
+You should be automatically set up to "Watch" changes to your
+repository, but ensure that you are watching changes.
+
+Set up your notifications by going to your personal settings
+accessed through your user icon on the upper right corner:
+
+![Settings](assets/img/github-personal-settings.png)
+
+Then select `Notifications` (with the bell icon) and make
+sure you are notified about changes to the repository:
+
+![Notifications](assets/img/github-notifications.png)
+
+Make sure you are notified about Github Issues.
 
 ### Setup SSH Key
 
 Next we will set up the Secure Shell (ssh) keys so you can access
 your repo without a password. 
 
-Go to [this page](https://github.sfu.ca/settings/keys):
-[https://github.sfu.ca/settings/keys](https://github.sfu.ca/settings/keys) and you will see a page for entering your SSH key.
-
-First follow [the instructions on
-setting up your SSH key pair](https://docs.github.com/en/enterprise-server@3.9/authentication/connecting-to-github-with-ssh).
+First [set up your SSH key pair](https://docs.github.com/en/enterprise-server@3.9/authentication/connecting-to-github-with-ssh).
 You should [check for existing keys](https://docs.github.com/en/enterprise-server@3.9/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys) and [create new SSH keys](https://docs.github.com/en/enterprise-server@3.9/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) if needed.  
 Use `USER@sfu.ca` as your email (where `USER` is your SFU username).
 
-**Follow the instructions for Linux**.
+If you have set up your SSH key correctly then you will have a public key. To view it:
+
+  cat ~/.ssh/id_ed25519.pub
+
+This will show you the public key. Use the `Terminal` copy command to **copy** this into your clipboard.
 
 Now we have to copy your public key to the Github server.
 
-Follow the [instructions here](https://docs.github.com/en/enterprise-server@3.9/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+Go to [this page](https://github.sfu.ca/settings/keys):
+[https://github.sfu.ca/settings/keys](https://github.sfu.ca/settings/keys) and you will see a page for entering your SSH key.
+
+Follow the [instructions](https://docs.github.com/en/enterprise-server@3.9/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 to copy and add your key to your github.
 
-If you have set up your SSH key correctly then you will have a public key. View it
+Click on `New SSH Key` and use the web browser to **paste** your public key into the `Key` box and give it a `Title` (e.g. 'CSIL' is a reasonable title) and then `Add key`.
 
-    cat ~/.ssh/id_ed25519.pub
-
-This will show you the public key. Use the `Terminal` copy command to **copy**
-this into your clipboard.
-
-Make sure that you are at [this page](https://github.sfu.ca/settings/keys):
-[https://github.sfu.ca/settings/keys](https://github.sfu.ca/settings/keys).
-
-Click on `New SSH Key` and use the web browser to **paste** your public key into the `Key`
-box and give it a `Title` (e.g. 'CSIL' is a reasonable title) and then `Add key`.
 
 ### Clone your Repository
+
+<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i>
+Make sure you are connected to the SFU VPN before you interact with github.sfu.ca using ssh.
+</div>
 
 Download a copy of your repo to your CSIL machine.  The action of
 making a local copy of your online repo is known as a "clone".
@@ -194,7 +203,7 @@ In the terminal window, enter the commands
 where `USER` is your SFU username, `GROUPUSER` is the SFU username of
 the person who created the group repository and `GROUP` is the name of the
 group you have already setup on [Coursys]({{ site.coursys }}). If
-you skipped any of the above steps in setting up your Github repo
+you skipped any of the above steps in setting up your GitHub repo
 this command will not work.  The system might prompt you for a
 username/password combo. Supply the usual answers. To avoid entering
 your username/password over and over again you can set up [passwordless
@@ -222,9 +231,9 @@ and then `git push` to send your new directory and file to the
 Github server. Open up Github on a web browser to check that you
 can see `hw0/README.md` in your repository on the web browser.
 
-<!-- Add a `.gitignore` file at the top level of your git repository
-to avoid committing and pushing useless files to the Github
-server. Here is a typical `.gitignore` file.
+If you haven't added a `.gitignore` file, make sure to add a `.gitignore` file at the top level of your git repository to avoid committing and pushing useless files to the GitHub server. 
+
+Here is a typical `.gitignore` file.
 
     venv
     __pycache__
@@ -463,10 +472,16 @@ In particular use the log file to check your output evaluation:
 
     python3 check.py -l log
 
-The performance on `data/input/test.txt` will not be shown.  We will
+The output you will see is the score on the `dev` set:
+
+    $ python3 check.py
+    dev.out score: 0.82
+
+The accuracy on `data/input/test.txt` will not be shown.  We will
 evaluate your output on the test input after the submission deadline.
 
-The default solution gets a very poor F-score on the test set:
+The default solution gets a very poor F-score on the test set (again,
+you cannot see the test set score based on what is provided to you):
 
     $ python3 check.py
     dev.out score: 0.82
@@ -535,7 +550,7 @@ Only one person need to submit for the group, but please [add your group members
 so that they can see the submission and specify the name of your group in the report.
 {% endif %}
 * Make sure you have documented your approach in `answer/ensegment.ipynb`.
-* Make sure each member of your group has documented their contribution to this homework in `answer/README.username` where `username` is your CSIL/Github username.
+* Make sure each member of your group has documented their contribution to this homework in `answer/README.username` where `username` is your CSIL/GitHub username.
 
 ## Grading
 
