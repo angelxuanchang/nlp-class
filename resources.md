@@ -86,6 +86,38 @@ In some cases you can also extend your homework code to produce innovative proje
 * [Datasets for Natural Language Processing](https://machinelearningmastery.com/datasets-natural-language-processing/)
 * [Kaggle NLP Tasks](https://www.kaggle.com/datasets?sortBy=hottest&group=public&page=1&pageSize=20&size=sizeAll&filetype=fileTypeAll&license=licenseAll&tagids=13204%2C11208%2C2107)
 
+### Embeddings 
+* [MTEB](https://github.com/embeddings-benchmark/mteb)
+
+### Language models
+* [BabyLM Challenge](https://babylm.github.io)
+* [LAMBADA](https://zenodo.org/record/2630551)
+
+### Multitask Benchmarks
+* [MMLU](https://github.com/standardgalactic/mmlu)
+* [SuperGLUE](https://super.gluebenchmark.com/)
+* [GLUE Benchmark](https://gluebenchmark.com)
+
+### Question Answering
+
+* [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/)
+* [CoQA](https://stanfordnlp.github.io/coqa/)
+* [HotpotQA](https://hotpotqa.github.io/)
+* [Natural Questions](https://ai.google.com/research/NaturalQuestions)
+* [Qanta shared task](https://sites.google.com/view/qanta/home) 
+* Reverse QA: Jeopardy style QA. [json](https://drive.google.com/file/d/0BwT5wj_P7BKXb2hfM3d2RHU1ckE/view) and [csv](https://drive.google.com/file/d/0BwT5wj_P7BKXUl9tOUJWYzVvUjA/view)
+
+### Math questions
+* [MATH](https://github.com/hendrycks/math)
+* [MATH-Perturb](https://math-perturb.github.io/)
+* [Algebra Question Answering with Rationales](https://github.com/deepmind/AQuA/)
+* [GSM8K](https://huggingface.co/datasets/openai/gsm8k)
+
+### Commonsense reasoning
+* [Swag](https://rowanzellers.com/swag/)
+* [HellaSwag](https://rowanzellers.com/hellaswag/)
+
+
 #### CoNLL Shared Tasks
 
 * [CoNLL Shared Tasks](http://www.conll.org/previous-tasks)
@@ -157,22 +189,4 @@ In some cases you can also extend your homework code to produce innovative proje
 * [Yelp Challenge](https://www.yelp.com/dataset/challenge)
 * [Sentiment and opinion mining datasets](https://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html)
 
-### Natural Language Understanding and Inference
 
-* [SuperGLUE](https://super.gluebenchmark.com/)
-* [GLUE Benchmark](https://gluebenchmark.com)
-* [RepEval 2017](https://repeval2017.github.io/shared/)
-* [The Stanford Natural Language Inference (SNLI) Corpus](https://nlp.stanford.edu/projects/snli/)
-* [Multi-Genre NLI](https://www.nyu.edu/projects/bowman/multinli/)
-* [MedNLI](https://physionet.org/physiotools/mimic-code/mednli/)
-* [XNLI](https://www.nyu.edu/projects/bowman/xnli/)
-
-### Question Answering
-
-* [Qanta shared task](https://sites.google.com/view/qanta/home) 
-* [Algebra Question Answering with Rationales](https://github.com/deepmind/AQuA/)
-* [Quora Question Pairs](https://www.kaggle.com/c/quora-question-pairs).
-* Reverse QA: Jeopardy style QA. [json](https://drive.google.com/file/d/0BwT5wj_P7BKXb2hfM3d2RHU1ckE/view) and [csv](https://drive.google.com/file/d/0BwT5wj_P7BKXUl9tOUJWYzVvUjA/view)
-* [CoQA](https://stanfordnlp.github.io/coqa/)
-* [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/)
-* [HotpotQA](https://hotpotqa.github.io/)
