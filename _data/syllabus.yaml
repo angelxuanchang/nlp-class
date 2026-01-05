@@ -8,37 +8,15 @@
     - title: "Introduction to NLP Tasks"
       url: "assets/slides/nlptasks.pdf"
   readings:
-    - author: Lillian Lee
-      title: "I'm sorry Dave, I'm afraid I can't do that"
-      url: "http://www.cs.cornell.edu/home/llee/papers/cstb.pdf"
-      optional: false
-    - author: Percy Liang
-      title: "Talking to Computers in Natural Language"
-      url: "https://cs.stanford.edu/~pliang/papers/talking-xrds2014.pdf"
+    - author: Lera Boroditsky
+      title: How Language Shapes the Way We Think
+      url: "https://www.youtube.com/watch?v=RKK7wGAYP6k"
       optional: true
-    - author: Julia Hirschberg and Christopher D. Manning 
-      title: "Advances in Natural Language Processing"
-      url: "https://cs224d.stanford.edu/papers/advances.pdf"
+    - author: Chris Manning
+      title: Meaning and Intelligence in Language Models (KDD 2025 Keynote)
+      url: "https://www.youtube.com/watch?v=d6XBrx_7rIE"
       optional: true
   links:
-    - author: Rick Rashid 
-      title: "Speech Recognition Breakthrough for the Spoken, Translated Word by Rick Rashid"
-      video: "https://www.youtube.com/watch?v=Nu-nlQqFCKg"
-      url: "https://www.youtube.com/watch?v=Nu-nlQqFCKg"
-      optional: true
-    - title: "IBM Watson competes in Jeopardy!"
-      video: "https://www.youtube.com/watch?v=lI-M7O_bRNg"
-      url: "https://www.youtube.com/watch?v=lI-M7O_bRNg"
-      optional: true
-    - author: Rick Rashid 
-      title: "Speech Recognition Breakthrough for the Spoken, Translated Word by Rick Rashid"
-      video: "https://www.youtube.com/watch?v=Nu-nlQqFCKg"
-      url: "https://www.youtube.com/watch?v=Nu-nlQqFCKg"
-      optional: true
-    - author: Anoop Sarkar
-      title: "NLP and Text Visualization"
-      url: "assets/slides/wikihistory.pdf"
-      optional: true
     - author: "Various Allen Institute AI2 Researchers"
       title: "NLP Highlights podcast"
       url: "https://soundcloud.com/nlp-highlights"
@@ -81,10 +59,10 @@
       download: "http://github.com/anoopsarkar/nlp-class/raw/gh-pages/assets/notebooks/bpe.ipynb"    
   readings:
     - author: Dan Jurafsky and James H. Martin
-      title: "Words and Tokens (J+M chapter 1)"
-      abbr: "J+M chapter 1" 
-      tag: jm1
-      url: "https://web.stanford.edu/~jurafsky/slp3/1.pdf"
+      title: "Words and Tokens (J+M chapter 2)"
+      abbr: "J+M chapter 2" 
+      tag: jm2
+      url: "https://web.stanford.edu/~jurafsky/slp3/2.pdf"
       optional: false
   links:
     - title: "BPE tutorial at Huggingface"
