@@ -15,7 +15,7 @@ officehour: "Mon 1:30pm-2:30pm"
 tas:
   - name: "Sonia Raychaudhuri"
     email: sraychau
-    officehour: "TBD"
+    officehour: "Thu, 2:00-3:00 PM (ASB9810)"
   - name: "Qirui Wu"
     email: qiruiw
     officehour: "Tue, 3:00-4:00 PM (ASB9810)"
@@ -24,7 +24,7 @@ tas:
     officehour: "Tue, 3:00-4:00 PM (ASB9810)"
   - name: "Xiaohao Sun"
     email: xsa55
-    officehour: "TBD"
+    officehour: "Thu, 2:00-3:00 PM (ASB9810)"
 tutorials:
   - tutorial: "0"
     title: "Review of a) probability, linear algebra and calculus and b) useful python/unix commands"
