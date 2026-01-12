@@ -82,7 +82,7 @@ In some cases you can also extend your homework code to produce innovative proje
 
 ### Shared Task Collections
 
-* [Torchtext](https://torchtext.readthedocs.io/en/latest/)
+* [NLP datasets (Wikipedia)](https://en.wikipedia.org/wiki/Language_model_benchmark)
 * [Sebastian Ruder's curated collection](https://nlpprogress.com/)
 * [Datasets for Natural Language Processing](https://machinelearningmastery.com/datasets-natural-language-processing/)
 * [Kaggle NLP Tasks](https://www.kaggle.com/datasets?sortBy=hottest&group=public&page=1&pageSize=20&size=sizeAll&filetype=fileTypeAll&license=licenseAll&tagids=13204%2C11208%2C2107)
