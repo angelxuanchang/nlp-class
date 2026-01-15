@@ -61,7 +61,7 @@ hwdates:
   - hw: "1"
     startdate: "Jan 14, 2025"
     deadline: "Jan 28, 2025"
-    hwc-url: 
+    hwc-url: https://app.crowdmark.com/student/assessments/hw1-c-0d83e
     hwp-report-submit-url: 
   - hw: "2"
     startdate: "Jan 28, 2025"
