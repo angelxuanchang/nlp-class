@@ -55,40 +55,40 @@ group:
 hwdates:
   - hw: "0"
     startdate: "Jan 5, 2026"
-    deadline: "Jan 14, 2025"
+    deadline: "Jan 14, 2026"
     hwc-url: https://app.crowdmark.com/student/assessments/hw0-c-4bd18
     hwp-report-submit-url: 
   - hw: "1"
-    startdate: "Jan 14, 2025"
-    deadline: "Jan 28, 2025"
+    startdate: "Jan 14, 2026"
+    deadline: "Jan 28, 2026"
     hwc-url: https://app.crowdmark.com/student/assessments/hw1-c-0d83e
     hwp-report-submit-url: 
   - hw: "2"
-    startdate: "Jan 28, 2025"
-    deadline: "Feb 11, 2025"
+    startdate: "Jan 28, 2026"
+    deadline: "Feb 11, 2026"
     hwc-url: 
     hwp-report-submit-url: 
   - hw: "3"
-    startdate: "Feb 11, 2025"
-    deadline: "Feb 25, 2025"
+    startdate: "Feb 11, 2026"
+    deadline: "Feb 25, 2026"
     hwc-url: 
     hwp-report-submit-url: 
   - hw: "4"
-    startdate: "Feb 25, 2025"
-    deadline: "Mar  11, 2025"
+    startdate: "Feb 25, 2026"
+    deadline: "Mar  11, 2026"
     hwc-url: 
     hwp-report-submit-url: 
   - hw: "project"
-    startdate: "Feb 10, 2025"
-    deadline: "Apr 09, 2025"
+    startdate: "Feb 10, 2026"
+    deadline: "Apr 09, 2026"
     time: "Poster session: ???"
     location: "TBD"
-    abstract: "Feb 18, 2025"
-    proposal: "Feb 23, 2025"
+    abstract: "Feb 18, 2026"
+    proposal: "Feb 23, 2026"
     proposal-submit-url: 
-    milestone: "Mar 19, 2025"
+    milestone: "Mar 19, 2026"
     milestone-submit-url: 
-    poster: "Video due on Apr 6, 2025"
+    poster: "Video due on Apr 6, 2026"
     video-submit-url: 
     report-submit-url: 
 hwsubmit:
