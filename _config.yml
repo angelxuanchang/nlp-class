@@ -79,18 +79,19 @@ hwdates:
     hwc-url: 
     hwp-report-submit-url: 
   - hw: "project"
+    report-submit-name: "Gradescope"
     startdate: "Feb 10, 2026"
     deadline: "Apr 09, 2026"
     time: "Poster session: ???"
     location: "TBD"
     abstract: "Feb 18, 2026"
     proposal: "Feb 23, 2026"
-    proposal-submit-url: 
+    proposal-submit-url: https://www.gradescope.ca/courses/33825/assignments/179256
     milestone: "Mar 19, 2026"
-    milestone-submit-url: 
+    milestone-submit-url: https://www.gradescope.ca/courses/33825/assignments/179257
     poster: "Video due on Apr 6, 2026"
-    video-submit-url: 
-    report-submit-url: 
+    video-submit-url: https://www.gradescope.ca/courses/33825/assignments/179259
+    report-submit-url: https://www.gradescope.ca/courses/33825/assignments/179258
 hwsubmit:
   name: "Coursys"
   url:  "https://coursys.sfu.ca/2026sp-cmpt-713-x1/"

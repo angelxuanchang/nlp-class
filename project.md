@@ -84,7 +84,7 @@ activity submit the following files:
 
 * `proposal.pdf`: this is the project proposal report  -->
 
-Please upload your `proposal.pdf` to [Crowdmark]({{site.hwdates[5].proposal-submit-url}}) `Project Proposal`.  
+Please upload your `proposal.pdf` to [{{site.hwdates[5].report-submit-name}}]({{site.hwdates[5].proposal-submit-url}}) `Project Proposal`.  
 
 <!-- Go to [Canvas]({{ site.canvas }}). Under the `Project Proposal`
 assignment submit your `proposal.pdf` -->
@@ -135,7 +135,7 @@ Grading of the milestone will be based on the progress and the quality of writin
 <!-- Go to [Canvas]({{ site.canvas }}). Under the `Project Milestone`
 assignment submit your `milestone.pdf` -->
 
-Please upload your `milestone.pdf` to [Crowdmark]({{site.hwdates[5].milestone-submit-url}}) `Project Milestone`.  
+Please upload your `milestone.pdf` to [{{site.hwdates[5].report-submit-name}}]({{site.hwdates[5].milestone-submit-url}}) `Project Milestone`.  
 
 Optionally, you can go to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}). Under the `Project Milestone`
 activity upload `source.zip` and `output.zip` for your project.  These will not be graded. 
@@ -194,7 +194,7 @@ Please read this [guide to presenting your work](assets/cached/cs224u/cs224u-201
 <!-- Go to [Gradescope]({{ site.gradescope }}). Under the `Final Project Report`
 assignment submit your `report.pdf` -->
 
-Please upload your `report.pdf` to [Crowdmark]({{site.hwdates[5].report-submit-url}}) `Final Project Report`.  
+Please upload your `report.pdf` to [{{site.hwdates[5].report-submit-name}}]({{site.hwdates[5].report-submit-url}}) `Final Project Report`.  
 
 To submit your code and output, go to [{{ site.hwsubmit.name }}]({{ site.hwsubmit.url }}). Under the `Final Project Report`
 activity submit the following files:
