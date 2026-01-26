@@ -234,7 +234,7 @@ The documentation and analysis in your python notebook should include the follow
 <!-- * Group name with names of group members -->
 * A short **description of the task** (e.g. the problem you are solving) in your own words.  In this case, you should describe what is spelling correction and why it is useful to be contextual.  Make sure to indicate what is the expected input and output.   
 * Short description of your method 
-* Results (both quantitative and qualitative) comparing your method to the baseline (default) solution.   For  qualitative results, you should include some illustrative examples of the baseline vs your solution. For quantitative results, you would present tables/figures comparing how well the different methods performed (e.g. report and compare the F-score of the baseline and your method). 
+* Results (both quantitative and qualitative) comparing your method to the baseline (default) solution.   For  qualitative results, you should include some illustrative examples of the baseline vs your solution. For quantitative results, you would present tables/figures comparing how well the different methods performed (e.g. report and compare the accuracy of the baseline and your method). 
 * Discussion of alternative methods you tried and how well they worked (or didn't work)
 <!-- * Breakdown of contributions by each group member -->
 
