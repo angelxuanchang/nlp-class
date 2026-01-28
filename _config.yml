@@ -66,7 +66,7 @@ hwdates:
   - hw: "2"
     startdate: "Jan 28, 2026"
     deadline: "Feb 11, 2026"
-    hwc-url: 
+    hwc-url: https://www.gradescope.ca/courses/33825/assignments/180853
     hwp-report-submit-url: 
   - hw: "3"
     startdate: "Feb 11, 2026"
@@ -99,7 +99,11 @@ hwp-report-submit:
   name: "Crowdmark"
   url:  "https://app.crowdmark.com/courses/cmpt413-d100-computational-linguistics-cmpt713-g100-natural-language-processing"
   specify-group-url: "https://www.youtube.com/watch?v=N2LtHmdu09c"
-hwc: "Crowdmark"
-hwcsubmit:
+hwc01: "Crowdmark"
+hwcsubmit01:
   name: "Crowdmark"
   url:  "https://app.crowdmark.com/courses/cmpt413-d100-computational-linguistics-cmpt713-g100-natural-language-processing"
+hwc: "Gradescope"
+hwcsubmit01:
+  name: "Gradescope"
+  url:  "https://www.gradescope.ca/courses/33825"

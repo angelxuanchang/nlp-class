@@ -15,7 +15,7 @@ active_tab: homework
 
 <span class="text-info">Out on {{ site.hwdates[1].startdate }}.</span> 
 {% if site.hwdates[1].hwc-url %}
-<span>Posted on [{{site.hwc}}]({{ site.hwdates[1].hwc-url }}).</span> 
+<span>Posted on [{{site.hwc01}}]({{ site.hwdates[1].hwc-url }}).</span> 
 {% endif %}
 
 # Programming Homework 1: Contextual Spell Checking
@@ -287,7 +287,7 @@ The grading is split up into the following components:
 
 * dev scores (see Table below)
 * test scores (see Table below)
-* Report quality 
+* Documentation and analysis (e.g. report) quality 
 * Code content and quality
   * Make sure that iterative search algorithm is implemented as described in the Baseline section above
 * Check if each group member has a `answer/README.username`.

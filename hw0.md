@@ -16,7 +16,7 @@ active_tab: homework
 
 <span class="text-info">Out on {{ site.hwdates[0].startdate }}.</span> 
 {% if site.hwdates[0].hwc-url %}
-<span>Posted on [{{site.hwc}}]({{ site.hwdates[0].hwc-url }}).</span> 
+<span>Posted on [{{site.hwc01}}]({{ site.hwdates[0].hwc-url }}).</span> 
 {% endif %}
 
 # Programming Homework 0: Setup

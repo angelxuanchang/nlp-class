@@ -243,20 +243,20 @@ In particular use the log file to check your output evaluation:
 The performance on `data/input/test.txt` will not be shown.  We will
 evaluate your output on the test input after the submission deadline.
 
-## Preparing your report
+## Preparing your python notebook to clearly document what you have done
 
-You should prepare a short (1-2 pages) report on what you did in this assignment.  Your report should be organized into clear sections, with grammatical English (full sentences).  Use figures, graphs, tables to compare results of different experiments.  
+You should prepare a clear summary of what you did in this assignment.  For your documentation and analysis should be organized into clear sections, with grammatical English (full sentences).  Use figures, graphs, tables to compare results of different experiments.  
 
-The report should include the following:
-* Group name with names of group members
-* A summary of the task you are addressing and what you are aiming to achieve 
+The documentation and analysis in your python notebook should include the following:
+<!-- * Group name with names of group members -->
+* A short **description of the task** (e.g. the problem you are solving) in your own words.  Make sure to indicate what is the expected input and output.   
 * Short description of your method 
-* Results (both quantitative and qualitative) comparing your method to the baseline (default) solution 
+* Results (both quantitative and qualitative) comparing your method to the baseline (default) solution.   For  qualitative results, you should include some illustrative examples of the baseline vs your solution. For quantitative results, you would present tables/figures comparing how well the different methods performed (e.g. report and compare the accuracy of the baseline and your method). 
 * Discussion of alternative methods you tried and how well they worked (or didn't work)
-* Breakdown of contributions by each group member
+<!-- * Breakdown of contributions by each group member -->
 
-Your report should be submitted as `report.pdf` to  to [{{site.hwp-report-submit.name}}]({{site.hwdates[3].hwp-report-submit-url}}).
-Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required.
+<!-- You can optionally prepare a short (1-2 pages) pdf.  Your report should be submitted as `report.pdf` to  to [{{site.hwp-report-submit.name}}]({{site.hwdates[3].hwp-report-submit-url}}).
+Using LaTex for preparing your reports is recommended (see [Overleaf](https://www.overleaf.com) for online editing of LaTex documents), but not required. -->
 
 ## Submit your homework on {{ site.hwsubmit.name }}
 
@@ -304,7 +304,7 @@ The grading is split up into the following components:
 
 * dev scores (see Table below)
 * test scores (see Table below)
-* Report quality
+* Documentation and analysis (e.g. report) quality 
 * Code content and quality 
 * Check if each group member has a `answer/README.username`.
 
