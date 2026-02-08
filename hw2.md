@@ -198,7 +198,7 @@ will start training on the `data/train.txt.gz` file. This
 will take about 15-20 minutes.
 
 You can also download the [`chunker.pt` model
-file](https://drive.google.com/file/d/1Cob8vewgpvNhJ2KnZlYq2Tntkgc0l2yx/view)
+file](https://drive.google.com/file/d/1OY_NKo0vxS2ndttdfpqGyMo0PubbhIK3/view?usp=sharing)
 that was trained using `default.py`.
 
 Please do not commit the file into your git repository as it is
@@ -493,9 +493,8 @@ evaluate your output on the test input after the submission deadline.
 You should prepare a clear summary of what you did in this assignment.  For your documentation and analysis should be organized into clear sections, with grammatical English (full sentences).  Use figures, graphs, tables to compare results of different experiments.  
 
 The documentation and analysis in your python notebook should include the following:
-The report should include the following:
 <!-- * Group name with names of group members -->
-* A summary of the task you are addressing and what you are aiming to achieve 
+* A short **description of the task** (e.g. the problem you are solving) in your own words.  Make sure to indicate what is the expected input and output.   
 * Short description of your method 
 * Results (both quantitative and qualitative) comparing your method to the baseline (default) solution.   For  qualitative results, you should include some illustrative examples of the baseline vs your solution. For quantitative results, you would present tables/figures comparing how well the different methods performed (e.g. report and compare the accuracy of the baseline and your method). 
 * Discussion of alternative methods you tried and how well they worked (or didn't work).  
