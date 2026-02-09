@@ -92,28 +92,30 @@
   num: 5
   dates:
   - date: "2/2" 
-    title: "Sequence generation, attention and transformers"
-    lecture: "transformers"
+    title: "Sequence generation, attention, and intro to transformers"
+    lecture: "seq2seq"
     leclinks:
       - name: "sequence generation slides"
         url: "assets/lecture-slides/L11-sequence-generation.pdf"
       - name: "transformer slides"
         url: "assets/lecture-slides/L12-transformers.pdf"
   - date: "2/4" 
-    title: "Contextualized word embeddings (masked language modeling)"
-    lecture: "cwe"
+    title: "Transformers"
+    lecture: "transformers"
     leclinks:
-      - name: "cwe slides"
-        url: "assets/lecture-slides/L13-contextualized-word-embeddings.pdf"
+      - name: "transformer slides"
+        url: "assets/lecture-slides/L12-transformers.pdf"
 - week: 
   num: 6
   dates:
   - date: "2/9" 
-    title: "Pretrained LLMs"
+    title: "Pretraining LLMs"
     lecture: "llms"
     leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L14-pretrained-llms.pdf"
+      - name: "pretraining slides"
+        url: "assets/lecture-slides/L14-pretraining.pdf"
+      - name: "prompting slides"
+        url: "assets/lecture-slides/L15-fewshot.pdf"
   - date: "2/11" 
     title: "Tasks, benchmarks and project information"
     lecture: "tasks"
@@ -141,7 +143,7 @@
     lecture: "peft"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L16-fewshot.pdf"
+        url: "assets/lecture-slides/L15-fewshot.pdf"
       - name: "fine-tuning slides"
         url: "assets/lecture-slides/peft.pdf"
     readings: ["jm14", "jm15"]

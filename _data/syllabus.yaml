@@ -472,7 +472,7 @@
 - title: "Transformers"
   tag: transformers
   include: true
-  current: false
+  current: true
   notes:
     - title: "Transformers"
       url: "assets/lecture-slides/L12-transformers.pdf"
@@ -532,13 +532,10 @@
 - title: "Large Language Models"
   tag: "llms"
   include: true
-  current: false
+  current: true
   notes:
     - title: Lecture notes
-      url: "assets/slides/pre_training.pdf"
-    - title: "Improving language understanding with unsupervised learning"
-      author: "Alec Radford, Karthik Narasimhan, Tim Salimans, Ilya Sutskever"
-      url: "https://openai.com/research/language-unsupervised"
+      url: "assets/lecture-slides/L14-pretraining.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
       title: "Large Language Models (J+M chapter 7)"
@@ -552,6 +549,21 @@
       tag: jm10
       url: "https://web.stanford.edu/~jurafsky/slp3/10.pdf"
       optional: false
+    - title: "Illustrated BERT"
+      author: "Jay Alammar"
+      url: "http://jalammar.github.io/illustrated-bert/"
+      optional: true
+    - title: "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+      author: "Devlin et al. 2018"
+      url: "https://arxiv.org/pdf/1810.04805.pdf"
+      optional: true
+    - title: "Improving Language Understanding by Generative Pre-Training"  
+      author: "Alec Radford, Karthik Narasimhan, Tim Salimans, Ilya Sutskever"
+      url: "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
+      optional: true
+    - title: "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"
+      author: "Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, Peter J. Liu"
+      url: "https://arxiv.org/abs/1910.10683"
   links:
     - title: "Semi-supervised Sequence Learning"
       author: "Andrew M. Dai, Quoc V. Le"
@@ -568,9 +580,6 @@
     - title: "ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators"
       author: "Kevin Clark, Minh-Thang Luong, Quoc V. Le, Christopher D. Manning"
       url: "https://arxiv.org/abs/2003.10555"
-    - title: "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"
-      author: "Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, Peter J. Liu"
-      url: "https://arxiv.org/abs/1910.10683"
     - title: "ALBERT: A Lite BERT for Self-supervised Learning of Language Representations"
       author: "Zhenzhong Lan, Mingda Chen, Sebastian Goodman, Kevin Gimpel, Piyush Sharma, Radu Soricut"
       url: "https://arxiv.org/abs/1909.11942"
