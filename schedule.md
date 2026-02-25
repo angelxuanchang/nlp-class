@@ -90,8 +90,8 @@ The schedule is preliminary and subject to change.   Slides will be updated as t
                 {% endif %}
               <td rowspan="{{ keepread }}">
                 {% if date.lecture %}
-                  {% assign lectures = site.data.syllabus | where: "tag", date.lecture  %}
-                  {% if lectures[0] %}
+                  {% assign lectures = site.data.syllabus | where_exp: "item", "date.lecture contains item.tag" %}
+                  {% for lecture in lectures %}
                       <ul>
                       {% if date.readings %}
                          {% assign readings = lectures[0].readings | where: "tag", date.readings[0] %}
@@ -123,7 +123,7 @@ The schedule is preliminary and subject to change.   Slides will be updated as t
                         </li>
                       {% endfor %}
                       </ul>
-                  {% endif %}
+                  {% endfor %}
                 {% endif %}
               </td>
               {% endif %}

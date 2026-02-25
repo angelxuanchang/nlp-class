@@ -114,8 +114,6 @@
     leclinks:
       - name: "pretraining slides"
         url: "assets/lecture-slides/L14-pretraining.pdf"
-      - name: "prompting slides"
-        url: "assets/lecture-slides/L15-fewshot.pdf"
   - date: "2/11" 
     title: "Tasks, benchmarks and project information"
     lecture: "tasks"
@@ -142,45 +140,45 @@
     title: "Using LLMs: Prompting and parameter efficient fine-tuning"
     lecture: "peft"
     leclinks:
-      - name: "slides"
+      - name: "prompting"
         url: "assets/lecture-slides/L15-fewshot.pdf"
-      - name: "fine-tuning slides"
+      - name: "fine-tuning"
         url: "assets/lecture-slides/peft.pdf"
     readings: ["jm14", "jm15"]
     project: "Project proposal"
   - date: "2/25" 
-    lecture: "instruct_tuning"
-    title: "Posttraining - instruction tuning"
+    title: "Modern LLM architecture"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/instruct_tuning.pdf"
+        url: "assets/lecture-slides/modern-llms.pdf"
     hwdue: "3"
     hwout: "4"
 - week: 
   num: 9
   dates:
   - date: "3/2" 
-    title: "Constituency Parsing"
-    lecture: "cfg"
+    lecture: "instruct_tuning"
+    title: "Posttraining - instruction tuning and preference alignment"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L15-constituency-parsing.pdf"
+        url: "assets/lecture-slides/instruct_tuning.pdf"
   - date: "3/4" 
-    title: "Dependency parsing"
-    lecture: "dependency"
-    leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L16-dependency-parsing.pdf"
-
-- week: 
-  num: 10
-  dates:
-  - date: "3/9" 
     title: "Posttraining - preference alignment"
     lecture: "preference"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/preference-alignment.pdf"
+- week: 
+  num: 10
+  dates:
+  - date: "3/9" 
+    title: "Parsing"
+    lecture: ["cfg", "dependency"]
+    leclinks:
+      - name: "constituency parsing"
+        url: "assets/lecture-slides/L15-constituency-parsing.pdf"
+      - name: "Dependency parsing"
+        url: "assets/lecture-slides/L16-dependency-parsing.pdf"
   - date: "3/11" 
     title: "Final project tips, model debugging and analysis"
     lecture: "analysis"
