@@ -163,7 +163,7 @@
       - name: "slides"
         url: "assets/lecture-slides/instruct_tuning.pdf"
   - date: "3/4" 
-    title: "Posttraining - preference alignment"
+    title: "Posttraining - preference alignment and reasoning"
     lecture: "preference"
     leclinks:
       - name: "slides"
@@ -225,7 +225,7 @@
   num: 13
   dates:
   - date: "3/30" 
-    title: "Scaling laws and modern LLMs"
+    title: "Scaling laws and data"
     lecture: "scaling-laws"
     leclinks:
       - name: "slides"
