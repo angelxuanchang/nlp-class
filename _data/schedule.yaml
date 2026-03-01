@@ -143,14 +143,14 @@
       - name: "prompting"
         url: "assets/lecture-slides/L15-fewshot.pdf"
       - name: "fine-tuning"
-        url: "assets/lecture-slides/peft.pdf"
+        url: "assets/lecture-slides/L16-peft.pdf"
     readings: ["jm14", "jm15"]
     project: "Project proposal"
   - date: "2/25" 
     title: "Modern LLM architecture"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/modern-llms.pdf"
+        url: "assets/lecture-slides/L17-modern-llms.pdf"
     hwdue: "3"
     hwout: "4"
 - week: 
@@ -160,14 +160,16 @@
     lecture: "instruct_tuning"
     title: "Posttraining - instruction tuning and preference alignment"
     leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/instruct_tuning.pdf"
+      - name: "instruction tuning"
+        url: "assets/lecture-slides/L18-instruct_tuning.pdf"
+      - name: "preference alignment"
+        url: "assets/lecture-slides/L19-preference-alignment.pdf"
   - date: "3/4" 
     title: "Posttraining - preference alignment and reasoning"
     lecture: "preference"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/preference-alignment.pdf"
+        url: "assets/lecture-slides/L19-reasoning.pdf"
 - week: 
   num: 10
   dates:
@@ -176,15 +178,15 @@
     lecture: ["cfg", "dependency"]
     leclinks:
       - name: "constituency parsing"
-        url: "assets/lecture-slides/L15-constituency-parsing.pdf"
+        url: "assets/lecture-slides/L20-constituency-parsing.pdf"
       - name: "Dependency parsing"
-        url: "assets/lecture-slides/L16-dependency-parsing.pdf"
+        url: "assets/lecture-slides/L20-dependency-parsing.pdf"
   - date: "3/11" 
     title: "Final project tips, model debugging and analysis"
     lecture: "analysis"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L17-project-tips-analysis.pdf"
+        url: "assets/lecture-slides/L21-project-tips-analysis.pdf"
     hwdue: "4"
 - week: 
   num: 11
@@ -194,11 +196,13 @@
     lecture: "grounding"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L23-grounding.pdf"
+        url: "assets/lecture-slides/L22-grounding.pdf"
   - date: "3/18" 
     title: "Information retrieval and RAG"
     lecture: "rag"
     leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L23-retrieval.pdf"
   - date: "3/19" 
     project: "Project milestone"
 - week: 
@@ -229,13 +233,13 @@
     lecture: "scaling-laws"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/scaling.pdf"
+        url: "assets/lecture-slides/L24-scaling.pdf"
   - date: "4/1"
     title: "LLM Agents"
     lecture: "llm-agents"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L20-LLM-agents.pdf"
+        url: "assets/lecture-slides/L25-LLM-agents.pdf"
 - week: 
   num: 14
   dates:
@@ -247,6 +251,6 @@
     lecture: "project"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L24-conclusion.pdf"
+        url: "assets/lecture-slides/L26-conclusion.pdf"
   - date: "4/9"
     project: "Final project report"
