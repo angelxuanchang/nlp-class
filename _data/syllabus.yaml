@@ -724,7 +724,7 @@
   current: false
   notes:
     - title: Lecture notes
-      url: "assets/lecture-slides/L24-scaling.pdf"
+      url: "assets/lecture-slides/L20-scaling.pdf"
     - title: "Scaling Laws for Neural Language Models"
       author: "Open AI"
       url: "https://arxiv.org/abs/2001.08361"
@@ -756,7 +756,7 @@
   current: false
   notes:
     - title: "Constituency Parsing"
-      url: "assets/lecture-slides/L20-constituency-parsing.pdf"
+      url: "assets/lecture-slides/L22-constituency-parsing.pdf"
     - title: "Phrase structure parsing (Berkeley)"
       author: "David Bamman"
       url: "http://people.ischool.berkeley.edu/~dbamman/nlp20_slides/14_phrase_structure_parsing.pdf"  
@@ -809,7 +809,7 @@
   current: false
   notes:
     - title: "Dependency Parsing"
-      url: "assets/lecture-slides/L20-dependency-parsing.pdf"
+      url: "assets/lecture-slides/L22-dependency-parsing.pdf"
   readings:
     - author: Dan Jurafsky and James H. Martin
       title: "Dependency Parsing (J+M chapter 19)"

@@ -174,13 +174,11 @@
   num: 10
   dates:
   - date: "3/9" 
-    title: "Parsing"
-    lecture: ["cfg", "dependency"]
+    title: "Scaling laws and data"
+    lecture: "scaling-laws"
     leclinks:
-      - name: "constituency parsing"
-        url: "assets/lecture-slides/L20-constituency-parsing.pdf"
-      - name: "Dependency parsing"
-        url: "assets/lecture-slides/L20-dependency-parsing.pdf"
+      - name: "slides"
+        url: "assets/lecture-slides/L20-scaling.pdf"
   - date: "3/11" 
     title: "Final project tips, model debugging and analysis"
     lecture: "analysis"
@@ -192,11 +190,13 @@
   num: 11
   dates:
   - date: "3/16" 
-    title: "Grounding and multimodal models"
-    lecture: "grounding"
+    title: "Parsing"
+    lecture: ["cfg", "dependency"]
     leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L22-grounding.pdf"
+      - name: "constituency parsing"
+        url: "assets/lecture-slides/L22-constituency-parsing.pdf"
+      - name: "Dependency parsing"
+        url: "assets/lecture-slides/L22-dependency-parsing.pdf"
   - date: "3/18" 
     title: "Information retrieval and RAG"
     lecture: "rag"
@@ -217,7 +217,7 @@
         url: "assets/lecture-slides/2025-03-26_CMPT-413_01_3DGrounding.pdf"
       - name: "Text and 3D Representation Learning"
         speaker: Han-Hung Lee
-        url: "assets/lecture-slides/2025-03-26_CMPT-413_02_Text3DRep"
+        url: "assets/lecture-slides/2025-03-26_CMPT-413_02_Text3DRep.pdf"
       - name: "Text-to-Scene Generation"
         speaker: Austin Wang
         url: "assets/lecture-slides/2025-03-26_CMPT-413_03_text-to-scene.pdf"
@@ -229,11 +229,11 @@
   num: 13
   dates:
   - date: "3/30" 
-    title: "Scaling laws and data"
-    lecture: "scaling-laws"
+    title: "Grounding and multimodal models"
+    lecture: "grounding"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L24-scaling.pdf"
+        url: "assets/lecture-slides/L24-grounding.pdf"
   - date: "4/1"
     title: "LLM Agents"
     lecture: "llm-agents"
