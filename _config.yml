@@ -71,12 +71,12 @@ hwdates:
   - hw: "3"
     startdate: "Feb 11, 2026"
     deadline: "Feb 25, 2026"
-    hwc-url: 
+    hwc-url: https://www.gradescope.ca/courses/33825/assignments/184655
     hwp-report-submit-url: 
   - hw: "4"
     startdate: "Feb 25, 2026"
     deadline: "Mar  11, 2026"
-    hwc-url: 
+    hwc-url: https://www.gradescope.ca/courses/33825/assignments/187573
     hwp-report-submit-url: 
   - hw: "project"
     report-submit-name: "Gradescope"

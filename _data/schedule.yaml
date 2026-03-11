@@ -208,9 +208,22 @@
 - week: 
   num: 12
   dates:
-  - date: "3/23" 
-    title: "Guest Lecture (TBD)"
+  - date: "3/23"
+    speaker: 
+      name: "Issam Laradji" 
+      url: "https://issamlaradji.com/"
+    title: "Emerging directions in Large Language Models and AI agents"
   - date: "3/25" 
+    title: "Guest Lecture (TBD)"
+- week: 
+  num: 13
+  dates:
+  - date: "3/30" 
+    title: "Grounding and multimodal models - with talks from TAs (TA talks from Spring 2025 is currently linked)"
+    lecture: "grounding"
+    leclinks:
+      - name: "slides"
+        url: "assets/lecture-slides/L24-grounding.pdf"
     talks:
       - name: "Visual grounding in 3D"
         speaker: Austin Wang
@@ -224,22 +237,11 @@
       - name: "LLMs for modeling DNA"
         speaker: Chuanqi Tang
         url: "assets/lecture-slides/2025-03-26_CMPT-413_04_DNA.pdf"
-    title: "TBD - Spring 2025, TAs gave overview of recent multimodal research"
-- week: 
-  num: 13
-  dates:
-  - date: "3/30" 
-    title: "Grounding and multimodal models"
-    lecture: "grounding"
-    leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L24-grounding.pdf"
   - date: "4/1"
-    title: "LLM Agents"
-    lecture: "llm-agents"
+    title: "Conclusion"
     leclinks:
       - name: "slides"
-        url: "assets/lecture-slides/L25-LLM-agents.pdf"
+        url: "assets/lecture-slides/L26-conclusion.pdf"
 - week: 
   num: 14
   dates:
@@ -249,8 +251,5 @@
   - date: "4/8"
     title: "Final project presentations"
     lecture: "project"
-    leclinks:
-      - name: "slides"
-        url: "assets/lecture-slides/L26-conclusion.pdf"
   - date: "4/9"
     project: "Final project report"
