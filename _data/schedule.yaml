@@ -214,12 +214,19 @@
       url: "https://issamlaradji.com/"
     title: "Emerging directions in Large Language Models and AI agents"
   - date: "3/25" 
-    title: "Guest Lecture (TBD)"
+    title: "LLMs for math and jailbreaking LLMs"
+    talks:
+      - name: "AI4Math"
+        speaker: Mike Lu
+        speakerUrl: "https://mikeljl.github.io/"
+      - name: "Jailbreaking LLMs"
+        speaker: Jialin Song
+        speakerUrl: "https://scholar.google.ca/citations?user=-zPtvfsAAAAJ"
 - week: 
   num: 13
   dates:
   - date: "3/30" 
-    title: "Grounding and multimodal models - with talks from TAs (TA talks from Spring 2025 is currently linked)"
+    title: "Grounding and multimodal models.  Talks from TAs (TA talks from Spring 2025 is currently linked)"
     lecture: "grounding"
     leclinks:
       - name: "slides"
@@ -227,15 +234,19 @@
     talks:
       - name: "Visual grounding in 3D"
         speaker: Austin Wang
+        speakerUrl: "https://atwang16.github.io/"
         url: "assets/lecture-slides/2025-03-26_CMPT-413_01_3DGrounding.pdf"
       - name: "Text and 3D Representation Learning"
         speaker: Han-Hung Lee
+        speakerUrl: "https://hanhung.github.io/"
         url: "assets/lecture-slides/2025-03-26_CMPT-413_02_Text3DRep.pdf"
       - name: "Text-to-Scene Generation"
         speaker: Austin Wang
+        speakerUrl: "https://atwang16.github.io/"
         url: "assets/lecture-slides/2025-03-26_CMPT-413_03_text-to-scene.pdf"
       - name: "LLMs for modeling DNA"
         speaker: Chuanqi Tang
+        speakerUrl: "https://scholar.google.com/citations?user=pTlyDN0AAAAJ" 
         url: "assets/lecture-slides/2025-03-26_CMPT-413_04_DNA.pdf"
   - date: "4/1"
     title: "Conclusion"

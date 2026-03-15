@@ -57,7 +57,16 @@ The schedule is preliminary and subject to change.   Slides will be updated as t
                     {% endif %} 
                     {% if date.talks %}
                       {% for talk in date.talks %}
-                        <a href="{{talk.url}}">{{talk.name}}</a> ({{talk.speaker}})
+                        {% if talk.url %}
+                          <a href="{{talk.url}}">{{talk.name}}</a> 
+                        {% else %}  
+                          {{talk.name}}
+                        {% endif %} 
+                        {% if talk.speakerUrl %}
+                          (<a href="{{talk.speakerUrl}}">{{talk.speaker}}</a>)
+                        {% else %}  
+                          ({{talk.speaker}})
+                        {% endif %} 
                         <br/>
                       {% endfor %}
                     {% endif %} 
