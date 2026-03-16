@@ -191,11 +191,11 @@
   dates:
   - date: "3/16" 
     title: "Parsing"
-    lecture: ["cfg", "dependency"]
+    lecture: ["parsing"]
     leclinks:
       - name: "constituency parsing"
         url: "assets/lecture-slides/L22-constituency-parsing.pdf"
-      - name: "Dependency parsing"
+      - name: "dependency parsing"
         url: "assets/lecture-slides/L22-dependency-parsing.pdf"
   - date: "3/18" 
     title: "Information retrieval and RAG"

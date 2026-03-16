@@ -752,7 +752,7 @@
       url: "https://www.semianalysis.com/p/the-ai-brick-wall-a-practical-limit"
 - title: Constituency Parsing, Ambiguity and Context-Free Grammars
   tag: cfg
-  include: true
+  include: false
   current: false
   notes:
     - title: "Constituency Parsing"
@@ -803,14 +803,21 @@
       author: "Jason Eisner"
       url: "http://www.naclo.cs.cmu.edu/problems2009/N2009-M.pdf"
       optional: true
-- title: "Dependency Parsing"
-  tag: dependency
+- title: "Parsing"
+  tag: parsing
   include: true
   current: false
   notes:
+    - title: "Constituency Parsing"
+      url: "assets/lecture-slides/L22-constituency-parsing.pdf"
     - title: "Dependency Parsing"
       url: "assets/lecture-slides/L22-dependency-parsing.pdf"
   readings:
+    - author: Dan Jurafsky and James H. Martin
+      title: "Constituency Grammars (J+M chapter 18)"
+      url: "https://web.stanford.edu/~jurafsky/slp3/18.pdf"
+      abbr: "J+M chapter 18" 
+      optional: false
     - author: Dan Jurafsky and James H. Martin
       title: "Dependency Parsing (J+M chapter 19)"
       abbr: "J+M chapter 19" 
