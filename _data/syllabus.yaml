@@ -710,7 +710,7 @@
   current: false
   notes:
     - title: Lecture notes
-      url: "assets/slides/rag.pdf"
+      url: "assets/lecture-slides/L23-retrieval.pdf"
   links:
     - author: Dan Jurafsky and James H. Martin
       title: "Post-training (J+M chapter 11)"
