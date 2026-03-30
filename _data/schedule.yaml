@@ -246,10 +246,10 @@
         speaker: Xiaohao Sun
         speakerUrl: "https://sun-xh.github.io/"
         url: "assets/lecture-slides/2026-03-30_CMPT-413_03_text-to-scene.pdf"
-      - name: "LLMs for modeling DNA (slides from 2025, Chuanqi Tang)"
+      - name: "LLMs for modeling DNA"
         speaker: Austin Wang
         speakerUrl: "https://atwang16.github.io/"
-        url: "assets/lecture-slides/2025-03-26_CMPT-413_04_DNA.pdf"
+        url: "assets/lecture-slides/2026-03-30_CMPT-413_04_DNA.pdf"
       - name: "Visual grounding in 3D (from 2025)"
         speaker: Austin Wang
         speakerUrl: "https://atwang16.github.io/"
