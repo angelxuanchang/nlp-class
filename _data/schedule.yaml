@@ -234,10 +234,10 @@
       - name: "slides"
         url: "assets/lecture-slides/L24-grounding.pdf"
     talks:
-      - name: "Text and 3D Representation Learning (slides from 2025, Han-Hung Lee)"
+      - name: "Text and 3D Representation Learning"
         speaker: Qirui Wu
         speakerUrl: "https://qiruiw.github.io/"
-        url: "assets/lecture-slides/2025-03-26_CMPT-413_02_Text3DRep.pdf"
+        url: "assets/lecture-slides/2026-03-30_CMPT-413_01_tt3d.pdf"
       - name: "When Language Meets the Physical World: Semantic Representation for Robots"
         speaker: Sonia Raychaudhuri
         speakerUrl: "https://sonia-raychaudhuri.github.io/"
