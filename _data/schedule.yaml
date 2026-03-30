@@ -216,12 +216,14 @@
   - date: "3/25" 
     title: "LLMs for math and jailbreaking LLMs"
     talks:
-      - name: "AI4Math"
-        speaker: Mike Lu
-        speakerUrl: "https://mikeljl.github.io/"
       - name: "Jailbreaking LLMs"
         speaker: Jialin Song
         speakerUrl: "https://scholar.google.ca/citations?user=-zPtvfsAAAAJ"
+        url: "assets/lecture-slides/2026-03-25-JialinSong-LLMJailbreak.pdf" 
+      - name: "AI4Math"
+        speaker: Mike Lu
+        speakerUrl: "https://mikeljl.github.io/"
+        url: "assets/lecture-slides/2026-03-25-MikeLu-AIMath.pdf"
 - week: 
   num: 13
   dates:
