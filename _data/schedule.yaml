@@ -228,28 +228,32 @@
   num: 13
   dates:
   - date: "3/30" 
-    title: "Grounding and multimodal models.  Talks from TAs (TA talks from Spring 2025 is currently linked)"
+    title: "Grounding and multimodal models.  Talks from TAs"
     lecture: "grounding"
     leclinks:
       - name: "slides"
         url: "assets/lecture-slides/L24-grounding.pdf"
     talks:
-      - name: "Visual grounding in 3D"
+      - name: "Text and 3D Representation Learning (slides from 2025, Han-Hung Lee)"
+        speaker: Qirui Wu
+        speakerUrl: "https://qiruiw.github.io/"
+        url: "assets/lecture-slides/2025-03-26_CMPT-413_02_Text3DRep.pdf"
+      - name: "When Language Meets the Physical World: Semantic Representation for Robots"
+        speaker: Sonia Raychaudhuri
+        speakerUrl: "https://sonia-raychaudhuri.github.io/"
+        url: "assets/lecture-slides/2026-03-30_CMPT-413_02_semantic_repr.pdf"
+      - name: "Text-to-Scene Generation"
+        speaker: Xiaohao Sun
+        speakerUrl: "https://sun-xh.github.io/"
+        url: "assets/lecture-slides/2026-03-30_CMPT-413_03_text-to-scene.pdf"
+      - name: "LLMs for modeling DNA (slides from 2025, Chuanqi Tang)"
+        speaker: Austin Wang
+        speakerUrl: "https://atwang16.github.io/"
+        url: "assets/lecture-slides/2025-03-26_CMPT-413_04_DNA.pdf"
+      - name: "Visual grounding in 3D (from 2025)"
         speaker: Austin Wang
         speakerUrl: "https://atwang16.github.io/"
         url: "assets/lecture-slides/2025-03-26_CMPT-413_01_3DGrounding.pdf"
-      - name: "Text and 3D Representation Learning"
-        speaker: Han-Hung Lee
-        speakerUrl: "https://hanhung.github.io/"
-        url: "assets/lecture-slides/2025-03-26_CMPT-413_02_Text3DRep.pdf"
-      - name: "Text-to-Scene Generation"
-        speaker: Austin Wang
-        speakerUrl: "https://atwang16.github.io/"
-        url: "assets/lecture-slides/2025-03-26_CMPT-413_03_text-to-scene.pdf"
-      - name: "LLMs for modeling DNA"
-        speaker: Chuanqi Tang
-        speakerUrl: "https://scholar.google.com/citations?user=pTlyDN0AAAAJ" 
-        url: "assets/lecture-slides/2025-03-26_CMPT-413_04_DNA.pdf"
   - date: "4/1"
     title: "Conclusion"
     leclinks:
